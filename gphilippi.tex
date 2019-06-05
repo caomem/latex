@@ -19,6 +19,7 @@
 \newcommand\Mark[1]{\textsuperscript#1}
 \usepackage{pgfplots}
 \usepackage{amsfonts}
+\newtheorem{definicao}{Definição}[section]
 \title{Relatório de Laboratório 2}
 \author{Guilherme Philippi, Carlos Eduardo dos Santos Junior}
 \begin{document}
@@ -27,9 +28,107 @@
 
 \section{Introdução}
 
-Este relatório tem como objetivo apresentar soluções de exercícios envolvendo grafos.
+Este relatório tem como objetivo apresentar soluções de exercícios envolvendo \textit{grafos}, que foi um tema estudado por diversos matemáticos proeminentes. Pode-se dizer que em 1736 é que a teoria teve início, com base no artigo publicado por Leonhard Euler, sobre as 7 pontes de Königsberg. Existe uma íntima relação entre Grafos e algoritmos. Podemos, por exemplo, representar um algoritmo por um grafo. Nos apegaremos a este conceito. Assim, segue a definição:
 
-Utilizou-se o software PIPE (Platform Independent Petri net Editor) \cite{dias2007ferramentas} para modelar e simular as soluções propostas, assim como segue na próxima seção.
+\begin{definicao}
+	Um grafo $G$ é um par ordenado da forma $(V(G),E(G))$, composto por um conjunto de \textit{vértices} $V(G)$, de arestas $E(G)$ e uma \textit{função de incidência} $\psi_{g}$ que, por sua vez, associa a cada aresta de $V(G)$ um par não ordenado de vértices (nem sempre distintos) de $E(G)$. É dito que as arestas \textit{ligam} os vértices, bem como denomina-se também tais vértices como \textit{extremidades} desta aresta.
+\end{definicao}
+
+Utilizando esta definição, pode-se denominar outras características das estruturas de um grafo. Assim, por exemplo, estudamos: \textit{ordem, tamanho, incidência, adjacência, vizinhança, laço} e \textit{elo}. Assim, os separamos por tipos, como grafo: \textit{finito, nulo, simples, pseudografo, completo, conexo} e \textit{bipartido}. Dentre estas, frisamos algumas definições a seguir.
+
+\subsection{Classificações}
+
+\begin{definicao}
+	Um grafo que não possui laços (arestas que possuem o mesmo vértice como extremidades),bem como não possui arestas paralelas (arestas cujas extremidades são os mesmo vértices) e onde quaisquer dois vértices são ligados por uma aresta é denominado \textit{grafo completo}.
+\end{definicao}
+
+\begin{definicao}
+	\textit{Grafo conexo} é o nome dado para o tipo de grafo onde é possível estabelecer um caminho de qualquer vértice para qualquer outro vértice dele. Caso contrário, temos um \textit{grafo desconexo}.
+\end{definicao}
+
+\begin{definicao}
+	Chamamos de \textit{grafo bipartido} o grafo onde pode-se particionar o conjunto de vértices em dois, de modo que cada aresta possua extremidades em ambos os conjuntos.
+\end{definicao}
+
+Em especial, também podemos discutir \textit{caminhos} (tanto eulerianos quanto hamiltonianos), \textit{cliques, ciclos, árvores, dígrafos} e, por fim, \textit{grafos ponderados}. Aqui, é importante destacar a definição de \textit{grafo ponderado}, pois podemos representar os esquemas de distâncias (muito utilizado em modelagem na engenharia) com base neles.
+
+\begin{definicao}
+	Chamamos de \textit{grafo ponderado} o grafo que possui valores numéricos atribuídos as suas arestas.
+\end{definicao}
+
+Após isto, partimos para o estudo de \textit{matrizes de incidência e adjacência}. 
+
+\subsection{Grafos como matrizes}
+
+Seguem algumas definições importantes.
+
+\begin{definicao}
+	As extremidades de uma aresta são denominadas \textit{incidentes} à aresta, bem como esta aresta é \textit{incidente} às \textit{extremidades}.
+\end{definicao}
+
+\begin{definicao}
+	Vértices distintos e incidentes à uma mesma aresta são denominados \textit{adjacentes}. Nesse sentido, arestas que possuem um vértice em comum são \textit{adjacentes} também.
+\end{definicao}
+
+\begin{definicao}
+	Dois vértices distintos e adjacentes são denominados \textit{vizinhos}. O conjuntos de vértices \textit{vizinhos} geralmente é denotado por $N_{G}(v)$.
+\end{definicao}
+
+Assim, a partir de matrizes, é possível definir outras maneiras de representar um grafo, donde
+\\
+
+\noindent\textbf{Matriz de Incidência: }Cada coluna representa os vértices incidentes a determinada aresta. Assim, cada linha representa as arestas incidentes a cada vértice. Contamos 1 para aresta incidente ao vértice (ou vice-versa) e 2 se tivermos um laço. Observe a matriz de incidência de $G_1$ à seguir:
+\[
+\begin{blockarray}{ccccccc}
+f & g & h & i & j & k \\
+\begin{block}{(cccccc)c}
+1 & 0 & 0 & 0 & 0 & 1 & A \\
+0 & 0 & 1 & 1 & 0 & 0 & B \\
+0 & 0 & 0 & 0 & 0 & 0 & C \\
+1 & 1 & 0 & 1 & 0 & 1 & D \\
+0 & 1 & 1 & 0 & 2 & 0 & E \\
+\end{block}
+\end{blockarray}
+\]
+
+\noindent\textbf{Matriz de Adjacência: }É uma tabela onde observa-se somente a relação de adjacência entre vértices. Caso um vértice seja adjacente a outro, bota-se número 1. No caso de um laço, bota-se 2. Observe a matriz de adjacência de $G_1$:
+\[
+\begin{blockarray}{cccccc}
+A & B & C & D & E\\
+\begin{block}{(ccccc)c}
+0 & 0 & 0 & 1 & 0 & A \\
+0 & 0 & 0 & 1 & 1 & B \\
+0 & 0 & 0 & 0 & 0 & C \\
+1 & 1 & 0 & 0 & 1 & D \\
+0 & 0 & 0 & 0 & 2 & E \\
+\end{block}
+\end{blockarray}
+\]
+
+Por último, temos alguns resultados sobre \textit{grau de um vértice}. Assim, seguem outras definições, com a prova de 2 resultados na sequência.
+
+\begin{definicao}
+	O \textit{grau} de um vértice é o número de arestas incidentes a ele. Cada laço conta como duas arestas. O vértice com \textit{grau} zero é chamado de \textit{vértice isolado}.
+\end{definicao}
+\begin{itemize}
+	\item $d_{G}(v)$: É o grau do vértice $v$. Se $G$ é um grafo simples (sem laços ou arestas paralelas), então $d_{G}(v)$ denota o número de vizinhos de $v$ em $G$.
+\end{itemize}
+
+\begin{teorema}
+	Para todo grafo $G(V(G),E(G))$, com $m$ arestas, vale:
+	$$
+	\sum\limits_{v\in V}{d_{G}(v)=2m}.
+	$$
+\end{teorema}
+\noindent\dem Considere a matriz de incidência M do grafo G. Para saber o grau de um determinado vértice basta olharmos para sua linha correspondente e somarmos os valores contidos na linha. Note que somar os valores presentes em todas as linhas é o mesmo que somar os valores presentes nas colunas. Como temos $m$ colunas e cada aresta possui 2 vértices incidentes, segue que $\sum\limits_{v\in V}{d_{G}(v)=2m}$.\qed
+
+\begin{teorema}
+	Em qualquer grafo, o número de vértices, cujo grau é ímpar, é par.
+\end{teorema}
+\noindent\dem Suponha que o número de vértices com grau ímpar seja ímpar. Note que a soma do grau de todos os vértices resulta em um número ímpar(resultado aritmético). Somando este resultado com o grau dos demais vértices, cujo grau é par, obtemos um número ímpar. Absurdo, pois $\sum\limits_{v\in V}{d(v)=2m}$. Portanto, o número de vértices, cujo grau é ímpar, é par.\qed
+
+
+Utilizou-se o software GRAFOS \cite{grafos} para modelar e simular as soluções propostas, assim como segue na próxima seção.
 
 \section{Desenvolvimento}
 Descrever de forma mais detalhada o problema.
