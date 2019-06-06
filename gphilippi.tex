@@ -19,30 +19,26 @@
 \newcommand\Mark[1]{\textsuperscript#1}
 \usepackage{pgfplots}
 \usepackage{amsfonts}
-\title{Relatório de Laboratório 2}
-\author{Guilherme Philippi, Carlos Eduardo dos Santos Junior}
+\title{Relatório de Laboratório 6}
+\author{Guilherme Philippi}
 \begin{document}
 \maketitle
-\tableofcontents
 
-\section{Introdução}
+\section{Diferença entre Hubs, Switchs e Roteadores}
 
-Este relatório tem como objetivo apresentar soluções de exercícios envolvendo grafos.
+\subsection{Hub}
+O Hub é um equipamento para conectar dispositivos em redes de computadores de maneira simples, operando na camada física (camada 1 do modelo OSI \cite{dean2012network}). É um equipamento barato, devido sua simplicidade estrutural, que divide toda a sua banda disponível entre todas os dispositivos conectados a ele, isto é, funcionando como uma conexão em barramento entre todos os dispositivos.
+\subsection{Switchs}
+Switchs são equipamentos um pouco mais robustos, também servindo para conectar dispositivos de redes, porém, operando na camada de enlace (2 do modelo OSI). Este, diferentemente do switch, não funciona apenas como barramento, mas faz um roteamento físico (usando endereço MAC) dos dispositivos conectados na rede, isto é, utilizando uma tabela de roteamento. Esta característica faz com que os dispositivos conectados a rede não tenham que compartilhar entre si a banda total do switch (como no hub), ou seja, se for um switch de 100Mb, a capacidade real do switch é $100Mb * \frac{n}{2}$ onde $n$ é a quantidade de portas que ele possui (que no geral, é um valor alto).
+\subsection{Roteadores}
+Roteadores são os equipamentos mais robustos entre estes, operando na camada de rede (3 do modelo OSI). Diferentemente do switch, que apenas faz um roteamento físico entre os dispositivos conectados, o roteador faz, de fato, um roteamento utilizando o endereço lógico (IP). Por serem mais robustos, também são mais caros. Normalmente roteadores não possuem grande quantidade de portas, diferentemente dos seus antecessores.
 
-Utilizou-se o software PIPE (Platform Independent Petri net Editor) \cite{dias2007ferramentas} para modelar e simular as soluções propostas, assim como segue na próxima seção.
+\section{Simulação com Cisco Packet Tracer}
 
-\section{Desenvolvimento}
-Descrever de forma mais detalhada o problema.
-Apresentar a solução proposta pela equipe.
-Discorrer sobre a solução (por exemplo, explicar com detalhes os pontos mais
-importantes).
+\subsection{Tipos de interface}
+\subsection{Hub}
+No hub utilizou-se a interface \textit{fastethernet}, que possui velocidade de 100Mbit/s
 
-Atenção: Se mais de uma ou atividade foi realizada no laboratório repetir a sequência
-anterior (da Seção 3) para cada atividade.
-
-\section{Considerações Finais}
-Apresentar as considerações finais sobre o trabalho. Se o objetivo foi alcançado ou não,
-o que foi aprendido, dificuldades encontradas, etc.
 
 \newpage
 \phantomsection
