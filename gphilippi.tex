@@ -20,15 +20,16 @@
 \usepackage{pgfplots}
 \usepackage{amsfonts}
 \newtheorem{definicao}{Definição}[section]
-\title{Relatório de Laboratório 2}
-\author{Guilherme Philippi, Carlos Eduardo dos Santos Junior}
+\newtheorem{teorema}{Teorema}[section]
+\title{Relatório de Laboratório 1}
+\author{Guilherme Philippi}
 \begin{document}
 \maketitle
 \tableofcontents
 
 \section{Introdução}
 
-Este relatório tem como objetivo apresentar soluções de exercícios envolvendo \textit{grafos}, que foi um tema estudado por diversos matemáticos proeminentes. Pode-se dizer que em 1736 é que a teoria teve início, com base no artigo publicado por Leonhard Euler, sobre as 7 pontes de Königsberg. Existe uma íntima relação entre Grafos e algoritmos. Podemos, por exemplo, representar um algoritmo por um grafo. Nos apegaremos a este conceito. Assim, segue a definição:
+Este relatório tem como objetivo apresentar soluções de exercícios envolvendo \textit{grafos}, que foi um tema estudado por diversos matemáticos proeminentes. Pode-se dizer que em 1736 é que a teoria teve início, com base no artigo publicado por Leonhard Euler, sobre as 7 pontes de Königsberg \cite{grafos1}. Existe uma íntima relação entre Grafos e algoritmos \cite{grafos0}. Podemos, por exemplo, representar um algoritmo por um grafo. Nos apegaremos a este conceito. Assim, segue a definição:
 
 \begin{definicao}
 	Um grafo $G$ é um par ordenado da forma $(V(G),E(G))$, composto por um conjunto de \textit{vértices} $V(G)$, de arestas $E(G)$ e uma \textit{função de incidência} $\psi_{g}$ que, por sua vez, associa a cada aresta de $V(G)$ um par não ordenado de vértices (nem sempre distintos) de $E(G)$. É dito que as arestas \textit{ligam} os vértices, bem como denomina-se também tais vértices como \textit{extremidades} desta aresta.
@@ -120,30 +121,130 @@ Por último, temos alguns resultados sobre \textit{grau de um vértice}. Assim, 
 	\sum\limits_{v\in V}{d_{G}(v)=2m}.
 	$$
 \end{teorema}
-\noindent\dem Considere a matriz de incidência M do grafo G. Para saber o grau de um determinado vértice basta olharmos para sua linha correspondente e somarmos os valores contidos na linha. Note que somar os valores presentes em todas as linhas é o mesmo que somar os valores presentes nas colunas. Como temos $m$ colunas e cada aresta possui 2 vértices incidentes, segue que $\sum\limits_{v\in V}{d_{G}(v)=2m}$.\qed
+ Considere a matriz de incidência M do grafo G. Para saber o grau de um determinado vértice basta olharmos para sua linha correspondente e somarmos os valores contidos na linha. Note que somar os valores presentes em todas as linhas é o mesmo que somar os valores presentes nas colunas. Como temos $m$ colunas e cada aresta possui 2 vértices incidentes, segue que $\sum\limits_{v\in V}{d_{G}(v)=2m}$.
 
 \begin{teorema}
 	Em qualquer grafo, o número de vértices, cujo grau é ímpar, é par.
 \end{teorema}
-\noindent\dem Suponha que o número de vértices com grau ímpar seja ímpar. Note que a soma do grau de todos os vértices resulta em um número ímpar(resultado aritmético). Somando este resultado com o grau dos demais vértices, cujo grau é par, obtemos um número ímpar. Absurdo, pois $\sum\limits_{v\in V}{d(v)=2m}$. Portanto, o número de vértices, cujo grau é ímpar, é par.\qed
+ Suponha que o número de vértices com grau ímpar seja ímpar. Note que a soma do grau de todos os vértices resulta em um número ímpar(resultado aritmético). Somando este resultado com o grau dos demais vértices, cujo grau é par, obtemos um número ímpar. Absurdo, pois $\sum\limits_{v\in V}{d(v)=2m}$. Portanto, o número de vértices, cujo grau é ímpar, é par.
+ \\
 
-
-Utilizou-se o software GRAFOS \cite{grafos} para modelar e simular as soluções propostas, assim como segue na próxima seção.
+Iremos apresentar alguns problemas-exemplos da utilização de grafos, implementando algorítimos bem conhecidos na literatura. Utilizou-se o software GRAFOS \cite{grafos} para modelar e simular as soluções propostas, assim como segue na próxima seção.
 
 \section{Desenvolvimento}
-Descrever de forma mais detalhada o problema.
-Apresentar a solução proposta pela equipe.
-Discorrer sobre a solução (por exemplo, explicar com detalhes os pontos mais
-importantes).
+\subsection{Distribuição de Sensores}
+ Em uma casa que busca ser automatizada (vide Figura ~\ref{fig:sensores}), realizou-se uma proposta do cabeamento utilizando a menor quantidade possível de matéria prima (Cabos) levando em consideração que todas as tomadas de ar mostradas na planta (pontos em vermelho) deveriam ser visitadas. Considerou-se que todos os vértices do grafo que define o sistema podem ter ligações entre si de maneira linear.
+ 
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=0.8\linewidth]{sensores.png}
+	\end{center}
+	\caption{Distribuição dos sensores}
+	\label{fig:sensores}
+\end{figure}
 
-Atenção: Se mais de uma ou atividade foi realizada no laboratório repetir a sequência
-anterior (da Seção 3) para cada atividade.
+Para solucionar este problema, com o auxilio do software GRAFOS, utilizou-se a Figura ~\ref{fig:sensores} como parâmetro, uma vez que a mesma está em perfeita escala, possibilitando-se que se calculasse as ponderações das arestas como as distâncias euclidianas dos pontos na imagem. Com isso, gerou-se o grafo completo mostrado na Figura ~\ref{fig:sensorescompleto}.
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=0.8\linewidth]{sensorescompleto.png}
+	\end{center}
+	\caption{Grafo completo dos sensores}
+	\label{fig:sensorescompleto}
+\end{figure}
+
+Com isso, pode-se utilizar o algorítimo de Kruskal, que busca uma árvore geradora mínima para um grafo conexo com pesos \cite{kruskal1990complexity}, ou seja, ele encontra um subconjunto das arestas que formam uma árvore incluindo todos os vértices onde o peso total desses, dado pela soma dos pesos das arestas da árvore, é mínimo. Observe o resultado obtido na Figura ~\ref{fig:sensoresconclusao}
+
+\begin{figure}[H]
+	\hspace{-1cm}
+	\includegraphics[width=1.2\linewidth]{sensoresconclusao.png}
+	\caption{Aplicação do algorítimo de Kruskal no grafo completo}
+	\label{fig:sensoresconclusao}
+\end{figure}
+
+\subsection{Sistema de Posicionamento Global}
+
+Outro excelente problema-exemplo envolvendo grafos está em obter o menor caminho entre dois pontos obedecendo um sistema de rotas. Aqui teremos como objetivo construir um GPS primitivo que permita calcular as menores rotas entre o ponto $2$ e os demais pontos marcados no mapa da Figura ~\ref{fig:mapa}.
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=0.85\linewidth]{mapa.png}
+	\end{center}
+	\caption{Mapa de rotas possíveis entre os pontos}
+	\label{fig:mapa}
+\end{figure}
+
+\subsubsection*{Caminho do ponto 2 até 1}
+
+Semelhante a Figura ~\ref{fig:sensores}, o mapa ilustrado na Figura ~\ref{fig:mapa} também está em perfeita escala, nos permitindo utilizá-lo como parâmetro para o software GRAFOS. Assim foi feito, obtendo os possíveis caminhos representados pelo grafo ponderado da Figura ~\ref{fig:mapa1} (note que somente os caminhos validos estão presentes, ou seja, não fora levado em consideração os caminhos demasiadamente longos).
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=0.45\linewidth]{cam1.png}
+	\end{center}
+	\caption{Mapa de rotas possíveis entre os pontos 2 e 1}
+	\label{fig:mapa1}
+\end{figure}
+
+Com este grafo montado, podemos utilizar o algorítimo de Dijkstra, concebido pelo cientista da computação holandês Edsger Dijkstra em 1956 e publicado em 1959 \cite{dijkstra1959note}, que soluciona o problema do caminho mais curto num grafo dirigido (ou não) com arestas ponderadas não negativas, em tempo computacional $O(m + n \log{n})$ onde m é o número de arestas e n é o número de vértices. Assim sendo, obtivemos o caminho representado pela Figura ~\ref{fig:mapa1sol}
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=0.7\linewidth]{cam1sol.png}
+	\end{center}
+	\caption{Mapa de rota mais curta entre os pontos 2 e 1}
+	\label{fig:mapa1sol}
+\end{figure}
+
+\subsubsection*{Caminho do ponto 2 até 3}
+Da mesma forma do destino anterior, construiu-se o grafo que melhor representa as possíveis rotas que ligam os pontos 2 e 3, como pode-se ver na Figura ~\ref{fig:mapa2}.
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=0.45\linewidth]{cam2.png}
+	\end{center}
+	\caption{Mapa de rotas possíveis entre os pontos 2 e 3}
+	\label{fig:mapa2}
+\end{figure}
+
+Segue, na Figura ~\ref{fig:mapa2sol}, a representação do caminho mais curto obtido através da aplicação do algorítimo de Dijkstra.
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=0.8\linewidth]{cam2sol.png}
+	\end{center}
+	\caption{Mapa de rota mais curta entre os pontos 2 e 3}
+	\label{fig:mapa2sol}
+\end{figure}
+
+\subsubsection*{Caminho do ponto 2 até 4}
+Igualmente como os caminhos anteriores, construiu-se o grafo que melhor representa as possíveis rotas que ligam os pontos 2 e 4, como pode-se comprovar na Figura ~\ref{fig:mapa3}.
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=0.6\linewidth]{cam3.png}
+	\end{center}
+	\caption{Mapa de rotas possíveis entre os pontos 2 e 4}
+	\label{fig:mapa3}
+\end{figure}
+
+Segue, na Figura ~\ref{fig:mapa3sol}, a representação do caminho mais curto obtido através da aplicação do algorítimo de Dijkstra entre os pontos 2 e 4.
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=0.8\linewidth]{cam3sol.png}
+	\end{center}
+	\caption{Mapa de rota mais curta entre os pontos 2 e 4}
+	\label{fig:mapa3sol}
+\end{figure}
 
 \section{Considerações Finais}
-Apresentar as considerações finais sobre o trabalho. Se o objetivo foi alcançado ou não,
-o que foi aprendido, dificuldades encontradas, etc.
+Perceba que no problema-exemplo de posicionamento global alguns caminhos foram propositalmente omitidos, por serem considerados desprezáveis (trivialmente longos), donde que um resultado mais robusto contaria com a presença de um grafo completo, envolvendo todos os possíveis caminhos. Ressalta-se também que um estudo sobre a complexidade computacional dos algorítimos apresentados seria proveitoso para algum possível trabalho futuro.
 
-\newpage
+Espera-se ter deixado claro para o leitor quais os princípios básicos envolvendo grafos, principais resultados e esboçado possíveis aplicações com o desenvolvimento proposto. Vale a ressalva de que a bibliografia contém uma grande quantidade de algorítimos diferentes envolvendo grafos e uma diversa gama de aplicações. 
+
+Pede-se uma pequena pausa para a licença poética: Acreditamos que uma das mais belas características da representação dos grafos é que o conjunto de vértices $V$ aceita qualquer elemento, ou seja, pode ser tanto um sensor, quanto uma esquina. Daí vem o grande poder de abstração da representação de grafos.
+
 \phantomsection
 \addcontentsline{toc}{section}{Referências}
 

@@ -1,7 +1,27 @@
 \begin{thebibliography}{1}
 
+\bibitem{grafos1}
+J.~A. Bondy and U.~S.~R. Murty.
+\newblock {\em Graph Theory With Applications}.
+\newblock Elsevier Science Publishing, New York, 5 edition, 1982.
+
+\bibitem{grafos0}
+Paulo Oswaldo~Boaventura Netto.
+\newblock {\em Grafos}.
+\newblock Blucher, São Paulo, 5 edition, 2012.
+
 \bibitem{grafos}
 Grafos - software para la construcción, edición y análisis de grafos.
 \newblock Disponivel em: http://arodrigu.webs.upv.es/grafos/doku.php?id=inicio.
+
+\bibitem{kruskal1990complexity}
+Clyde~P Kruskal, Larry Rudolph, and Marc Snir.
+\newblock A complexity theory of efficient parallel algorithms.
+\newblock {\em Theoretical Computer Science}, 71(1):95--132, 1990.
+
+\bibitem{dijkstra1959note}
+Edsger~W Dijkstra.
+\newblock A note on two problems in connexion with graphs.
+\newblock {\em Numerische mathematik}, 1(1):269--271, 1959.
 
 \end{thebibliography}

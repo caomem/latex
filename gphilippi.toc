@@ -1,0 +1,9 @@
+\babel@toc {brazil}{}
+\contentsline {section}{\numberline {1}Introdu\IeC {\c c}\IeC {\~a}o}{1}{section.1}
+\contentsline {subsection}{\numberline {1.1}Classifica\IeC {\c c}\IeC {\~o}es}{2}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}Grafos como matrizes}{2}{subsection.1.2}
+\contentsline {section}{\numberline {2}Desenvolvimento}{3}{section.2}
+\contentsline {subsection}{\numberline {2.1}Distribui\IeC {\c c}\IeC {\~a}o de Sensores}{3}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Sistema de Posicionamento Global}{5}{subsection.2.2}
+\contentsline {section}{\numberline {3}Considera\IeC {\c c}\IeC {\~o}es Finais}{9}{section.3}
+\contentsline {section}{Refer\IeC {\^e}ncias}{9}{section*.15}
