@@ -19,43 +19,48 @@
 \newcommand\Mark[1]{\textsuperscript#1}
 \usepackage{pgfplots}
 \usepackage{amsfonts}
-\title{Relatório de Laboratório 2}
-\author{Guilherme Philippi, Carlos Eduardo dos Santos Junior}
+\usepackage{listings}
+\title{Trabalho Prático 2 - Parte 2\\ Um Estudo sobre o FreeRTOS e suas APIs}
+\author{Guilherme Philippi\\Campus Blumenau\\Universidade Federal de Santa Catarina\\UFSC
+	\\guilherme.philippi@grad.ufsc.br}
 \begin{document}
-\maketitle
-\tableofcontents
-
-\section{Introdução}
-
-Este relatório tem como objetivo apresentar soluções de exercícios envolvendo grafos.
-
-Utilizou-se o software PIPE (Platform Independent Petri net Editor) \cite{dias2007ferramentas} para modelar e simular as soluções propostas, assim como segue na próxima seção.
-
-\section{Desenvolvimento}
-Descrever de forma mais detalhada o problema.
-Apresentar a solução proposta pela equipe.
-Discorrer sobre a solução (por exemplo, explicar com detalhes os pontos mais
-importantes).
-
-\begin{figure}[H]
-	\begin{center}
-		\includegraphics[width=0.4\linewidth]{img.png}
-	\end{center}
-	\caption{Transformação linear composta BA}
-	\label{fig:compfunc}
-\end{figure}
-
-Atenção: Se mais de uma ou atividade foi realizada no laboratório repetir a sequência
-anterior (da Seção 3) para cada atividade.
-
-\section{Considerações Finais}
-Apresentar as considerações finais sobre o trabalho. Se o objetivo foi alcançado ou não,
-o que foi aprendido, dificuldades encontradas, etc.
-
-\phantomsection
-\addcontentsline{toc}{section}{Referências}
-
-\bibliographystyle{unsrt}
-\bibliography{references}
-
+	\maketitle
+	\tableofcontents
+	
+	\section{Sincronização de processos utilizando filas}
+	A implementação que se segue esboça um problema clássico de sincronização de processos, o produtor/consumidor. Teve-se como objetivo implementar um grupo de tasks produtoras de conteúdo que é desenhado em uma tela por outra task consumidora. Note que esta é uma implementação prática, feita na IDE Arduino, utilizando um Arduino Mega, um display OLED GM009605 e um Joystick bidimensional modelo KY-023.
+	
+	Segue o exemplo da solução deste problema utilizando a linguagem C:
+	\lstset{numbers=left,basicstyle=\footnotesize, numberstyle=\tiny, stepnumber=1, numbersep=5pt, showstringspaces=false}
+	\lstinputlisting[language=c]{q1.c}
+	
+	\section{Mecanismos de escalonamento}
+	Nesta seção iremos analisar o comportamento do escalonador do FreeRTOS. Para melhor compreendê-lo, executou-se o código visto abaixo duas vezes, donde, na segunda vez, modificou-se o valor de prioridade de apenas uma das tasks para 2.
+	
+	\lstinputlisting[language=c]{q2.c}
+	
+	Com esses testes pode-se verificar que, quando as tasks tem a mesma prioridade, tendem a executar na mesma proporção, porém, do contrário, quando uma task tem mais prioridade que as demais, fica evidente o efeito de \textit{starvation}, ou seja, a task com maior prioridade não para de ser executada e a task com menor prioridade nunca entra em execução.
+	
+	Segundo a documentação oficial do FreeRTOS \cite{barry2009freertos}: "The FreeRTOS scheduler ensures that tasks in the Ready or Running state will always be given processor (CPU) time in preference to tasks of a lower priority that are also in the ready state. In other words, the task placed into the Running state is always the highest priority task that is able to run.", isto é, em tradução livre, a tarefa que entra em execução é sempre a tarefa com maior prioridade que esteja preparada para executar. Pode-se concluir então que o FreeRTOS implementa um escalonador simples baseado em \textit{Escalonamento por Prioridade}.
+	
+	\section{Tarefas Periódicas}
+	Comumente necessita-se garantir a periodicidade de certas tarefas em sistemas de tempo real, como a leitura de um determinado sensor que desempenha o controle crítico de uma válvula de pressão. Para que se tenha essa garantia, é necessário um estudo sobre as diferentes formas de controle temporal no FreeRTOS.
+	
+	Pode-se perceber que, nos exemplos anteriores, nós só havíamos utilizado o método vTaskDelay(), o qual tem o objetivo de manter uma tarefa em modo de espera até que uma certa quantidade de batidas do relógio do processador sejam efetuadas. Pode-se calcular o tempo que a tarefa ficará aguardando utilizando, por exemplo, a constante portTICK$\_$PERIOD$\_$MS que retorna o período de cada batida do relógio.
+	
+	Infelizmente essa não é uma boa solução quando se quer garantir um período constante para a execução de uma tarefa. Perceba que, no fim deste método, apenas é habilitado que a task volte a ser executada. Nada garante que ela realmente entrará em execução naquele momento. Pior ainda, na verdade, garante-se que ela sempre demorará a mais o tempo que o kernel necessita para coloca-la em execução. Note que uma grande quantidade de repetições gera um erro acumulado significativo.
+	
+	Uma solução alternativa para este problema é a utilização da função vTaskDelayUntil(), que, diferentemente da sua prima já comentada, esta retorna a ser executada em um tempo exato passado como parâmetro. Na verdade, ela recebe dois parâmetros: pxPreviousWakeTime, que diz quando foi a ultima vez que ela foi chamada; e xTimeIncrement, que é daqui a quantos ciclos ela será executada. Ou seja, com esses dois parâmetros pode-se garantir que a tarefa volte a ser executada exatamente em pxPreviousWakeTime$+$xTimeIncrement.
+	
+	Segundo a documentação oficial \cite{barry2009freertos}: "Whereas vTaskDelay() specifies a wake time relative to the time at which the function is called, vTaskDelayUntil() specifies the absolute (exact) time at which it wishes to unblock.", isto é, em tradução livre, diferentemente da vTaskDelay(), vTaskDelayUntil() especifica o tempo exato em que se quer executar.
+	
+	Segue exemplo de implementação de uma tarefa periódica no FreeRTOS.
+	\lstinputlisting[language=c]{q3.c}
+	
+	\phantomsection
+	\addcontentsline{toc}{section}{Referências}
+	
+	\bibliographystyle{unsrt}
+	\bibliography{references}
+	
 \end{document}

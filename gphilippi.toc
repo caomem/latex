@@ -1,0 +1,5 @@
+\babel@toc {brazil}{}
+\contentsline {section}{\numberline {1}Sincroniza\IeC {\c c}\IeC {\~a}o de processos utilizando filas}{1}{section.1}% 
+\contentsline {section}{\numberline {2}Mecanismos de escalonamento}{4}{section.2}% 
+\contentsline {section}{\numberline {3}Tarefas Peri\IeC {\'o}dicas}{5}{section.3}% 
+\contentsline {section}{Refer\IeC {\^e}ncias}{6}{section*.2}% 

@@ -1,2 +1,2 @@
-# latex
-This is the default repository for my personal workings with latex
+# Trabalho 2 Parte 2
+Trabalho desenvolvido em SO
