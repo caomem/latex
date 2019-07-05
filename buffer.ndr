@@ -1,0 +1,79 @@
+p 65.0 395.0 S1y 0 w Yellow s
+p 65.0 130.0 S1r 1 n Red w
+t 180.0 200.0 t13 1 1 n
+t 65.0 235.0 t15 3 3 w
+t 180.0 395.0 t9 20 20 e
+p 180.0 295.0 S1g 0 w Green e
+p 653.0 335.0 p11 0 e Yellow s
+t 538.0 140.0 t18 1 1 n
+t 653.0 175.0 t19 3 3 e
+t 538.0 335.0 t20 20 20 w
+p 538.0 235.0 p13 0 e Green w
+p 522.0 578.0 p14 0 e Yellow s
+p 257.0 578.0 p15 1 w Red s
+t 327.0 463.0 t21 1 1 n
+t 362.0 578.0 t22 3 3 s
+t 522.0 463.0 t23 20 20 n
+p 422.0 463.0 p16 0 n Green s
+p 653.0 70.0 p12 1 n Red e
+p 325.0 235.0 p21 0 n
+n 585.0 535.0 n3 1 {RP semaphore 1}
+n 40.0 60.0 n1 1 {RP semaphore 3}
+n 700.0 140.0 n12 1 {RP semaphore 2}
+p 360.0 290.0 p19 1 n
+p 365.0 190.0 p20 0 n
+n 325.0 125.0 n4 1 {RP controller}
+t 910.0 280.0 t26 2 2 n
+p 840.0 280.0 p22 0 n
+t 765.0 280.0 t25 0 w n
+p 985.0 280.0 p23 0 n
+p 840.0 205.0 p24 1 n
+p 980.0 205.0 p25 1 n
+t 1055.0 280.0 t27 2 2 n
+p 385.0 50.0 p27 0 n
+p 265.0 135.0 p28 0 n
+p 180.0 50.0 p31 1 n
+t 290.0 50.0 t29 20 20 n
+e t29 p31 1 n
+e p31 t29 1 n
+e p28 t9 1 n
+e t29 p28 1 n
+e p28 t29 1 n
+e t13 p28 1 n
+e p27 t25 1 n
+e t29 p27 1 n
+e p25 t26 1 n
+e t27 p25 1 n
+e p24 t25 1 n
+e t26 p24 1 n
+e p23 t27 1 n
+e t26 p23 1 n
+e p22 t26 1 n
+e t25 p22 1 n
+e p21 t21 1 n
+e t15 p21 1 n
+e p20 t13 1 n
+e t19 p20 1 n
+e p19 t18 1 n
+e t22 p19 1 n
+e t23 p14 1 n
+e p15 t21 1 n
+e t21 p16 1 n
+e p16 t23 1 n
+e p14 t22 1 n
+e t22 p15 1 n
+e t20 p11 1 n
+e p12 t18 1 n
+e t18 p13 1 n
+e p13 t20 1 n
+e p11 t19 1 n
+e t19 p12 1 n
+e t15 S1r 1 n
+e S1y t15 1 n
+e S1g t9 1 n
+e t13 S1g 1 n
+e S1r t13 1 n
+e t9 S1y 1 n
+h buffer
+
+
