@@ -1,0 +1,8 @@
+\babel@toc {english}{}
+\babel@toc {english}{}
+\beamer@sectionintoc {1}{Preliminares}{3}{0}{1}
+\beamer@sectionintoc {2}{Redes de sensores e detec\IeC {\c c}\IeC {\~a}o de localiza\IeC {\c c}\IeC {\~a}o}{5}{0}{2}
+\beamer@sectionintoc {3}{Como modelar um sistema de localiza\IeC {\c c}\IeC {\~a}o}{6}{0}{3}
+\beamer@sectionintoc {4}{ML Multilatera\IeC {\c c}\IeC {\~a}o - Uma proposta de solu\IeC {\c c}\IeC {\~a}o}{12}{0}{4}
+\beamer@sectionintoc {5}{Um estudo de Complexidade Computacional}{22}{0}{5}
+\beamer@sectionintoc {6}{PGD - Aplica\IeC {\c c}\IeC {\~o}es}{24}{0}{6}
