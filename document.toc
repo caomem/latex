@@ -1,0 +1,23 @@
+\babel@toc {brazil}{}
+\contentsline {section}{\numberline {1}Grafos}{2}
+\contentsline {subsection}{\numberline {1.1}Defini\IeC {\c c}\IeC {\~o}es Elementares}{2}
+\contentsline {subsection}{\numberline {1.2}Tipos de Grafos}{2}
+\contentsline {subsection}{\numberline {1.3}Subgrafos e Grafos Especiais}{5}
+\contentsline {subsection}{\numberline {1.4}Matrizes de Incid\IeC {\^e}ncia e Adjac\IeC {\^e}ncia}{9}
+\contentsline {subsection}{\numberline {1.5}Grau (ou Val\IeC {\^e}ncia) de um V\IeC {\'e}rtice}{9}
+\contentsline {subsection}{\numberline {1.6}Sequ\IeC {\^e}ncia de V\IeC {\'e}rtices e Arestas}{10}
+\contentsline {subsection}{\numberline {1.7}Um aprofundamento}{11}
+\contentsline {section}{\numberline {2}Quat\IeC {\'e}rnios: Abordagem para um Problema Real}{14}
+\contentsline {subsection}{\numberline {2.1}A Primeira \IeC {\'A}lgebra n\IeC {\~a}o Comutativa}{14}
+\contentsline {subsection}{\numberline {2.2}\IeC {\'A}lgebra dos Quat\IeC {\'e}rnios}{15}
+\contentsline {subsubsection}{Opera\IeC {\c c}\IeC {\~o}es sobre $\mathbb {H}$}{15}
+\contentsline {section}{\numberline {3}PGDM}{21}
+\contentsline {subsection}{\numberline {3.1}Aspectos Hist\IeC {\'o}ricos - Preliminares}{21}
+\contentsline {subsection}{\numberline {3.2}Geometria de Dist\IeC {\^a}ncias}{21}
+\contentsline {subsection}{\numberline {3.3}Estrutura das Prote\IeC {\'\i }nas}{22}
+\contentsline {subsection}{\numberline {3.4}Representa\IeC {\c c}\IeC {\~o}es dos \IeC {\'A}tomos em Coordenadas}{23}
+\contentsline {subsection}{\numberline {3.5}RMN - Resson\IeC {\^a}ncia Magn\IeC {\'e}tica Nuclear}{25}
+\contentsline {subsection}{\numberline {3.6}Modelagem Matem\IeC {\'a}tica}{25}
+\contentsline {subsection}{\numberline {3.7}Modelagem Computacional}{27}
+\contentsline {subsection}{\numberline {3.8}N\IeC {\'u}mero de solu\IeC {\c c}\IeC {\~o}es de um PGDM}{30}
+\contentsline {section}{Ap\IeC {\^e}ndice A - Lei dos Cossenos e \IeC {\^A}ngulos Entre dois Vetores no $\mathbb {R}^3$}{34}
