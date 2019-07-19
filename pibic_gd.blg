@@ -1,0 +1,39 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: pibic_gd.aux
+The style file: unsrt.bst
+Database file #1: references.bib
+I was expecting a `,' or a `}'---line 90 of file references.bib
+ :  
+ :  address  = "São Paulo",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Too many commas in name 1 of "Carlile Lavor, Jon Lee, Audrey Lee-St. John, Leo Liberti, Antonio Mucherino and Maxim Sviridenko" for entry carlile:DDGP
+while executing---line 944 of file unsrt.bst
+Too many commas in name 1 of "Carlile Lavor, Jon Lee, Audrey Lee-St. John, Leo Liberti, Antonio Mucherino and Maxim Sviridenko" for entry carlile:DDGP
+while executing---line 944 of file unsrt.bst
+Warning--empty journal in Blumenthal:53
+Name 1 in "A. T. Philips, J. B. Rosen, and V. H. Walke" has a comma at the end for entry Philips:96
+while executing---line 944 of file unsrt.bst
+Too many commas in name 1 of "Eren, T., Goldenberg, O. K., Whiteley, W., Yang, Y. R., Morse, A. S., Anderson, B. D., & Belhumeur, P. N" for entry NetworkLocalizationEren
+while executing---line 944 of file unsrt.bst
+Too many commas in name 1 of "Eren, T., Goldenberg, O. K., Whiteley, W., Yang, Y. R., Morse, A. S., Anderson, B. D., & Belhumeur, P. N" for entry NetworkLocalizationEren
+while executing---line 944 of file unsrt.bst
+Too many commas in name 1 of "Eren, T., Goldenberg, O. K., Whiteley, W., Yang, Y. R., Morse, A. S., Anderson, B. D., & Belhumeur, P. N" for entry NetworkLocalizationEren
+while executing---line 944 of file unsrt.bst
+Too many commas in name 1 of "Eren, T., Goldenberg, O. K., Whiteley, W., Yang, Y. R., Morse, A. S., Anderson, B. D., & Belhumeur, P. N" for entry NetworkLocalizationEren
+while executing---line 944 of file unsrt.bst
+Too many commas in name 1 of "Eren, T., Goldenberg, O. K., Whiteley, W., Yang, Y. R., Morse, A. S., Anderson, B. D., & Belhumeur, P. N" for entry NetworkLocalizationEren
+while executing---line 944 of file unsrt.bst
+Too many commas in name 1 of "Eren, T., Goldenberg, O. K., Whiteley, W., Yang, Y. R., Morse, A. S., Anderson, B. D., & Belhumeur, P. N" for entry NetworkLocalizationEren
+while executing---line 944 of file unsrt.bst
+Too many commas in name 1 of "Eren, T., Goldenberg, O. K., Whiteley, W., Yang, Y. R., Morse, A. S., Anderson, B. D., & Belhumeur, P. N" for entry NetworkLocalizationEren
+while executing---line 944 of file unsrt.bst
+Too many commas in name 1 of "Eren, T., Goldenberg, O. K., Whiteley, W., Yang, Y. R., Morse, A. S., Anderson, B. D., & Belhumeur, P. N" for entry NetworkLocalizationEren
+while executing---line 944 of file unsrt.bst
+Too many commas in name 1 of "Eren, T., Goldenberg, O. K., Whiteley, W., Yang, Y. R., Morse, A. S., Anderson, B. D., & Belhumeur, P. N" for entry NetworkLocalizationEren
+while executing---line 944 of file unsrt.bst
+Too many commas in name 1 of "Eren, T., Goldenberg, O. K., Whiteley, W., Yang, Y. R., Morse, A. S., Anderson, B. D., & Belhumeur, P. N" for entry NetworkLocalizationEren
+while executing---line 944 of file unsrt.bst
+Too many commas in name 1 of "Eren, T., Goldenberg, O. K., Whiteley, W., Yang, Y. R., Morse, A. S., Anderson, B. D., & Belhumeur, P. N" for entry NetworkLocalizationEren
+while executing---line 944 of file unsrt.bst
+Warning--empty booktitle in NetworkLocalizationEren
+(There were 15 error messages)

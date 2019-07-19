@@ -1,0 +1,22 @@
+\babel@toc {brazil}{}
+\contentsline {section}{\numberline {1}Resumo}{1}
+\contentsline {section}{\numberline {2}Introdu\IeC {\c c}\IeC {\~a}o}{2}
+\contentsline {subsection}{\numberline {2.1}Motiva\IeC {\c c}\IeC {\~a}o: Solu\IeC {\c c}\IeC {\~a}o para Problemas Reais}{2}
+\contentsline {subsection}{\numberline {2.2}Obten\IeC {\c c}\IeC {\~a}o de Dados}{3}
+\contentsline {subsubsection}{\numberline {2.2.1}Sistema de Coordenadas Internas}{3}
+\contentsline {subsection}{\numberline {2.3}Contextualiza\IeC {\c c}\IeC {\~a}o: Geometria de Dist\IeC {\^a}ncias}{4}
+\contentsline {subsubsection}{\numberline {2.3.1}Descri\IeC {\c c}\IeC {\~a}o do Problema Fundamental}{5}
+\contentsline {subsection}{\numberline {2.4}Multilatera\IeC {\c c}\IeC {\~a}o At\IeC {\^o}mica de M\IeC {\'a}xima Verossimilhan\IeC {\c c}a}{7}
+\contentsline {subsubsection}{\numberline {2.4.1}Dist\IeC {\^a}ncias Intervalares}{7}
+\contentsline {subsection}{\numberline {2.5}Algoritmo Branch-And-Prune}{7}
+\contentsline {section}{\numberline {3}Objetivos e Justificativa}{9}
+\contentsline {subsection}{\numberline {3.1}Objetivo Principal}{9}
+\contentsline {subsection}{\numberline {3.2}Objetivos Espec\IeC {\'\i }ficos}{9}
+\contentsline {subsection}{\numberline {3.3}Justificativa}{9}
+\contentsline {section}{\numberline {4}Metodologia e Resultados Esperados}{10}
+\contentsline {section}{\numberline {5}Planos de Trabalho e Cronogramas}{10}
+\contentsline {subsection}{\numberline {5.1}Plano de Trabalho}{10}
+\contentsline {subsection}{\numberline {5.2}Cronograma}{12}
+\contentsline {section}{\numberline {6}Exequibilidade}{12}
+\contentsline {section}{\numberline {7}Grupo de Pesquisa}{12}
+\contentsline {section}{\numberline {8}Bibliografia}{12}

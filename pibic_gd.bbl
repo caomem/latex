@@ -1,0 +1,126 @@
+\begin{thebibliography}{10}
+
+\bibitem{carlile:DDGP}
+Audrey Lee-St. John Leo Liberti Antonio~Mucherino Carlile~Lavor, Jon~Lee and
+  Maxim Sviridenko.
+\newblock Discretization orders for distance geometry problems.
+\newblock {\em Optimization Letters}, 6(Issue 4):783–796, April 2012.
+
+\bibitem{deza2006dictionary}
+Michel-Marie Deza and Elena Deza.
+\newblock {\em Dictionary of distances}.
+\newblock Elsevier, 2006.
+
+\bibitem{deza2009encyclopedia}
+Michel-Marie Deza and Elena Deza.
+\newblock Encyclopedia of distances.
+\newblock In {\em Encyclopedia of distances}, pages 1--583. Springer, 2009.
+
+\bibitem{savvides2001dynamic}
+Andreas Savvides, Chih-Chieh Han, and Mani~B Strivastava.
+\newblock Dynamic fine-grained localization in ad-hoc networks of sensors.
+\newblock In {\em Proceedings of the 7th annual international conference on
+  Mobile computing and networking}, pages 166--179. ACM, 2001.
+
+\bibitem{Blumenthal:53}
+Leonard~M Blumenthal.
+\newblock Theory and applications of distance geometry.
+\newblock 1953.
+
+\bibitem{Cayley:1841}
+Arthur Cayley.
+\newblock On a theorem in the geometry of position.
+\newblock {\em Cambridge Mathematical Journal}, 2:267--271, 1841.
+
+\bibitem{Menger:31}
+Karl Menger.
+\newblock New foundation of euclidean geometry.
+\newblock {\em American Journal of Mathematics}, 53(4):721--745, 1931.
+
+\bibitem{Survey:12}
+Nelson~Maculan Leo~Liberti, Carlile~Lavor and Antonio Mucherino.
+\newblock Euclidean distance geometry and applications.
+\newblock {\em Siam Review}, 56(1):3--69, 2014.
+
+\bibitem{Yemini:79}
+Yechiam Yemini.
+\newblock Some theoretical aspects of position-location problems.
+\newblock In {\em 20th Annual Symposium on Foundations of Computer Science
+  (sfcs 1979)}, pages 1--8. IEEE, 1979.
+
+\bibitem{Saxe:79}
+James~B Saxe.
+\newblock Embeddability of weighted graphs in k-space is strongly np-hard.
+\newblock In {\em Proc. of 17th Allerton Conference in Communications, Control
+  and Computing, Monticello, IL}, pages 480--489, 1979.
+
+\bibitem{Havel:95}
+TF~Havel.
+\newblock Distance geometry, dm grant and rk harris (eds.), encyclopedia of
+  nuclear magnetic resonance, 1995.
+
+\bibitem{LavorCNMAC:14}
+C~Lavor and L~Liberti.
+\newblock Um convite {\'a} geometria de dist{\^a}ncias.
+\newblock {\em SBMAC, Notas em Matem{\'a}tica Aplicada}, 71, 2014.
+
+\bibitem{Crippen:77}
+Gordon~M Crippen.
+\newblock A novel approach to calculation of conformation: distance geometry.
+\newblock {\em Journal of Computational Physics}, 24(1):96--107, 1977.
+
+\bibitem{carlileBook31Coloquio}
+C.~Lavor, N.~Maculan, M.~Souza, and R.~Alves.
+\newblock {\em Álgebra e Geometria no Cálculo de Estrutura Molecular}.
+\newblock IMPA, Rio de Janeiro, RJ, 31º colóquio brasileiro de matemática
+  edition, 2017.
+
+\bibitem{iBPCarlile}
+Carlile Lavor, Leo Liberti, and Antonio Mucherino.
+\newblock The interval branch-and-prune algorithm for the discretizable
+  molecular distance geometry problem with inexact distances.
+\newblock {\em Journal of Global Optimization}, 56(3):855--871, 2013.
+
+\bibitem{carlile:MinimalOrder}
+Carlile Lavor, Leo Liberti, Bruce Donald, Bradley Worley, Benjamin Bardiaux,
+  Th{\'e}r{\`e}se~E Malliavin, and Michael Nilges.
+\newblock Minimal nmr distance information for rigidity of protein graphs.
+\newblock {\em Discrete Applied Mathematics}, 256:91--104, 2019.
+
+\bibitem{Liberti:08}
+Leo Liberti, Carlile Lavor, and Nelson Maculan.
+\newblock A branch-and-prune algorithm for the molecular distance geometry
+  problem.
+\newblock {\em International Transactions in Operational Research},
+  15(1):1--17, 2008.
+
+\bibitem{LavorCOAP:12}
+Carlile Lavor, Leo Liberti, Nelson Maculan, and Antonio Mucherino.
+\newblock The discretizable molecular distance geometry problem.
+\newblock {\em Computational Optimization and Applications}, 52(1):115--146,
+  2012.
+
+\bibitem{Pogorelov:87}
+A.~Pogorelov.
+\newblock Geometry, 1987.
+
+\bibitem{Philips:96}
+J.~B.~Rosen A.~T.~Philips and V.~H. Walke.
+\newblock Molecular structure determination by convex underestimation of local
+  energy minima.
+\newblock {\em DIMACS Series in Discrete Mathematics and Theoretical Computer
+  Science}, 23:181–198, 1996.
+
+\bibitem{NetworkLocalizationEren}
+Goldenberg O. K. Whiteley-W. Yang Y. R. Morse A. S. Anderson B. D. & Belhumeur
+  P.~N Eren, T.
+\newblock Rigidity, computation, and randomization in network localization.
+\newblock pages 2673--2684. IEEE, 2004.
+
+\bibitem{carlileGDandAplications}
+Leo Liberti, Carlile Lavor, Nelson Maculan, and Antonio Mucherino.
+\newblock Euclidean distance geometry and applications.
+\newblock {\em Society for Industrial and Applied Mathematics}, 56(1):3–69,
+  February 2014.
+
+\end{thebibliography}
