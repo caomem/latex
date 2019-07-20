@@ -1,0 +1,44 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[a4paper,top=3cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+\usepackage[brazil]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{MnSymbol}
+\usepackage{wasysym}
+\usepackage{hyperref}
+\usepackage{color}
+\definecolor{Blue}{rgb}{0,0,0.9}
+\definecolor{Red}{rgb}{0.9,0,0}
+\usepackage{esvect}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{indentfirst}
+\usepackage{caption}
+\usepackage{blkarray}
+\newcommand\Mark[1]{\textsuperscript#1}
+\usepackage{pgfplots}
+\usepackage{amsfonts}
+\title{PGDM: Um Problema Real}
+\author{Guilherme Philippi\Mark{*}, orientado por Felipe Delfini Caetano Fidalgo\Mark{\dagger}\\Campus Blumenau\\Universidade Federal de Santa Catarina\\UFSC
+\\guilherme.philippi@grad.ufsc.br\Mark{*}, felipe.fidalgo@ufsc.br\Mark{\dagger}}
+\begin{document}
+	\maketitle
+	
+	\section*{Resumo}
+	
+	Existe uma relação muito forte com a forma geométrica das moléculas orgânicas e suas funções em organismos vivos \cite{bioquimicaLehninger}. Pode-se fazer uma analogia destes organismos com um grande quebra-cabeça, cheio de peças tão variadas quanto se queira, onde cada peça tem um local e função específica no grande quebra-cabeça, de forma que tal local e função é dado justamente pela forma geométrica de cada peça. Imagine este imenso jogo de tabuleiro em forma tridimensional ao invés de plana, imaginando as peças com formas espaciais diversas e escalafobéticas, logo você não estará tão longe de entender como funciona um organismo vivo.
+	
+	Outrora, em pesquisas sobre a molécula de DNA (ácido desoxirribonucleico), descobriu-se que esse produzia um dos pilares para a vida, a proteína \cite{fidalgotese}. Perceba a importância fundamental que tem-se em conhecer a estrutura geométrica de cada uma dessas proteínas. Para sanar essa necessidade desenvolveram-se alguns métodos para a determinação da estrutura tridimensional de uma molécula de proteína, como difração de raios X, onde se cristaliza a molécula para determinar-se o espaçamento dos átomos pela medida da localização e da intensidade dos pontos produzidos por um feixe de raios X. Porém, é claro, o ambiente físico em um cristal não é idêntico ao ambiente em solução ou em uma célula viva \cite{bioquimicaLehninger}, dando espaço interessante para outro método que consegue medir distâncias entre (não restritos à) átomos de hidrogênios próximos em uma molécula: o chamado experimento de \textit{Ressonância Magnética Nuclear} (NMR).
+	
+	Infelizmente um experimento de NMR não dá localizações bem definidas em um plano cartesiano, a saída desse experimento são apenas distâncias entre alguns dos pontos dos quais deseja-se obter as localizações. Sabendo que conhece-se (através da literatura \cite{crippen:DistancesAndMolecularConformation}) a medida de ângulos e distâncias entre ligações atômicas, pode-se montar um conjunto de dados em outro sistema de coordenadas, muito parecido com as coordenadas esféricas, onde se utiliza de uma distâncias e dois ângulos para descrever pontos. Este é o sistema de \textit{coordenadas internas}. Note, então, que nosso problema se resume em transformar pontos no sistema de coordenadas internas para pontos em coordenadas cartesianas \cite{carlileBook31Coloquio}. Este problema é conhecido na literatura como \textit{Problema de Geometria de Distâncias Moleculares}, ou simplesmente, MDGP \cite{carlileGDandAplications}. 
+	
+	Neste trabalho mostra-se um estudo aprofundado sobre o tema, bem como sobre um método de reordenação nas moléculas do sistema para redução da cardinalidade do conjunto solução deste problema \cite{carlile:MinimalOrder} (o qual pode ser muito grande), discretizando-o, gerando o \textit{Problema de Geometria de Distâncias Moleculares Discretizado} (DMDGP) \cite{carlile:DDGP}, tal qual pode-se representar seu conjunto solução através de uma árvore binária \cite{fidalgotese}, onde se tem um magnífico algorítimo para sua resolução, conhecido como \textit{Branch \& Prune} (BP) \cite{fidalgotese}.
+	
+	\phantomsection
+	\addcontentsline{toc}{section}{Referências}
+	
+	\bibliographystyle{unsrt}
+	\bibliography{references}
+	
+\end{document}

@@ -1,0 +1,14 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: ermac resumo.aux
+The style file: unsrt.bst
+Database file #1: references.bib
+I was expecting a `,' or a `}'---line 90 of file references.bib
+ :  
+ :  address  = "São Paulo",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Warning--empty publisher in bioquimicaLehninger
+Too many commas in name 1 of "Carlile Lavor, Jon Lee, Audrey Lee-St. John, Leo Liberti, Antonio Mucherino and Maxim Sviridenko" for entry carlile:DDGP
+while executing---line 944 of file unsrt.bst
+Too many commas in name 1 of "Carlile Lavor, Jon Lee, Audrey Lee-St. John, Leo Liberti, Antonio Mucherino and Maxim Sviridenko" for entry carlile:DDGP
+while executing---line 944 of file unsrt.bst
+(There were 3 error messages)
