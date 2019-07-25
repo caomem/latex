@@ -1,0 +1,5 @@
+\babel@toc {brazil}{}
+\contentsline {section}{\numberline {1}Introdu\IeC {\c c}\IeC {\~a}o}{1}{section.1}% 
+\contentsline {section}{\numberline {2}Desenvolvimento}{1}{section.2}% 
+\contentsline {section}{\numberline {3}Considera\IeC {\c c}\IeC {\~o}es Finais}{2}{section.3}% 
+\contentsline {section}{Refer\IeC {\^e}ncias}{2}{section*.3}% 
