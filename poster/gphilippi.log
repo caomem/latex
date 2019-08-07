@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050) (preloaded format=pdflatex 2019.5.20)  25 JUL 2019 06:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050) (preloaded format=pdflatex 2019.5.20)  25 JUL 2019 07:36
 entering extended mode
 **./gphilippi.tex
 (gphilippi.tex
@@ -873,7 +873,7 @@ Columns: 3
 2
 3
 BAPOSTER: Using shade top to bottom background.
-Memory usage before: 638&381095; after: 610&381088; still untouched: 2614329
+Memory usage before: 638&381094; after: 610&381087; still untouched: 2614330
 Eyecatcher found!
 <logo_ufsc.png, id=30, 2007.5pt x 1979.395pt>
 File: logo_ufsc.png Graphic file (type png)
@@ -956,7 +956,7 @@ Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Header
 Header-Shape: roundedright
-Memory usage before: 3581&389616; after: 3553&389609; still untouched: 2604745
+Memory usage before: 3581&389613; after: 3553&389606; still untouched: 2604748
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <12> not available
 (Font)              Font shape `T1/ppl/b/n' tried instead on input line 266.
 Sidebars
@@ -1065,6 +1065,11 @@ name=geometria, column=0, below=dmdgp
 
 Underfull \hbox (badness 3098) in paragraph at lines 292--292
 \T1/ppl/m/n/10 precisamos estudar a geometria molecular.
+ []
+
+
+Underfull \hbox (badness 1796) in paragraph at lines 292--292
+\T1/ppl/m/n/10 Felizmente existe uma \T1/ppl/m/it/10 subestrutura periódica
  []
 
 Setting Coordinates
@@ -1206,48 +1211,43 @@ Sidebars
 Drawing Text
 name=pdbreader, column=1, below=hc
 
-Underfull \hbox (badness 10000) in paragraph at lines 354--354
-[]\T1/ppl/m/n/10 Para facilitar o estudo da geometria
+Underfull \hbox (badness 2626) in paragraph at lines 357--357
+\T1/ppl/m/n/10 e as simulações do problema, o principal
  []
 
 
-Underfull \hbox (badness 1577) in paragraph at lines 354--354
-\T1/ppl/m/n/10 molecular e as simulações do problema, o
- []
-
-
-Underfull \hbox (badness 8075) in paragraph at lines 354--354
+Underfull \hbox (badness 8075) in paragraph at lines 357--357
 \T1/ppl/m/n/10 autor deste documento implementou um
  []
 
 
-Underfull \hbox (badness 2221) in paragraph at lines 354--354
+Underfull \hbox (badness 2221) in paragraph at lines 357--357
 \T1/ppl/m/n/10 software (chamado \T1/ppl/b/n/10 PDBReader\T1/ppl/m/n/10 ) que a
 ceita
  []
 
 
-Underfull \hbox (badness 6141) in paragraph at lines 354--354
+Underfull \hbox (badness 6141) in paragraph at lines 357--357
 \T1/ppl/m/n/10 como entrada instâncias de proteínas do
  []
 
 
-Underfull \hbox (badness 1852) in paragraph at lines 354--354
+Underfull \hbox (badness 1852) in paragraph at lines 357--357
 \T1/ppl/m/n/10 repositório wwPDB e tem como saída um
  []
 
 
-Underfull \hbox (badness 5331) in paragraph at lines 354--354
+Underfull \hbox (badness 5331) in paragraph at lines 357--357
 \T1/ppl/m/n/10 arquivo descrevendo a proteína \T1/ppl/b/n/10 com sua
  []
 
 
-Underfull \hbox (badness 2245) in paragraph at lines 354--354
+Underfull \hbox (badness 2245) in paragraph at lines 357--357
 \T1/ppl/b/n/10 instância reordenada \T1/ppl/m/n/10 (utilizando ordenação
  []
 
 
-Underfull \hbox (badness 1147) in paragraph at lines 354--354
+Underfull \hbox (badness 1147) in paragraph at lines 357--357
 \T1/ppl/m/n/10 HC). Perceba que esta é uma \T1/ppl/m/it/10 automação da
  []
 
@@ -1267,24 +1267,25 @@ Header
 Header-Shape: roundedright
 Sidebars
 Drawing Text
-name=results, column=2
-LaTeX Font Info:    Try loading font information for OMS+ppl on input line 398.
+name=gui, column=2
+<output.png, id=38, 548.80031pt x 184.43906pt>
+File: output.png Graphic file (type png)
+<use output.png>
+Package pdftex.def Info: output.png  used on input line 366.
+(pdftex.def)             Requested size: 219.51622pt x 73.7743pt.
 
-(/home/bruno/.miktex/texmfs/install/tex/latex/psnfss/omsppl.fd
-File: omsppl.fd 
-)
-LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <9> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 398.
-LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <9> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 398.
-File: cnpq.jpg Graphic file (type jpg)
-<use cnpq.jpg>
-Package pdftex.def Info: cnpq.jpg  used on input line 398.
-(pdftex.def)             Requested size: 8.58214pt x 3.48434pt.
+Underfull \hbox (badness 10000) in paragraph at lines 366--366
+[]
+ []
+
+
+Overfull \hbox (109.10197pt too wide) in paragraph at lines 366--366
+[] 
+ []
 
 Setting Coordinates
 Upper Right
-results
+gui
 Fixed
 Lower Left
 Above=not set
@@ -1298,43 +1299,46 @@ Header
 Header-Shape: roundedright
 Sidebars
 Drawing Text
-name=conclusion, column=2,below=results
+name=conclusion, column=2,below=gui
+<dual.png, id=39, 443.40656pt x 299.61937pt>
+File: dual.png Graphic file (type png)
+<use dual.png>
+Package pdftex.def Info: dual.png  used on input line 383.
+(pdftex.def)             Requested size: 88.67973pt x 59.9228pt.
+<bp.png, id=40, 748.29562pt x 411.78844pt>
+File: bp.png Graphic file (type png)
+<use bp.png>
+Package pdftex.def Info: bp.png  used on input line 383.
+(pdftex.def)             Requested size: 119.72974pt x 65.88748pt.
 
-Underfull \hbox (badness 7047) in paragraph at lines 403--403
-[]\T1/ppl/m/n/9 UT has shown good numerical stability and
- []
-
-Setting Coordinates
-Upper Right
-conclusion
-Below
-Lower Left
-Above=not set
-height=auto or fixed
-Fixing Coordinates
-Header-Shade: Shade Left - Right
-Box-Shade: plain
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Header
-Header-Shape: roundedright
-Sidebars
-Drawing Text
-name=conclusion, column=2,below=conclusion
-
-Underfull \hbox (badness 6493) in paragraph at lines 417--417
-[]\T1/ppl/m/n/9 Control even more the growing of the
+Overfull \hbox (9.31549pt too wide) in paragraph at lines 383--383
+[][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 417--417
-[]\T1/ppl/m/n/9 Identify $\OML/cmm/m/it/9 t[]$ \T1/ppl/m/n/9 with such modeling
- of
+Overfull \hbox (95.47278pt too wide) in paragraph at lines 383--383
+[]$[]$
  []
 
 
-Underfull \hbox (badness 5203) in paragraph at lines 417--417
-\T1/ppl/m/n/9 uncertainties with respect to the MDGP
+Underfull \hbox (badness 10000) in paragraph at lines 383--383
+[]\T1/ppl/m/n/10 Ganhamos algumas vantagens com a
+ []
+
+
+Underfull \hbox (badness 7238) in paragraph at lines 383--383
+\T1/ppl/m/n/10 discretização do problema pois a ordem
+ []
+
+
+Underfull \hbox (badness 1325) in paragraph at lines 383--383
+\T1/ppl/m/n/10 o espaço onde devemos fazer a busca por
+ []
+
+
+Underfull \hbox (badness 1838) in paragraph at lines 383--383
+\T1/ppl/m/n/10 estratégia numérica \T1/ppl/m/it/10 recursiva \T1/ppl/m/n/10 que
+ resolve o
  []
 
 Setting Coordinates
@@ -1355,49 +1359,49 @@ Sidebars
 Drawing Text
 name=bibref, column=2, below=conclusion
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 481.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 447.
 
-Underfull \hbox (badness 3724) in paragraph at lines 481--481
+Underfull \hbox (badness 3724) in paragraph at lines 447--447
 \T1/ppl/m/it/9 Álgebra e Geometria no Cálculo de Estrutura
  []
 
 
-Underfull \hbox (badness 2922) in paragraph at lines 481--481
+Underfull \hbox (badness 2922) in paragraph at lines 447--447
 \T1/ppl/m/it/9 Distance geometry and molecular conformation\T1/ppl/m/n/9 ,
  []
 
 
-Underfull \hbox (badness 1668) in paragraph at lines 481--481
+Underfull \hbox (badness 1668) in paragraph at lines 447--447
 []\T1/ppl/m/n/9 Leo Liberti, Carlile Lavor, Nelson Maculan,
  []
 
 
-Underfull \hbox (badness 1152) in paragraph at lines 481--481
+Underfull \hbox (badness 1152) in paragraph at lines 447--447
 \T1/ppl/m/it/9 and Applied Mathematics\T1/ppl/m/n/9 , 56(1):3-69, February
  []
 
 
-Underfull \hbox (badness 6396) in paragraph at lines 481--481
+Underfull \hbox (badness 6396) in paragraph at lines 447--447
 []\T1/ppl/m/n/9 Carlile Lavor, Leo Liberti, Bruce Donald,
  []
 
 
-Underfull \hbox (badness 3088) in paragraph at lines 481--481
+Underfull \hbox (badness 3088) in paragraph at lines 447--447
 \T1/ppl/m/n/9 distance information for rigidity of protein
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 481--481
+Underfull \hbox (badness 10000) in paragraph at lines 447--447
 []\T1/ppl/m/n/9 GN Ramachandran, AS Kolaskar,
  []
 
 
-Underfull \hbox (badness 3439) in paragraph at lines 481--481
+Underfull \hbox (badness 3439) in paragraph at lines 447--447
 []\T1/ppl/m/n/9 Felipe Delfini Caetano Fidalgo.  \T1/ppl/m/it/9 Dividindo
  []
 
 
-Underfull \hbox (badness 2564) in paragraph at lines 481--481
+Underfull \hbox (badness 2564) in paragraph at lines 447--447
 \T1/ppl/m/it/9 e conquistando com simetrias em geometria de
  []
 
@@ -1437,18 +1441,19 @@ Drawing Text
 [2
 
 {/home/bruno/.miktex/texmfs/data/pdftex/config/pdftex.map} <./logo_ufsc.png> <.
-/cnpq.jpg> <./protein.png> <./amino.png> <./hcVO.png>]
-Memory usage before: 60352&407149; after: 32168&401487; still untouched: 251242
-9
+/cnpq.jpg> <./protein.png> <./amino.png> <./hcVO.png> <./output.png> <./dual.pn
+g> <./bp.png>]
+Memory usage before: 49994&405660; after: 26335&400164; still untouched: 252472
+1
 (gphilippi.aux) ) 
 Here is how much of TeX's memory you used:
- 17845 strings out of 494857
- 349307 string characters out of 3178232
- 487571 words of memory out of 3000000
- 21052 multiletter control sequences out of 15000+200000
- 49045 words of font info for 104 fonts, out of 3000000 for 9000
+ 17837 strings out of 494857
+ 348833 string characters out of 3178232
+ 475279 words of memory out of 3000000
+ 21048 multiletter control sequences out of 15000+200000
+ 45990 words of font info for 100 fonts, out of 3000000 for 9000
  0 hyphenation exceptions out of 8191
- 62i,12n,72p,799b,952s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 62i,14n,72p,968b,952s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/home/bruno/.miktex/texmfs/install/fonts/enc/dvips/base/8r.en
 c}</home/bruno/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi10.pfb
 ></home/bruno/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi6.pfb><
@@ -1470,9 +1475,9 @@ fonts/type1/urw/palatino/uplb8a.pfb></home/bruno/.miktex/texmfs/install/fonts/t
 ype1/urw/palatino/uplbi8a.pfb></home/bruno/.miktex/texmfs/install/fonts/type1/u
 rw/palatino/uplr8a.pfb></home/bruno/.miktex/texmfs/install/fonts/type1/urw/pala
 tino/uplri8a.pfb>
-Output written on gphilippi.pdf (1 page, 946754 bytes).
+Output written on gphilippi.pdf (1 page, 1163168 bytes).
 PDF statistics:
- 127 PDF objects out of 1000 (max. 8388607)
+ 132 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 146 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 161 words of extra memory for PDF output out of 10000 (max. 10000000)
 

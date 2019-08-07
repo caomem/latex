@@ -220,7 +220,7 @@
 			% Format of text header
 			eyecatcher=yes,
 			headerborder=open,
-			headerheight=0.11\textheight,
+			headerheight=0.0970\textheight,
 			headershape=roundedright,
 			%  headershade=plain,
 			headerfont=\large \textbf, %Sans Serif
@@ -288,7 +288,7 @@
 		}
 		
 		\headerbox{Geometria das Proteínas}{name=geometria, column=0, below=dmdgp}{
-			Para ser possível encontrar a ordem acima, precisamos estudar a geometria molecular. Felizmente existe uma \textit{subestrutura periódica} nas proteínas chamada \textbf{Cadeia Principal} \cite{bioquimicaLehninger}.
+			Para ser possível encontrar a ordem acima, precisamos estudar a geometria molecular. Felizmente existe uma \textit{subestrutura periódica} nas proteínas chamada \textbf{Cadeia Principal}, que possui uma geometria rica e bem conhecida \cite{bioquimicaLehninger}.
 		}
 		
 		\headerbox{Cadeia Principal}{name=cadeia, column=1}{
@@ -307,7 +307,7 @@
 			
 			\begin{minipage}{0.532\linewidth}
 				\includegraphics[scale=0.495]{hcVO.png}
-				\label{fig:hcVO}
+				\vspace{-0.3cm}
 			\end{minipage}
 			
 		}
@@ -350,71 +350,36 @@
 		}
 	
 		\headerbox{PDBReader}{name=pdbreader, column=1, below=hc}{
-		Para facilitar o estudo da geometria molecular e as simulações do problema, o autor deste documento implementou um software (chamado \textbf{PDBReader}) que aceita como entrada instâncias de proteínas do repositório wwPDB e tem como saída um arquivo descrevendo a proteína \textbf{com sua instância reordenada} (utilizando ordenação HC). Perceba que esta é uma \textit{automação da discretização do problema}.
+		Para facilitar o estudo da geometria molecular e as simulações do problema, o principal autor deste documento implementou um software (chamado \textbf{PDBReader}) que aceita como entrada instâncias de proteínas do repositório wwPDB e tem como saída um arquivo descrevendo a proteína \textbf{com sua instância reordenada} (utilizando ordenação HC). Perceba que esta é uma \textit{automação da discretização do problema}.
+		
+		O software permite atualmente três opções de saída (XML, matriz para Matlab e JSON), além de uma interface gráfica para visualização de uma projeção 2D da proteína.
 		
 		}
 	
-		
-		\headerbox{Results}{name=results, column=2}{
-			\begin{itemize}
-				{\small
-					\item {\bf $1^{st}$ column}: name of the PDB protein;
-					\vspace{-0.2cm}
-					\item {\bf $2^{nd}$ column}: number of atoms;
-					\vspace{-0.2cm}
-					\item {\bf $3^{rd}$ column}: RMSD values for UT;
-					\vspace{-0.2cm}
-					\item {\bf $4^{th}$ column}: RMSD values for UGB;
-					\vspace{-0.2cm}
-					\item {\bf $5^{th}$ column}: relative time value UT/UGB;}
-			\end{itemize}
-			{\scriptsize
-				\vspace{-0.3cm}
-				\begin{tabular}{c|c|c|c|c}
-					\hline
-					Name & \# atoms & UT & UGB & Time(UT/UGB) \\
-					\hline \hline
-					1ID7	&	189	&	3,12E-09	&	3,12E-09	&	57,32\%	\\
-					1FW5	&	332	&	1,18E-08	&	1,18E-08	&	60,42\%	\\
-					1JAV	&	360	&	1,38E-07	&	1,38E-07	&	60,70\%	\\
-					1MEQ	&	405	&	6,39E-11	&	6,42E-11	&	61,51\%	\\
-					1AMB	&	438	&	8,22E-06	&	8,22E-06	&	61,15\%	\\
-					1R7C	&	532	&	8,39E-07	&	8,38E-07	&	63,83\%	\\
-					1HLL	&	540	&	1,59E-07	&	1,59E-07	&	61,96\%	\\
-					1VII	&	596	&	9,19E-07	&	9,19E-07	&	58,55\%	\\
-					1HIP	&	617	&	3,15E-09	&	3,14E-09	&	57,98\%	\\
-					1ULR	&	677	&	2,82E-09	&	2,81E-09	&	59,20\%	\\
-					1KVX	&	954	&	1,65E-06	&	1,65E-06	&	58,19\%	\\
-					1VMP	&	1166 &	1,97E-07	&	1,97E-07	&	56,25\%	\\
-					1RGS	&	2015	&	1,37E-08	&	1,37E-08	&	55,23\%	\\
-					1BPM	&	3671	&	5,08E-06	&	5,08E-06	&	57,11\%	\\      
-					%Média	&		&		&		&		&		&	59,24\%	
-					\hline
-			\end{tabular}}
+		\headerbox{GUI PDBReader}{name=gui, column=2}{
+			Segue interface gráfica (GUI) do software.
 			
-			\begin{minipage}{0.8\linewidth}
-				\centering
-				\includegraphics[scale=0.19]{cnpq.jpg}
+			\begin{minipage}{0.532\linewidth}
+				\hspace{-0.5cm}
+				\includegraphics[scale=0.4]{output.png}
 			\end{minipage}
 		}
 		
-		\headerbox{Concluding Remarks}{name=conclusion, column=2,below=results}{
-			{\small
-				UT has shown good numerical stability and accuracy, when compared to one method from the literature, being better conditioned and requiring less time to solve the MDGP. Even the difference is not much, it can play an important role when $n$ grows.}
-		}
+		\headerbox{Algorítimo Branch-\&-Prune }{name=conclusion, column=2,below=gui}{
+			Ganhamos algumas vantagens com a discretização do problema pois a ordem no DMDGP garante a \textbf{finitude do conjunto solução} do problema e, além disso, organiza o espaço onde devemos fazer a busca por uma solução. Na verdade, a ordem induz uma estrutura de \textit{\textbf{árvore binária}} no espaço de busca \cite{fidalgotese}. De fato, sempre \textbf{temos duas possibilidades para posicionar o ângulo de torção} para o próximo átomo da molécula \cite{carlileGDandAplications}. Devido a esta estrutura, criou-se o algorítimo \textit{\textbf{Branch-\&-Prune}} (BP), que consiste em uma estratégia numérica \textit{recursiva} que resolve o DMDGP eficientemente utilizando uma busca combinatória no espaço de busca de soluções, onde realiza-se vértice por vértice do sistema, seguindo a ordem dada, ``podando'' todo sub-conjunto solução do sistema que não esteja de acordo com as informações pré-estabelecidas. 
+			\begin{minipage}{1\linewidth}  
+				\begin{minipage}{1.46\linewidth}  
+					\vspace{.1cm}
+					\hspace{4.2cm}
+					\includegraphics[scale=0.2]{dual.png}
+				\end{minipage}
+				\begin{minipage}{0.532\linewidth}
+					\vspace{-2.2cm}
+					\includegraphics[scale=0.16]{bp.png}
+				\end{minipage}
+			\end{minipage}
+		\vspace{-.2cm}
 		
-		\headerbox{Future Work}{name=conclusion, column=2,below=conclusion}{
-			\begin{itemize}
-				{\small
-					\item Our main outlook: treat noisy distances, i. e., sparse and inexact ones;
-					\vspace{-0.3cm}
-					\item Stochastic modeling is one of the ideas, by means of the Monte Carlo approach;
-					\vspace{-0.3cm}
-					\item Control even more the growing of the condition number of the linear system;
-					\vspace{-0.3cm}
-					\item Identify $t_{j}$ with such modeling of uncertainties with respect to
-					the MDGP in the sense of Monte Carlo simulations}
-			\end{itemize}
 		}
 		
 		%\headerbox{Sponsors}{name=sponsor, column=2, above=bottom}{
@@ -423,7 +388,7 @@
 		%\end{center}
 		%}
 		
-		\headerbox{References}{name=bibref, column=2, below=conclusion}{
+		\headerbox{Referências}{name=bibref, column=2, below=conclusion}{
 			
 			\renewcommand\refname{}
 			% \renewcommand\bibname{}
@@ -481,12 +446,10 @@
 				\vspace{-0.2cm}
 		\end{thebibliography}}
 		
-		\headerbox{Acknoledgments}{name=acknoledge, column=2,below=bibref}{
+		\headerbox{Agradecimentos}{name=acknoledge, column=2,below=bibref}{
 			{\footnotesize
-				We would like to thank to the brazilian agencies CNPq (133311/2009-0, 142379/2011-5), FAPESP (2011/11897-6) and to the University of Campinas for the support.}
+				O presente trabalho foi realizado com o apoio do Conselho Nacional de Desenvolvimento	Científico e Tecnológico – CNPq – Brasil. Agradeço a Família e ao Felipão.}
 		}
-		
-		
 		
 	\end{poster}%
 \end{document}
