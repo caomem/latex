@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.11.3)  10 AUG 2019 16:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.11.3)  30 APR 2019 12:09
 entering extended mode
 **./RelatorioIC_GP.tex
 (RelatorioIC_GP.tex
@@ -1201,254 +1201,427 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 LaTeX Font Info:    Try loading font information for U+msb on input line 27.
  ("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) (RelatorioIC_GP.toc)
+)
+Overfull \hbox (4.03766pt too wide) in paragraph at lines 27--27
+ [][] 
+ []
+
+(RelatorioIC_GP.toc)
 \tf@toc=\write5
 \openout5 = `RelatorioIC_GP.toc'.
 
  [1
 
-{C:/Users/Bruno/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2] [3] [4]
- [5]
-<carbono.png, id=145, 1422.81563pt x 373.395pt>
-File: carbono.png Graphic file (type png)
-<use carbono.png>
-Package pdftex.def Info: carbono.png  used on input line 85.
-(pdftex.def)             Requested size: 426.79135pt x 112.00226pt.
- [6 <./carbono.png>]
-<Peptidformation.png, id=164, 401.5pt x 332.24126pt>
+{C:/Users/Bruno/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2]
+Underfull \hbox (badness 10000) in paragraph at lines 53--56
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 57--59
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 60--62
+
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 65.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 65.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 70--74
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 70--74
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 76--79
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 80--83
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 80--83
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 80--83
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 83--86
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 83--86
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 83--86
+
+ []
+
+[3]
+Underfull \hbox (badness 10000) in paragraph at lines 89--92
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--92
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 95--98
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 99--102
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 99--102
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 106--110
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 112--115
+
+ []
+
+[4]
+Underfull \hbox (badness 10000) in paragraph at lines 116--119
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 116--119
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 116--119
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 119--121
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 119--121
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 133--135
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 138--140
+
+ []
+
+[5]
+Underfull \hbox (badness 10000) in paragraph at lines 186--188
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 190--193
+
+ []
+
+[6]
+Underfull \hbox (badness 10000) in paragraph at lines 201--203
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 204--206
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 207--209
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 214--216
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 217--219
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 220--222
+
+ []
+
+[7] [8]
+<Peptidformation.png, id=188, 401.5pt x 332.24126pt>
 File: Peptidformation.png Graphic file (type png)
 <use Peptidformation.png>
-Package pdftex.def Info: Peptidformation.png  used on input line 104.
+Package pdftex.def Info: Peptidformation.png  used on input line 253.
 (pdftex.def)             Requested size: 256.07741pt x 211.91885pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 100--108
+Underfull \hbox (badness 10000) in paragraph at lines 249--257
 
  []
 
-[7 <./Peptidformation.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 131--133
+
+Underfull \hbox (badness 10000) in paragraph at lines 266--268
 
  []
 
-<Capturar.PNG, id=173, 255.20343pt x 187.45032pt>
+[9 <./Peptidformation.png>]
+<Capturar.PNG, id=197, 255.20343pt x 187.45032pt>
 File: Capturar.PNG Graphic file (type png)
 <use Capturar.PNG>
-Package pdftex.def Info: Capturar.PNG  used on input line 136.
+Package pdftex.def Info: Capturar.PNG  used on input line 271.
 (pdftex.def)             Requested size: 256.07741pt x 188.10197pt.
-[8] [9 <./Capturar.PNG>] [10] [11]
-Underfull \hbox (badness 10000) in paragraph at lines 272--274
+ [10 <./Capturar.PNG>] [11] [12]
+Underfull \hbox (badness 10000) in paragraph at lines 407--409
 
  []
 
-[12]
-Overfull \hbox (50.25914pt too wide) in paragraph at lines 300--301
+[13]
+Overfull \hbox (50.25914pt too wide) in paragraph at lines 435--436
 []\T1/cmr/m/n/12 distância en-tre os áto-mos se-pa-ra-dos por uma li-ga-ção co-
 va-lente: $\OMX/MnSymbolE/m/n/12 ˜\OML/cmm/m/it/12 d[]; d[]; :::; d[]\OMX/MnSym
 bolE/m/n/12 $\T1/cmr/m/n/12 ,
  []
 
 
-Overfull \hbox (60.57047pt too wide) in paragraph at lines 301--302
+Overfull \hbox (60.57047pt too wide) in paragraph at lines 436--437
 []\T1/cmr/m/n/12 distância en-tre os áto-mos se-pa-ra-dos por duas li-ga-ções c
 o-va-len-tes: $\OMX/MnSymbolE/m/n/12 ˜\OML/cmm/m/it/12 d[]; d[]; :::; d[]\OMX/M
 nSymbolE/m/n/12 $\T1/cmr/m/n/12 ,
  []
 
-[13]
-Underfull \hbox (badness 10000) in paragraph at lines 354--356
+[14]
+Underfull \hbox (badness 10000) in paragraph at lines 489--491
 
  []
 
-[14]
-Overfull \hbox (1.4727pt too wide) in paragraph at lines 484--485
+[15] [16]
+Overfull \hbox (1.4727pt too wide) in paragraph at lines 619--620
 []\T1/cmr/m/n/12 Para cada vér-tice $\OML/cmm/m/it/12 s \U/MnSymbolD/m/n/12 > \
 OML/cmm/m/it/12 V$ \T1/cmr/m/n/12 a ser re-a-li-zado em $\U/msb/m/n/12 R$\T1/cm
 r/m/n/12 , de-vem exis-tir ares-tas $[]\OML/cmm/m/it/12 ; []; [] \U/MnSymbolD/m
 /n/12 >
  []
 
-[15] [16] [17] [18] (RelatorioIC_GP.bbl) [19]
+
+Underfull \hbox (badness 10000) in paragraph at lines 643--646
+
+ []
+
+[17] (RelatorioIC_GP.bbl) [18]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 528.
+(hyperref)                removing `math shift' on input line 655.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 528.
+(hyperref)                removing `superscript' on input line 655.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 528.
+(hyperref)                removing `math shift' on input line 655.
 
-<triangulo.png, id=255, 240.14719pt x 125.71968pt>
+<triangulo.png, id=265, 240.14719pt x 125.71968pt>
 File: triangulo.png Graphic file (type png)
 <use triangulo.png>
-Package pdftex.def Info: triangulo.png  used on input line 538.
+Package pdftex.def Info: triangulo.png  used on input line 664.
 (pdftex.def)             Requested size: 213.39568pt x 111.7175pt.
-<Angulovetoresnovo.png, id=260, 204.765pt x 139.27031pt>
+<Angulovetoresnovo.png, id=270, 204.765pt x 139.27031pt>
 File: Angulovetoresnovo.png Graphic file (type png)
 <use Angulovetoresnovo.png>
-Package pdftex.def Info: Angulovetoresnovo.png  used on input line 583.
+Package pdftex.def Info: Angulovetoresnovo.png  used on input line 709.
 (pdftex.def)             Requested size: 170.71393pt x 116.11708pt.
-[20 <./triangulo.png>]
-Overfull \hbox (0.70966pt too wide) in paragraph at lines 588--589
+[19 <./triangulo.png>]
+Overfull \hbox (0.70966pt too wide) in paragraph at lines 714--715
 []\T1/cmr/m/n/12 Para en-con-trar-mos o an-gulo $\OML/cmm/m/it/12 $ \T1/cmr/m/
 n/12 uti-li-za-re-mos a lei dos cos-se-nos apli-cada a $\OT1/cmr/m/n/12 \OML/c
 mm/m/it/12 ABC$\T1/cmr/m/n/12 : 
  []
 
-[21 <./Angulovetoresnovo.png>]
+[20 <./Angulovetoresnovo.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 614.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 614.
+(hyperref)                removing `math shift' on input line 740.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 614.
+(hyperref)                removing `subscript' on input line 740.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 649--651
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 740.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 775--777
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 652--654
+Underfull \hbox (badness 10000) in paragraph at lines 778--780
+
+ []
+
+[21]
+Underfull \hbox (badness 10000) in paragraph at lines 787--789
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 790--792
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 821--823
 
  []
 
 [22]
-Underfull \hbox (badness 10000) in paragraph at lines 661--663
+Underfull \hbox (badness 10000) in paragraph at lines 843--845
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 664--666
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 695--697
+Underfull \hbox (badness 10000) in paragraph at lines 873--875
 
  []
 
 [23]
-Underfull \hbox (badness 10000) in paragraph at lines 717--719
+Underfull \hbox (badness 10000) in paragraph at lines 876--878
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 747--749
-
- []
-
-[24]
-Underfull \hbox (badness 10000) in paragraph at lines 750--752
-
- []
-
-<compfunc.png, id=309, 146.04562pt x 91.84312pt>
+<compfunc.png, id=319, 146.04562pt x 91.84312pt>
 File: compfunc.png Graphic file (type png)
 <use compfunc.png>
-Package pdftex.def Info: compfunc.png  used on input line 755.
+Package pdftex.def Info: compfunc.png  used on input line 881.
 (pdftex.def)             Requested size: 170.71393pt x 107.3663pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 761--764
+Underfull \hbox (badness 10000) in paragraph at lines 887--890
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 761--764
+Underfull \hbox (badness 10000) in paragraph at lines 887--890
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 765--767
+Underfull \hbox (badness 10000) in paragraph at lines 891--893
 
  []
 
-[25 <./compfunc.png>] [26]
-<rota.png, id=326, 180.675pt x 130.98938pt>
+[24 <./compfunc.png>] [25]
+<rota.png, id=335, 180.675pt x 130.98938pt>
 File: rota.png Graphic file (type png)
 <use rota.png>
-Package pdftex.def Info: rota.png  used on input line 878.
+Package pdftex.def Info: rota.png  used on input line 1004.
 (pdftex.def)             Requested size: 213.39568pt x 154.714pt.
- [27] [28 <./rota.png>]
-Overfull \hbox (43.85068pt too wide) detected at line 1007
+ [26] [27 <./rota.png>]
+Overfull \hbox (43.85068pt too wide) detected at line 1133
 \OML/cmm/m/it/12 B[]  \U/MnSymbolD/m/n/12    []
  []
 
-[29]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1016.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1016.
+[28]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1142.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1142.
  (RelatorioIC_GP.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1016.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1016.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1142.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1142.
 
-
-
-Package rerunfilecheck Warning: File `RelatorioIC_GP.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `RelatorioIC_GP.out':
-(rerunfilecheck)             Before: 68ACE91DA8CB8CA3C9B1C526C408AE47;1301
-(rerunfilecheck)             After:  96E217E98B8DB4C24A0505E9CA109CB6;1381.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1016.
+Package rerunfilecheck Info: File `RelatorioIC_GP.out' has not changed.
+(rerunfilecheck)             Checksum: D10E28328D65200BFA7714F386204396;1385.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1142.
  ) 
 Here is how much of TeX's memory you used:
- 30325 strings out of 492970
- 703474 string characters out of 3126594
+ 30340 strings out of 492970
+ 704293 string characters out of 3126594
  924680 words of memory out of 3000000
- 33548 multiletter control sequences out of 15000+200000
- 36521 words of font info for 113 fonts, out of 3000000 for 9000
+ 33545 multiletter control sequences out of 15000+200000
+ 37752 words of font info for 115 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,10n,96p,1203b,609s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 62i,10n,96p,971b,609s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/Bruno/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/mnsymbol/Mn
 SymbolA.enc}{C:/Users/Bruno/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/m
 nsymbol/MnSymbolD.enc}{C:/Users/Bruno/AppData/Local/Programs/MiKTeX 2.9/fonts/e
 nc/dvips/mnsymbol/MnSymbolE.enc}{C:/Users/Bruno/AppData/Local/Programs/MiKTeX 2
 .9/fonts/enc/dvips/mnsymbol/MnSymbolF.enc}{C:/Users/Bruno/AppData/Local/Program
 s/MiKTeX 2.9/fonts/enc/dvips/mnsymbol/MnSymbolC.enc} <C:\Users\Bruno\AppData\Lo
-cal\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbi1728.pk> <C:\Users\Bruno\
-AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0700.pk> <C:\Us
-ers\Bruno\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0800.
+cal\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0700.pk> <C:\Users\Bruno\
+AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0800.pk> <C:\Us
+ers\Bruno\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1200.
 pk> <C:\Users\Bruno\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600
-\tcrm1200.pk> <C:\Users\Bruno\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen
-\ec\dpi600\ecti1200.pk> <C:\Users\Bruno\AppData\Local\MiKTeX\2.9\fonts\pk\ljfou
-r\jknappen\ec\dpi600\ecbx1440.pk> <C:\Users\Bruno\AppData\Local\MiKTeX\2.9\font
-s\pk\ljfour\jknappen\ec\dpi600\ecbi1200.pk> <C:\Users\Bruno\AppData\Local\MiKTe
-X\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1200.pk> <C:\Users\Bruno\AppData\L
-ocal\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1200.pk> <C:\Users\Bruno
-\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1728.pk> <C:\U
-sers\Bruno\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1000
+\ecti1200.pk> <C:\Users\Bruno\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen
+\ec\dpi600\ecbx1440.pk> <C:\Users\Bruno\AppData\Local\MiKTeX\2.9\fonts\pk\ljfou
+r\jknappen\ec\dpi600\ecrm1200.pk> <C:\Users\Bruno\AppData\Local\MiKTeX\2.9\font
+s\pk\ljfour\jknappen\ec\dpi600\ecbx1200.pk> <C:\Users\Bruno\AppData\Local\MiKTe
+X\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1728.pk> <C:\Users\Bruno\AppData\L
+ocal\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1000.pk> <C:\Users\Bruno
+\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1000.pk> <C:\U
+sers\Bruno\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1440
 .pk> <C:\Users\Bruno\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi60
-0\ecrm1000.pk> <C:\Users\Bruno\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappe
-n\ec\dpi600\ecrm1440.pk> <C:\Users\Bruno\AppData\Local\MiKTeX\2.9\fonts\pk\ljfo
-ur\jknappen\ec\dpi600\ecrm2074.pk><C:/Users/Bruno/AppData/Local/Programs/MiKTeX
- 2.9/fonts/type1/public/mnsymbol/MnSymbol12.pfb><C:/Users/Bruno/AppData/Local/P
-rograms/MiKTeX 2.9/fonts/type1/public/mnsymbol/MnSymbol7.pfb><C:/Users/Bruno/Ap
-pData/Local/Programs/MiKTeX 2.9/fonts/type1/public/mnsymbol/MnSymbol8.pfb><C:/U
-sers/Bruno/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmb
-x12.pfb><C:/Users/Bruno/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/am
-sfonts/cm/cmbx8.pfb><C:/Users/Bruno/AppData/Local/Programs/MiKTeX 2.9/fonts/typ
-e1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Bruno/AppData/Local/Programs/MiKTeX 
-2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Bruno/AppData/Local/Pro
-grams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/Bruno/AppDa
-ta/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users
-/Bruno/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.p
-fb><C:/Users/Bruno/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfont
-s/cm/cmr12.pfb><C:/Users/Bruno/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
-blic/amsfonts/cm/cmr6.pfb><C:/Users/Bruno/AppData/Local/Programs/MiKTeX 2.9/fon
-ts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/Bruno/AppData/Local/Programs/MiK
-TeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Bruno/AppData/Local/P
-rograms/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on RelatorioIC_GP.pdf (29 pages, 806367 bytes).
+0\ecrm2074.pk><C:/Users/Bruno/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pub
+lic/mnsymbol/MnSymbol12.pfb><C:/Users/Bruno/AppData/Local/Programs/MiKTeX 2.9/f
+onts/type1/public/mnsymbol/MnSymbol7.pfb><C:/Users/Bruno/AppData/Local/Programs
+/MiKTeX 2.9/fonts/type1/public/mnsymbol/MnSymbol8.pfb><C:/Users/Bruno/AppData/L
+ocal/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Br
+uno/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx8.pfb>
+<C:/Users/Bruno/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/c
+m/cmmi10.pfb><C:/Users/Bruno/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
+ic/amsfonts/cm/cmmi12.pfb><C:/Users/Bruno/AppData/Local/Programs/MiKTeX 2.9/fon
+ts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/Bruno/AppData/Local/Programs/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Bruno/AppData/Local
+/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Bruno/A
+ppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/U
+sers/Bruno/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr
+6.pfb><C:/Users/Bruno/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsf
+onts/cm/cmr7.pfb><C:/Users/Bruno/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/
+public/amsfonts/cm/cmr8.pfb><C:/Users/Bruno/AppData/Local/Programs/MiKTeX 2.9/f
+onts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on RelatorioIC_GP.pdf (28 pages, 567562 bytes).
 PDF statistics:
- 908 PDF objects out of 1000 (max. 8388607)
- 90 named destinations out of 1000 (max. 500000)
- 192 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 872 PDF objects out of 1000 (max. 8388607)
+ 108 named destinations out of 1000 (max. 500000)
+ 179 words of extra memory for PDF output out of 10000 (max. 10000000)
 

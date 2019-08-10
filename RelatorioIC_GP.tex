@@ -19,231 +19,81 @@
 \newcommand\Mark[1]{\textsuperscript#1}
 \usepackage{pgfplots}
 \usepackage{amsfonts}
-\title{PGDM: Um Problema Real}
-\author{Guilherme Philippi\Mark{*}, orientado por Felipe Delfini Caetano Fidalgo\Mark{\dagger}\\Participações de Guilherme Abreu, Ricardo E. Mueller, Lucas Pereira\\Campus Blumenau\\Universidade Federal de Santa Catarina\\UFSC
+\title{DMDGP: Um Problema Real}
+\author{Guilherme Philippi\Mark{*}, orientado por Felipe Delfini Caetano Fidalgo\Mark{\dagger}\\Campus Blumenau\\Universidade Federal de Santa Catarina\\UFSC
 \\guilherme.philippi@grad.ufsc.br\Mark{*}, felipe.fidalgo@ufsc.br\Mark{\dagger}}
 \begin{document}
 	\maketitle
 	\tableofcontents
 	\newpage
 	
-		% ====================================== Quatérnios ========================================================
+	\begin{center}
+		\large
+		\textbf{Abstract}
+	\end{center}
 	
-	\section{Quatérnios: Abordagem para um Problema Real}
+	In this paper, two subjects were presented in a disjointed form: The algebra of
+	the quaternions and the Problem of Geometry of Molecular Distances. For the first,
+	it begins with a historical introduction to quantum algebra and presents some of its	most basic results, monid of its partial or complete demonstrations, as it was found necessary. The same structure forms the second subject, but, due to its nature, a more literary and less formal approach was used. Starting from a contextualisation of the PGDM, some important tools were presented to model it, where, in possession of everything until then, the problem in question can be presented and a brief introduction to the study of its solution. 
 	
-	\subsection{A Primeira Álgebra não Comutativa}
-	William Rowan Hamilton fora uma criança extremamente precoce. De origem irlandesa, viveu entre 1805 e 1865, onde, aos três anos de idade lia perfeitamente inglês. Devido a morte antecipada de seus pais teve como orientador um tio linguista e aos cinco anos sabia latim e hebraico. Até os dez anos já era familiarizado com italiano, francês, árabe, sânscrito, persa, caldeu e algumas outras línguas orientais. Ainda criança, Hamilton demonstrou grande interesse pela matemática, influenciado por autores como Newton e Laplace, caminhava a passos largos para o mundo da física e astronomia. Sem dúvidas estava florescendo um dos grandes nomes da ciência do século XIX. \cite{BoyerMathHistory,AlgebraAbstrata2BienalSBM}
+	\textbf{Keywords:} Quaternions, MDGP, Distance geometry, Optimization.
+	 
 	
-	Porém, nos atentando as suas contribuições à matemática, tudo começou quando Hamilton percebeu que uma notação utilizada na teoria dos números complexos não era a mais adequada. Ele percebeu que a expressão $a + bi$ não era realmente uma soma, isto é, não é como somar dois números reais que pertencem a mesma dimensão, o que dá sentido a soma. Ele afirma que o sinal ‘$+$’ é um equívoco, um acidente histórico, e que as duas partes não podem ser naturalmente somadas. A partir deste pensamento construiu e publicou em 1833 a teoria de números complexos formalmente como conhecemos hoje, definindo a soma e produto em pares ordenados, ou seja:
-	\begin{equation*}
-	(a,b) + (c,d) = (a + b, c + d)
-	\end{equation*}
-	\begin{equation*}
-	(a, b)(c, d) = (ac-bd, ad + bc)
-	\end{equation*}
+	\vspace{2cm}	
+	\begin{center}
+		\large
+		\textbf{Resumo}
+	\end{center}
+
+	Neste documento foram apresentados dois assuntos de forma disjunta: A álgebra dos quatérnios e o Problema de Geometria de Distâncias Moleculares. Para o primeiro, inicia-se com uma introdução histórica à álgebra de quatérnios e apresenta-se alguns de seus resultados mais básicos, monidos de suas demonstrações parciais ou completas, conforme achou-se necessário. A mesma estruturação forma o segundo assunto, porém, devido a sua natureza, utilizou-se uma abordagem mais literária e menos formal. Partindo de uma contextualização do PGDM, apresentou-se algumas ferramentas importantes para modelá-lo, onde, de posse de tudo até então, pode-se apresentar de fato o problema em questão e uma brevê introdução ao estudo de sua solução. 
 	
-	Claramente Hamilton só pode perceber isso devido sua inclinação física, afinal, físicos adoram se perguntar sobre as dimensões do que se está somando. Graças também a esta inclinação Hamilton logo percebeu como esta nova abordagem permitiria uma visão dos números complexos como entidades orientadas no plano e, maravilhado com as possibilidades de sua descoberta, não demorou muito para que se perguntasse como seria esta relação se fosse expandida para o espaço tridimensional. Infelizmente as respostas não foram fáceis e por dez anos trabalhou arduamente tentando desenvolver ternas (três representantes do espaço) que pudessem ser multiplicadas, tendo em vista que a soma e a subtração se davam trivialmente. A demonstração de que Hamilton nunca conseguiria sua terna encontra-se em \cite{QuaterniosJucineide}. 
-	
-	Tais questões manteriam-se obscuras se não fosse pelo histórico dia de 16 de outubro de 1843, onde Hamilton, andando ao lado de sua esposa na ponte Brougham sobre o Royal Canal para presidir uma reunião do Conselho da Real Sociedade da Irlanda, dividia-se entre conversas ocasionais e no pensar sobre seu trabalho e tão logo teve um \textit{insight}: Percebeu que seus problemas sumiriam se utilizasse quádruplas em vez de ternas e ignorasse a comutatividade para a multiplicação. Percebeu que para quádruplas $a + bi + cj + dk$ teria $i^2 = j^2 = k^2 = ijk = -1$. Desta fórmula fundamental tira-se a solução do problema da multiplicação que Hamilton encontrara, a origem da Regra de Fleming (vulgarmente conhecida como “regra da mão direita”) e, entre outras coisas surpreendentes, uma nova álgebra que iria contra os princípios matemáticos da época: \textit{A Álgebra dos Quatérnios}.
-	
-	\subsection{Álgebra dos Quatérnios}
-	\textbf{Definição: }Seja $B_{\mathbb{R}^3}=\{i,j,k\}$ a base canônica de $\mathbb{R}^3$. Um \textit{quatérnio} é definido como um elemento da forma 
-	\begin{equation}
-	q=q_0+\mathbf{q_v},
-	\end{equation} 
-	onde $q_0 \in \mathbb{R}$ é um escalar e $\mathbf{qv}=q_1\mathbf{i}+q_2\mathbf{j}+q_3\mathbf{k}$ é um vetor de $\mathbb{R}^3$.
-	\\
-	
-	Ou seja, todo elemento $q$ da forma $q = q_0 + q_1\textbf{i} + q_2\textbf{j} + q_3\textbf{k}$ é um quatérnio e a medida que variamos os valores dos coeficientes reais $q_0, q_1, q_2$ e $q_3$ independentemente uns dos outros na reta real percorremos todos os quatérnios possíveis, nos levando a criação do \textit{Conjunto dos Quatérnios}, definido por $\mathbb{H}$. Perceba então que há uma relação biunívoca entre $\mathbb{H}$ e $\mathbb{R}^4$, uma vez que um quatérnio pode ser escrito como a quádrupla $q = (q_0, q_1, q_2, q_3) \in \mathbb{R}^4$. \cite{fidalgotese}
-	\\
-	
-	\textbf{Definição:} Seja $B_\mathbb{H} = \{1, \mathbf{i}, \mathbf{j}, \mathbf{k}\}$ definida como a \textit{base canônica de $\mathbb{H}$} tal que $\mathbf{i}^2 = \mathbf{j}^2 = \mathbf{k}^2 = \mathbf{ijk} = -1$.
-	\\
-	
-	Pode-se tratar agora de operações aritméticas no Conjunto dos Quatérnios:
-	\phantomsection
-	\addcontentsline{toc}{subsubsection}{Operações sobre $\mathbb{H}$}
-	\begin{itemize}
-		\item \textbf{Adição:} dados dois quatérnios $p=p_0+\mathbf{p_v}$ e $q=q_0+\mathbf{q_v}$ em $\mathbb{H}$, define-se a adição de $p$ a $q$ como  
-		\begin{equation}
-		p+q=(p_0+q_0)+(\mathbf{p_v}+\mathbf{q_v})
-		\end{equation}
-		Temos uma proposição que mostra que esta adição está bem-definida no conjunto de quatérnios. 
-		\\ \newline \textbf{Proposição:} \textit{O conjunto $\mathbb{H}$ é fechado para adição}.
-		\\ \newline \textit{Demonstração.} O que queremos mostrar é que a soma de dois quatérnios é, por sua vez, um novo quatérnio. De fato: considerando $r=p+q$, podemos escrever o elemento $r$ como
-		\begin{equation}
-		r=r_0+\mathbf{r_v}
-		\end{equation}
-		onde sua parte escalar é dada por $r_0=p_0+q_0$ e sua parte vetorial é dada por $\mathbf{r_v=p_v+q_v}. \hfill\blacksquare$
-		\\ \newline Dados $p,q,r \in \mathbb{H}$ arbitrários, temos as seguintes propriedades para a adição de quatérnios.
-		\begin{enumerate}
-			\item \textbf{Associatividade:} $(p+q)+r=p+(q+r)$.
-			\\ \newline \textit{Demonstração.} Seja $p=p_0+\mathbf{p_v}, q=q_0+\mathbf{q_v}, r=r_0+\mathbf{r_v}$,\,\,tal que $p,q,r \in \mathbb{H}$. Partindo de $(p+q)+r$ \,\,temos:
-			\\ \newline $(p+q)+r=[(p_0+\mathbf{p_v})+(q_0+\mathbf{p_v})]+(r_0+\mathbf{r_v})=[(p_0+q_0)+(\mathbf{p_v}+\mathbf{q_v})]+(r_0+\mathbf{r_v})=[(p_0+q_0+r_0)+(\mathbf{p_v}+\mathbf{q_v}+\mathbf{r_v})]=[(p_0+q_0+r_0)+(\mathbf{p_v}+\mathbf{q_v}+\mathbf{r_v})]=\{[p_0+(q_0+r_0)]+[\mathbf{p_v}+(\mathbf{q_v}+\mathbf{r_v})]\}=(p_0+\mathbf{p_v})+[(q_0+r_0)+(\mathbf{q_v}+\mathbf{r_v})]=(p_0+\mathbf{p_v})+[(q_0+\mathbf{q_v})+(r_0+\mathbf{r_v})]=p+(q+r). \hfill\blacksquare$
-			\\ \item \textbf{Comutatividade:} $p+q=q+p$
-			\\ \newline \textit{Demonstração.} Seja $p=p_0+\mathbf{p_v}, q=q_0+\mathbf{q_v}$,\,\,tal que $p,q \in \mathbb{H}$. Partindo de $p+q$, temos:
-			\\ \newline $p+q=(p_0+\mathbf{p_v})+(q_0+\mathbf{q_v})=(p_0+q_0)+(\mathbf{p_v}+\mathbf{q_v})=(q_0+p_0)+(\mathbf{q_v}+\mathbf{p_v})=q+p.\hfill\blacksquare$
-			\\ \item \textbf{Existência de Elemento Neutro:} Existe um elemento neutro, a saber, $0_{\mathbb{H}}=0+\mathbf{0_v} \in \mathbb{H}$, de modo que,
-			\begin{equation}
-			p+0_{\mathbb{H}}=0+p=p
-			\end{equation}
-			\\ \textit{Demonstração.}  Seja $p=p_0+\mathbf{p_v} \textrm{ e } 0_{\mathbb{H}}=0+\mathbf{0_v}$,\,\,tal que $p,0_{\mathbb{H}} \in \mathbb{H}$. Partindo de $p+0_{\mathbb{H}}$, temos:
-			\\ \newline $p+0_{\mathbb{H}}=(p_0+\mathbf{p_v})+(0+\mathbf{0_v})=(p_0+0)+(\mathbf{p_v}+\mathbf{0_v})=(0+p_0)+(\mathbf{0_v}+\mathbf{p_v})=p_0+\mathbf{p_v}=p.\hfill\blacksquare$
-			\\ \item \textbf{Existência de Elemento Oposto:} Existe um elemento oposto para cada $p=p_0+\mathbf{p_v} \in \mathbb{H}$, dado por $-p=-p_0-\mathbf{p_v}$, de modo que sua soma com $p$ resulte no elemento neutro da adição do item anterior, ou seja,
-			\begin{equation}
-			p+(-p)=(-p)+p=0_{\mathbb{H}}
-			\end{equation}
-			\\ \textit{Demonstração.} De fato, se partirmos de $p+(-p)$, temos:
-			\\ \newline $p+(-p)= (p_0+\mathbf{p_v})+(-p_0-\mathbf{p_v})=[p_0+(-p_0)]+[\mathbf{p_v}+(\mathbf{-p_v})]=(p_0-p_0)+(\mathbf{p_v}-\mathbf{p_v})=0+\mathbf{0_v}=0_{\mathbb{H}}.\hfill\blacksquare$
-		\end{enumerate}
-		Como a adição de quatérnios satisfaz estas propriedades, temos o seguinte resultado.
-		\\ \newline \textbf{Proposição: } ($\mathbb{H},+$) é um \textit{grupo abeliano}.
-		\\
-		
-		\item \textbf{Multiplicação por Escalar:} Dado um quatérnio $q=q_0+\mathbf{q_v} \in \mathbb{H}$ e uma constante escalar real $\alpha \in \mathbb{R}$, define-se a multiplicação de $q$ pelo escalar $\alpha$ da forma
-		\begin{equation}
-		\alpha q=(\alpha q_0)+(\alpha \mathbf{q_v})
-		\end{equation}
-		A próxima proposição mostra que esta operação, unindo itens de espaços distintos, está bem definida no conjunto dos quatérnios.
-		\\ \newline \textbf{Proposição:} O \textit{conjunto $\mathbb{H}$ é fechado para a multiplicação de escalares reais.}
-		\\ \textit{Demonstração.} Queremos demonstrar que a multiplicação de um escalar por um quatérnio tem por resultado um novo quatérnio. Com efeito: podemos considerar tal multiplicação como o elemento 
-		\begin{equation*}
-		r=r_0+\mathbf{r_v}
-		\end{equation*}
-		onde sua parte escalar é dada por $r_0=\alpha q_0 \in \mathbb{R}$ e sua parte vetorial é dada por $\mathbf{r_v}=\alpha \mathbf{q_v} \in \mathbb{R}^3.\hfill\blacksquare$
-		\\ \newline A multiplicação por escalar também tem uma série de propriedades. Dados os números reais $\alpha,\beta$ e os quatérnios $p$ e $q$, temos:
-		\begin{enumerate}
-			\item \textbf{Associatividade:} $(\alpha \beta)q=\alpha(\beta q)$ 
-			\\ \newline \textit{Demonstração.} De fato, seja $\alpha, \beta \in \mathbb{R}$ e $q=q_00+\mathbf{q_v} \in \mathbb{H}$, partindo de $(\alpha \beta)q$ temos:
-			\\ \newline $(\alpha \beta)q=(\alpha \beta)(q_0+\mathbf{q_v})=\alpha \beta q_0+\alpha \beta \mathbf{q_v}=\alpha(\beta q_0+\beta \mathbf{q_v})=\alpha(\beta q).\hfill\blacksquare$
-			\\ \item \textbf{Multiplicação pela Unidade:} $1q=q$
-			\\ \newline \textit{Demonstração.} Queremos provar que $1q=q$. Para isto, tome $\alpha \in \mathbb{R}$, com $\alpha = 1$. Partindo de $1q=1(q_0+\mathbf{q_v})=(1q_0+1\mathbf{q_v})=q_0+\mathbf{q_v}=q$. Logo, $1q=q.\hfill\blacksquare$
-			\\ \item \textbf{Distributividade em relação à soma:} estas duas propriedades unem a adição e a multiplicação por escalar e são dadas por
-			\begin{equation*}
-			(\alpha+\beta)q=\alpha q + \beta q
-			\end{equation*}e \begin{equation*}
-			\alpha(p+q)=\alpha p + \alpha q	
-			\end{equation*}
-			\\ \textit{Demonstração.} Seja $\alpha,\beta \in \mathbb{R}$ e $p,q \in \mathbb{H}$. Partindo de $(\alpha + \beta)q=((\alpha + \beta)q_0 + (\alpha + \beta)\mathbf{q_v})$. Deste modo, é fácil ver que $((\alpha + \beta)q_0 + (\alpha + \beta)\mathbf{q_v})=\alpha(q_0+\mathbf{q_v})+\beta(q_0+\mathbf{q_v})=\alpha q+\beta q$. Analogamente, se olharmos para $\alpha q+\beta q$. Agora, partindo de $\alpha(p+q)=\alpha p+\alpha q$. Aplicando as devidas distributividades, temos que $\alpha p+\alpha q=(\alpha p_0+\alpha\mathbf{p_v})+(\alpha q_0+\alpha\mathbf{q_v})=\alpha p+\alpha q$. Analogamente para $\alpha p+\alpha q$. Portanto, a distributividade é válida. \hfill$\blacksquare$ 
-		\end{enumerate}
-	\end{itemize}
-	
-	Sabendo do isomorfismo já citado entre $\mathbb{H}$ e $\mathbb{R}^4$ e percebendo que as operações descritas preservam as mesmas operações entre os dois conjuntos, nota-se que existe uma relação de isomorfismo entre $\mathbb{H}$ e $\mathbb{R}^4$. Isso se deve ao fato de que o calculo vetorial como conhecemos hoje é mera simplificação das ideias de Hamilton sobre quatérnios, simplificação feita por Josiah Willard Gibbs (1839 – 1903) em um conjunto de notas para seus estudantes de física-matemática intitulado Elements of Vector Analysis \cite{AlgebraAbstrata2BienalSBM}.
-	
-	\textbf{Proposição:} O espaço vetorial dos quatérnios $\mathbb{H}$ é isomorfo ao espaço vetorial Euclidiano de dimensão 4, i.e. $\mathbb{H} \simeq \mathbb{R}^4$.
-	\\
-	
-	Assim como os complexos, os quatérnios também tem conjugado. E esses são definidos da seguinte forma:
-	
-	\textbf{Definição:} Seja $q = q_0 + \mathbf{q_v} \in \mathbb{H}$, define-se seu \textit{conjugado} como $q^* = q_0 - \mathbf{q_v}$.
-	\\
-	
-	\phantomsection
-	\addcontentsline{toc}{subsubsection}{Produto algébrico dos quatérnios}
-	Tendo as definições já estabelecidas, pode-se construir a terceira operação dos quatérnios, baseando-se em \cite{QuaterniosAndRotationsKuipers}, justamente a que causou dez anos de trabalho para Hamilton e que torna sua álgebra um tanto não trivial, o \textit{produto algébrico dos quatérnios}:
-	
-	Suponha dois elementos pertencentes a $\mathbb{H}/0$, $p = p_0 + \mathbf{p_v}$ e $q = q_0 + \mathbf{q_v}$ e escritos em $B_{\mathbb{H}}$. Sabe-se que podemos escrever $\mathbf{p_v} = p_1\mathbf{i} + p_2\mathbf{j} + p_3\mathbf{k}$ e $\mathbf{q_v} = q_1\mathbf{i} + q_2\mathbf{j} + q_3\mathbf{k}$. Se multiplicarmos os dois elementos termo a termo, como na propriedade distributiva, teremos:
-	\begin{equation}
-	\begin{aligned}
-	pq = (p_0+\mathbf{i}p_1+\mathbf{j}p_2+\mathbf{k}p_3)(q_0+\mathbf{i}q_1+\mathbf{j}q_2+\mathbf{k}q_3) \\ = (p_0q_0+p_0+\mathbf{i}p_0q_1+p_1q_0)+\mathbf{j}(p_0q_2+p_2q_0) \\ +\mathbf{k}(p_0q_3+p_3q_0)+\mathbf{i}^2p_1q_1+\mathbf{j}^2p_2q_2+\mathbf{k}^2p_3q_3+\mathbf{ij}p_1q_2+\mathbf{ji}p_2q_1 \\ +\mathbf{ik}p_1q_3+\mathbf{ki}p_3q_1+\mathbf{jk}p_2q_3+\mathbf{kj}p_3q_2
-	\end{aligned}		   	       
-	\end{equation}
-	Mas podemos utilizar de algumas definições para simplificar a equação acima. Os produtos dos versores a seguir foram definidos por Hamilton por construção a partir de seus três planos retangulares intersectados utilizando de rotações \cite{QuaterniosHamilton}.
-	\begin{equation*}
-	\mathbf{ij} = \mathbf{k} = \mathbf{-ji}
-	\end{equation*}
-	\begin{equation*}
-	\mathbf{jk} = \mathbf{i} = \mathbf{-kj}
-	\end{equation*}
-	\begin{equation*}
-	\mathbf{ki} = \mathbf{j} = \mathbf{-ik}
-	\end{equation*}
-	Note que esses são os produtos que fazem com que esta álgebra seja não comutativa no produto. Também são graças a esses produtos que poderemos agrupar os termos comuns em 1. Logo, usando os produtos definidos acima e a fórmula fundamental $\mathbf{i}^2 = \mathbf{j}^2 = \mathbf{k}^2 = \mathbf{ijk} = -1$ temos:
-	\begin{equation}
-	\begin{aligned}
-	pq = (p_0q_0-p_1q_1+p_2q_2+p_3q_3)+p_0(\mathbf{i}q_1+\mathbf{j}q_2+\mathbf{k}q_3+q_0(\mathbf{i}p_1+\mathbf{j}p_2+\mathbf{k}p_3) \\ +\mathbf{i}(p_2q_3-p_3q_2)+\mathbf{j}(p_3q_1-p_1q_3)+\mathbf{k}(p_1q_2-p_2q_1).
-	\end{aligned}
-	\end{equation}
-	Veja que conseguimos um produto interno no $\mathbb{R}^3$, uma vez que $<\mathbf{pv}, \mathbf{qv}> = p_1q_1 + p_2q_2 + p_3q_3$, então, por uma questão de estética, para deixar está operação menor:
-	\begin{equation}
-	\begin{aligned}
-	pq = p_0q_0-<\mathbf{pv,qv}>+p_0\mathbf{q_v}+q_0\mathbf{p_v}+\mathbf{i}(p_2p_3-p_3p_2)+\mathbf{j}(p_3q_1-p_1q_3)\\+\mathbf{k}(p_1q_2-p_2q_1)
-	\end{aligned}
-	\end{equation}
-	Mais uma vez podemos simplificar esta equação, porém agora utilizando do produto vetorial no $\mathbb{R}^3$. Sabendo que $\mathbf{p_v} \times \mathbf{q_v} = \mathbf{i}(p_2q_3 - p_3q_2) + \mathbf{j}(p_3q_1 - p_1q_3) + \mathbf{k}(p_1q_2 - p_2q_1)$. Assim, chegamos ao produto algébrico de quatérnios, dado por:
-	\begin{equation*}
-	pq=p_0q_0-<\mathbf{p_v,q_v}>+p_0\mathbf{q_v}+q_0\mathbf{p_v}+\mathbf{p_v}\times\mathbf{q_v}
-	\end{equation*}
-	
-	Agora, formalmente.
-	
-	\textbf{Definição} (Produto Algébrico de Quatérnios). Dados dois quatérnios não nulos $p,q \in \mathbb{H}/0$, o produto algébrico entre $p$ e $q$ é dado por 
-	\begin{equation}
-	pq=p_0q_0-<\mathbf{p_v,q_v}>+p_0\mathbf{q_v}+q_0\mathbf{p_v}+\mathbf{p_v}\times\mathbf{q_v}
-	\end{equation}
-	Considerando $p=p_0+\mathbf{p_v}$ e $q=q_0+\mathbf{q_v}$.
-	
-	\textbf{Proposição:} O conjunto dos quatérnios é fechado pelo produto algébrico de quatérnios.
-	\\ \newline \textit{Demonstração.} De fato. Considerando a equação (11), temos que o quatérnio produto algébrico $r=pq$ pode ser escrito como 
-	\begin{equation}
-	r=r_0+\mathbf{r_v},
-	\end{equation}
-	onde $r_0=(p_0q_0-<\mathbf{p_v,q_v}>)$ e $\mathbf{r_v}=(p_0\mathbf{q_v}+q_0\mathbf{p_v}+\mathbf{p_v}\times\mathbf{q_v})$. Portanto, $r \in \mathbb{H} \hfill\blacksquare$
-	\\ 
-	
-	\textbf{Proposição:} O produto algébrico de quatérnios é associativo. Ou seja, dados $p,q,r \in \mathbb{H}$, temos que 
-	\begin{equation}
-	(pq)r=p(qr)
-	\end{equation}
-	\\ \textbf{Proposição:} O produto algébrico de quatérnios é distributivo em relação à adição, ou seja, $p,q,r \in \mathbb{H}$
-	\begin{equation}
-	p(q+r)=pq+pr \,\,\,\,\,\,\,\,e\,\,\,\,\,\,\,\, (p+q)r=pr+qr
-	\end{equation}
-	\\
-	
-	Temos então o conjunto dos quatérnios monido das operações de adição, multiplicação por escalar e do produto de quatérnios, o que forma uma álgebra associativa, denominada \textit{Álgebra dos Quatérnios}. Construída tal álgebra, pode-se definir algumas propriedades interessantes.
-	\\
-	
-	\textbf{Proposição:} Seja $1_\mathbb{H} = 1 + \mathbf{0_v} \in \mathbb{H}$ o elemento da álgebra dos quatérnios definido como identidade do produto de quatérnios. Isto é, para todo $q = q_0 + \mathbf{q_v} \in \mathbb{H}$, $q1_\mathbb{H} = q$.
-	\\
-	
-	Como já definiu-se produto de quatérnios e conjugado, pode-se definir a norma de um quatérnio, seu tamanho:
-	
-	\textbf{Definição:} Dado $q \in \mathbb{H}$, sua \textit{norma} é dada por $N(q) = \sqrt[]{q^*q}$. 
-	
-	Duas propriedades para normas de quatérnios seguem. 
-	\\
-	
-	\textbf{Proposição:} Dado $p \in \mathbb{H}$, a norma do conjugado de $p$ é igual a sua própria norma, ou seja, $N(p^*) = N(p)$.
-	\\
-	
-	\textbf{Proposição:} Sejam $p, q \in \mathbb{H}$, a norma do produto $pq$ é igual ao produto das normas de $p$ e $q$, isto é, $N(pq) = N(p)N(q)$.
-	\\
+	\textbf{Palavras-chave:} Quatérnios, PGDM, Geometria de Distâncias, Otimização.
 	
 	
-	
-	
-	% ====================================== PGDM ========================================================
 	\newpage
-	\section{PGDM}
-	\subsection{Aspectos Históricos - Preliminares}
-	Existe uma relação muito forte com a forma geométrica das moléculas orgânicas e suas funções em organismos vivos. Pode-se fazer uma analogia destes organismos com um grande quebra-cabeça, cheio de peças tão variadas quanto se queira, onde cada peça tem um local e função específica no grande quebra-cabeça, de forma que tal local e função é dado justamente pela forma geométrica de cada peça. Imagine este grande quebra-cabeça de forma tridimensional ao invés de plana, imaginando as peças com formas espaciais diversas e escalafobéticas, logo você não estará tão longe de entender como funciona um organismo vivo.
+	\section{Introdução}
+	Existe uma relação muito forte com a forma geométrica das moléculas orgânicas e suas funções em organismos vivos. Pode-se fazer uma analogia destes organismos com um grande quebra-cabeça, cheio de peças tão variadas quanto se queira, onde cada peça tem um local específico no grande quebra-cabeça, de forma que sua posição e função é dado justamente pela forma geométrica de cada peça. Imagine este grande quebra-cabeça de forma tridimensional ao invés de plana, com peças em formatos diversos e escalafobéticos, logo, você não estará tão longe de entender como funciona um organismo vivo.
 	
-	Outrora, em pesquisas sobre a molécula de DNA (ácido desoxirribonucleico), descobriu-se que esse produziria um dos pilares para a vida, a proteína. Essa molécula será o alvo principal deste estudo e possuí uma gama extensa de funções em nosso organismo, como se fossem as tais peças do quebra-cabeça aludido acima. Entre tais funções, destacam-se o seu papel no transporte de oxigênio (hemoglobina), na proteção do corpo contra organismos patogênicos (anticorpos), como catalizadora de reações químicas (enzimas), receptora de membrana, atuação na contração muscular, além de outras inúmeras funções primordiais no nosso organismo \cite{fidalgotese}. Perceba a importância fundamental que tem conhecer a estrutura geométrica de cada uma dessas proteínas.
+	Outrora, em pesquisas sobre a molécula de DNA (ácido desoxirribonucleico), descobriu-se que essa era parte fundamental da produção de um dos pilares para a vida: a proteína. Esta será o alvo principal deste estudo e possuí uma gama extensa de funções em nosso organismo --- como se fossem as tais peças do quebra-cabeça da analogia acima. Podemos dizer que somos feitos de proteínas. Organismos vivos lutam constantemente contra a desorganização intrínseca do universo e as proteínas tem papel importantíssimo nessa luta. São elas as estruturas que utilizamos para nos organizar, gerando informação, ao possibilitarem um mecanismo procedural natural para a vida, como com o seu papel no transporte de oxigênio (hemoglobina), na proteção do corpo contra organismos patogênicos (imunoglobulina), com a catalização de reações químicas (apoenzima), além de outras inúmeras funções primordiais no nosso organismo \cite{fidalgotese}. Perceba a importância fundamental em estudar a estrutura geométrica de cada uma dessas proteínas e sua relação com suas funções.
 	
 	Por conta dessa motivação tem-se esforços como o de Kurt Wüthrich, que propôs que se utilizasse experimentos de \textit{Ressonância Magnética Nuclear}
-	(RMN) para calcular a estrutura tridimensional de uma molécula de proteína, ganhando o premio Nobel da Química em 2002 \cite{RMNproteinWrutrich}. Porém, a partir dessa estratégia tivemos novos problemas. A RMN não tem como resultado a estrutura tridimensional de uma proteína, mas sim distâncias entre átomos relativamente próximos que compõem a proteína. Para poder calcular a estrutura de uma proteína a partir dessas distâncias, surgira um novo problema, conhecido na literatura como \textit{Problema de Geometria de Distâncias Moleculares}, ou simplesmente, PGDM \cite{carlileGDandAplications}.
+	(RMN) para calcular a estrutura tridimensional de uma molécula de proteína, ganhando o premio Nobel da Química em 2002 \cite{RMNproteinWrutrich}. Porém, a partir dessa estratégia tivemos novos problemas. A RMN não tem como resultado a estrutura tridimensional de uma proteína, mas sim distâncias entre átomos relativamente próximos que compõem a proteína. Para poder calcular a estrutura de uma proteína a partir dessas distâncias, surgira um novo problema, conhecido na literatura como \textit{Problema de Geometria de Distâncias Moleculares}, ou simplesmente, MDGP \cite{carlileGDandAplications}.
 	
-	\subsection{Geometria de Distâncias}
-	O principal conteúdo de estudo da Geometria de Distâncias, como o próprio nome sugere, rodeia a ideia de distância entre objetos de determinada estrutura geométrica. Assim, o problema fundamental da Geometria de Distâncias consiste em determinar um conjunto de pontos, pertencentes a um espaço geométrico, com base nas distâncias conhecidas entre tais pontos. Note que nem sempre sabemos todas as distâncias entre todos os pontos.
-	\subsubsection*{Breve Histórico sobre Geometria de Distâncias}
-	Temos que o surgimento da Geometria de Distâncias deu-se por volta de 1928, com o matemático Karl Menger. Entretanto, somente em 1953, com Leonard Blumenthal, que a Geometria de Distâncias tornou-se uma nova área de conhecimento.
-	\\
-	Por outro lado, somente em 1978, com Yemini, que o problema fundamental de Geometria de Distâncias foi enunciado. Problema onde não sabemos todas as distâncias.
-	\\
-	Em 1988, temos o início da utilização da Geometria de Distâncias para o cálculo de Proteínas.
+	Ao longo desse texto estudaremos este problema, suas variações, seus problemas relacionados, as ferramentas que nos facilitarão a resolve-los, suas soluções e as complexidades relacionadas a estas soluções.
 	
-	\subsection{Estrutura das Proteínas}
+	\newpage
+
+	\section{Materiais e Métodos}
+	
+	\newpage
+	
+	\section{Grafos: Aspectos Gerais}
+	
+	\newpage
+	
+	\section{Um Passeio pela Bioquímica}
+	A bioquímica é a ciência que busca explicar as formas e funções biológicas em termos químicos, uma tarefa muito divertida, porém, complicada. Já no século XVIII, os químicos percebiam a grande diferença entre o mundo inanimado e o mundo vivo: Antoine-Laurent Lavoisier (1743-1794) constatou a relativa simplicidade do ``mundo mineral'' --- não orgânico --- comparada a complexidade dos ``mundos animal e vegetal'' \cite{bioquimicaLehninger}. Ele sabia que esses últimos eram constituídos de moléculas ricas nos elementos carbono, oxigênio, nitrogênio e fósforo, que, devido sua abundância na natureza somada com as suas características químicas, são ótimos para constituírem a complexidade da vida.
+
+	\subsection{Carbono}
+	A química dos organismos vivos está organizada em torno do carbono, pois este é muito comum na natureza e possuí uma ótima propriedade estrutural: O carbono pode formar ligações simples estáveis com até quatro outros átomos. De fato, o carbono constitui mais da metade do peso seco das células. 
+	
+	Sabe-se, através de experimentos de cristalografia \cite{ramachandran1974MolStructure}, muito sobre a geometria das ligações dos átomos de uma proteína. Em particular, as quatro ligações simples do carbono formam um tetraedro (vide Figura ~\ref{fig:carbono} \cite{bioquimicaLehninger}) com ângulos de 109,5\textdegree entre duas ligações quaisquer e comprimento médio de ligação de 1,54\AA\footnote[1]{Unidade física para distâncias atômicas é o Ângstron (\AA), onde equivale a 1\AA = $10^{-10}$ m.}. Existe também uma outra característica muito importante para nós nas ligações do carbono: Sabe-se que as ligações simples podem rotacionar livremente (a menos que grupos muito grandes ou altamente carregados estejam ligados aos átomos de carbono, onde, neste caso --- e, na verdade, isso só não ocorre em casos triviais ---, a rotação é regida pelo equilíbrio de forças na molécula \cite{carlileTese}, que pode ser limitada), enquanto que as ligações duplas são mais curtas (em torno de 1,34\AA) e não permitem rotação. Perceba também o plano formado pelos átomos A, B, X e Y na Figura ~\ref{fig:carbono}.
+
+	\begin{figure}[H]
+		\begin{center}
+			\includegraphics[width=1\linewidth]{carbono.png}
+		\end{center}
+		\caption{Geometria da ligação do carbono.}
+		\label{fig:carbono}
+	\end{figure}
+
+	A versatilidade das ligações covalentes do carbono podem formar cadeias lineares, ramificadas e estruturas cíclicas. Nenhum outro elemento químico consegue formar moléculas com tanta diversidade de tamanhos, formas e composição.
+	
+	\subsection{Classificação molecular}
+	As células contém um conjunto universal de moléculas pequenas
+	
+	
+	
 	Ao se estudar proteínas, logo se percebe sua imensidão, tanto em número como em diferenças, porém, algumas características se mantem em comum entre elas. Sabe-se que todas são formadas por aminoácidos, visto que apenas eles restam quando uma se degrada. Existem vinte tipos de aminoácidos naturais e da combinação destes por ligações petídicas formam-se todas as proteínas conhecidas. \cite{fidalgotese}
 	
 	Destes vinte aminoácidos, dezenove tem uma estrutura básica em comum, um carbono principal (ou também chamado, carbono alfa) ligado a um grupo amina e um grupo carboxílico. O que diferencia esses dezenove aminoácidos é o radical (ou grupo variável). Na ilustração abaixo os radicais são representados por $R_1$ e $R_2$.
@@ -258,12 +108,26 @@
 	
 	Por tanto, há uma noção prévia de qual tipo de estrutura esperar ao analisar uma molécula de proteína, isto é, existe uma ordem conhecida para as ligações dos átomos. Como as ligações atômicas vêm de processos físico-químicos, há na literatura a distância e ângulo associados a cada tipo diferente de ligação e pares de átomo. Neste problema trataremos apenas de ligações covalentes, pois há o compartilhamento de elétrons.
 	
+	\subsection{wwPDB}
+	
+	\newpage
+	\section{\textit{Molecular Distance Geometry Problem}}
+	
+	\subsection{Geometria de Distâncias}
+	O principal conteúdo de estudo da Geometria de Distâncias, como o próprio nome sugere, rodeia a ideia de distância entre objetos de determinada estrutura geométrica. Assim, o problema fundamental da Geometria de Distâncias consiste em determinar um conjunto de pontos, pertencentes a um espaço geométrico, com base nas distâncias conhecidas entre tais pontos. Note que nem sempre sabemos todas as distâncias entre todos os pontos.
+	\subsubsection*{Breve Histórico sobre Geometria de Distâncias}
+	Temos que o surgimento da Geometria de Distâncias deu-se por volta de 1928, com o matemático Karl Menger. Entretanto, somente em 1953, com Leonard Blumenthal, que a Geometria de Distâncias tornou-se uma nova área de conhecimento.
+	\\
+	Por outro lado, somente em 1978, com Yemini, que o problema fundamental de Geometria de Distâncias foi enunciado. Problema onde não sabemos todas as distâncias.
+	\\
+	Em 1988, temos o início da utilização da Geometria de Distâncias para o cálculo de Proteínas.
+	
 	\subsection{Representações dos Átomos em Coordenadas\label{sec:bi}}
 	Como as partículas que estamos interessados estão localizadas no espaço tridimensional, podemos representa-las utilizando coordenadas cartesianas tridimensionais $x_1, ...,x_n \in\mathbb{R}^3$, onde $x_n$ é a \textit{realização} do n-ésimo átomo da molécula analisada. 
 	
 	Além da utilização das coordenadas cartesianas, também se faz uso de outro sistema de coordenadas, mais condizente com os dados que se tem a priori da molécula, antes da solução do problema. Tal sistema denomina-se \textit{coordenadas internas}.
 	
-	As coordenadas internas de uma proteína são definidas pela distância entre os átomos $d_{1,2}, ..., d_{n - 1,n}$, pelo ângulo planar $\theta_{1,3}, ...,\theta_{n - 2,n}$ (formados por 3 átomos consecutivos) e pelos ângulos de torção $\omega_{1,4}, ..., \omega_{n-3,n}$ (formado por 4 átomos consecutivos). O ângulo de torção é o ângulo entre os planos formados pelos átomos $i-3,i-2,i-1$ e$i-2,i-1,i$, respectivamente. Assim, temos que $\omega$ varia no intervalo $[0,2\pi]$ e $\theta$ de $[0,\pi]$, assim como em um sistema de coordenadas esféricas, e também sabe-se da literatura que as distâncias entre os átomos unidos por ligações covalentes é em torno de 1,5\AA\footnote[1]{Unidade física para distâncias atômicas é o Ângstron (\AA), onde equivale a 1\AA = $10^{-10}$ m.}. Em vista desta curta distância típica, convenciona-se selecionar apenas pares de átomos tais que $d_{i,j}\leq 5 $\AA 
+	As coordenadas internas de uma proteína são definidas pela distância entre os átomos $d_{1,2}, ..., d_{n - 1,n}$, pelo ângulo planar $\theta_{1,3}, ...,\theta_{n - 2,n}$ (formados por 3 átomos consecutivos) e pelos ângulos de torção $\omega_{1,4}, ..., \omega_{n-3,n}$ (formado por 4 átomos consecutivos). O ângulo de torção é o ângulo entre os planos formados pelos átomos $i-3,i-2,i-1$ e$i-2,i-1,i$, respectivamente. Assim, temos que $\omega$ varia no intervalo $[0,2\pi]$ e $\theta$ de $[0,\pi]$, assim como em um sistema de coordenadas esféricas, e também sabe-se da literatura que as distâncias entre os átomos unidos por ligações covalentes é em torno de 1,5\AA. Em vista desta curta distância típica, convenciona-se selecionar apenas pares de átomos tais que $d_{i,j}\leq 5 $\AA 
 	\\
 	
 	\begin{figure}[H]
@@ -642,7 +506,13 @@
 	\forall {u, v}\in E, \|x_{u} - x_{v}\| = d_{uv}.
 	$$
 	Portanto uma solução do problema pode ser representada, então, como um elemento do $\mathbb{R}^{3\|V\|}$
-	\\
+	
+	\newpage
+	\section{\textit{Branch-and-Prune}}
+	
+	\newpage
+	\section{Considerações Finais}
+	
 	\newpage
 	\phantomsection
 	\addcontentsline{toc}{section}{Referências}

@@ -1,10 +1,36 @@
 \begin{thebibliography}{10}
 
+\bibitem{BoyerMathHistory}
+Carl~Benjamin Boyer.
+\newblock {\em História da matemática}.
+\newblock Edgard Bl{\"{u}}cher/EDUSP, São Paulo, 3 edition, 1974.
+
+\bibitem{AlgebraAbstrata2BienalSBM}
+César~Polcino Milies.
+\newblock {\em Breve história da álgebra abstrata}.
+\newblock USP.
+
+\bibitem{QuaterniosJucineide}
+Jucineide~Silva Santos and Maurício de~Araujo~Ferreira.
+\newblock Álgebra de quatérnios.
+\newblock Trabalho de Iniciação cientifica, Agosto 2011.
+
 \bibitem{fidalgotese}
 Felipe Delfini~Caetano Fidalgo.
 \newblock {\em Dividindo e conquistando com simetrias em geometria de
   distâncias}.
 \newblock PhD thesis, UNICAMP, Campinas, SP, Fevereiro 2015.
+
+\bibitem{QuaterniosAndRotationsKuipers}
+J.~B. Kuipers.
+\newblock {\em Quaternions and Rotation Sequences}.
+\newblock Princeton University Press, Princeton, New Jersey, 1999.
+
+\bibitem{QuaterniosHamilton}
+William~Rowan Hamilton.
+\newblock {\em Elements of Quaternions}.
+\newblock London: Longmans, Green and Co, Dublin, first edition, 1866.
+\newblock Book II pag 156.
 
 \bibitem{RMNproteinWrutrich}
 K.~W{\"{u}}thrich.
@@ -18,23 +44,6 @@ Leo Liberti, Carlile Lavor, Nelson Maculan, and Antonio Mucherino.
 \newblock Euclidean distance geometry and applications.
 \newblock {\em Society for Industrial and Applied Mathematics}, 56(1):3–69,
   February 2014.
-
-\bibitem{bioquimicaLehninger}
-David~L Nelson and Michael~M Cox.
-\newblock {\em Lehninger principles of biochemistry}.
-\newblock W.H.Freeman and Company, 2013.
-
-\bibitem{ramachandran1974MolStructure}
-GN~Ramachandran, AS~Kolaskar, C~Ramakrishnan, and V~Sasisekharan.
-\newblock The mean geometry of the peptide unit from crystal structure data.
-\newblock {\em Biochimica et Biophysica Acta (BBA)-Protein Structure},
-  359(2):298--302, 1974.
-
-\bibitem{carlileTese}
-CC~Lavor.
-\newblock {\em Uma abordagem determin{\'\i}stica para minimiza{\c{c}}{\~a}o
-  global da energia potencial de mol{\'e}culas}.
-\newblock PhD thesis, PhD thesis, COPPE/UFRJ, Rio de Janeiro, 2001.
 
 \bibitem{RMNBookIntroduction}
 Peter~A. Rinck.

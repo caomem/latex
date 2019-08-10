@@ -1,0 +1,10 @@
+todo
+
+	- seção de grafos
+	- aumentar muito a seção de proteínas
+	- uma seção sobre os repositórios de proteínas
+	- uma seção sobre ordenação
+	- Continuar a seção de mdgp
+	- falar sobre o dmdgp
+	- criar um apêndice D sobre ângulos de torção
+	- E mais uma última sobre o BP
