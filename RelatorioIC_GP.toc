@@ -1,20 +1,20 @@
 \babel@toc {brazil}{}
-\contentsline {section}{\numberline {1}Introdu\IeC {\c c}\IeC {\~a}o}{3}{section.1}% 
-\contentsline {section}{\numberline {2}Materiais e M\IeC {\'e}todos}{4}{section.2}% 
-\contentsline {section}{\numberline {3}Grafos: Aspectos Gerais}{5}{section.3}% 
-\contentsline {section}{\numberline {4}Um Passeio pela Bioqu\IeC {\'\i }mica}{6}{section.4}% 
-\contentsline {subsection}{\numberline {4.1}Carbono}{6}{subsection.4.1}% 
-\contentsline {subsection}{\numberline {4.2}Classifica\IeC {\c c}\IeC {\~a}o Macromolecular}{7}{subsection.4.2}% 
-\contentsline {subsection}{\numberline {4.3}wwPDB}{8}{subsection.4.3}% 
-\contentsline {section}{\numberline {5}\textit {Molecular Distance Geometry Problem}}{9}{section.5}% 
-\contentsline {subsection}{\numberline {5.1}Geometria de Dist\IeC {\^a}ncias}{9}{subsection.5.1}% 
-\contentsline {subsection}{\numberline {5.2}Representa\IeC {\c c}\IeC {\~o}es dos \IeC {\'A}tomos em Coordenadas}{9}{subsection.5.2}% 
-\contentsline {subsection}{\numberline {5.3}Resson\IeC {\^a}ncia Magn\IeC {\'e}tica Nuclear}{11}{subsection.5.3}% 
-\contentsline {subsection}{\numberline {5.4}Modelagem Matem\IeC {\'a}tica}{11}{subsection.5.4}% 
-\contentsline {subsection}{\numberline {5.5}Modelagem Computacional}{13}{subsection.5.5}% 
-\contentsline {subsection}{\numberline {5.6}N\IeC {\'u}mero de solu\IeC {\c c}\IeC {\~o}es de um PGDM}{15}{subsection.5.6}% 
-\contentsline {section}{\numberline {6}\textit {Branch-and-Prune}}{18}{section.6}% 
-\contentsline {section}{\numberline {7}Considera\IeC {\c c}\IeC {\~o}es Finais}{19}{section.7}% 
-\contentsline {section}{Refer\IeC {\^e}ncias}{20}{section*.9}% 
-\contentsline {section}{Ap\IeC {\^e}ndice A - Lei dos Cossenos e \IeC {\^A}ngulos Entre dois Vetores no $\mathbb {R}^3$}{21}{section*.11}% 
-\contentsline {section}{Ap\IeC {\^e}ndice B - Matrizes como Transforma\IeC {\c c}\IeC {\~o}es Lineares e Sobre $B_i$}{23}{section*.17}% 
+\contentsline {section}{\numberline {1}Introdu\IeC {\c c}\IeC {\~a}o}{3}{section.1}
+\contentsline {section}{\numberline {2}Materiais e M\IeC {\'e}todos}{4}{section.2}
+\contentsline {section}{\numberline {3}Grafos: Aspectos Gerais}{5}{section.3}
+\contentsline {section}{\numberline {4}Um Passeio pela Bioqu\IeC {\'\i }mica}{6}{section.4}
+\contentsline {subsection}{\numberline {4.1}Carbono}{6}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Classifica\IeC {\c c}\IeC {\~a}o Macromolecular}{7}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}wwPDB}{8}{subsection.4.3}
+\contentsline {section}{\numberline {5}\textit {Molecular Distance Geometry Problem}}{9}{section.5}
+\contentsline {subsection}{\numberline {5.1}Geometria de Dist\IeC {\^a}ncias}{9}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Representa\IeC {\c c}\IeC {\~o}es dos \IeC {\'A}tomos em Coordenadas}{9}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}Resson\IeC {\^a}ncia Magn\IeC {\'e}tica Nuclear}{11}{subsection.5.3}
+\contentsline {subsection}{\numberline {5.4}Modelagem Matem\IeC {\'a}tica}{11}{subsection.5.4}
+\contentsline {subsection}{\numberline {5.5}Modelagem Computacional}{13}{subsection.5.5}
+\contentsline {subsection}{\numberline {5.6}N\IeC {\'u}mero de solu\IeC {\c c}\IeC {\~o}es de um PGDM}{15}{subsection.5.6}
+\contentsline {section}{\numberline {6}\textit {Branch-and-Prune}}{18}{section.6}
+\contentsline {section}{\numberline {7}Considera\IeC {\c c}\IeC {\~o}es Finais}{19}{section.7}
+\contentsline {section}{Refer\IeC {\^e}ncias}{20}{section*.9}
+\contentsline {section}{Ap\IeC {\^e}ndice A - Lei dos Cossenos e \IeC {\^A}ngulos Entre dois Vetores no $\mathbb {R}^3$}{21}{section*.11}
+\contentsline {section}{Ap\IeC {\^e}ndice B - Matrizes como Transforma\IeC {\c c}\IeC {\~o}es Lineares e Sobre $B_i$}{23}{section*.17}
