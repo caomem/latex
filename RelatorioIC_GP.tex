@@ -32,7 +32,7 @@
 		\textbf{Abstract}
 	\end{center}
 	
-	In this paper, two subjects were presented in a disjointed form: The algebra of
+	This is a old abstract, dont read. In this paper, two subjects were presented in a disjointed form: The algebra of
 	the quaternions and the Problem of Geometry of Molecular Distances. For the first,
 	it begins with a historical introduction to quantum algebra and presents some of its	most basic results, monid of its partial or complete demonstrations, as it was found necessary. The same structure forms the second subject, but, due to its nature, a more literary and less formal approach was used. Starting from a contextualisation of the PGDM, some important tools were presented to model it, where, in possession of everything until then, the problem in question can be presented and a brief introduction to the study of its solution.
  
@@ -46,7 +46,7 @@
 		\textbf{Resumo}
 	\end{center}
 
-	Neste documento foram apresentados dois assuntos de forma disjunta: A álgebra dos quatérnios e o Problema de Geometria de Distâncias Moleculares. Para o primeiro, inicia-se com uma introdução histórica à álgebra de quatérnios e apresenta-se alguns de seus resultados mais básicos, monidos de suas demonstrações parciais ou completas, conforme achou-se necessário. A mesma estruturação forma o segundo assunto, porém, devido a sua natureza, utilizou-se uma abordagem mais literária e menos formal. Partindo de uma contextualização do PGDM, apresentou-se algumas ferramentas importantes para modelá-lo, onde, de posse de tudo até então, pode-se apresentar de fato o problema em questão e uma brevê introdução ao estudo de sua solução. 
+	Este é um resumo velho, nem leia. Neste documento foram apresentados dois assuntos de forma disjunta: A álgebra dos quatérnios e o Problema de Geometria de Distâncias Moleculares. Para o primeiro, inicia-se com uma introdução histórica à álgebra de quatérnios e apresenta-se alguns de seus resultados mais básicos, monidos de suas demonstrações parciais ou completas, conforme achou-se necessário. A mesma estruturação forma o segundo assunto, porém, devido a sua natureza, utilizou-se uma abordagem mais literária e menos formal. Partindo de uma contextualização do PGDM, apresentou-se algumas ferramentas importantes para modelá-lo, onde, de posse de tudo até então, pode-se apresentar de fato o problema em questão e uma brevê introdução ao estudo de sua solução. 
 	
 	\textbf{Palavras-chave:} Quatérnios, PGDM, Geometria de Distâncias, Otimização.
 	
@@ -91,23 +91,74 @@
 	A versatilidade das ligações covalentes do carbono podem formar cadeias lineares, ramificadas e estruturas cíclicas. Nenhum outro elemento químico consegue formar moléculas com tanta diversidade de tamanhos, formas e composição.
 	
 	\subsection{Classificação Macromolecular}
-	As células contém um conjunto universal de moléculas pequenas. Mas como podemos discutir sobre o que é uma molécula pequena, média ou grande? Devemos definir uma forma de comparar os tamanhos moleculares. Na literatura existem duas medidas principais para esse fim, com uma relação bem definida entre si	, tratam-se do \textit{peso molecular} --- ou \textit{massa molecular relativa} ---, denominado $M_r$ e da \textit{massa molecular}, denotada simplesmente por $m$. O peso molecular é definido como uma relação direta da massa da molécula da substância estudada com um duodécimo da massa do carbono-12 ($^{12}C$, em torno de $1,9926\times 10^{-23}$ gramas), note que, como $M_r$ é uma razão, não possui dimensão associada. Já a massa molecular é apenas a massa da molécula (ou massa molar) sobre o número de Avogadro --- que é definida como sendo o número de átomos por mol de uma determinada substância.
+	As células contém um conjunto universal de moléculas pequenas. Mas como podemos discutir sobre o que é uma molécula pequena? Devemos definir uma forma de comparar os tamanhos moleculares. Na literatura existem duas medidas principais para esse fim, com uma relação bem definida entre si	, tratam-se do \textit{peso molecular} (ou \textit{massa molecular relativa}), denominado $M_r$ e da \textit{massa molecular}, denotada simplesmente por $m$.
 	
+	O peso molecular é definido como uma relação direta da massa da molécula da substância estudada com um duodécimo da massa do carbono-12 ($^{12}C$, em torno de $1,9926\times 10^{-23}$ gramas), note que, como $M_r$ é uma razão, não possui dimensão associada. Já a massa molecular é apenas a massa da molécula (ou massa molar) sobre o número de Avogadro --- que é definida como sendo o número de átomos por mol de uma determinada substância. Esta, diferente da massa molecular relativa, possui dimensão e é expressa em dáltons (abreviado Da) e um dálton equivale a um duodécimo da massa do carbono-12 --- donde deduze-se facilmente a relação entre massa molecular e peso molecular.
 	
+	Os organismos vivos são constituídos por moléculas de características muito diversas. Existe uma coleção de aproximadamente mil moléculas consideradas pequenas ($M_r$ ${\sim}100$ a ${\sim}500$) diferentes dissolvidas na fase aquosa das células \cite{bioquimicaLehninger}. Nessa coleção está contido os aminoácidos comuns, nucleotídeos, açúcares e seus derivados fosforilados e ácidos mono, di e tricarboxílicos. Porém, neste estudo, estaremos mais preocupados com moléculas significativamente maiores, chamadas \textit{macromoléculas}.
+	\subsubsection*{Macromoléculas}
+	As macromoléculas são as principais constituintes das células. São polímeros\footnote[1]{Polímeros são moléculas formadas a partir de repetições de unidades estruturais menores, chamadas \textit{meros} ou \textit{monômeros}. Daí o nome, poli-meros $\approx$ vários-meros.} com peso molecular acima de ${\sim}5.000$. Polímeros menores são chamados de \textit{oligômeros} --- do grego, ``oligos'' significa ``pouco''. Proteínas (principal molécula do nosso estudo), ácidos nucleicos (DNA, RNA) e polissacarídeos são macromoléculas feitas de monômeros cujos pesos moleculares são de 500 ou menos, porém, como apresentam um grande número dessas subunidades, possuem um alto peso molecular --- até 1 milhão para proteínas e até vários bilhões para ácidos nucleicos. A síntese de macromoléculas é a atividade mais custosa energeticamente das células.
 	
-	Ao se estudar proteínas, logo se percebe sua imensidão, tanto em número como em diferenças, porém, algumas características se mantem em comum entre elas. Sabe-se que todas são formadas por aminoácidos, visto que apenas eles restam quando uma se degrada. Existem vinte tipos de aminoácidos naturais e da combinação destes por ligações petídicas formam-se todas as proteínas conhecidas. \cite{fidalgotese}
+	Tanto as proteínas quanto os ácidos nucleicos são polímeros lineares (isto é, que não possuem ramos ligados as suas cadeias principais, agindo como um longo fio contínuo) feitos de subunidades monoméricas bem mais simples, donde esta sequência específica de meros é que dá as informações sobre a sua estrutura tridimensional e suas funções biológicas associadas \cite{bioquimicaLehninger}.
 	
-	Destes vinte aminoácidos, dezenove tem uma estrutura básica em comum, um carbono principal (ou também chamado, carbono alfa) ligado a um grupo amina e um grupo carboxílico. O que diferencia esses dezenove aminoácidos é o radical (ou grupo variável). Na ilustração abaixo os radicais são representados por $R_1$ e $R_2$.
-	\\
+	Em especial, as proteínas são constituídas por um conjunto de monômeros muito bem conhecidos e catalogados, chamados \textit{aminoácidos}. As proteínas constituem a segunda maior fração da célula, só perdendo para a água. Provavelmente são as mais versáteis de todas as biomoléculas: Algumas tem atividade catalítica e funcionam como enzimas, outras servem como elementos estruturais, receptoras de sinais, ou transportadoras que carregam substâncias específicas para dentro ou fora das células.  
+	
+	\subsection{Configuração Molecular}
+	No mundo biomolecular, toda a informação sobre uma molécula é dada pela sua estrutura (também chamada de \textit{estereoquímica}), logo, suas ligações covalentes e seus grupos funcionais (subestruturas padrões associadas) são trivialmente importantes para definir seu bom funcionamento. Devido a característica rotacional das ligações simples do carbono, existem muitas moléculas (chamadas \textit{estereoisômeros}) com a mesma fórmula molecular e ligações químicas, mas com diferentes configurações espaciais, o que pode mudar completamente suas funções. 
+	
+	De maneira simples, podemos identificar estereoisômeros pelo fato de que eles possuem as mesmas propriedades químicas, porém, não podem ser convertidos entre si sem que haja a quebra de uma ou mais ligações covalentes. Isto se dá pela presença de ligações duplas (devido a limitação na sua rotação) ou pela presença de \textit{centros quirais}, onde a molécula rotacionada não pode corresponder a sua imagem especular (conforme Figura ~\ref{fig:quiral}, extraída de \cite{bioquimicaLehninger}). Um átomo de carbono com quatro ligações diferentes é considerado assimétrico e é chamado de centro quiral --- do grego, \textit{chiros} quer dizer "mão", parafraseando estas estruturas com a relação da mão direita com a esquerda. Logo, se existir um centro quiral, sempre haverá pelo menos duas possibilidades para configuração.
+	 
 	\begin{figure}[H]
 		\begin{center}
-			\includegraphics[width=0.6\linewidth]{Peptidformation.png}
+			\includegraphics[width=0.45\linewidth]{quiral.png}
 		\end{center}
-		\caption{Estrutura de um aminoácido e a síntese proteica}
-		\label{}
+		\caption{Ilustração de uma molécula quiral.}
+		\label{fig:quiral}
+	\end{figure} 
+	
+	 Outro conceito que nos será importante no futuro, a \textit{conformação molecular} é a disposição dos átomos no espaço que pode ser mudada por rotação em torno de ligações simples, sem quebrar ligações covalentes. Estes ângulos possíveis tem posições mais estáveis e instáveis do ponto de vista energético, conforme mostra o gráfico da Figura ~\ref{fig:carener}. Podemos tentar descobrir a conformação mais provável de uma molécula minimizando a somatória de todas as forças atuantes na molécula \cite{carlileTese}. 
+	
+	\begin{figure}[H]
+		\begin{center}
+			\includegraphics[width=0.55\linewidth]{carbonoenergia.png}
+		\end{center}
+		\caption{Conformações e Equilíbrio de Energia \cite{bioquimicaLehninger}.}
+		\label{fig:carener}
+	\end{figure} 
+	
+	Para compreender melhor como serão as configurações das moléculas que trataremos nesse texto (proteínas), vale nos preocuparmos com as subestruturas do qual eles são formados. 
+	
+	\subsection{Aminoácidos}
+	As proteínas são longas cadeias lineares de aminoácidos ligados por um tipo específico de ligação (chamada \textit{peptídica}), a qual é característica por ter como resíduo uma molécula de água. São vinte tipos diferentes de aminoácidos encontrados normalmente na natureza, sendo esses muito bem conhecidos e catalogados. O primeiro a ser descoberto foi a asparagina, em 1806; o ultimo foi a treonina, descoberto em 1938 \cite{bioquimicaLehninger}. Vale mencionar que, além destes vinte aminoácidos mais comuns, há vários outros menos frequentes, porém não constituem as proteínas.
+	
+	Destes vinte aminoácidos comuns, dezenove compartilham da mesma estrutura principal --- estes são chamados $\alpha$-aminoácidos. Eles tem um grupo carboxílico e um grupo amina ligados ao mesmo átomo de carbono (o carbono $\alpha$), além de mais um hidrogênio (chamado hidrogênio $\alpha$) e, em sua última ligação, uma cadeia R que é o que diferencia cada aminoácido. Essa estrutura é ilustrada na Figura ~\ref{fig:amino}. O único aminoácido que difere disso é a Prolina, que possui como cadeia R um anel aromático que se fecha no nitrogênio (que no padrão mencionado há um grupo amina).
+	
+	\begin{figure}[H]
+		\begin{center}
+			\includegraphics[width=0.35\linewidth]{amino.png}
+		\end{center}
+		\caption{Estrutura padrão de um $\alpha$-aminoácido.}
+		\label{fig:amino}
 	\end{figure}
 	
-	Por tanto, há uma noção prévia de qual tipo de estrutura esperar ao analisar uma molécula de proteína, isto é, existe uma ordem conhecida para as ligações dos átomos. Como as ligações atômicas vêm de processos físico-químicos, há na literatura a distância e ângulo associados a cada tipo diferente de ligação e pares de átomo. Neste problema trataremos apenas de ligações covalentes, pois há o compartilhamento de elétrons.
+	Por tanto, há uma noção prévia de qual tipo de estrutura esperar ao analisar uma molécula de proteína. Existe uma estrutura conhecida e repetitiva para os átomos.
+	
+	Para todos os aminoácidos comuns, exceto a glicina, o carbono $\alpha$ está ligado com quatro outros átomos diferentes entre si (na glicina temos R como apenas mais um hidrogênio, sendo o aminoácido mais simples), o que transforma o carbono $\alpha$ em um centro quiral. Logo, cada aminoácido (menos glicina) tem sempre dois estereoisômeros possíveis. Porém, na verdade, apenas um destes ocorrê naturalmente nas proteínas \cite{bioquimicaLehninger}.
+	
+	\subsubsection*{Ligação Peptídica}
+	A ligação entre dois aminoácidos é feita de modo covalente por meio de desidratação do grupo $\alpha$-carboxílico de um com o grupo $\alpha$-amina do outro --- ou seja, ligar o carbono final de um no nitrogênio inicial do outro, liberando um oxigênio e dois hidrogênios, que formam uma molécula de água. Essa ligação, também chamada de resíduo pela liberação da água, forma um dipeptídeo. 
+	
+	Quando muitos aminoácidos se juntam, o produto é chamado de polipeptídeo. Perceba que os termos ``polipeptídeo'' e ``proteína'' parecem dirigir-se as mesmas moléculas, porém, a diferença está na massa molecular: As moléculas com massa abaixo de 10.000 são ditas polipeptídeos, enquanto as maiores que essas são consideradas proteínas. Os comprimentos dessas cadeias variam significativamente. O citocromo c humano tem apenas 104 aminoácidos, enquanto, no outro extremo, a titina (relacionada ao músculo de vertebrados) possui aproximadamente 27.000 aminoácidos e uma massa molecular de cerca de 3.000.000. No geral, as proteínas naturais contém menos de 2.000 aminoácidos \cite{bioquimicaLehninger}.
+	
+	Outra característica muito importante das ligações peptídicas é de que elas se comportam semelhantemente a ligações covalentes duplas dos carbonos. Estudos envolvendo difração de raios X em cristais de aminoácidos e polipeptídeos descobriram que a ligação peptídica $C-N$ é de alguma forma mais curta que a ligação de uma amina simples, e que os átomos associados a ligação peptídica estão todos co-planares (conforme Figura ~\ref{fig:peptidica}). Perceba que também são rígidos, não sendo possível a rotação. Essa é uma propriedade muito útil que também nos será importante, descoberta de 1930 que se deve a Linus Pauling e Robert Corey.
+	
+	\begin{figure}[H]
+		\begin{center}
+			\includegraphics[width=0.8\linewidth]{peptide.jpg}
+		\end{center}
+		\caption{O grupo peptídico planar \cite{carlile:MinimalOrder}.}
+		\label{fig:peptidica}
+	\end{figure}
 	
 	\subsection{wwPDB}
 	

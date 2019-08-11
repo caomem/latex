@@ -36,6 +36,12 @@ CC~Lavor.
   global da energia potencial de mol{\'e}culas}.
 \newblock PhD thesis, PhD thesis, COPPE/UFRJ, Rio de Janeiro, 2001.
 
+\bibitem{carlile:MinimalOrder}
+Carlile Lavor, Leo Liberti, Bruce Donald, Bradley Worley, Benjamin Bardiaux,
+  Th{\'e}r{\`e}se~E Malliavin, and Michael Nilges.
+\newblock Minimal nmr distance information for rigidity of protein graphs.
+\newblock {\em Discrete Applied Mathematics}, 256:91--104, 2019.
+
 \bibitem{RMNBookIntroduction}
 Peter~A. Rinck.
 \newblock {\em The history of MR imaging}.
