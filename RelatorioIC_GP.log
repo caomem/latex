@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.11.3)  13 AUG 2019 07:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.11.3)  13 AUG 2019 17:06
 entering extended mode
 **./RelatorioIC_GP.tex
 (RelatorioIC_GP.tex
@@ -1619,7 +1619,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1692.
 Here is how much of TeX's memory you used:
  30663 strings out of 492970
  708445 string characters out of 3126594
- 924679 words of memory out of 3000000
+ 924680 words of memory out of 3000000
  33764 multiletter control sequences out of 15000+200000
  42516 words of font info for 121 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1670,7 +1670,7 @@ s/cm/cmr6.pfb><C:/Users/Bruno/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pub
 lic/amsfonts/cm/cmr7.pfb><C:/Users/Bruno/AppData/Local/Programs/MiKTeX 2.9/font
 s/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Bruno/AppData/Local/Programs/MiKT
 eX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on RelatorioIC_GP.pdf (48 pages, 3199142 bytes).
+Output written on RelatorioIC_GP.pdf (48 pages, 3199141 bytes).
 PDF statistics:
  1367 PDF objects out of 1440 (max. 8388607)
  166 named destinations out of 1000 (max. 500000)
