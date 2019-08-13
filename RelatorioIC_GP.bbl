@@ -42,16 +42,25 @@ Carlile Lavor, Leo Liberti, Bruce Donald, Bradley Worley, Benjamin Bardiaux,
 \newblock Minimal nmr distance information for rigidity of protein graphs.
 \newblock {\em Discrete Applied Mathematics}, 256:91--104, 2019.
 
-\bibitem{RMNBookIntroduction}
-Peter~A. Rinck.
-\newblock {\em The history of MR imaging}.
-\newblock The Round Table Foundation, Germany, 11th edition, 2017.
+\bibitem{wwPDB}
+wwPDB.org.
+\newblock Worldwide protein data bank.
+
+\bibitem{emersonMolConf}
+Emerson Castelani;~Repositório da~MolecularConformation.jl; Acesso~em
+  11/08/2019.
+\newblock Url = ``https://github.com/evcastelani/molecularconformation.jl''.
 
 \bibitem{carlileBook31Coloquio}
 C.~Lavor, N.~Maculan, M.~Souza, and R.~Alves.
 \newblock {\em Álgebra e Geometria no Cálculo de Estrutura Molecular}.
 \newblock IMPA, Rio de Janeiro, RJ, 31º colóquio brasileiro de matemática
   edition, 2017.
+
+\bibitem{RMNBookIntroduction}
+Peter~A. Rinck.
+\newblock {\em The history of MR imaging}.
+\newblock The Round Table Foundation, Germany, 11th edition, 2017.
 
 \bibitem{EstatisticaTratamentoDeDados}
 Não lembro~o autor.
@@ -64,6 +73,24 @@ Não lembro~o autor.
 \newblock {\em Custo computacional, teoria da computação,Tenho que verificar
   certinho o titulo na ufsc, é um livro de lá}.
 \newblock Favor relevar, Germany, whatever edition, 2017.
+
+\bibitem{carlile:dvopComplexity}
+Andrea Cassioli, Oktay G{\"u}nl{\"u}k, Carlile Lavor, and Leo Liberti.
+\newblock Discretization vertex orders in distance geometry.
+\newblock {\em Discrete Applied Mathematics}, 197:27--41, 2015.
+
+\bibitem{carlile:DMDGP}
+Carlile Lavor, Leo Liberti, Nelson Maculan, and Antonio Mucherino.
+\newblock The discretizable molecular distance geometry problem.
+\newblock {\em Computational Optimization and Applications}, 52(1):115--146,
+  2012.
+
+\bibitem{carlile:BP}
+Leo Liberti, Carlile Lavor, and Nelson Maculan.
+\newblock A branch-and-prune algorithm for the molecular distance geometry
+  problem.
+\newblock {\em International Transactions in Operational Research},
+  15(1):1--17, 2008.
 
 \bibitem{GASteinbruch}
 Alfredo Steinbruch and Paulo Winterle.
