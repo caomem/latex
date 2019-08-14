@@ -17,12 +17,14 @@
 \BOOKMARK [3][-]{subsubsection.5.4.1}{MDGP: Uma defini\347\343o formal}{subsection.5.4}% 17
 \BOOKMARK [2][-]{subsection.5.5}{Modelagem Computacional}{section.5}% 18
 \BOOKMARK [2][-]{subsection.5.6}{Estudando o Conjunto Solu\347\343o de um MDGP}{section.5}% 19
-\BOOKMARK [2][-]{subsection.5.7}{Ordena\347\343o Conveniente dos V\351rtices}{section.5}% 20
+\BOOKMARK [2][-]{subsection.5.7}{Ordena\347\343o Conveniente dos V\351rtices }{section.5}% 20
 \BOOKMARK [2][-]{subsection.5.8}{Discretizable Molecular Distance Geometry Problem}{section.5}% 21
 \BOOKMARK [1][-]{section.6}{Branch-and-Prune}{}% 22
 \BOOKMARK [2][-]{subsection.6.1}{O Algor\355timo}{section.6}% 23
-\BOOKMARK [1][-]{section.7}{Considera\347\365es Finais}{}% 24
-\BOOKMARK [1][-]{section*.33}{Refer\352ncias}{}% 25
-\BOOKMARK [1][-]{section*.35}{Ap\352ndice A - Lei dos Cossenos e \302ngulos Entre dois Vetores no R3}{}% 26
-\BOOKMARK [1][-]{section*.41}{Ap\352ndice B - Matrizes como Transforma\347\365es Lineares e Sobre Bi}{}% 27
-\BOOKMARK [1][-]{section*.50}{Ap\352ndice C - Vinte Amino\341cidos Naturais}{}% 28
+\BOOKMARK [2][-]{subsection.6.2}{Estrutura Algor\355tmica}{section.6}% 24
+\BOOKMARK [2][-]{subsection.6.3}{Simula\347\365es Computacionais}{section.6}% 25
+\BOOKMARK [1][-]{section.7}{Considera\347\365es Finais}{}% 26
+\BOOKMARK [1][-]{section*.37}{Refer\352ncias}{}% 27
+\BOOKMARK [1][-]{section*.39}{Ap\352ndice A - Lei dos Cossenos e \302ngulos Entre dois Vetores no R3}{}% 28
+\BOOKMARK [1][-]{section*.45}{Ap\352ndice B - Matrizes como Transforma\347\365es Lineares e Sobre Bi}{}% 29
+\BOOKMARK [1][-]{section*.54}{Ap\352ndice C - Vinte Amino\341cidos Naturais}{}% 30

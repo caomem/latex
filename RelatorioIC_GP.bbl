@@ -79,18 +79,23 @@ Andrea Cassioli, Oktay G{\"u}nl{\"u}k, Carlile Lavor, and Leo Liberti.
 \newblock Discretization vertex orders in distance geometry.
 \newblock {\em Discrete Applied Mathematics}, 197:27--41, 2015.
 
-\bibitem{carlile:DMDGP}
-Carlile Lavor, Leo Liberti, Nelson Maculan, and Antonio Mucherino.
-\newblock The discretizable molecular distance geometry problem.
-\newblock {\em Computational Optimization and Applications}, 52(1):115--146,
-  2012.
-
 \bibitem{carlile:BP}
 Leo Liberti, Carlile Lavor, and Nelson Maculan.
 \newblock A branch-and-prune algorithm for the molecular distance geometry
   problem.
 \newblock {\em International Transactions in Operational Research},
   15(1):1--17, 2008.
+
+\bibitem{carlile:instancesMDGP}
+Carlile Lavor.
+\newblock On generating instances for the molecular distance geometry problem.
+\newblock In {\em Global optimization}, pages 405--414. Springer, 2006.
+
+\bibitem{carlile:DMDGP}
+Carlile Lavor, Leo Liberti, Nelson Maculan, and Antonio Mucherino.
+\newblock The discretizable molecular distance geometry problem.
+\newblock {\em Computational Optimization and Applications}, 52(1):115--146,
+  2012.
 
 \bibitem{GASteinbruch}
 Alfredo Steinbruch and Paulo Winterle.

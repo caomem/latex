@@ -19,6 +19,8 @@
 \newcommand\Mark[1]{\textsuperscript#1}
 \usepackage{pgfplots}
 \usepackage{amsfonts}
+\usepackage[english, ruled, linesnumbered]{algorithm2e}
+\usepackage{algorithmic}
 
 \title{DMDGP: Um Problema Real}
 \author{Guilherme Philippi\Mark{*}, orientado por Felipe Delfini Caetano Fidalgo\Mark{\dagger}\\Campus Blumenau\\Universidade Federal de Santa Catarina\\UFSC
@@ -476,10 +478,10 @@
 	O cosseno de um ângulo diedral pode ser dado em função de distâncias euclidianas e ângulos planos \cite{carlileTese}. Sejam $x_i, x_j, x_k, x_l \in \mathbb{R}^3$ quaisquer quatro átomos consecutivos com coordenadas ($x_{i_1}, x_{i_2}, x_{i_3}$), ($x_{j_1}, x_{j_2}, x_{j_3}$), ($x_{k_1}, x_{k_2}, x_{k_3}$) e ($x_{l_1}, x_{l_2}, x_{l_3}$), respectivamente; Também $r_{ab}$, com $a,b \in \{i,j,k,l\}$ as distâncias entre os átomos $x_a$ e $x_b$; e por último $\theta_{ijk}$, o ângulo definido pelos átomos $x_i, x_j, x_k$ e $\theta_{kji}$, o ângulo definido pelos átomos $x_k, x_j, x_i$. Então, o cosseno do ângulo diedral $\omega_{ijkl}$ é dado por:
 	
 	\begin{equation}
-	\cos(\omega_{ijkl}) = \frac{r^2_{ij} + r^2_{jl} - 2r_{ij}r_{jl}\cos(\theta_{ijk})\cos(\theta_{kjl}-r^2_{il})}{2r_{ij}r_{jl}\sin(\theta_{ijk})\sin(\theta_{kjl})}. \label{eq:cosOmega}
+	\cos(\omega_{ijkl}) = \frac{r^2_{ij} + r^2_{jl} - 2r_{ij}r_{jl}\cos(\theta_{ijk})\cos(\theta_{kjl}-r^2_{il})}{2r_{ij}r_{jl}\mbox{sen}(\theta_{ijk})\mbox{sen}(\theta_{kjl})}. \label{eq:cosOmega}
 	\end{equation}    
 	
-	Porém, não temos como definir exatamente o seno desse ângulo. Só podemos fazer $\sin(\omega_{ijkl}) = \pm\sqrt{1 - \cos(\omega_{ijkl})^2} \label{eq:senOmega}$. Mas vamos deixar esse problema do ângulo de torção para outra hora --- por enquanto supomos que temos os valores exatos de $\omega_{ijkl}$.
+	Porém, não temos como definir exatamente o seno desse ângulo. Só podemos fazer $\mbox{sen}(\omega_{ijkl}) = \pm\sqrt{1 - \cos(\omega_{ijkl})^2} \label{eq:senOmega}$. Mas vamos deixar esse problema do ângulo de torção para outra hora --- por enquanto supomos que temos os valores exatos de $\omega_{ijkl}$.
 	
 	Por tanto, conseguimos definir todo o problema a partir das coordenadas internas. Como nosso objetivo é obter as posições tridimensionais de cada átomo, nosso problema se restringiu em transformar as coordenadas internas em cartesianas. Para isso, utiliza-se uma série de operações lineares que estão descritas pelas matrizes abaixo.
 	
@@ -519,8 +521,8 @@
 	$$
 	B_3\:=\:
 	\begin{bmatrix}
-	-\cos\theta_{1,3} & -\sin\theta_{1,3} & 0 & -d_{2,3}\cos\theta_{1,3}\\ 
-	\sin\theta_{1,3} & -\cos\theta_{1,3} & 0 & d_{2,3}\sin\theta_{1,3}\\ 
+	-\cos\theta_{1,3} & -\mbox{sen}\theta_{1,3} & 0 & -d_{2,3}\cos\theta_{1,3}\\ 
+	\mbox{sen}\theta_{1,3} & -\cos\theta_{1,3} & 0 & d_{2,3}\mbox{sen}\theta_{1,3}\\ 
 	0 & 0 & 1 & 0\\ 
 	0 & 0 & 0 & 1
 	\end{bmatrix}
@@ -536,10 +538,10 @@
 	0 & 0 & 0 & 1
 	\end{bmatrix}
 	$$
-	dado $s_{\theta_{i}}=\sin (\theta_{i-2, i}),\: c_{\theta_{i}}=\cos (\theta_{i-2, i}),\: s_{\omega_{i}}=\sin (\omega_{i-3, i}),\: c_{\omega_{i}}=\cos (\omega_{i-3, i})$. Em $B_i$, $i=4, ..., n$.
+	dado $s_{\theta_{i}}=\mbox{sen} (\theta_{i-2, i}),\: c_{\theta_{i}}=\cos (\theta_{i-2, i}),\: s_{\omega_{i}}=\mbox{sen} (\omega_{i-3, i}),\: c_{\omega_{i}}=\cos (\omega_{i-3, i})$. Em $B_i$, $i=4, ..., n$.
 	
 	
-	Perceba que $B_i$ é a matriz que engloba todas as operações necessárias para encontrar a i-ésima realização do i-ésimo átomo da molécula, tendo conhecimento de todas as matrizes $B_j$ $\forall j < i$. Como é de grande importância o entendimento de tais operações que formam a $B_i$, deixa-se o Apêndice B para esta discussão.
+	Perceba que $B_i$ (chamada \textit{Matriz de Torção}) é a matriz que engloba todas as operações necessárias para encontrar a i-ésima realização do i-ésimo átomo da molécula, tendo conhecimento de todas as matrizes $B_j$ $\forall j < i$. Como é de grande importância o entendimento de tais operações que formam a $B_i$, deixa-se o Apêndice B para esta discussão.
 	
 	Note também que fixando os comprimentos das ligações covalentes $d_{1,2},d_{2,3}$ e o valor do ângulo plano $\theta_{1,3}$, os três primeiros átomos terão as coordenadas dadas por
 	$$
@@ -558,7 +560,7 @@
 	x_3\:=\:
 	\begin{bmatrix}
 	-d_{1,2}+d_{2,3}\cos\theta_{1,3}\\ 
-	d_{2,3}\sin\theta_{1,3}\\  
+	d_{2,3}\mbox{sen}\theta_{1,3}\\  
 	0
 	\end{bmatrix}.
 	$$
@@ -787,7 +789,7 @@
 	
 	Para encontramos uma solução, devemos retornar ao sistema quadrático e resolver uma equação do sistema linear acima.
 	
-	Geometricamnete, temos a intersecção de uma reta, dada por
+	Geometricamnete, temos a interseção de uma reta, dada por
 	$$
 	\begin{bmatrix}
 	x_{s1}\\
@@ -859,7 +861,7 @@
 	$$
 	Portanto uma solução do problema pode ser representada, então, como um elemento do $\mathbb{R}^{3\|V\|}$
 	
-	\subsection{Ordenação Conveniente dos Vértices}
+	\subsection{Ordenação Conveniente dos Vértices \label{sec:hc}}
 	Ótimo, estamos progredindo. Caso exista uma ordenação que respeite essas condições, podemos tornar a busca por uma solução para o problema factível. Porém, encontrar tal ordem, no geral, não é trivial e depende muito da natureza do problema. Encontrar essa ordem trata-se do $\emph{Problema da Ordem de Vértices Discretizáveis}$ --- ou simplesmente DVOP (do inglês, \textit{Discretization Vertex Order Problem}). Segue sua definição formal:
 	
 	\begin{center}
@@ -911,11 +913,11 @@
 	
 	Dado nossas hipóteses do problema, fica trivial perceber que essa ordenação respeita as condições (a) e (b), a menos de duas informações que podem não ser tão óbvias. Primeiramente: Toda distância entre hidrogênios relativamente próximos --- inclusive entre $H_\alpha^{i-1}$ e $H^{i}$ --- são dados pela RMN. A segunda informação pertinente é que, para respeitar a condição (a) no átomo $H^i$, precisamos ter conhecimento do plano mostrado na Figura ~\ref{fig:peptidica}, que diz que os átomos em torno da ligação peptídica são coplanares --- e, por tanto, pode-se descobrir a distância entre o $H^i$ e $C_\alpha^{i-1}$ através das leis de senos e cossenos. 
  	
- 	Nesse momento, é importante mencionar que o software PDBReader implementa a ordenação HC (como pode ser visto no componente 6 da Figura ~\ref{fig:pdbreader}), ou seja, este trabalho também tem como resultado final uma automação do processo de criação de instâncias de proteínas ordenadas a partir de dados de moléculas reais vindas do wwPDB. Vale mencionar que essa é uma ferramenta valiosa do ponto de vista acadêmico, uma vez que possibilita a entrada de dados reais para testes --- ainda é comum, na literatura, a utilização de instâncias artificiais muito simplificadas nos testes. 
+ 	Nesse momento, é importante mencionar que o software PDBReader implementa a ordenação HC (como pode ser visto no componente 6 da Figura ~\ref{fig:pdbreader}), ou seja, este trabalho também tem como resultado final uma automação do processo de criação de instâncias de proteínas ordenadas a partir de dados de moléculas reais vindas do wwPDB. Vale mencionar que essa é uma ferramenta valiosa do ponto de vista acadêmico, uma vez que possibilita a entrada de dados reais para testes --- é comum, na literatura, a utilização de instâncias artificiais nos testes \cite{carlile:BP} \cite{carlile:instancesMDGP}.
  	
- 	A ordenação HC gera uma estrutura muitíssimo interessante para se trabalhar. De fato, por garantir que sempre tenhamos pelo menos um 3-click em todo átomo com posto maior que três, podemos tentar encontrar a realização do próximo átomo da sequência $v_i$ com $i \geq 4$, utilizando a intersecção das 3 esferas centradas nos três átomos anteriores $v_{i-3}, v_{i-2}$ e $v_{i-1}$ (já realizados) e com os respectivos raios iguais as distâncias $d_{i,i-3}, d_{i,i-2}$ e $d_{i,i-1}$ para o átomo $i$ que se está tentando localizar. 
+ 	A ordenação HC gera uma estrutura muitíssimo interessante para se trabalhar. De fato, por garantir que sempre tenhamos pelo menos um 3-click em todo átomo com posto maior que três, podemos tentar encontrar a realização do próximo átomo da sequência $v_i$ com $i \geq 4$, utilizando a interseção das 3 esferas centradas nos três átomos anteriores $v_{i-3}, v_{i-2}$ e $v_{i-1}$ (já realizados) e com os respectivos raios iguais as distâncias $d_{i,i-3}, d_{i,i-2}$ e $d_{i,i-1}$ para o átomo $i$ que se está tentando localizar. 
  	
- 	Essas intersecções tem três possibilidades associadas (veja Figura ~\ref{fig:esferas}): Ou não temos nenhum ponto de intersecção entre elas --- e isso não acontece, pois fere as hipóteses do problema, logo, só ocorre se existe alguma informação incorreta; Ou existe um ponto --- donde os átomos são colineares e isso também nunca acontece, devido aos ângulos típicos das ligações; ou existem dois pontos onde as esferas se interceptam --- este é o caso geral.
+ 	Essas intersecções tem três possibilidades associadas (veja Figura ~\ref{fig:esferas}): Ou não temos nenhum ponto de interseção entre elas --- e isso não acontece, pois fere as hipóteses do problema, logo, só ocorre se existe alguma informação incorreta; Ou existe um ponto --- donde os átomos são colineares e isso também nunca acontece, devido aos ângulos típicos das ligações; ou existem dois pontos onde as esferas se interceptam --- este é o caso geral.
  	
  	\begin{figure}[H]
  		\begin{center}
@@ -925,7 +927,7 @@
  		\label{fig:esferas}
  	\end{figure}
  	
- 	Perceba, então, que além da ordenação dos vértices garantir a finitude do conjunto solução do problema, ela também organizar o espaço onde devemos fazer a busca por uma solução. Na verdade, a ordem induz uma estrutura de \textit{árvore binária} no espaço de busca \cite{fidalgotese}. De fato, conforme discussão anterior entorno da Equação ~\ref{eq:cosOmega}, sempre temos duas possibilidades para posicionar o próximo átomo da molécula \cite{carlileGDandAplications} --- pois, como já dito, possuímos dois $\sin(\omega_{ijkl})$ associados, um positivo e outro negativo. Com isso, ganhamos uma discretização do problema (pois saímos espaço contínuo de soluções), nos permitindo definir uma nova variante para ele.
+ 	Perceba, então, que além da ordenação dos vértices garantir a finitude do conjunto solução do problema, ela também organizar o espaço onde devemos fazer a busca por uma solução. Na verdade, a ordem induz uma estrutura de \textit{árvore binária} no espaço de busca \cite{fidalgotese}. De fato, conforme discussão anterior entorno da Equação ~\ref{eq:cosOmega}, sempre temos duas possibilidades para posicionar o próximo átomo da molécula \cite{carlileGDandAplications} --- pois, como já dito, possuímos dois $\mbox{sen}(\omega_{ijkl})$ associados, um positivo e outro negativo. Com isso, ganhamos uma discretização do problema (pois saímos espaço contínuo de soluções), nos permitindo definir uma nova variante para ele.
  	
  	\subsection{\textit{Discretizable Molecular Distance Geometry Problem}}
  	Esse é o problema central desse texto. Trata-se do MDGP monido de uma ordenação conveniente que permite sua discretização, como segue formalmente definido.
@@ -971,15 +973,22 @@
 	As vezes parece que o universo conspira a favor da beleza de uma solução matemática. A ordenação nos átomos da molécula, além de reduzir infinitamente o conjunto solução do problema \cite{carlileBook31Coloquio}, ainda induziu uma estrutura de \textbf{árvore binária} para os pontos que sobraram \cite{fidalgotese}, que logo deu origem a um algorítimo que se aproveita dessa estrutura para reduzir ainda mais o conjunto solução do problema --- o algorítimo Branch-and-Prune, tema desse capítulo. E mais: por conta dessa estrutura, ficou fácil perceber --- visualmente mesmo --- que existe uma simetria intrínseca nas diferentes soluções do DMDGP (que normalmente não tem solução única, devido as várias conformações moleculares). De fato, parece que o universo conspirou a favor desta solução. É belíssima.
 	
 	\subsection{O Algorítimo}
-	Apresentado em 2007, no artigo \cite{carlile:BP}, por Leo Liberti, Carlile Lavor e Nelson Maculan, este algorítimo consiste em uma estratégia numérica recursiva, que resolve o DMDGP eficientemente utilizando uma busca combinatória no espaço de busca de soluções, onde realiza-se vértice por vértice do sistema, seguindo a ordem dada, ``podando'' --- descartando mesmo --- todo sub-conjunto solução do sistema que não esteja de acordo com as informações pré-estabelecidas. Desde que ele foi publicado, tem se verificado tanto sua beleza matemática, quanto a sua eficiência numérica-computacional para resolver problemas em Geometria de Distâncias.
+	Apresentado em 2007 \cite{carlile:BP}, por Leo Liberti, Carlile Lavor e Nelson Maculan, este algorítimo (também chamado BP, com grande similaridade ao Branch-and-Bound) consiste em uma estratégia numérica recursiva, que resolve o DMDGP eficientemente utilizando uma busca combinatória no espaço de busca de soluções, onde realiza-se vértice por vértice do sistema, seguindo a ordem dada, ``podando'' --- isto é, descartando --- todo sub-conjunto solução do sistema que não esteja de acordo com as informações pré-estabelecidas. Desde que ele foi publicado, tem se verificado tanto sua beleza matemática, quanto a sua eficiência numérica-computacional para resolver problemas em Geometria de Distâncias.
 	
 	Como todo algorítimo, esse possui um conjunto de entradas e saídas.
 	\begin{description}
-		\item[Entradas:] O grafo $G(V, E, d)$ (sendo $V$ uma n-úpla ordenada) que define o DMDGP, e mais um $\epsilon$ para definir qual o erro tolerado no algoritmo.
-		\item[Saídas:] Uma árvore binária $T$ onde cada vértice é uma localização possível do átomo de mesmo índice que o seu nível na árvore, de tal forma que o caminho da raiz até uma folha da árvore seja uma solução para o problema.
+		\item[Entradas:] O grafo $G(V, E, d)$ que define o DMDGP --- onde possuímos uma ordenação para $V$ --- e mais um escalar $\varepsilon \in \mathbb{R}$ que da a tolerância aceita no algoritmo (pois o BP não é um método exato, encontrando apenas soluções distantes a menos de $\varepsilon$ das reais).
+		
+		Para facilitar a utilização do algorítimo, também faremos uma distinção dos vértices que compõem o conjunto $E$: Sejam os subconjuntos $E_{d}, E_p \subset E$, tal que $E = E_{d} \cup E_{p}$ --- denominados como, respectivamente, \textit{arestas de discretização} e \textit{arestas de poda} ---, onde
+		
+		\begin{center}
+			$E_{d} = \{\{v_i,v_j\} \in E : |i-j|\leq 3\}$ e $E_{p} = E - E_d$.
+		\end{center}
+		
+		\item[Saídas:] Uma árvore binária $T$, onde cada nó de nível $i$ da árvore é uma realização possível do vértice $v_i \in V$, de tal forma que o caminho $C \subset T$ partindo da raiz (primeiro nó) até uma folha de nível $n = |V|$ da árvore seja uma solução para o problema, isto é, um conjunto de realizações de todos os átomos da molécula.
 	\end{description}
 
-	São três etapas que definem o algoritmo: Inicialização, Branching e Pruning \cite{fidalgotese}.
+	São três fases que definem o algoritmo: Inicialização, \textit{Branching} e \textit{Pruning} \cite{fidalgotese}.
 		
 	\subsubsection*{Inicialização}
 	Esta etapa se preocupa com a inicialização da estrutura. Ela define a realização dos três primeiros átomos $v_1, v_2$ e $v_3 \in V$ da sequência, que são posicionados nas respectivas posições $x_1, x_2$ e $x_3 \in \mathbb{R}^3$, utilizando as operações contidas nas matrizes $B_1, B_2$ e $B_3$ (ver Capitulo ~\ref{sec:bi}). Obtendo os pontos 	
@@ -999,12 +1008,12 @@
 	x_3\:=\:
 	\begin{bmatrix}
 	-d_{1,2}+d_{2,3}\cos\theta_{1,3}\\ 
-	d_{2,3}\sin\theta_{1,3}\\  
+	d_{2,3}\mbox{sen}\theta_{1,3}\\  
 	0
 	\end{bmatrix}.
 	$$
 	
-	Essas três primeiras posições estão associados biunivocamente com os três primeiros nós da arvore T, que também é iniciada, conforme Figura ~\ref{fig:bp1}
+	Essas três primeiras posições estão associados biunivocamente com os três primeiros nós da arvore de busca $T$ (representada por um grafo), que também é iniciada, conforme Figura ~\ref{fig:bp1}
 	
 	\begin{figure}[H]
 		\begin{center}
@@ -1014,8 +1023,133 @@
 		\label{fig:bp1}
 	\end{figure}
 		
-	\subsubsection*{Branching}
-	Essa etapa está associada com o processo de ``ramificação'' da arvore binária de soluções possíveis \cite{fidalgotese}. Suponha que já foram realizados os vértices $v_1, \dots, v_{i-1}$, logo, nosso objetivo é posicionar o vértice $v_i$ no espaço (onde $i\geq4$). Para fazer isso, teremos necessariamente que abrir uma nova bifurcação na árvore, devido as duas possibilidades de ângulos de torção.
+	\subsubsection*{\textit{Branching}}
+	Essa etapa está associada com o processo de ``ramificação'' de $T$ \cite{fidalgotese}. Ou seja, supondo que já foram realizados os vértices $v_1, \dots, v_{i-1}$ (onde $3 < i< |V|$), repeitando a ordenação em $V$, nosso objetivo é obter a realização $x_i = (x_{i1}, x_{i2}, x_{i3}) \in \mathbb{R}^3$ do vértice $v_i \in V$.
+	
+	Para isso, basta calcularmos o produto matricial mostrado no Capitulo ~\ref{sec:bi}:
+	
+	$$
+	\begin{bmatrix}
+	x_{i1}\\ 
+	x_{i2}\\ 
+	x_{i3}\\ 
+	1
+	\end{bmatrix}
+	= C_{i}\begin{bmatrix}
+	0\\ 
+	0\\ 
+	0\\ 
+	1
+	\end{bmatrix},
+	$$
+	onde $C_i = C_{i-1}B_i = \prod_{j=1}^{i}B_j$ é dita o \textit{produto acumulado} das matrizes de torção $B_j$, que, para $j>3$, são dadas por
+	
+	$$\hspace{-1.1cm}
+	B_{j}=\begin{bmatrix}
+	-\cos(\theta_{j-2,j}) & -\mbox{sen}(\theta_{j-2,j}) & 0 & -d_{j-1,j}\cos(\theta_{j-2,j}) \\
+	\mbox{sen}(\theta_{j-2,j})\cos(\omega_{j-3,j}) & -\cos(\theta_{j-2,j})\cos(\omega_{j-3,j}) & -\mbox{sen}(\omega_{j-3,j}) & d_{j-1,j}\hspace{0.1cm}\mbox{sen}(\theta_{j-2,j})\cos(\omega_{j-3,j}) \\
+	\mbox{sen}(\theta_{j-2,j})\hspace{0.1cm}\mbox{sen}(\omega_{j-3,j}) & -\cos(\theta_{j-2,j})\hspace{0.1cm}\mbox{sen}(\omega_{j-3,j}) & \cos(\omega_{j-3,j}) & d_{j-1,j}\hspace{0.1cm}\mbox{sen}(\theta_{j-2,j})\hspace{0.1cm}\mbox{sen}(\omega_{j-3,j}) \\
+	0 & 0 & 0 & 1
+	\end{bmatrix}.
+	$$
+	
+	Porém, como $\mbox{sen}(\omega_{j-3,j}) = \pm\sqrt{1 - \cos(\omega_{j-3,j})^2}$, sempre temos duas matrizes de torção $B_j^1$ e $B_j^2$ associadas a cada vértice $v_j$. É a este fato que está associado o conceito de ramificação, pois, a cada matriz de torção temos como resultado um novo conjunto de realizações, que se visualiza como um novo ramo de $T$. 
+	
+	Ilustramos esse processo na Figura ~\ref{fig:ramificacoes}, que presume um DMDGP com $|V| = 6$. Ou seja, obtemos $2^{6-3} = 2^3 = 8$ possíveis soluções, dadas pelas suas três ramificações.
+	
+	\begin{figure}[H]
+		\begin{center}
+			\includegraphics[width=0.45\linewidth]{ramificacoes.png}
+		\end{center}
+		\caption{Árvore $T$ completa de uma instância DMDGP com 6 vértices \cite{fidalgotese}.}
+		\label{fig:ramificacoes}
+	\end{figure}
+	
+	Fica claro aqui que o processo de ramificação garante que, no máximo, existem $2^{n-3}$ soluções possíveis para o problema. Isso colabora com a enumerabilidade e finitude do conjunto solução do problema, porém, também mostra que o número de soluções cresce de uma forma exponencial com o crescimento da molécula.
+	
+	\subsubsection*{\textit{Pruning}}
+	Essa etapa tem como função diminuir drasticamente o conjunto solução do problema. Conseguimos isso ao classificar os diferentes ramos de $T$ (gerados pelos diferentes ângulos de torção $\omega_{i-3,i}^1$ e $\omega_{i-3,i}^2$) como factíveis ou não e, então, ``podando'' os infactíveis.  
+	
+	Como já discutimos antes, para calcular as matrizes de torção da etapa anterior só precisamos dos dados do 3-clique garantido pelas hipóteses do DMDGP, ou seja, das distâncias $d_{i,i-3}, d_{i,i-2}$ e $d_{i,i-1}$ associadas aos elementos de $E_d$. Com isso, todas as distâncias associados aos elementos de $E_p$ podem ser consideradas como dados adicionais para o problema. 
+	
+	Perceba que, para todo $v_j$ tal que $\{v_i,v_j\} \in E_p$, se conhecemos a realização de $v_j$, a distância extra $d_{i,j}$ pode ser enxergada, do ponto de vista geométrico, como uma esfera extra àquelas outras três dadas pelo 3-clique. Isso gera a interseção de quatro esferas no $\mathbb{R}^3$, donde podemos ter apenas uma das duas possibilidades: Ou elas se interceptam em um único ponto (veja Figura ~\ref{fig:quatroesferas}) ou em nenhum. 
+
+	\begin{figure}[H]
+		\begin{center}
+			\includegraphics[width=0.35\linewidth]{quatroesferas.png}
+		\end{center}
+		\caption{Interseção de quatro esferas no $\mathbb{R}^3$ \cite{carlileBook31Coloquio}.}
+		\label{fig:quatroesferas}
+	\end{figure}
+	
+	E é este o princípio da factibilidade de um ramo: Sempre que estamos na etapa de \textit{Branching} --- ou seja, calculando uma realização $x_i$ de $v_i$ a partir de uma matriz de torção ---, podemos verificar se existe uma distância extra, associada a algum elemento $\{v_i,v_j\} \in E_p$ tal que $j < i$ e, caso exista, podemos verificar se $|x_i - x_j| < \varepsilon$. Caso for, significa que o ramo é factível e, caso não for, podemos descartar (``podar'') todas as soluções associadas a sub-árvore definida por aquele ramo.
+	
+	A etapa de \textit{pruning} é ilustrada na Figura ~\ref{fig:poda} (adaptada de \cite{fidalgotese}). Dando continuidade ao exemplo da Figura ~\ref{fig:ramificacoes}, agora temos $E_p = \{\{v_1,v_5\},\{v_2,v_6\}\}$, o que nos permitiu testar a factibilidade dos ramos associados ao $v_5$ e ao $v_6$ e podar os infactíveis, diminuindo consideravelmente o conjunto solução.
+	
+	\begin{figure}[H]
+		\begin{center}
+			\includegraphics[width=0.45\linewidth]{prune.png}
+		\end{center}
+		\caption{Árvore $T$ de um DMDGP de 6 vértices com a poda evidenciada.}
+		\label{fig:poda}
+	\end{figure}
+
+	Perceba que o crescimento exponencial de soluções ($2^{n-3}$) da etapa de \textit{branching} está associado com o DMDGP ser um problema NP-Difícil. Por conta disso é que esse algorítimo tem tanta beleza associada, isto é, apesar da grande complexidade de se resolver o problema original, o BP pode encontrar rapidamente essas soluções.
+
+	Mas uma dúvida ainda é importante: O conjunto $E_p = \emptyset$? Neste caso, $E = E_d$ e, portanto, todas as posições finais são factíveis trivialmente. Dessa forma, todas as $2^{n-3}$ realizações encontradas durante a etapa de \textit{branching} representam soluções possíveis para o DMDGP, o que, é claro, é o nosso pior caso, pois o BP precisa continuar a exploração de todos os $2^{n-3}$ nós de $T$. 
+	
+	Por outro lado, se utilizarmos a ordenação hc apresentada no Capitulo ~\ref{sec:hc} como ordem que define o DMDGP, nós garantimos que $E_p \neq \emptyset$. Essa é uma das vantagens dessa ordenação. Na verdade, muito mais do que não vazio, graças as propriedades geométricas das proteínas estudadas em \cite{carlile:MinimalOrder} nós podemos enunciar o seguinte resultado (extraído de \cite{carlile:MinimalOrder}): 
+
+	\textbf{Teorema:} Usando a ordenação hc, considerando que todos os ângulos e distâncias das ligações atômica estão fixadas nos seus valores de equilíbrio energético (essa é conhecida como \textit{hipótese de geometria rígida}), que os átomos ao redor das ligações peptídicas formam um plano, que as posições possíveis para $C_\alpha^1$ e $C^j$ (com $j = 1, \dots,p$) são únicas --- devido a propriedade quiral do tetraedro formado por $\{N^1, H^1, H^{1\prime}, C_\alpha^1\}$ e $\{C_\alpha^j, N^j, H^j_\alpha,C^j\}$ --- e, dado o conjunto de distâncias entre os pares de átomos de hidrogênio
+	
+	$$\{H^{1\prime}, H^1_\alpha\}, \dots, \{H_\alpha^{i-1}, H^i\}, \{H^i, H^i_\alpha\}, \{H^i_\alpha, H^{i+1}\}, \dots, \{H^p, H^p_\alpha\}$$
+	(onde $i = 2, \dots, p-1$ e $p$ é o número de aminoácidos que compõem a proteína), as ramificações na árvore de busca só ocorrem em átomos de hidrogênio dados por
+	$$\{H_\alpha^1, \dots, H^i, H_\alpha^i, \dots, H^p, H_\alpha^p\}.$$	
+	
+	\subsection{Estrutura Algorítmica}
+	Agora que a ideia por trás do BP está desenvolvida nos três passos anteriores (inicialização, \textit{branching} e \textit{pruning}) podemos apresenta-lo formalmente como um algorítimo de uma função recursiva, como segue.
+	\\
+	
+	\begin{algorithm}[H]
+		BranchAndPrune($T,v,i$)\\
+		\uIf{$i\leq n-1$}{
+			Calcule as matrizes de torção $B_i^1$ e $B_i^2$;\\
+			Recupere a matriz de torção acumulada $C_{i-1}$ referente ao nó-pai $P(v)$;\\
+			Calcule as próximas matrizes de torção acumuladas $C_i = C_{i-1}B_i^1$ e $C_i^\prime=C_{i-1}B_i^2$;\\
+			Utilize-as para calcular as posições $x_i = C_iy$ e $x_i^\prime = C_i^\prime y$;\\
+			Seja $\lambda = 1, \rho = 1$;\\
+			\ForEach{$\{v_j,v_i\} \in E_p$ com $j<i$}{
+				\If{$(||x_j - x_i||^2 - d_{ij}^2)^2 > \varepsilon$}{
+					$\lambda = 0$;	
+				}	
+				\If{$(||x_j - x_i^\prime||^2 - d_{ij}^2)^2 > \varepsilon$}{
+					$\rho = 0$;	
+				}	
+			}
+			
+			\uIf{$\lambda = 1$}{
+				Crie um nó $z$, armazenando $C_i$ e $x_i$ e fazendo $P(z) = v$ e $L(v) = z$;\\
+				Faça $T \leftarrow T \cup \{z\}$;\\
+				BranchAndPrune($T,z,i+1$);
+			}\Else{
+				Faça $L(v) =$ PRUNED;
+			}
+			\uIf{$\rho = 1$}{
+				Crie um nó $z^\prime$, armazenando $C_i^\prime$ e $x_i^\prime$ e fazendo $P(z^\prime) = v$ e $R(v) = z^\prime$;\\
+				Faça $T \leftarrow T \cup \{z^\prime\}$;\\
+				BranchAndPrune($T,z^\prime,i+1$);
+			}\Else{
+				Faça $R(v) =$ PRUNED;			
+			}	
+		}
+		\Else{
+			Solução está armazenada nos nós-pais de $n$ a $1$, em busca retrocedida.
+		}
+		\caption{Algoritmo BP \cite{fidalgotese} \cite{carlile:BP}}
+	\end{algorithm}
+	
+	\subsection{Simulações Computacionais}
+	Lorem ipsum es bons para fodis a tchuca cakopsa apsokdpaksdpak apskdam gn an foamcorhba asidj dpao kafhrauh a jdoaiho ao naob eubf aohua asd.
 	
 	
 	\newpage
@@ -1505,10 +1639,10 @@
  	$$
  	B_i\:=\:{
  		\begin{bmatrix}
- 		-\cos(\theta_{i-2,i}) & -\sin(\theta_{i-2,i}) & 0 & -d_{i-1,i}\cos(\theta_{i-2,i})\\ 
- 		\sin(\theta_{i-2,i})\cos(\omega_{i-3,i}) & -\cos(\theta_{i-2,i})\cos(\omega_{i-3,i})
- 		& -\sin(\omega_{i-3,i}) & d_{i-1,i}\sin(\theta_{i-2,i})\cos(\omega_{i-3,i})\\ 
- 		\sin(\theta_{i-2,i})\sin(\omega_{i-3,i}) & -\cos(\theta_{i-2,i})\sin(\omega_{i-3,i}) & \cos(\omega_{i-3,i}) & d_{i-1,i}\sin(\theta_{i-2,i})\sin(\omega_{i-3,i})\\ 
+ 		-\cos(\theta_{i-2,i}) & -\mbox{sen}(\theta_{i-2,i}) & 0 & -d_{i-1,i}\cos(\theta_{i-2,i})\\ 
+ 		\mbox{sen}(\theta_{i-2,i})\cos(\omega_{i-3,i}) & -\cos(\theta_{i-2,i})\cos(\omega_{i-3,i})
+ 		& -\mbox{sen}(\omega_{i-3,i}) & d_{i-1,i}\mbox{sen}(\theta_{i-2,i})\cos(\omega_{i-3,i})\\ 
+ 		\mbox{sen}(\theta_{i-2,i})\mbox{sen}(\omega_{i-3,i}) & -\cos(\theta_{i-2,i})\mbox{sen}(\omega_{i-3,i}) & \cos(\omega_{i-3,i}) & d_{i-1,i}\mbox{sen}(\theta_{i-2,i})\mbox{sen}(\omega_{i-3,i})\\ 
  		0 & 0 & 0 & 1
  		\end{bmatrix},}
  	$$
