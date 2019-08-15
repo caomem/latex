@@ -21,6 +21,8 @@
 \usepackage{amsfonts}
 \usepackage[english, ruled, linesnumbered]{algorithm2e}
 \usepackage{algorithmic}
+\newtheorem{definicao}{Definição}[section]
+\newtheorem{teorema}{Teorema}[section]
 
 \title{DMDGP: Um Problema Real}
 \author{Guilherme Philippi\Mark{*}, orientado por Felipe Delfini Caetano Fidalgo\Mark{\dagger}\\Campus Blumenau\\Universidade Federal de Santa Catarina\\UFSC
@@ -119,6 +121,85 @@
 	\newpage
 	
 	\section{Grafos: Aspectos Gerais}
+	Esta seção tem como objetivo apresentar a \textit{teoria de grafos}, um tema muito estudado por diversos matemáticos, o que dá uma certa sensação de importância histórica na matéria.
+	
+	 Pode-se dizer que em 1736 é que a teoria teve início, com base no artigo publicado por Leonhard Euler, sobre as 7 pontes de Königsberg \cite{euler:KOENIGSBERG} \cite{grafos1}. Esse é o problema que normalmente introduz quem está começando a trabalhar com grafos --- se trata do desafio de ligar todos os pontos de um desenho sem tirar o lápis do papel e sem passar duas vezes no mesmo ponto. Diz a lenda que esta era uma dúvida rotineira dos moradores de Koenigsberg, que tentavam constantemente fazer o trecho a pé motivados a resolverem o desafio --- algo que, tanto pelo tamanho demasiadamente grande do percurso quanto pela falta de fé de que esse problema realmente motivaria alguém não ligado a matemática, pessoalmente, acho que alguém inventou essa última parte. 
+	
+	\begin{figure}[H]
+		\begin{center}
+			\includegraphics[width=0.85\linewidth]{koenigsbern.png}
+		\end{center}
+		\caption{Ilustração original do problema \cite{euler:KOENIGSBERG} e sua representação em Grafos.}
+		\label{fig:koni}
+	\end{figure}
+	
+	Muitas situações reais podem ser convenientemente representadas por diagramas contendo um conjunto de pontos e linhas ligando pares desses pontos --- que é a definição empírica de um grafo. Por exemplo, esses pontos podem ser pessoas, onde as linhas representam pares de amigos. 
+	
+	Existe uma íntima relação entre Grafos e algoritmos. De fato, podemos inclusive representar um algoritmo por um grafo \cite{grafos0}. Na verdade, a definição de grafos é tão abrangente que podemos ver suas ligações com diversas áreas do conhecimento.
+		
+	\begin{center}
+		\begin{minipage}{0.9 \linewidth}
+			\textbf{Grafo:} Um grafo $G$ é uma tripla ordenada da forma $(V(G),E(G), \psi_{G})$, composto por um conjunto de \textit{vértices} $V(G)$, de arestas $E(G)$ e uma \textit{função de incidência} $\psi_{G}$ que, por sua vez, associa a cada aresta de $V(G)$ um par não ordenado de vértices (nem sempre distintos) de $E(G)$. Costumamos dizer que as arestas ligam os vértices.
+			
+		\end{minipage}
+	\end{center}
+	
+	Pede-se uma pequena pausa para a licença poética: Acreditamos que uma das mais belas características da representação dos grafos é que o conjunto de vértices $V$ aceita qualquer elemento, ou seja, pode ser tanto um prédio, quanto um átomo. Daí vem o grande poder de abstração da representação de grafos. 
+	
+	Essa abstração na representação de grafos é tamanha que nos motiva a usar um paradigma diferente para apresenta-los. Na literatura, grafos sempre são usados em paralelo com desenhos de diagramas que tentam demonstrar, geometricamente, a que está associado os conjuntos que os definem. Porém, essa representação é enganosa: Os vértices simplesmente não tem uma posição bem definida no espaço.
+	
+	No que se segue, definiremos algumas características elementares que serão utilizadas durante esse texto. Para um estudo mais completo obre essa teoria (a qual recomendamos profundamente), favor considerar \cite{grafos1} e \cite{grafosPremioElon}.
+	
+	\subsection{Classificações}
+	
+	Existem duas definições de extrema importância para o nosso problema molecular (tema central desse texto): o conceito de grafo completo e o de estruturas $k$-cliques. Porém, seremos obrigado a definir alguns outros conceitos prévios, como segue. 
+	
+	
+	\begin{center}
+		\begin{minipage}{0.9 \linewidth}
+			\textbf{Laço:} Uma aresta $\{e_i, e_j\} \in E$ tal que $i = j$.
+		\end{minipage}
+	\end{center}
+
+	Também, caso existam duas arestas iguais (\{$e_i, e_j\}$ e 
+	$\{e_j, e_i\}$, por exemplo), com as mesmas extremidades são ditos \textit{paralelos}.
+
+	\begin{center}
+		\begin{minipage}{0.9 \linewidth}
+			\textbf{Grafo simples}: Um grafo que não possui laços ou arestas paralelas.
+		\end{minipage}
+	\end{center}
+	
+	\begin{center}
+		\begin{minipage}{0.9 \linewidth}
+			\textbf{Grafo Completo:} Um grafo simples onde quaisquer dois vértices são adjacentes é denominado \textit{grafo completo}.
+		\end{minipage}
+	\end{center}
+	
+	Outro conceito que nos será de grande utilidade é o de subgrafo.
+	\begin{center}
+		\begin{minipage}{0.9 \linewidth}
+			\textbf{Subgrafo:} É um grafo resultante de um subconjunto de vértices e outro subconjunto de arestas de outro grafo. Isto é, seja $G = (V, E), G^\prime = (V^\prime, E^\prime)$ é dito um subgrafo de $G$ se $(V^\prime, E^\prime)$ é um grafo, $V^\prime \subseteq V$ e $E^\prime \subseteq E$.
+		\end{minipage}
+	\end{center}
+	
+	E, finalmente
+	\begin{center}
+		\begin{minipage}{0.9 \linewidth}
+			\textbf{$k$-Clique}: é um subgrafo $G^\prime$ com $k$ vértices tal que $G^\prime$ é completo.
+		\end{minipage}
+	\end{center}
+	
+	Em especial, também podemos interpretar as arestas como \textit{caminhos} e, se o fizermos, podemos pensar em alguma forma de métrica para esses caminhos. Esse pensamento da origem aos grafos ditos \textit{ponderados}.
+	
+	
+	\begin{center}
+		\begin{minipage}{0.9 \linewidth}
+			\textbf{Grafo Ponderado:} É um grafo que possui uma função $d(E) \rightarrow \mathbb{R}$ associada, isto é, o grafo que possui valores numéricos atribuídos as suas arestas.
+		\end{minipage}
+	\end{center}
+
+	Para nós essa última definição terá uma maior importância, visto que nosso problema é localizar um conjunto de pontos dado um conjunto de distâncias entre eles \cite{fidalgotese}. Perceba que se trata do problema de desenhar o diagrama que representa esse grafo ponderado, completo \cite{carlileBook31Coloquio}, respeitando as suas distâncias no papel.
 	
 	\newpage
 	
@@ -1100,12 +1181,13 @@
 	
 	Por outro lado, se utilizarmos a ordenação hc apresentada no Capitulo ~\ref{sec:hc} como ordem que define o DMDGP, nós garantimos que $E_p \neq \emptyset$. Essa é uma das vantagens dessa ordenação. Na verdade, muito mais do que não vazio, graças as propriedades geométricas das proteínas estudadas em \cite{carlile:MinimalOrder} nós podemos enunciar o seguinte resultado (extraído de \cite{carlile:MinimalOrder}): 
 
-	\textbf{Teorema:} Usando a ordenação hc, considerando que todos os ângulos e distâncias das ligações atômica estão fixadas nos seus valores de equilíbrio energético (essa é conhecida como \textit{hipótese de geometria rígida}), que os átomos ao redor das ligações peptídicas formam um plano, que as posições possíveis para $C_\alpha^1$ e $C^j$ (com $j = 1, \dots,p$) são únicas --- devido a propriedade quiral do tetraedro formado por $\{N^1, H^1, H^{1\prime}, C_\alpha^1\}$ e $\{C_\alpha^j, N^j, H^j_\alpha,C^j\}$ --- e, dado o conjunto de distâncias entre os pares de átomos de hidrogênio
-	
-	$$\{H^{1\prime}, H^1_\alpha\}, \dots, \{H_\alpha^{i-1}, H^i\}, \{H^i, H^i_\alpha\}, \{H^i_\alpha, H^{i+1}\}, \dots, \{H^p, H^p_\alpha\}$$
-	(onde $i = 2, \dots, p-1$ e $p$ é o número de aminoácidos que compõem a proteína), as ramificações na árvore de busca só ocorrem em átomos de hidrogênio dados por
-	$$\{H_\alpha^1, \dots, H^i, H_\alpha^i, \dots, H^p, H_\alpha^p\}.$$	
-	
+	\begin{teorema}
+		Usando a ordenação hc, considerando que todos os ângulos e distâncias das ligações atômica estão fixadas nos seus valores de equilíbrio energético (essa é conhecida como \textit{hipótese de geometria rígida}), que os átomos ao redor das ligações peptídicas formam um plano, que as posições possíveis para $C_\alpha^1$ e $C^j$ (com $j = 1, \dots,p$) são únicas --- devido a propriedade quiral do tetraedro formado por $\{N^1, H^1, H^{1\prime}, C_\alpha^1\}$ e $\{C_\alpha^j, N^j, H^j_\alpha,C^j\}$ --- e, dado o conjunto de distâncias entre os pares de átomos de hidrogênio
+		$$\{H^{1\prime}, H^1_\alpha\}, \dots, \{H_\alpha^{i-1}, H^i\}, \{H^i, H^i_\alpha\}, \{H^i_\alpha, H^{i+1}\}, \dots, \{H^p, H^p_\alpha\}$$
+		(onde $i = 2, \dots, p-1$ e $p$ é o número de aminoácidos que compõem a proteína), as ramificações na árvore de busca só ocorrem em átomos de hidrogênio dados por
+		$$\{H_\alpha^1, \dots, H^i, H_\alpha^i, \dots, H^p, H_\alpha^p\}.$$	
+	\end{teorema}
+
 	\subsection{Estrutura Algorítmica}
 	Agora que a ideia por trás do BP está desenvolvida nos três passos anteriores (inicialização, \textit{branching} e \textit{pruning}) podemos apresenta-lo formalmente como um algorítimo de uma função recursiva, como segue.
 	\\

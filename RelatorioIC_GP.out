@@ -1,30 +1,31 @@
 \BOOKMARK [1][-]{section.1}{Introdu\347\343o}{}% 1
 \BOOKMARK [1][-]{section.2}{Materiais e M\351todos}{}% 2
 \BOOKMARK [1][-]{section.3}{Grafos: Aspectos Gerais}{}% 3
-\BOOKMARK [1][-]{section.4}{Um Passeio pela Bioqu\355mica}{}% 4
-\BOOKMARK [2][-]{subsection.4.1}{Carbono}{section.4}% 5
-\BOOKMARK [2][-]{subsection.4.2}{Classifica\347\343o Macromolecular}{section.4}% 6
-\BOOKMARK [2][-]{subsection.4.3}{Configura\347\343o Molecular}{section.4}% 7
-\BOOKMARK [2][-]{subsection.4.4}{Amino\341cidos}{section.4}% 8
-\BOOKMARK [2][-]{subsection.4.5}{Estrutura das Prote\355nas}{section.4}% 9
-\BOOKMARK [2][-]{subsection.4.6}{Worldwide Protein Data Bank}{section.4}% 10
-\BOOKMARK [3][-]{subsubsection.4.6.1}{Sotware PDBReader}{subsection.4.6}% 11
-\BOOKMARK [1][-]{section.5}{Molecular Distance Geometry Problem}{}% 12
-\BOOKMARK [2][-]{subsection.5.1}{Geometria de Dist\342ncias}{section.5}% 13
-\BOOKMARK [2][-]{subsection.5.2}{Representa\347\365es de \301tomos em Coordenadas}{section.5}% 14
-\BOOKMARK [2][-]{subsection.5.3}{Resson\342ncia Magn\351tica Nuclear}{section.5}% 15
-\BOOKMARK [2][-]{subsection.5.4}{Modelagem Matem\341tica}{section.5}% 16
-\BOOKMARK [3][-]{subsubsection.5.4.1}{MDGP: Uma defini\347\343o formal}{subsection.5.4}% 17
-\BOOKMARK [2][-]{subsection.5.5}{Modelagem Computacional}{section.5}% 18
-\BOOKMARK [2][-]{subsection.5.6}{Estudando o Conjunto Solu\347\343o de um MDGP}{section.5}% 19
-\BOOKMARK [2][-]{subsection.5.7}{Ordena\347\343o Conveniente dos V\351rtices }{section.5}% 20
-\BOOKMARK [2][-]{subsection.5.8}{Discretizable Molecular Distance Geometry Problem}{section.5}% 21
-\BOOKMARK [1][-]{section.6}{Branch-and-Prune}{}% 22
-\BOOKMARK [2][-]{subsection.6.1}{O Algor\355timo}{section.6}% 23
-\BOOKMARK [2][-]{subsection.6.2}{Estrutura Algor\355tmica}{section.6}% 24
-\BOOKMARK [2][-]{subsection.6.3}{Simula\347\365es Computacionais}{section.6}% 25
-\BOOKMARK [1][-]{section.7}{Considera\347\365es Finais}{}% 26
-\BOOKMARK [1][-]{section*.37}{Refer\352ncias}{}% 27
-\BOOKMARK [1][-]{section*.39}{Ap\352ndice A - Lei dos Cossenos e \302ngulos Entre dois Vetores no R3}{}% 28
-\BOOKMARK [1][-]{section*.45}{Ap\352ndice B - Matrizes como Transforma\347\365es Lineares e Sobre Bi}{}% 29
-\BOOKMARK [1][-]{section*.54}{Ap\352ndice C - Vinte Amino\341cidos Naturais}{}% 30
+\BOOKMARK [2][-]{subsection.3.1}{Classifica\347\365es}{section.3}% 4
+\BOOKMARK [1][-]{section.4}{Um Passeio pela Bioqu\355mica}{}% 5
+\BOOKMARK [2][-]{subsection.4.1}{Carbono}{section.4}% 6
+\BOOKMARK [2][-]{subsection.4.2}{Classifica\347\343o Macromolecular}{section.4}% 7
+\BOOKMARK [2][-]{subsection.4.3}{Configura\347\343o Molecular}{section.4}% 8
+\BOOKMARK [2][-]{subsection.4.4}{Amino\341cidos}{section.4}% 9
+\BOOKMARK [2][-]{subsection.4.5}{Estrutura das Prote\355nas}{section.4}% 10
+\BOOKMARK [2][-]{subsection.4.6}{Worldwide Protein Data Bank}{section.4}% 11
+\BOOKMARK [3][-]{subsubsection.4.6.1}{Sotware PDBReader}{subsection.4.6}% 12
+\BOOKMARK [1][-]{section.5}{Molecular Distance Geometry Problem}{}% 13
+\BOOKMARK [2][-]{subsection.5.1}{Geometria de Dist\342ncias}{section.5}% 14
+\BOOKMARK [2][-]{subsection.5.2}{Representa\347\365es de \301tomos em Coordenadas}{section.5}% 15
+\BOOKMARK [2][-]{subsection.5.3}{Resson\342ncia Magn\351tica Nuclear}{section.5}% 16
+\BOOKMARK [2][-]{subsection.5.4}{Modelagem Matem\341tica}{section.5}% 17
+\BOOKMARK [3][-]{subsubsection.5.4.1}{MDGP: Uma defini\347\343o formal}{subsection.5.4}% 18
+\BOOKMARK [2][-]{subsection.5.5}{Modelagem Computacional}{section.5}% 19
+\BOOKMARK [2][-]{subsection.5.6}{Estudando o Conjunto Solu\347\343o de um MDGP}{section.5}% 20
+\BOOKMARK [2][-]{subsection.5.7}{Ordena\347\343o Conveniente dos V\351rtices }{section.5}% 21
+\BOOKMARK [2][-]{subsection.5.8}{Discretizable Molecular Distance Geometry Problem}{section.5}% 22
+\BOOKMARK [1][-]{section.6}{Branch-and-Prune}{}% 23
+\BOOKMARK [2][-]{subsection.6.1}{O Algor\355timo}{section.6}% 24
+\BOOKMARK [2][-]{subsection.6.2}{Estrutura Algor\355tmica}{section.6}% 25
+\BOOKMARK [2][-]{subsection.6.3}{Simula\347\365es Computacionais}{section.6}% 26
+\BOOKMARK [1][-]{section.7}{Considera\347\365es Finais}{}% 27
+\BOOKMARK [1][-]{section*.38}{Refer\352ncias}{}% 28
+\BOOKMARK [1][-]{section*.40}{Ap\352ndice A - Lei dos Cossenos e \302ngulos Entre dois Vetores no R3}{}% 29
+\BOOKMARK [1][-]{section*.46}{Ap\352ndice B - Matrizes como Transforma\347\365es Lineares e Sobre Bi}{}% 30
+\BOOKMARK [1][-]{section*.55}{Ap\352ndice C - Vinte Amino\341cidos Naturais}{}% 31
