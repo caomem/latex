@@ -1,4 +1,4 @@
-\documentclass[a4paper,12pt]{article}
+ \documentclass[a4paper,12pt]{article}
 \usepackage[a4paper,top=3cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
 \usepackage[brazil]{babel}
 \usepackage[T1]{fontenc}
@@ -84,12 +84,10 @@
 		\textbf{Abstract}
 	\end{center}
 	
-	This is a old abstract, dont read. In this paper, two subjects were presented in a disjointed form: The algebra of
-	the quaternions and the Problem of Geometry of Molecular Distances. For the first,
-	it begins with a historical introduction to quantum algebra and presents some of its	most basic results, monid of its partial or complete demonstrations, as it was found necessary. The same structure forms the second subject, but, due to its nature, a more literary and less formal approach was used. Starting from a contextualisation of the PGDM, some important tools were presented to model it, where, in possession of everything until then, the problem in question can be presented and a brief introduction to the study of its solution.
- 
 	
-	\textbf{Keywords:} Quaternions, MDGP, Distance geometry, Optimization.
+	In this paper we presented the basic principles of the Discretizable Molecular Distance Geometry Problem (DMDGP), as well as the necessary tools for its comprehension, going from the graph theory to the biomolecular structure of the main macromolecules of our study. We also present some recent results on the ordering that makes up the problem. The text concludes with a study of the algorithm described in the literature to solve the problem efficiently and a brief section of computer simulations.
+	
+	\textbf{Keywords:} DMDGP, Distance geometry, Optimization.
 	 
 	
 	\vspace{2cm}	
@@ -97,10 +95,10 @@
 		\large
 		\textbf{Resumo}
 	\end{center}
-
-	Este é um resumo velho, nem leia. Neste documento foram apresentados dois assuntos de forma disjunta: A álgebra dos quatérnios e o Problema de Geometria de Distâncias Moleculares. Para o primeiro, inicia-se com uma introdução histórica à álgebra de quatérnios e apresenta-se alguns de seus resultados mais básicos, monidos de suas demonstrações parciais ou completas, conforme achou-se necessário. A mesma estruturação forma o segundo assunto, porém, devido a sua natureza, utilizou-se uma abordagem mais literária e menos formal. Partindo de uma contextualização do PGDM, apresentou-se algumas ferramentas importantes para modelá-lo, onde, de posse de tudo até então, pode-se apresentar de fato o problema em questão e uma brevê introdução ao estudo de sua solução. 
 	
-	\textbf{Palavras-chave:} Quatérnios, PGDM, Geometria de Distâncias, Otimização.
+	Neste trabalho foram apresentados os princípios básicos sobre o Discretizable Molecular Distance Geometry Problem (DMDGP), bem como as ferramentas necessárias para sua compreensão, passando da teoria de grafos à estrutura biomolecular das macromoléculas principais do nosso estudo. Também apresentamos alguns resultados recentes sobre a ordenação que compõe o problema. O texto se encerra com um estudo sobre o algoritmo descrito na literatura para solucionar o problema de forma eficiente e uma brevê seção de simulações computacionais.
+	
+	\textbf{Palavras-chave:} DMDGP, Geometria de Distâncias, Otimização.
 	
 	
 	\newpage
@@ -112,15 +110,17 @@
 	Por conta dessa motivação tem-se esforços como o de Kurt Wüthrich, que propôs que se utilizasse experimentos de \textit{Ressonância Magnética Nuclear}
 	(RMN) para calcular a estrutura tridimensional de uma molécula de proteína, ganhando o premio Nobel da Química em 2002 \cite{RMNproteinWrutrich}. Porém, a partir dessa estratégia tivemos novos problemas. A RMN não tem como resultado a estrutura tridimensional de uma proteína, mas sim distâncias entre átomos relativamente próximos que compõem a proteína. Para poder calcular a estrutura de uma proteína a partir dessas distâncias, surgira um novo problema, conhecido na literatura como \textit{Problema de Geometria de Distâncias Moleculares}, ou simplesmente, MDGP \cite{carlileGDandAplications}.
 	
-	Ao longo desse texto estudaremos este problema, suas variações, seus problemas relacionados, as ferramentas que nos facilitarão a resolve-los, suas soluções e as complexidades relacionadas a estas soluções.
+	Ao longo desse texto estudaremos este problema, suas variações, seus problemas relacionados, as ferramentas que nos facilitarão a resolve-los, suas soluções e as complexidades relacionadas a estas soluções. 
+	
+	Partindo para uma introdução a ferramenta matemática usada para definir o nosso problema, o capitulo 2 da aspectos essenciais para este texto sobre a teoria de grafos, donde segue-se para uma contextualização do problema do ponto de vista biomolecular, explorando cada detalhe da estrutura das proteínas no capítulo 3. Após, segue-se para a seção principal do texto, o capitulo 4, que se encerra com a definição formal do problema, nos permitindo tratar do algorítimo que é responsável por sua solução, introduzido no capítulo 5.
+	
+	O texto se encerra com os três apêndices: A, B e C. O primeiro trata de uma brevê explicação sobre a lei dos cossenos, que nos é essencial; O apêndice B constrói, junto ao leitor, uma linha de raciocínio para definir o conjunto de operações que compõe a matriz $B_i$; Por último, no apêndice C, temos uma representação química das estruturas básicas que compõe as proteínas.
+	
+	A revisão bibliográfica pode ser encontrados no fim do documento. 
 	
 	\newpage
-
-	\section{Materiais e Métodos}
 	
-	\newpage
-	
-	\section{Grafos: Aspectos Gerais}
+	\section{Grafos: Breve Introdução}
 	Esta seção tem como objetivo apresentar a \textit{teoria de grafos}, um tema muito estudado por diversos matemáticos, o que dá uma certa sensação de importância histórica na matéria.
 	
 	 Pode-se dizer que em 1736 é que a teoria teve início, com base no artigo publicado por Leonhard Euler, sobre as 7 pontes de Königsberg \cite{euler:KOENIGSBERG} \cite{grafos1}. Esse é o problema que normalmente introduz quem está começando a trabalhar com grafos --- se trata do desafio de ligar todos os pontos de um desenho sem tirar o lápis do papel e sem passar duas vezes no mesmo ponto. Diz a lenda que esta era uma dúvida rotineira dos moradores de Koenigsberg, que tentavam constantemente fazer o trecho a pé motivados a resolverem o desafio --- algo que, tanto pelo tamanho demasiadamente grande do percurso quanto pela falta de fé de que esse problema realmente motivaria alguém não ligado a matemática, pessoalmente, acho que alguém inventou essa última parte. 
@@ -150,7 +150,7 @@
 	
 	No que se segue, definiremos algumas características elementares que serão utilizadas durante esse texto. Para um estudo mais completo obre essa teoria (a qual recomendamos profundamente), favor considerar \cite{grafos1} e \cite{grafosPremioElon}.
 	
-	\subsection{Classificações}
+	\subsection{Algumas Classificações Importantes}
 	
 	Existem duas definições de extrema importância para o nosso problema molecular (tema central desse texto): o conceito de grafo completo e o de estruturas $k$-cliques. Porém, seremos obrigado a definir alguns outros conceitos prévios, como segue. 
 	
@@ -161,8 +161,8 @@
 		\end{minipage}
 	\end{center}
 
-	Também, caso existam duas arestas iguais (\{$e_i, e_j\}$ e 
-	$\{e_j, e_i\}$, por exemplo), com as mesmas extremidades são ditos \textit{paralelos}.
+	Também, caso existam duas arestas iguais ($\{e_i, e_j\}$ e 
+	$\{e_j, e_i\}$, por exemplo, lembrando que $E$ é um conjunto de pares não ordenados), com as mesmas extremidades, estas recebem o nome de \textbf{arestas paralelas}.
 
 	\begin{center}
 		\begin{minipage}{0.9 \linewidth}
@@ -199,7 +199,7 @@
 		\end{minipage}
 	\end{center}
 
-	Para nós essa última definição terá uma maior importância, visto que nosso problema é localizar um conjunto de pontos dado um conjunto de distâncias entre eles \cite{fidalgotese}. Perceba que se trata do problema de desenhar o diagrama que representa esse grafo ponderado, completo \cite{carlileBook31Coloquio}, respeitando as suas distâncias no papel.
+	Para nós essa última definição terá uma maior importância, visto que nosso problema é localizar um conjunto de pontos dado um conjunto de distâncias entre eles \cite{fidalgotese}. Perceba que se trata do problema de desenhar o diagrama que representa esse grafo ponderado, completo \cite{carlileBook31Coloquio}, respeitando as suas distâncias no papel.		
 	
 	\newpage
 	
@@ -713,7 +713,7 @@
 	É fácil ver que essa se trata de uma especificação do DGP, onde $k = 3$. Logo, nossa tarefa é encontrar uma aplicação $x$ que satisfaça todas as distâncias e dados do grafo que temos. Esta função é denominada \textit{realização} de $G$. Quando a realização satisfaz todas as equações da forma "$\|x(u)-x(v)\|=d({u,v})$", dizemos que ela é uma \textit{realização válida}.
 	
 	
-	\subsection{Modelagem Computacional}
+	\subsection{Modelagem Computacional \label{sec:modelagem}}
 	
 	Uma vez que existe uma introdução a modelagem matemática do problema, pode-se pensar em uma abordagem computacional. Não é segredo para ninguém que a computação veio e vem melhorando muito a forma como se faz matemática, introduzindo novas ferramentas e campos de estudo de grande importância. Vamos utilizar dessa evolução para a solução desse problema que, de outra forma, não seria viável. Na verdade, uma das dúvidas que estamos motivados a responder aqui é se, mesmo com toda nossa capacidade computacional atual, o problema tem uma solução viável. Definiremos melhor adiante o que é uma solução dita \textit{viável}. 
 	
@@ -1231,11 +1231,197 @@
 	\end{algorithm}
 	
 	\subsection{Simulações Computacionais}
-	Lorem ipsum es bons para fodis a tchuca cakopsa apsokdpaksdpak apskdam gn an foamcorhba asidj dpao kafhrauh a jdoaiho ao naob eubf aohua asd.
+	Afim de ilustrar o que foi apresentado aqui, realizamos alguns experimentos computacionais, implementando o algorítimo BP em Linguagem C. 
 	
+Utilizamos a biblioteca BLAS (\textit{Basic Linear Algebra Subprograms}), onde encontra-se algumas boas implementações essenciais para que trabalhemos, como o produto matricial.
+
+	Inicialmente, precisamos conhecer um pouco sobre matrizes de distâncias \cite{carlileGDandAplications}:
+	 
+	 \subsubsection{Representando distâncias com matrizes}
+	 É evidente a necessidade de uma forma de representar o conjunto de dados de entrada para o algorítimo BP. A definição a seguir nos ajuda com isso.
+	 
+	 \begin{center}
+	 	\begin{minipage}{0.9 \linewidth}
+	 		\textbf{Matriz de Distâncias Euclidianas (MDE)}: Uma matriz $D_{n \times n}$ é dita MDE se existe um inteiro $k>0$ e um conjunto $X=\{x_1, \dots, x_n\} \subset \mathbb{R}^k$ tal que para $i,j \leq n$ temos
+	 		$$D_{i,j}  =||x_i - x_j||.$$
+	 	\end{minipage}
+	 \end{center}
+	 
+	 Perceba que utilizando uma MDE podemos representar de forma completa o grafo que define um DMDGP: O conjunto de vértices $V$ tem uma relação biunívoca com o conjunto de linhas da matriz e, além disso, a ordem dos vértices é dado pela ordem das linhas; Também temos o conjunto de arestas $E$, pois se $d_{ij} \in D_{n\times n} \neq 0$, então existe $\{v_i, v_j\} \in E$;
+	 
+	 Inclusive, utilizando esse conceito, podemos definir um problema paralelo da área \cite{fidalgotese} que funcione a partir de uma extensão e um completamento das lacunas dessa matriz, tentando transformar-la em uma MDE quadrada, simétrica, completa e com diagonal nula. Esse é o \textit{Euclidean Distance Matrix Completion Problem} (EDMCP). Perceba também que resolve-lo significa ter o grafo completo da análise do capítulo ~\ref{sec:modelagem}, deixando a solução do nosso problema com complexidade linear.
+	 
+	 \subsubsection{Medida de distância entre resultados}
+	 A qualidade das soluções aqui apresentadas foram averiguadas utilizando a medida \textit{Largest Distance Error}, que é definida como se segue, a partir de \cite{mucherino:BP}.
+	 
+	 \begin{center}
+	 	\begin{minipage}{0.9 \linewidth}
+	 		\textbf{\textit{Largest Distance Error} (LDE)}: Para uma conformação $x = \{x_1, \dots, x_n\}$ de uma instância com $n$ vértices, cujo conjunto de distâncias disponíveis é dado por $m = |d|$, o LDE é definido por  
+	 		$$LDE(x) = \frac{1}{m} \sum_{i,j}^{}\frac{|||x_i - x_j|| - d_{i,j}|}{d_{i,j}} .$$
+	 	\end{minipage}
+	 \end{center}
+	
+	\subsubsection{Experimentos}
+	Para os primeiros testes, utilizamos como moléculas sintéticas as chamadas Lavor Instances \cite{carlile:instancesMDGP}, que possuem uma estrutura minimamente parecida com as reais (pois são baseadas nas posições de equilíbrio energético da molécula), garantindo sua validade acadêmica. Todos os testes foram rodados em um Intel Core 5 CPU 8600k @ 3.6 GHz com 8GB de RAM, rodando Linux e utilizamos $\varepsilon = 0.01$.
+	
+	Um exemplo de matriz MDE de uma Lavor Instance, de tamanho $|V| = 10$, é mostrado como se segue: 
+	\\
+	
+	\begin{footnotesize}
+		\hspace{-2.6cm}
+		$
+		\begin{bmatrix}
+		0 & 1.526 & 2.4923900 & 2.89142911 & 3.48973730 & 4.58573650 & 4.37631924 & 3.9408570 & 2.6081655 & 3.0647545\\
+		1.526 & 0 & 1.526 & 2.4923900 & 2.933932 & 4.3520923 & 4.6600857 & 4.4179412 & 3.0301235 & 3.6325558\\
+		2.4923900 & 1.526 & 0 & 1.5259999 & 2.4923900 & 3.8396108 & 4.344572 & 3.88905 & 2.530918 & 2.9777443\\
+		2.89142911 & 2.4923900 & 1.5259999 & 0 & 1.526 & 2.4923900 & 2.9231996 & 2.506865 & 1.4901654 & 2.484326\\
+		3.4897373 & 2.933932 & 2.4923900 & 1.526 & 0 & 1.52599 & 2.4923900 & 2.933932 & 2.4827921 & 3.8434642\\
+		4.58573650 & 4.3520923 & 3.8396108 & 2.4923900 & 1.52599 & 0 & 1.526 & 2.4923900 & 2.9019439 & 4.303094\\
+		4.37631924 & 4.6600857 & 4.344572 & 2.9231996 & 2.4923900 & 1.526 & 0 & 1.5259999 & 2.49239 & 3.840923\\
+		3.9408570 & 4.4179412 & 3.88905 & 2.506865 & 2.933932 & 2.4923900 & 1.5259999 & 0 & 1.525999 & 2.49239\\
+		2.6081655 & 3.0301235 & 2.530918 & 1.4901654 & 2.4827921 & 2.9019439 & 2.49239 & 1.525999 & 0 & 1.52599\\
+		3.0647545 & 3.6325558 & 2.9777443 & 2.484326 & 3.8434642 & 4.303094 & 3.840923 & 2.49239 & 1.52599 & 0 
+		\end{bmatrix}
+		$
+	\end{footnotesize}
+	\\
+	
+	Ao utilizar nossa implementação do BP para calcular as possíveis instâncias dessa MDE, obtemos como resultado 2 moléculas válidas. São elas:
+	
+	\begin{center}
+		\begin{minipage}{0.45 \linewidth}
+			\begin{table}[H]
+				\centering
+				\begin{tabular}{ |c c c| } 
+					\hline
+					\textbf{x} & \textbf{y} & \textbf{z} \\\hline
+					0.000000 & 0.000000 & 0.000000\\
+					-1.526000 & 0.000000 & 0.000000\\
+					-2.035389 & 1.438471 & 0.000000\\
+					-1.466917 & 2.180162 & -1.206403\\
+					-1.932825 & 1.498175 & -2.489563\\
+					-1.447230 & 2.296543 & -3.695997\\
+					0.077180 & 2.364681 & -3.681643\\
+					0.543635 & 3.069462 & -2.411061\\
+					0.016528 & 2.320614 & -1.190381\\
+					0.482983 & 3.025395 & 0.080201\\\hline
+				\end{tabular}
+				\caption{Exemplar 1.}
+				\label{tab:re1}
+			\end{table}
+		\end{minipage}
+		\begin{minipage}{0.45 \linewidth}
+			\begin{table}[H]
+				\centering
+				\begin{tabular}{ |c c c| } 
+					\hline
+					\textbf{x} & \textbf{y} & \textbf{z} \\\hline
+					0.000000 & 0.000000 & 0.000000\\
+					-1.526000 & 0.000000 & 0.000000\\
+					-2.035389 & 1.438471 & 0.000000\\
+					-1.466917 & 2.180162 & 1.206403\\
+					-1.932825 & 1.498175 & 2.489563\\
+					-1.447230 & 2.296543 & 3.695997\\
+					0.077180 & 2.364681 & 3.681643\\
+					0.543635 & 3.069462 & 2.411061\\
+					0.016528 & 2.320614 & 1.190381\\
+					0.482983 & 3.025395 & -0.080201\\\hline
+				\end{tabular}
+				\caption{Exemplar 2.}
+				\label{tab:re2}
+			\end{table}
+		\end{minipage}
+	\end{center}
+
+	\begin{figure}[H]
+		\begin{center}
+			\includegraphics[width=0.45\linewidth]{lavor10.jpeg}
+		\end{center}
+		\caption{Árvore $T$ do calculo da Lavor Instance com $|V| = 10$.}
+		\label{fig:arvore}
+	\end{figure}
+	
+	Como forma de verificar se o resultado condiz com o correto, calculou-se os LDE dos exemplares acima, que são mostrados na Tabela ~\ref{tab:resul}. O tempo para resolver esse BP foi da ordem de 0,616ms.
+	
+	\begin{table}[H]
+		\centering
+		\begin{tabular}{ |c c| } 
+			\hline
+			\textbf{Exemplar} & \textbf{LDE} \\\hline
+			1 & $10^{-23}$\\
+			2 & $10^{-23}$\\\hline
+		\end{tabular}
+		\caption{Exemplar 2.}
+		\label{tab:resul}
+	\end{table}
+	
+	Também calculou-se as instâncias de outras Larvor Instances, com $|V| = 20$, 50, 100, 200, 500 e 1000. Os resultados são mostrados na Tabela ~\ref{tab:resul2}, onde, LDE média $= \frac{1}{n}\sum_{i=1}^{n}LDE_i$ e $n$ é o número de soluções encontradas.
+	
+	\begin{table}[H]
+		\centering
+		\begin{tabular}{ |c c c c| } 
+			\hline
+			\textbf{$|V|$} & n & \textbf{LDE} & \textbf{time (ms)} \\\hline
+			20 & 2 & $10^{-23}$& 0.231 \\
+			50 & 4 & $10^{-13}$& 4.381\\\hline
+			100 & 8 & $10^{-13}$& 26.181 \\\hline
+			200 & 8 & $10^{-23}$& 24.103\\\hline
+			500 & 64 & $10^{-12}$& 431.113 \\\hline
+			1000 & 4608 & $10^{-11}$& 80851.054 \\\hline
+		\end{tabular}
+		\caption{Exemplar 2.}
+		\label{tab:resul2}
+	\end{table}
+	
+	Vale mencionar que a instância com $|V| = 2000$ também foi gerada, porém, infelizmente a memória RAM do computador (8Gb) não foi suficiente para que o algorítimo chegasse ao fim. 
+	
+	Dominado esta etapa, também utilizamos instâncias reais retiradas do repositório PDB (lidas com o auxílio do software PDBReader) para testar a nossa implementação do BP, feita em Linguagem C. Porém, mais uma vez nós não conseguimos terminar de executar o algorítimo para nenhuma das instâncias reais, pois, em média, elas possuem $|V| = 2000$. Como visto nas Lavor Instances, exemplares desta ordem costumam necessitar mais que os 8Gb de memória que tínhamos a disposição. 
+	
+	\newpage
+	\section{Resultados e Discussão}
+	Como vimos, não é possível, dada nosso suporte computacional atual, dar continuidade aos testes do software sem que haja alguma alteração. Uma boa estratégia seria um estudo sobre a otimização de memória necessária para implementar o BP. Isso pode ser observado no desenvolvimento do MD-Jeep \cite{mucherino:BP}, uma implementação em C feita por Antonio Mucherino, Leo Liberti e Carlile Lavor em 2010.
+	 
+	Um solução trivial pensada para contornar essa situação foi tentar manipular o valor de $\varepsilon$, de forma a produzir um filtro manual que diminuísse a quantidade de soluções (que estava crescendo exponencialmente). Porém, não obtivemos resultados satisfatórios. Pequenas oscilações em torno de um certo valor de $\varepsilon$ (intrínsecos de cada molécula) faziam que, ou os resultados explodissem a memória, ou não fossem nenhum.
+	
+	Outra alternativa para solucionar esse problema pode ser encontrada estudando as simetrias do DMDGP \cite{fidalgotese} \cite{carlileGDandAplications}. Perceba, nas Tabelas ~\ref{tab:re1} e ~\ref{tab:re2}, que os resultados possuem uma similaridade. Isso se dá devido as simetrias nas soluções de cada ramificação da arvore $T$, pois os resultados são simétricos (espelhados ao plano formado pelos três átomos anteriores \cite{carlileBook31Coloquio}). Com isso, não precisamos buscar por todas as soluções da árvore de busca, pois, tendo uma solução, consegue-se a sua simétrica em tempo linear \cite{fidalgotese}. Isso é implementado em uma variação do BP, chamado \textit{SymBP} \cite{fidalgotese}.
+	
+	Outras otimizações do algorítimo BP também podem ser encontrados na literatura, como uma versão que utiliza um paradigma Dividir e Conquistar \cite{fidalgotese}, onde se constrói uma implementação paralela (Multithreading), que se utiliza das simetrias para produzir vários SymBP em paralelo. Um estudo sobre essas implementações poderiam ser úteis para otimizar nosso algorítimo.
 	
 	\newpage
 	\section{Considerações Finais}
+	Com isso concluímos um estudo elementar sobre o Discretizable Molecular Distance Geometry Problem. Acreditamos que nos cabe, no fim de um projeto como esse, olhar para as propostas levantadas inicialmente e verificar se elas foram cumpridas. Seguem o conjunto de objetivos específicos desse projeto, monidos de breve conclusão:
+	
+	\begin{enumerate}
+		\item Entender as estruturas básicas de proteínas:
+			
+			Este fora feito de forma intensa, resultando no capítulo 3 deste documento;
+		
+		\item Relacionar-se eficientemente com o PDB (\emph{Protein Data Bank}) - como extrair os dados computacionais que servirão de insumos:
+		
+			Apresentou-se este repositório junto do capítulo 3, devido sua proximidade temática. Vale mencionar que lá também fora apresentado o software PDBReader, implementado pelo autor deste documento, que visa automatizar o processo de extração dos dados de distâncias do repositório PDB;
+		
+		\item Compreender o DMDGP e sua estrutura de ordenamento dos vértices:
+		
+			Podemos considerar essa frase como um resumo do capítulo 4. Peço atenção especial no estudo da ordenação HC, feita no fim do capítulo, devido sua grande importância no tema;
+		
+		\item Conhecer todos os passos do algoritmo BP:
+		
+			Feito no capítulo 5, onde estudou-se todos os passos referentes a esse algorítimo: Inicialização, \textit{branching} e \textit{pruning};
+		
+		\item Simular, computacionalmente, o algoritmo BP com instâncias artificialmente geradas, como descrito na Literatura, dominando cada passo utilizado:
+		
+			Feito no fim do capítulo 5, com resultados condizentes com a literatura;
+			
+		\item Aplicar o Algoritmo BP estudado em estruturas proteicas como instâncias reais do problema:
+		
+			Infelizmente não conseguimos poder computacional para que nosso algorítimo conseguisse calcular estas instâncias. Há uma pequena discussão, no Capitulo 7, sobre como contornar essa situação. Mas nos cabe aqui frisar que um estudo sobre otimização de memória computacional poderia ser útil para que nossa implementação realizasse os testes de forma adequada.
+			
+			Vale lembrar, porém, que uma parte importante desse resultado foi desenvolvido ao criar o software PDBReader, possibilitando a extração dos dados de moléculas reais do repositório PDB.
+	\end{enumerate}
+	
+	Como implementações futuras, deseja-se estudar mais sobre as distâncias intervalares que aparecem devido a ordenação HC \cite{carlile:MinimalOrder} (detalhe este que não fora considerado na nossa implementação). Uma ferramenta que tem demonstrado potencial para auxiliar nessa passagem é a Geometria Conforme \cite{carlileBook31Coloquio}.
+	
+	Também deseja-se poder fazer um novo estudo envolvendo o problema de geometria de distâncias aplicado a outras áreas do conhecimento, como localização de sensores \cite{carlileGDandAplications}. 
 	
 	\newpage
 	\phantomsection
