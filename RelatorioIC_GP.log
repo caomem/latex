@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7140 64-bit) (preloaded format=pdflatex 2019.8.10)  17 AUG 2019 14:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7140 64-bit) (preloaded format=pdflatex 2019.8.10)  21 AUG 2019 08:53
 entering extended mode
 **./RelatorioIC_GP.tex
 (RelatorioIC_GP.tex
@@ -1202,7 +1202,7 @@ ick labels; missing features). Consider writing \pgfplotsset{compat=1.16} into
 your preamble.
  on input line 30.
 
-<logoufsc.jpg, id=142, 458.6736pt x 449.7603pt>
+<logoufsc.jpg, id=146, 458.6736pt x 449.7603pt>
 File: logoufsc.jpg Graphic file (type jpg)
 <use logoufsc.jpg>
 Package pdftex.def Info: logoufsc.jpg  used on input line 38.
@@ -1238,221 +1238,222 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.80 	\newpage
+l.83 	\newpage
                [1] [2] [3]
-<koenigsbern.png, id=217, 513.41812pt x 221.32687pt>
+<koenigsbern.png, id=233, 513.41812pt x 221.32687pt>
 File: koenigsbern.png Graphic file (type png)
 <use koenigsbern.png>
-Package pdftex.def Info: koenigsbern.png  used on input line 130.
+Package pdftex.def Info: koenigsbern.png  used on input line 131.
 (pdftex.def)             Requested size: 362.77525pt x 156.39005pt.
- [4 <./koenigsbern.png>] [5]
-<carbono.png, id=250, 1422.81563pt x 373.395pt>
+ [4 <./koenigsbern.png>]
+<grafocompleto.png, id=249, 1027.84pt x 1027.84pt>
+File: grafocompleto.png Graphic file (type png)
+<use grafocompleto.png>
+Package pdftex.def Info: grafocompleto.png  used on input line 177.
+(pdftex.def)             Requested size: 170.71393pt x 170.69981pt.
+ [5 <./grafocompleto.png>]
+<carbono.png, id=268, 1422.81563pt x 373.395pt>
 File: carbono.png Graphic file (type png)
 <use carbono.png>
-Package pdftex.def Info: carbono.png  used on input line 216.
+Package pdftex.def Info: carbono.png  used on input line 217.
 (pdftex.def)             Requested size: 426.79135pt x 112.00226pt.
- [6 <./carbono.png>]
-[7]
-<quiral.png, id=285, 693.34032pt x 618.05907pt>
+
+[6 <./carbono.png>] [7]
+<quiral.png, id=300, 693.34032pt x 618.05907pt>
 File: quiral.png Graphic file (type png)
 <use quiral.png>
-Package pdftex.def Info: quiral.png  used on input line 244.
+Package pdftex.def Info: quiral.png  used on input line 245.
 (pdftex.def)             Requested size: 192.0548pt x 171.19748pt.
-<carbonoenergia.png, id=288, 755.82375pt x 557.83406pt>
+<carbonoenergia.png, id=303, 755.82375pt x 557.83406pt>
 File: carbonoenergia.png Graphic file (type png)
 <use carbonoenergia.png>
-Package pdftex.def Info: carbonoenergia.png  used on input line 254.
+Package pdftex.def Info: carbonoenergia.png  used on input line 255.
 (pdftex.def)             Requested size: 234.73654pt x 173.2417pt.
  [8 <./quiral.png>]
-<amino.png, id=301, 593.96906pt x 310.91156pt>
+<amino.png, id=316, 593.96906pt x 310.91156pt>
 File: amino.png Graphic file (type png)
 <use amino.png>
-Package pdftex.def Info: amino.png  used on input line 269.
+Package pdftex.def Info: amino.png  used on input line 270.
 (pdftex.def)             Requested size: 149.37958pt x 78.19261pt.
  [9 <./carbonoenergia.png> <./amino.png>]
-<peptide.jpg, id=311, 319.4334pt x 134.904pt>
+<peptide.jpg, id=326, 319.4334pt x 134.904pt>
 File: peptide.jpg Graphic file (type jpg)
 <use peptide.jpg>
-Package pdftex.def Info: peptide.jpg  used on input line 288.
+Package pdftex.def Info: peptide.jpg  used on input line 289.
 (pdftex.def)             Requested size: 341.43437pt x 144.20587pt.
  [10 <./peptide.jpg>]
-<protest.png, id=323, 940.26282pt x 466.74374pt>
+<protest.png, id=337, 940.26282pt x 466.74374pt>
 File: protest.png Graphic file (type png)
 <use protest.png>
-Package pdftex.def Info: protest.png  used on input line 299.
-(pdftex.def)             Requested size: 426.79135pt x 211.85596pt.
- [11 <./protest.png>]
-<backbone.png, id=332, 1020.81375pt x 487.06969pt>
+Package pdftex.def Info: protest.png  used on input line 300.
+(pdftex.def)             Requested size: 384.1096pt x 190.66821pt.
+<backbone.png, id=340, 1020.81375pt x 487.06969pt>
 File: backbone.png Graphic file (type png)
 <use backbone.png>
-Package pdftex.def Info: backbone.png  used on input line 314.
+Package pdftex.def Info: backbone.png  used on input line 315.
 (pdftex.def)             Requested size: 341.43437pt x 162.91109pt.
-<rama.png, id=337, 738.50906pt x 344.78813pt>
+ [11 <./protest.png>]
+<rama.png, id=351, 738.50906pt x 344.78813pt>
 File: rama.png Graphic file (type png)
 <use rama.png>
-Package pdftex.def Info: rama.png  used on input line 324.
+Package pdftex.def Info: rama.png  used on input line 325.
 (pdftex.def)             Requested size: 341.43437pt x 159.40413pt.
  [12 <./backbone.png> <./rama.png>] [13]
-<atom.png, id=357, 670.75594pt x 137.7647pt>
+<atom.png, id=371, 670.75594pt x 137.7647pt>
 File: atom.png Graphic file (type png)
 <use atom.png>
-Package pdftex.def Info: atom.png  used on input line 416.
+Package pdftex.def Info: atom.png  used on input line 417.
 (pdftex.def)             Requested size: 405.45047pt x 83.27325pt.
-<molproj.png, id=359, 547.2947pt x 176.91093pt>
+<molproj.png, id=373, 547.2947pt x 176.91093pt>
 File: molproj.png Graphic file (type png)
 <use molproj.png>
-Package pdftex.def Info: molproj.png  used on input line 427.
+Package pdftex.def Info: molproj.png  used on input line 428.
 (pdftex.def)             Requested size: 426.79135pt x 137.96027pt.
  [14 <./atom.png> <./molproj.png>]
-<classDiagram.png, id=369, 759.58781pt x 453.94594pt>
+<classDiagram.png, id=383, 759.58781pt x 453.94594pt>
 File: classDiagram.png Graphic file (type png)
 <use classDiagram.png>
-Package pdftex.def Info: classDiagram.png  used on input line 445.
+Package pdftex.def Info: classDiagram.png  used on input line 446.
 (pdftex.def)             Requested size: 384.1096pt x 229.55605pt.
  [15 <./classDiagram.png>]
-<fmainClassDiagram.png, id=378, 590.205pt x 457.71pt>
+<fmainClassDiagram.png, id=392, 590.205pt x 457.71pt>
 File: fmainClassDiagram.png Graphic file (type png)
 <use fmainClassDiagram.png>
-Package pdftex.def Info: fmainClassDiagram.png  used on input line 457.
+Package pdftex.def Info: fmainClassDiagram.png  used on input line 458.
 (pdftex.def)             Requested size: 367.04082pt x 284.65028pt.
-<pdbreader.png, id=381, 547.2947pt x 176.91093pt>
+<pdbreader.png, id=395, 547.2947pt x 176.91093pt>
 File: pdbreader.png Graphic file (type png)
 <use pdbreader.png>
-Package pdftex.def Info: pdbreader.png  used on input line 468.
+Package pdftex.def Info: pdbreader.png  used on input line 469.
 (pdftex.def)             Requested size: 426.79135pt x 137.96027pt.
 
-Overfull \hbox (46.87953pt too wide) in paragraph at lines 475--503
+Overfull \hbox (46.87953pt too wide) in paragraph at lines 476--504
 []  [] 
  []
 
 [16 <./fmainClassDiagram.png> <./pdbreader.png>]
-<exemploView.png, id=393, 645.91313pt x 184.43906pt>
+<exemploView.png, id=407, 645.91313pt x 184.43906pt>
 File: exemploView.png Graphic file (type png)
 <use exemploView.png>
-Package pdftex.def Info: exemploView.png  used on input line 511.
+Package pdftex.def Info: exemploView.png  used on input line 512.
 (pdftex.def)             Requested size: 512.14832pt x 146.24841pt.
 
-Overfull \hbox (50.97879pt too wide) in paragraph at lines 510--512
+Overfull \hbox (50.97879pt too wide) in paragraph at lines 511--513
 []  [] 
  []
 
-[17 <./exemploView.png>] [18]
-<Capturar.PNG, id=412, 255.20343pt x 187.45032pt>
-File: Capturar.PNG Graphic file (type png)
-<use Capturar.PNG>
-Package pdftex.def Info: Capturar.PNG  used on input line 551.
-(pdftex.def)             Requested size: 256.07741pt x 188.10197pt.
- [19 <./Capturar.PNG>] [20] [21] [22]
-Overfull \hbox (50.25914pt too wide) in paragraph at lines 732--733
+[17 <./exemploView.png>] [18] [19] [20]
+Overfull \hbox (50.25914pt too wide) in paragraph at lines 624--625
 []\T1/cmr/m/n/12 dist‚ncia en-tre os ·to-mos se-pa-ra-dos por uma li-ga-Á„o co-
 va-lente: $\OMX/MnSymbolE/m/n/12 ò\OML/cmm/m/it/12 d[]; d[]; :::; d[]\OMX/MnSym
 bolE/m/n/12 ù$\T1/cmr/m/n/12 ,
  []
 
 
-Overfull \hbox (60.57047pt too wide) in paragraph at lines 733--734
+Overfull \hbox (60.57047pt too wide) in paragraph at lines 625--626
 []\T1/cmr/m/n/12 dist‚ncia en-tre os ·to-mos se-pa-ra-dos por duas li-ga-Áıes c
 o-va-len-tes: $\OMX/MnSymbolE/m/n/12 ò\OML/cmm/m/it/12 d[]; d[]; :::; d[]\OMX/M
 nSymbolE/m/n/12 ù$\T1/cmr/m/n/12 ,
  []
 
-[23] [24] [25]
-Overfull \hbox (1.4727pt too wide) in paragraph at lines 918--919
+[21] [22] [23]
+Overfull \hbox (1.4727pt too wide) in paragraph at lines 810--811
 []\T1/cmr/m/n/12 Para cada vÈr-tice $\OML/cmm/m/it/12 s \U/MnSymbolD/m/n/12 > \
 OML/cmm/m/it/12 V$ \T1/cmr/m/n/12 a ser re-a-li-zado em $\U/msb/m/n/12 R$\T1/cm
 r/m/n/12 , de-vem exis-tir ares-tas $[]\OML/cmm/m/it/12 ; []; [] \U/MnSymbolD/m
 /n/12 >
  []
 
-[26] [27]
-<hcVO.png, id=482, 423.5825pt x 186.6975pt>
+[24]
+<hcVO.png, id=473, 423.5825pt x 186.6975pt>
 File: hcVO.png Graphic file (type png)
 <use hcVO.png>
-Package pdftex.def Info: hcVO.png  used on input line 966.
+Package pdftex.def Info: hcVO.png  used on input line 858.
 (pdftex.def)             Requested size: 341.43437pt x 150.49486pt.
-
-Overfull \hbox (41.73384pt too wide) detected at line 989
+ [25]
+Overfull \hbox (41.73384pt too wide) detected at line 881
 \OML/cmm/m/it/12 H[]; C[]; O[]; N[]; H[]; C[]; N[]; H[]; C[]; C[]; O[]; C[]; O[
 ]\OMX/MnSymbolE/m/n/12 ù
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 984--992
+Underfull \hbox (badness 10000) in paragraph at lines 876--884
 
  []
 
-[28 <./hcVO.png>]
-<esferas.png, id=500, 1005.7575pt x 202.50656pt>
+[26 <./hcVO.png>]
+<esferas.png, id=497, 1005.7575pt x 202.50656pt>
 File: esferas.png Graphic file (type png)
 <use esferas.png>
-Package pdftex.def Info: esferas.png  used on input line 1005.
+Package pdftex.def Info: esferas.png  used on input line 897.
 (pdftex.def)             Requested size: 341.43437pt x 68.74625pt.
- [29 <./esferas.png>]
-<torcao.png, id=516, 825.83531pt x 459.21562pt>
+ [27 <./esferas.png>]
+<Capturar.PNG, id=515, 255.20343pt x 187.45032pt>
+File: Capturar.PNG Graphic file (type png)
+<use Capturar.PNG>
+Package pdftex.def Info: Capturar.PNG  used on input line 937.
+(pdftex.def)             Requested size: 256.07741pt x 188.10197pt.
+ [28 <./Capturar.PNG>] [29]
+<torcao.png, id=531, 825.83531pt x 459.21562pt>
 File: torcao.png Graphic file (type png)
 <use torcao.png>
-Package pdftex.def Info: torcao.png  used on input line 1042.
+Package pdftex.def Info: torcao.png  used on input line 1046.
 (pdftex.def)             Requested size: 362.77525pt x 201.72617pt.
  [30 <./torcao.png>] [31]
-<bp1.png, id=536, 63.23625pt x 213.79875pt>
+<bp1.png, id=551, 63.23625pt x 213.79875pt>
 File: bp1.png Graphic file (type png)
 <use bp1.png>
-Package pdftex.def Info: bp1.png  used on input line 1101.
+Package pdftex.def Info: bp1.png  used on input line 1105.
 (pdftex.def)             Requested size: 14.93925pt x 50.50696pt.
 
-Overfull \hbox (40.12198pt too wide) detected at line 1135
+Overfull \hbox (40.12198pt too wide) detected at line 1139
  \OML/cmm/m/it/12 B[] \U/MnSymbolD/m/n/12   [] \OML/cmm/m/it/12 :
  []
 
-<ramificacoes.png, id=542, 822.07124pt x 560.0925pt>
+<ramificacoes.png, id=557, 822.07124pt x 560.0925pt>
 File: ramificacoes.png Graphic file (type png)
 <use ramificacoes.png>
-Package pdftex.def Info: ramificacoes.png  used on input line 1143.
+Package pdftex.def Info: ramificacoes.png  used on input line 1147.
 (pdftex.def)             Requested size: 192.0548pt x 130.84404pt.
 [32 <./bp1.png>]
-<quatroesferas.png, id=553, 847.66687pt x 621.07031pt>
+<quatroesferas.png, id=569, 847.66687pt x 621.07031pt>
 File: quatroesferas.png Graphic file (type png)
 <use quatroesferas.png>
-Package pdftex.def Info: quatroesferas.png  used on input line 1160.
+Package pdftex.def Info: quatroesferas.png  used on input line 1164.
 (pdftex.def)             Requested size: 149.37958pt x 109.44707pt.
  [33 <./ramificacoes.png> <./quatroesferas.png>]
-<prune.png, id=566, 822.07124pt x 560.0925pt>
+<prune.png, id=581, 822.07124pt x 560.0925pt>
 File: prune.png Graphic file (type png)
 <use prune.png>
-Package pdftex.def Info: prune.png  used on input line 1172.
+Package pdftex.def Info: prune.png  used on input line 1176.
 (pdftex.def)             Requested size: 192.0548pt x 130.84404pt.
- [34 <./prune.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 1192--1194
+
+Underfull \hbox (badness 10000) in paragraph at lines 1196--1198
 
  []
 
-[35]
-Overfull \hbox (5.78218pt too wide) in paragraph at lines 1236--1237
+[34 <./prune.png>]
+Overfull \hbox (5.78218pt too wide) in paragraph at lines 1240--1241
 []\T1/cmr/m/n/12 Utilizamos a bi-bli-o-teca BLAS (\T1/cmr/m/it/12 Ba-sic Li-nea
 r Al-ge-bra Sub-pro-grams\T1/cmr/m/n/12 ), onde encontra-
  []
 
+[35]
+Underfull \hbox (badness 10000) in paragraph at lines 1271--1273
 
-Underfull \hbox (badness 10000) in paragraph at lines 1267--1269
+ []
 
+
+Overfull \hbox (1.34128pt too wide) detected at line 1286
+[]
  []
 
 [36]
-Overfull \hbox (71.85454pt too wide) in paragraph at lines 1271--1288
-[]  $[]$
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1271--1288
+Underfull \hbox (badness 10000) in paragraph at lines 1286--1288
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 1271--1288
-
- []
-
-<lavor10.jpeg, id=629, 335.75438pt x 227.34938pt>
+<lavor10.jpeg, id=644, 335.75438pt x 227.34938pt>
 File: lavor10.jpeg Graphic file (type jpg)
 <use lavor10.jpeg>
 Package pdftex.def Info: lavor10.jpeg  used on input line 1338.
@@ -1476,12 +1477,12 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 1437.
 
-<triangulo.png, id=685, 240.14719pt x 125.71968pt>
+<triangulo.png, id=698, 240.14719pt x 125.71968pt>
 File: triangulo.png Graphic file (type png)
 <use triangulo.png>
 Package pdftex.def Info: triangulo.png  used on input line 1447.
 (pdftex.def)             Requested size: 213.39568pt x 111.7175pt.
-<Angulovetoresnovo.png, id=690, 204.765pt x 139.27031pt>
+<Angulovetoresnovo.png, id=703, 204.765pt x 139.27031pt>
 File: Angulovetoresnovo.png Graphic file (type png)
 <use Angulovetoresnovo.png>
 Package pdftex.def Info: Angulovetoresnovo.png  used on input line 1492.
@@ -1546,7 +1547,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1659--1661
 
  []
 
-<compfunc.png, id=738, 146.04562pt x 91.84312pt>
+<compfunc.png, id=752, 146.04562pt x 91.84312pt>
 File: compfunc.png Graphic file (type png)
 <use compfunc.png>
 Package pdftex.def Info: compfunc.png  used on input line 1664.
@@ -1567,7 +1568,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1674--1676
  []
 
 [48 <./compfunc.png>] [49]
-<rota.png, id=755, 180.675pt x 130.98938pt>
+<rota.png, id=769, 180.675pt x 130.98938pt>
 File: rota.png Graphic file (type png)
 <use rota.png>
 Package pdftex.def Info: rota.png  used on input line 1787.
@@ -1578,77 +1579,77 @@ Overfull \hbox (46.23357pt too wide) detected at line 1916
  []
 
 [52]
-<glycine.png, id=771, 301.125pt x 183.68625pt>
+<glycine.png, id=785, 301.125pt x 183.68625pt>
 File: glycine.png Graphic file (type png)
 <use glycine.png>
 Package pdftex.def Info: glycine.png  used on input line 1936.
 (pdftex.def)             Requested size: 97.31033pt x 59.35817pt.
-<alanine.png, id=772, 301.125pt x 197.73875pt>
+<alanine.png, id=786, 301.125pt x 197.73875pt>
 File: alanine.png Graphic file (type png)
 <use alanine.png>
 Package pdftex.def Info: alanine.png  used on input line 1942.
 (pdftex.def)             Requested size: 92.1884pt x 60.53802pt.
-<proline.png, id=773, 156.585pt x 120.45pt>
+<proline.png, id=787, 156.585pt x 120.45pt>
 File: proline.png Graphic file (type png)
 <use proline.png>
 Package pdftex.def Info: proline.png  used on input line 1948.
 (pdftex.def)             Requested size: 81.94612pt x 63.03685pt.
-<valine.png, id=774, 301.125pt x 242.9075pt>
+<valine.png, id=788, 301.125pt x 242.9075pt>
 File: valine.png Graphic file (type png)
 <use valine.png>
 Package pdftex.def Info: valine.png  used on input line 1954.
 (pdftex.def)             Requested size: 81.94612pt x 66.10109pt.
-<methionine.png, id=775, 301.125pt x 398.48875pt>
+<methionine.png, id=789, 301.125pt x 398.48875pt>
 File: methionine.png Graphic file (type png)
 <use methionine.png>
 Package pdftex.def Info: methionine.png  used on input line 1965.
 (pdftex.def)             Requested size: 80.665pt x 106.74821pt.
-<leucine.png, id=776, 301.125pt x 311.1625pt>
+<leucine.png, id=790, 301.125pt x 311.1625pt>
 File: leucine.png Graphic file (type png)
 <use leucine.png>
 Package pdftex.def Info: leucine.png  used on input line 1971.
 (pdftex.def)             Requested size: 102.43134pt x 105.84607pt.
-<isoleucine.png, id=777, 301.125pt x 311.1625pt>
+<isoleucine.png, id=791, 301.125pt x 311.1625pt>
 File: isoleucine.png Graphic file (type png)
 <use isoleucine.png>
 Package pdftex.def Info: isoleucine.png  used on input line 1977.
 (pdftex.def)             Requested size: 102.43134pt x 105.84607pt.
-<cysteine.png, id=778, 301.125pt x 252.945pt>
+<cysteine.png, id=792, 301.125pt x 252.945pt>
 File: cysteine.png Graphic file (type png)
 <use cysteine.png>
 Package pdftex.def Info: cysteine.png  used on input line 1990.
 (pdftex.def)             Requested size: 102.43134pt x 86.04262pt.
-<asparagine.png, id=779, 301.125pt x 311.1625pt>
+<asparagine.png, id=793, 301.125pt x 311.1625pt>
 File: asparagine.png Graphic file (type png)
 <use asparagine.png>
 Package pdftex.def Info: asparagine.png  used on input line 1996.
 (pdftex.def)             Requested size: 83.22437pt x 85.99963pt.
-<glutamine.png, id=780, 265.99374pt x 121.45375pt>
+<glutamine.png, id=794, 265.99374pt x 121.45375pt>
 File: glutamine.png Graphic file (type png)
 <use glutamine.png>
 Package pdftex.def Info: glutamine.png  used on input line 2002.
 (pdftex.def)             Requested size: 128.0387pt x 58.46391pt.
-<serine.png, id=781, 301.125pt x 252.945pt>
+<serine.png, id=795, 301.125pt x 252.945pt>
 File: serine.png Graphic file (type png)
 <use serine.png>
 Package pdftex.def Info: serine.png  used on input line 2013.
 (pdftex.def)             Requested size: 96.02739pt x 80.6623pt.
-<threonine.png, id=782, 301.125pt x 242.9075pt>
+<threonine.png, id=796, 301.125pt x 242.9075pt>
 File: threonine.png Graphic file (type png)
 <use threonine.png>
 Package pdftex.def Info: threonine.png  used on input line 2019.
 (pdftex.def)             Requested size: 96.02739pt x 77.46141pt.
-<phenylalanine.png, id=783, 301.125pt x 375.4025pt>
+<phenylalanine.png, id=797, 301.125pt x 375.4025pt>
 File: phenylalanine.png Graphic file (type png)
 <use phenylalanine.png>
 Package pdftex.def Info: phenylalanine.png  used on input line 2031.
 (pdftex.def)             Requested size: 89.6267pt x 111.73375pt.
-<tyrosine.png, id=784, 301.125pt x 453.695pt>
+<tyrosine.png, id=798, 301.125pt x 453.695pt>
 File: tyrosine.png Graphic file (type png)
 <use tyrosine.png>
 Package pdftex.def Info: tyrosine.png  used on input line 2037.
 (pdftex.def)             Requested size: 75.54236pt x 113.81807pt.
-<tryptophan.png, id=785, 301.125pt x 329.23pt>
+<tryptophan.png, id=799, 301.125pt x 329.23pt>
 File: tryptophan.png Graphic file (type png)
 <use tryptophan.png>
 Package pdftex.def Info: tryptophan.png  used on input line 2043.
@@ -1656,27 +1657,27 @@ Package pdftex.def Info: tryptophan.png  used on input line 2043.
  [53 <./glycine.png> <./alanine.png> <./proline.png> <./valine.png> <./methioni
 ne.png> <./leucine.png> <./isoleucine.png> <./cysteine.png> <./asparagine.png> 
 <./glutamine.png> <./serine.png> <./threonine.png>]
-<lysine.png, id=809, 301.125pt x 464.73625pt>
+<lysine.png, id=823, 301.125pt x 464.73625pt>
 File: lysine.png Graphic file (type png)
 <use lysine.png>
 Package pdftex.def Info: lysine.png  used on input line 2055.
 (pdftex.def)             Requested size: 89.6267pt x 138.3228pt.
-<arginine.png, id=810, 301.125pt x 516.93124pt>
+<arginine.png, id=824, 301.125pt x 516.93124pt>
 File: arginine.png Graphic file (type png)
 <use arginine.png>
 Package pdftex.def Info: arginine.png  used on input line 2061.
 (pdftex.def)             Requested size: 75.54236pt x 129.68208pt.
-<histidine.png, id=811, 301.125pt x 395.4775pt>
+<histidine.png, id=825, 301.125pt x 395.4775pt>
 File: histidine.png Graphic file (type png)
 <use histidine.png>
 Package pdftex.def Info: histidine.png  used on input line 2067.
 (pdftex.def)             Requested size: 89.6267pt x 117.70882pt.
-<asparticacid.png, id=812, 301.125pt x 304.13625pt>
+<asparticacid.png, id=826, 301.125pt x 304.13625pt>
 File: asparticacid.png Graphic file (type png)
 <use asparticacid.png>
 Package pdftex.def Info: asparticacid.png  used on input line 2080.
 (pdftex.def)             Requested size: 96.02739pt x 96.9868pt.
-<glutamicacid.png, id=813, 301.125pt x 367.3725pt>
+<glutamicacid.png, id=827, 301.125pt x 367.3725pt>
 File: glutamicacid.png Graphic file (type png)
 <use glutamicacid.png>
 Package pdftex.def Info: glutamicacid.png  used on input line 2086.
@@ -1690,22 +1691,22 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2094.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2094.
 
 Package rerunfilecheck Info: File `RelatorioIC_GP.out' has not changed.
-(rerunfilecheck)             Checksum: 1DC46E892087F99335A491D4E4CB3277;2685.
+(rerunfilecheck)             Checksum: DE7CD712E0F45AA2D580C22AB99751A2;2798.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2094.
  ) 
 Here is how much of TeX's memory you used:
- 32269 strings out of 492895
- 730570 string characters out of 3133476
+ 32283 strings out of 492895
+ 730812 string characters out of 3133476
  936994 words of memory out of 3000000
- 35315 multiletter control sequences out of 15000+200000
- 43292 words of font info for 122 fonts, out of 3000000 for 9000
+ 35325 multiletter control sequences out of 15000+200000
+ 43968 words of font info for 123 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,18n,96p,1198b,609s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Users/Denise/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/mnsymbol/MnSymbol
-E.enc} <C:\Users\Denise\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dp
-i600\ecbx0800.pk>{C:/Users/Denise/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/mn
-symbol/MnSymbolC.enc}{C:/Users/Denise/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvip
-s/mnsymbol/MnSymbolD.enc}{C:/Users/Denise/AppData/Roaming/MiKTeX/2.9/fonts/enc/
+ <C:\Users\Denise\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600
+\ecbx0800.pk>{C:/Users/Denise/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/mnsymb
+ol/MnSymbolC.enc}{C:/Users/Denise/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/mn
+symbol/MnSymbolD.enc}{C:/Users/Denise/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvip
+s/mnsymbol/MnSymbolE.enc}{C:/Users/Denise/AppData/Roaming/MiKTeX/2.9/fonts/enc/
 dvips/mnsymbol/MnSymbolF.enc} <C:\Users\Denise\AppData\Local\MiKTeX\2.9\fonts/p
 k/ljfour/jknappen/ec/dpi600\ecbi1728.pk> <C:\Users\Denise\AppData\Local\MiKTeX\
 2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbi1440.pk> <C:\Users\Denise\AppData\Lo
@@ -1723,31 +1724,32 @@ se\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:
 \Users\Denise\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1
 200.pk> <C:\Users\Denise\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/d
 pi600\ecbx1728.pk> <C:\Users\Denise\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jk
-nappen/ec/dpi600\ecrm1440.pk> <C:\Users\Denise\AppData\Local\MiKTeX\2.9\fonts/p
+nappen/ec/dpi600\eccc1440.pk> <C:\Users\Denise\AppData\Local\MiKTeX\2.9\fonts/p
 k/ljfour/jknappen/ec/dpi600\ecbx2074.pk> <C:\Users\Denise\AppData\Local\MiKTeX\
-2.9\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1728.pk> <C:\Users\Denise\AppData\Lo
-cal\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1728.pk> <C:\Users\Denise
-\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\eccc2074.pk><C:/Us
-ers/Denise/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/mnsymbol/MnSymbol10.pf
-b><C:/Users/Denise/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/mnsymbol/MnSym
-bol12.pfb><C:/Users/Denise/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/mnsymb
-ol/MnSymbol6.pfb><C:/Users/Denise/AppData/Roaming/MiKTeX/2.9/fonts/type1/public
-/mnsymbol/MnSymbol7.pfb><C:/Users/Denise/AppData/Roaming/MiKTeX/2.9/fonts/type1
-/public/mnsymbol/MnSymbol8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
-amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
-/cm/cmbx8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi1
-0.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C
-:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program
- Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/Mi
-KTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/
-fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
-e1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
-amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
-m/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msb
-m10.pfb>
-Output written on RelatorioIC_GP.pdf (55 pages, 3988051 bytes).
+2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1440.pk> <C:\Users\Denise\AppData\Lo
+cal\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1728.pk> <C:\Users\Denise
+\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1728.pk> <C:\U
+sers\Denise\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\eccc207
+4.pk><C:/Users/Denise/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/mnsymbol/Mn
+Symbol10.pfb><C:/Users/Denise/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/mns
+ymbol/MnSymbol12.pfb><C:/Users/Denise/AppData/Roaming/MiKTeX/2.9/fonts/type1/pu
+blic/mnsymbol/MnSymbol6.pfb><C:/Users/Denise/AppData/Roaming/MiKTeX/2.9/fonts/t
+ype1/public/mnsymbol/MnSymbol7.pfb><C:/Users/Denise/AppData/Roaming/MiKTeX/2.9/
+fonts/type1/public/mnsymbol/MnSymbol8.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
+pe1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
+ic/amsfonts/cm/cmbx8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfon
+ts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
+mi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb>
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Progr
+am Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/
+MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.
+9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
+pe1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
+/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/
+symbols/msbm10.pfb>
+Output written on RelatorioIC_GP.pdf (55 pages, 4119397 bytes).
 PDF statistics:
- 1581 PDF objects out of 1728 (max. 8388607)
- 236 named destinations out of 1000 (max. 500000)
- 530 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1619 PDF objects out of 1728 (max. 8388607)
+ 238 named destinations out of 1000 (max. 500000)
+ 543 words of extra memory for PDF output out of 10000 (max. 10000000)
 

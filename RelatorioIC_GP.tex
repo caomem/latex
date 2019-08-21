@@ -41,7 +41,7 @@
 		
 		\textsc{\LARGE \hspace{-0.17cm}Universidade Federal de Santa Catarina}\\[0.5cm] % Name of your university/college
 		{\Large Centro de Blumenau \\ Departamento de Matemática}\\[1.5cm] % Major heading such as course name
-		\textsc{\Large PIBIC \\ Relatório Final \vspace{1.5cm} }\\[2.0cm] % Minor heading such as course title
+		\textsc{\Large PIBIC \\ Relatório Final \vspace{1.5cm}  \\ }{\large Geometria de Distâncias e Álgebras Geométricas: novas perspectivas geométricas, computacionais e aplicações}\\[2.0cm] % Minor heading such as course title
 		
 		%\textsc{\LARGE Universidade Federal de Santa Catarina}\\[0.5cm] % Name of your university/college
 		%{\Large Centro de Blumenau \\ Departamento de Matemática}\\[1.5cm] % Major heading such as course name
@@ -52,7 +52,7 @@
 		%----------------------------------------------------------------------------------------
 		
 		\HRule \\[0.4cm]
-		{ \LARGE \bfseries DMDGP: Um Problema Real} \\ [0.4cm] % Title of your document
+		{ \LARGE \bfseries \textbf{Geometria de Distâncias: uma aplicação na Geometria de Proteínas}} \\ [0.4cm] % Title of your document
 		\HRule \\[2.5cm]
 		
 		%----------------------------------------------------------------------------------------
@@ -61,8 +61,11 @@
 		
 		\begin{minipage}{1\textwidth}
 			\begin{center} \large
-				Guilherme Philippi, orientado por Felipe Delfini Caetano Fidalgo
-				\\g.philippi@grad.ufsc.br, felipe.fidalgo@ufsc.br 
+				Guilherme Philippi (g.philippi@grad.ufsc.br),
+				\vspace{0.5cm}
+				\\
+				\underline{\textsc{Orientador:}} \vspace{0.2cm}
+				Felipe Delfini Caetano Fidalgo (felipe.fidalgo@ufsc.br).
 			\end{center}
 		\end{minipage} \\[2cm]
 		
@@ -85,7 +88,7 @@
 	\end{center}
 	
 	
-	In this paper we presented the basic principles of the Discretizable Molecular Distance Geometry Problem (DMDGP), as well as the necessary tools for its comprehension, going from the graph theory to the biomolecular structure of the main macromolecules of our study. We also present some recent results on the ordering that makes up the problem. The text concludes with a study of the algorithm described in the literature to solve the problem efficiently and a brief section of computer simulations.
+		In this paper, we study the Discretizable Molecular Distance Geometry Problem (DMDGP) applied to proteins, as well as the necessary tools for its comprehension, going from the graph theory to biomolecular structures. We, also, deal with some recent results on the ordering of a protein graph that composes the problem. The text concludes with a study of the algorithm described in the literature to solve the problem efficiently and a brief section of computer simulations.
 	
 	\textbf{Keywords:} DMDGP, Distance geometry, Optimization.
 	 
@@ -96,34 +99,32 @@
 		\textbf{Resumo}
 	\end{center}
 	
-	Neste trabalho foram apresentados os princípios básicos sobre o Discretizable Molecular Distance Geometry Problem (DMDGP), bem como as ferramentas necessárias para sua compreensão, passando da teoria de grafos à estrutura biomolecular das macromoléculas principais do nosso estudo. Também apresentamos alguns resultados recentes sobre a ordenação que compõe o problema. O texto se encerra com um estudo sobre o algoritmo descrito na literatura para solucionar o problema de forma eficiente e uma brevê seção de simulações computacionais.
+	Neste trabalho, foram estudados o Discretizable Molecular Distance Geometry Problem (DMDGP) aplicado as proteínas, bem como as ferramentas necessárias para sua compreensão, passando da teoria de grafos às estruturas biomoleculares. Também lidamos com alguns resultados recentes sobre a ordenação do grafo da proteína que compõe o problema. O texto se encerra com um estudo sobre o algoritmo descrito na literatura para solucionar o problema de forma eficiente e uma brevê seção de simulações computacionais.
 	
 	\textbf{Palavras-chave:} DMDGP, Geometria de Distâncias, Otimização.
 	
 	
 	\newpage
 	\section{Introdução}
-	Existe uma relação muito forte com a forma geométrica das moléculas orgânicas e suas funções em organismos vivos. Pode-se fazer uma analogia destes organismos com um grande quebra-cabeça, cheio de peças tão variadas quanto se queira, onde cada peça tem um local específico no grande quebra-cabeça, de forma que sua posição e função é dado justamente pela forma geométrica de cada peça. Imagine este grande quebra-cabeça de forma tridimensional ao invés de plana, com peças em formatos diversos e escalafobéticos, logo, você não estará tão longe de entender como funciona um organismo vivo.
+	Existe uma relação muito forte entre a forma geométrica das moléculas orgânicas e suas funções em organismos vivos \cite{bioquimicaLehninger}. Outrora, em pesquisas sobre a molécula de DNA (ácido desoxirribonucleico), descobriu-se que essa era parte fundamental da produção de um dos pilares para a vida: a proteína. Esta é a estrutura básica que utilizamos para organizar nossas moléculas, gerando informação, ao possibilitarem um mecanismo funcional natural para a vida. Por exemplo, podemos citar o seu papel no transporte de oxigênio (hemoglobina), na proteção do corpo contra organismos patogênicos (imunoglobulina), com a catalização de reações químicas (apoenzima), além de outras inúmeras funções primordiais no nosso organismo \cite{fidalgotese}.
 	
-	Outrora, em pesquisas sobre a molécula de DNA (ácido desoxirribonucleico), descobriu-se que essa era parte fundamental da produção de um dos pilares para a vida: a proteína. Esta será o alvo principal deste estudo e possuí uma gama extensa de funções em nosso organismo --- como se fossem as tais peças do quebra-cabeça da analogia acima. Podemos dizer que somos feitos de proteínas. Organismos vivos lutam constantemente contra a desorganização intrínseca do universo e as proteínas tem papel importantíssimo nessa luta. São elas as estruturas que utilizamos para nos organizar, gerando informação, ao possibilitarem um mecanismo procedural natural para a vida, como com o seu papel no transporte de oxigênio (hemoglobina), na proteção do corpo contra organismos patogênicos (imunoglobulina), com a catalização de reações químicas (apoenzima), além de outras inúmeras funções primordiais no nosso organismo \cite{fidalgotese}. Perceba a importância fundamental em estudar a estrutura geométrica de cada uma dessas proteínas e sua relação com suas funções.
+	Por conta dessa motivação tem-se esforços como o de Kurt Wüthrich, que propôs que utilizássemos experimentos de \textit{Ressonância Magnética Nuclear}
+	(RMN) para calcular a estrutura tridimensional de uma molécula de proteína (que lhe rendeu o premio Nobel da Química em 2002 \cite{RMNproteinWrutrich}). Porém, a RMN não tem como resultado direto a estrutura tridimensional de uma proteína, mas sim distâncias entre átomos relativamente próximos que compõem a proteína --- com inconvenientes erros associados, pois tratam-se de valores experimentais \cite{carlile:MinimalOrder}.
 	
-	Por conta dessa motivação tem-se esforços como o de Kurt Wüthrich, que propôs que se utilizasse experimentos de \textit{Ressonância Magnética Nuclear}
-	(RMN) para calcular a estrutura tridimensional de uma molécula de proteína, ganhando o premio Nobel da Química em 2002 \cite{RMNproteinWrutrich}. Porém, a partir dessa estratégia tivemos novos problemas. A RMN não tem como resultado a estrutura tridimensional de uma proteína, mas sim distâncias entre átomos relativamente próximos que compõem a proteína. Para poder calcular a estrutura de uma proteína a partir dessas distâncias, surgira um novo problema, conhecido na literatura como \textit{Problema de Geometria de Distâncias Moleculares}, ou simplesmente, MDGP \cite{carlileGDandAplications}.
+	Para podermos calcular a estrutura de uma proteína a partir dessas distâncias, de forma estática, respeitando restrições de outras informações provenientes da física e química, surgira um novo problema na literatura conhecido como \textit{Molecular Distance Geometry Problem} (MDGP), que é uma particularização do \textit{Distance Geometry Problem} (DGP) \cite{carlileGDandAplications}. Tal problema, munido de uma ordem conveniente para percorrer seus átomos (que garante uma discretização do espaço de buscas por soluções), pode ser discretizado, gerando o \textit{Discretizable MDGP} (DMDGP).
 	
-	Ao longo desse texto estudaremos este problema, suas variações, seus problemas relacionados, as ferramentas que nos facilitarão a resolve-los, suas soluções e as complexidades relacionadas a estas soluções. 
+	Este último trata-se do nosso problema fundamental, que será melhor definido no Capítulo ~\ref{sec:dmdgp}. Para podermos compreendê-lo, introduzimos a teoria de grafos (no Capítulo ~\ref{sec:grafos}), seguido das principais informações sobre as estruturas biomoleculares das proteínas (Capítulo ~\ref{sec:biomol}). Por último, apresentamos o principal algorítimo responsável pela solução do problema (Capítulo ~\ref{sec:bp}), contendo algumas simulações computacionais.
 	
-	Partindo para uma introdução a ferramenta matemática usada para definir o nosso problema, o capitulo 2 da aspectos essenciais para este texto sobre a teoria de grafos, donde segue-se para uma contextualização do problema do ponto de vista biomolecular, explorando cada detalhe da estrutura das proteínas no capítulo 3. Após, segue-se para a seção principal do texto, o capitulo 4, que se encerra com a definição formal do problema, nos permitindo tratar do algorítimo que é responsável por sua solução, introduzido no capítulo 5.
-	
-	O texto se encerra com os três apêndices: A, B e C. O primeiro trata de uma brevê explicação sobre a lei dos cossenos, que nos é essencial; O apêndice B constrói, junto ao leitor, uma linha de raciocínio para definir o conjunto de operações que compõe a matriz $B_i$; Por último, no apêndice C, temos uma representação química das estruturas básicas que compõe as proteínas.
-	
-	A revisão bibliográfica pode ser encontrados no fim do documento. 
+	A revisão bibliográfica completa pode ser encontrados no fim do documento, sendo devidamente citada durante o texto. 
 	
 	\newpage
 	
-	\section{Grafos: Breve Introdução}
-	Esta seção tem como objetivo apresentar a \textit{teoria de grafos}, um tema muito estudado por diversos matemáticos, o que dá uma certa sensação de importância histórica na matéria.
+	\section{Grafos: Aspectos Gerais\label{sec:grafos}}
+	Esta seção tem como objetivo apresentar um breve resumo da \textit{teoria de grafos}, tema muito estudado por diversos matemáticos e aplicado em diversas áreas do conhecimento para além da matemática.
 	
-	 Pode-se dizer que em 1736 é que a teoria teve início, com base no artigo publicado por Leonhard Euler, sobre as 7 pontes de Königsberg \cite{euler:KOENIGSBERG} \cite{grafos1}. Esse é o problema que normalmente introduz quem está começando a trabalhar com grafos --- se trata do desafio de ligar todos os pontos de um desenho sem tirar o lápis do papel e sem passar duas vezes no mesmo ponto. Diz a lenda que esta era uma dúvida rotineira dos moradores de Koenigsberg, que tentavam constantemente fazer o trecho a pé motivados a resolverem o desafio --- algo que, tanto pelo tamanho demasiadamente grande do percurso quanto pela falta de fé de que esse problema realmente motivaria alguém não ligado a matemática, pessoalmente, acho que alguém inventou essa última parte. 
+	 Podemos dizer que em 1736 é que a teoria teve início, com base no artigo publicado por Leonhard Euler, sobre as 7 pontes de Königsberg \cite{euler:KOENIGSBERG} \cite{grafos1}. Esse é o problema que normalmente introduz quem está começando a trabalhar com grafos --- se trata do desafio de ligar todos os pontos de um desenho sem tirar o lápis do papel e sem passar duas vezes no mesmo ponto. Segundo a história, os moradores daquela região perguntavam se era possível atravessar todas as pontes sem ter que repetir alguma delas. Euler provou que isso não era possível, ao formular matematicamente o problema, que deu origem a esta teoria.
+	
+	Para isso, Euler abstraiu o problema, ao vê-lo de um ponto de vista matemático, como um conjunto de pontos intersectados por linhas (vide Figura ~\ref{fig:koni}). Essa representação facilitou a análise de que a solução do problema só seria possível se houvesse exatamente zero ou dois pontos de onde saísse um número ímpar de caminhos \cite{euler:KOENIGSBERG}.
 	
 	\begin{figure}[H]
 		\begin{center}
@@ -133,22 +134,17 @@
 		\label{fig:koni}
 	\end{figure}
 	
-	Muitas situações reais podem ser convenientemente representadas por diagramas contendo um conjunto de pontos e linhas ligando pares desses pontos --- que é a definição empírica de um grafo. Por exemplo, esses pontos podem ser pessoas, onde as linhas representam pares de amigos. 
-	
-	Existe uma íntima relação entre Grafos e algoritmos. De fato, podemos inclusive representar um algoritmo por um grafo \cite{grafos0}. Na verdade, a definição de grafos é tão abrangente que podemos ver suas ligações com diversas áreas do conhecimento.
+	Além dessa, muitas outras situações reais podem ser convenientemente representadas por simples diagramas contendo um conjunto de pontos e linhas ligando pares desses pontos. Por exemplo, podemos definir o conjunto $P = \{a,b,c\}$ das pessoas $a, b$ e $c$ e um conjunto $A = \{\{a,b\}, \{b,c\}\}$ como o conjunto de amizades entre essas pessoas --- no caso, $a$ é amigo de $b$, que é amigo de $c$, porém $a$ não é amigo de $c$. 
 		
 	\begin{center}
 		\begin{minipage}{0.9 \linewidth}
 			\textbf{Grafo:} Um grafo $G$ é uma tripla ordenada da forma $(V(G),E(G), \psi_{G})$, composto por um conjunto de \textit{vértices} $V(G)$, de arestas $E(G)$ e uma \textit{função de incidência} $\psi_{G}$ que, por sua vez, associa a cada aresta de $V(G)$ um par não ordenado de vértices (nem sempre distintos) de $E(G)$. Costumamos dizer que as arestas ligam os vértices.
-			
 		\end{minipage}
 	\end{center}
 	
-	Pede-se uma pequena pausa para a licença poética: Acreditamos que uma das mais belas características da representação dos grafos é que o conjunto de vértices $V$ aceita qualquer elemento, ou seja, pode ser tanto um prédio, quanto um átomo. Daí vem o grande poder de abstração da representação de grafos. 
+	Existe, também, uma íntima relação entre Grafos e algoritmos. De fato, podemos inclusive representar um algoritmo por um grafo \cite{grafos0}. Na verdade, a definição de grafos é tão abrangente que podemos ver suas ligações com diversas áreas do conhecimento. 
 	
-	Essa abstração na representação de grafos é tamanha que nos motiva a usar um paradigma diferente para apresenta-los. Na literatura, grafos sempre são usados em paralelo com desenhos de diagramas que tentam demonstrar, geometricamente, a que está associado os conjuntos que os definem. Porém, essa representação é enganosa: Os vértices simplesmente não tem uma posição bem definida no espaço.
-	
-	No que se segue, definiremos algumas características elementares que serão utilizadas durante esse texto. Para um estudo mais completo obre essa teoria (a qual recomendamos profundamente), favor considerar \cite{grafos1} e \cite{grafosPremioElon}.
+	No que se segue, definiremos algumas características elementares que serão utilizadas durante esse texto. Para um estudo mais completo sobre essa teoria, vide \cite{grafos1} e \cite{grafosPremioElon}.
 	
 	\subsection{Algumas Classificações Importantes}
 	
@@ -172,14 +168,22 @@
 	
 	\begin{center}
 		\begin{minipage}{0.9 \linewidth}
-			\textbf{Grafo Completo:} Um grafo simples onde quaisquer dois vértices são adjacentes é denominado \textit{grafo completo}.
+			\textbf{Grafo Completo:} É um grafo simples em que todo vértice é conectado a todos os outros vértices.
 		\end{minipage}
 	\end{center}
+
+	\begin{figure}[H]
+		\begin{center}
+			\includegraphics[width=0.4\linewidth]{grafocompleto.png}
+		\end{center}
+		\caption{Diagrama de um grafo completo com 12 vértices ($|V| = 12$).}
+		\label{fig:grafocompleto}
+	\end{figure}
 	
 	Outro conceito que nos será de grande utilidade é o de subgrafo.
 	\begin{center}
 		\begin{minipage}{0.9 \linewidth}
-			\textbf{Subgrafo:} É um grafo resultante de um subconjunto de vértices e outro subconjunto de arestas de outro grafo. Isto é, seja $G = (V, E), G^\prime = (V^\prime, E^\prime)$ é dito um subgrafo de $G$ se $(V^\prime, E^\prime)$ é um grafo, $V^\prime \subseteq V$ e $E^\prime \subseteq E$.
+			\textbf{Subgrafo:} É um grafo resultante de um subconjunto de vértices e outro subconjunto de arestas de outro grafo. Isto é, seja $G = (V, E), G^\prime = (V^\prime, E^\prime)$ é dito um subgrafo de $G$ se $(V^\prime, E^\prime)$ é um grafo tal que $V^\prime \subseteq V$ e $E^\prime \subseteq E$.
 		\end{minipage}
 	\end{center}
 	
@@ -190,21 +194,18 @@
 		\end{minipage}
 	\end{center}
 	
-	Em especial, também podemos interpretar as arestas como \textit{caminhos} e, se o fizermos, podemos pensar em alguma forma de métrica para esses caminhos. Esse pensamento da origem aos grafos ditos \textit{ponderados}.
-	
+	Em especial, também podemos interpretar as arestas como \textit{caminhos} e, se o fizermos, podemos pensar em alguma forma de métrica para esses caminhos. Esse pensamento da origem à nossa última definição de grafos, ditos \textit{ponderados}.
 	
 	\begin{center}
 		\begin{minipage}{0.9 \linewidth}
 			\textbf{Grafo Ponderado:} É um grafo que possui uma função $d(E) \rightarrow \mathbb{R}$ associada, isto é, o grafo que possui valores numéricos atribuídos as suas arestas.
 		\end{minipage}
-	\end{center}
-
-	Para nós essa última definição terá uma maior importância, visto que nosso problema é localizar um conjunto de pontos dado um conjunto de distâncias entre eles \cite{fidalgotese}. Perceba que se trata do problema de desenhar o diagrama que representa esse grafo ponderado, completo \cite{carlileBook31Coloquio}, respeitando as suas distâncias no papel.		
+	\end{center}		
 	
 	\newpage
 	
-	\section{Um Passeio pela Bioquímica}
-	A bioquímica é a ciência que busca explicar as formas e funções biológicas em termos químicos, uma tarefa muito divertida, porém, complicada. Já no século XVIII, os químicos percebiam a grande diferença entre o mundo inanimado e o mundo vivo: Antoine-Laurent Lavoisier (1743-1794) constatou a relativa simplicidade do ``mundo mineral'' --- não orgânico --- comparada a complexidade dos ``mundos animal e vegetal'' \cite{bioquimicaLehninger}. Ele sabia que esses últimos eram constituídos de moléculas ricas nos elementos carbono, oxigênio, nitrogênio e fósforo, que, devido sua abundância na natureza somada com as suas características químicas, são ótimos para constituírem a complexidade da vida.
+	\section{Um Passeio pela Bioquímica \label{sec:biomol}}
+	A bioquímica é a ciência que estuda as formas e funções biológicas em termos químicos. Já no século XVIII, os químicos percebiam a grande diferença entre o mundo inanimado e o mundo vivo: Antoine-Laurent Lavoisier (1743-1794) constatou a relativa simplicidade do ``mundo mineral'' --- não orgânico --- comparada a complexidade dos ``mundos animal e vegetal'' \cite{bioquimicaLehninger}. Ele sabia que esses últimos eram constituídos de moléculas ricas nos elementos carbono, oxigênio, nitrogênio e fósforo, que, devido sua abundância na natureza somada com as suas características químicas, são ótimos para constituírem a complexidade da vida.
 
 	\subsection{Carbono}
 	A química dos organismos vivos está organizada em torno do carbono, pois este é muito comum na natureza e possuí uma ótima propriedade estrutural: O carbono pode formar ligações simples estáveis com até quatro outros átomos. De fato, o carbono constitui mais da metade do peso seco das células. 
@@ -272,7 +273,7 @@
 		\label{fig:amino}
 	\end{figure}
 	
-	Por tanto, há uma noção prévia de qual tipo de estrutura esperar ao analisar uma molécula de proteína. Existe uma estrutura conhecida e repetitiva para os átomos.
+	Portanto, há uma noção prévia de qual tipo de estrutura esperar ao analisar uma molécula de proteína. Existe uma estrutura conhecida e repetitiva para os átomos.
 	
 	Para todos os aminoácidos comuns, exceto a glicina, o carbono $\alpha$ está ligado com quatro outros átomos diferentes entre si (na glicina temos R como apenas mais um hidrogênio, sendo o aminoácido mais simples), o que transforma o carbono $\alpha$ em um centro quiral. Logo, cada aminoácido (menos glicina) tem sempre dois estereoisômeros possíveis. Porém, na verdade, apenas um destes ocorrê naturalmente nas proteínas \cite{bioquimicaLehninger}.
 	
@@ -296,7 +297,7 @@
 	
 	\begin{figure}[H]
 		\begin{center}
-			\includegraphics[width=1\linewidth]{protest.png}
+			\includegraphics[width=0.9\linewidth]{protest.png}
 		\end{center}
 		\caption{Níveis de estrutura das proteínas exemplificados na Hemoglobina.}
 		\label{fig:protest}
@@ -317,7 +318,7 @@
 		\label{fig:backbone}
 	\end{figure}
 	
-	Outra informação bastante útil sobre esta cadeia principal é que, devido dados experimentais de cristalografia, sabe-se sobre a geometria média dessa subestrutura \cite{ramachandran1974MolStructure}, onde os comprimentos e ângulos entre  as ligações dos átomos que a formam são fixas, na média, a menos de erros de medida. Vide Figura ~\ref{fig:rama}, extraída do texto original --- por razões emocionais --- de Ramachandran \textit{et al}, um dos precursores deste estudo.
+	Outra informação bastante útil sobre esta cadeia principal é que, devido dados experimentais de cristalografia, sabe-se sobre a geometria média dessa subestrutura \cite{ramachandran1974MolStructure}, onde os comprimentos e ângulos entre  as ligações dos átomos que a formam são fixas, na média, a menos de erros de medida. Vide Figura ~\ref{fig:rama}, extraída do texto original de Ramachandran \textit{et al}, um dos precursores deste estudo.
 	
 	\begin{figure}[H]
 		\begin{center}
@@ -331,7 +332,7 @@
 	\subsection{\textit{Worldwide Protein Data Bank}}
 	Já foi possível perceber a grande variedade de diferentes configurações possíveis para as proteínas. Com isso, há a necessidade de se estudar cada uma explicitamente, através de experimentos, catalogando e guardando essas informações. Esse grande esforço para entender o mundo das macromoléculas se deixa transparecer com o repositório \textit{Worldwide Protein Data Bank} --- ou simplesmente wwPDB \cite{wwPDB}.
 	
-	Este é um repositório online e público onde estão guardadas todas os dados de proteínas e ácidos nucleicos já catalogados, em especial dados de suas estruturas 3D (posições x, y e z de cada um dos átomos que a constituem). Auxiliando tanto pesquisadores, quanto professores e estudantes, popular essa base de dados é um grande esforço em conjunto de físicos, biólogos, bioquímicos e vários outros profissionais de diversas áreas do conhecimento de todo o mundo.
+	Este é um repositório online e público onde estão guardadas todas os dados de proteínas e ácidos nucleicos já catalogados, em especial dados de suas estruturas 3D (posições x, y e z de cada um dos átomos que a constituem). Auxiliando tanto pesquisadores, quanto professores e estudantes, essa base de dados é um grande esforço em conjunto de físicos, biólogos, bioquímicos e vários outros profissionais de diversas áreas do conhecimento de todo o mundo.
 	
 	\subsubsection*{Arquivo PDB}
 	Quando se quer estudar uma proteína no repositório PDB, base fazer o \textit{download} do arquivo PDB da molécula (extensão ``.ent''). Esse é um arquivo de estruturas tridimensionais de macromoléculas biológicas determinadas experimentalmente, que descrevem as coordenadas espaciais de cada átomo cuja posição foi determinada (muitas das estruturas catalogadas não estão completas); também existem dados adicionais sobre informações de como as estruturas foram determinadas, os dados práticos dos experimentos, a precisão associada aos dados e tudo mais que quem estiver criando o documento achar necessário para aquela macromolécula.
@@ -420,7 +421,7 @@
 	\end{figure}
 \vspace{-0.3cm}
 	
-	Com esse conjunto de dados, pode-se, por exemplo, esboçar uma representação gráfica de uma molécula. Existem muitos softwares compatíveis com os arquivos PDB para este fim, por exemplo, o autor deste documento implementou um a visualização de uma projeção da molécula 3D no plano z = 0, como pode-se averiguar na Figura ~\ref{fig:molproj}.
+	Com esse conjunto de dados, pode-se, por exemplo, esboçar uma representação gráfica de uma molécula. Existem muitos softwares compatíveis com os arquivos PDB para este fim, por exemplo, o autor deste documento implementou uma visualização de uma projeção da molécula 3D no plano z = 0, como pode-se averiguar na Figura~\ref{fig:molproj}.
 	
 	\begin{figure}[H]
 		\begin{center}
@@ -460,7 +461,7 @@
 		\label{fig:fmain}
 	\end{figure}
 	
-	\subsubsection*{Brevê definição das funções do PDBReader}
+	\subsubsection*{Definição das funções do PDBReader}
 	Segue abaixo uma descrição dos principais componentes do software que permitem interação com o usuário. Verifique a presença dos identificador \textit{id} de cada componente na Figura ~\ref{fig:pdbreader}, que são referenciados na Tabela ~\ref{table:pdbreader} com suas respectivas descrições.
 	
 	\begin{figure}[H]
@@ -514,7 +515,7 @@
 	\end{figure}
 	
 	\newpage
-	\section{\textit{Molecular Distance Geometry Problem}}
+	\section{\textit{Molecular Distance Geometry Problem} \label{sec:dmdgp}}
 	Até o momento, provavelmente, já deve estar mais que claro a importância de se estudar a estrutura tridimensional de proteínas e a grande complexidade relacionada a esta tarefa. De fato, a bioquímica é um universo de estudos imenso e, se não tomarmos cuidado, facilmente nos perderemos entre seus labirintos. Porém, a partir daqui voltaremos nosso olhar para uma perspectiva um pouco mais matemática, o que nos dá uma capacidade de abstração elevada.
 	
 	Sempre perdemos alguma coisa quando trazemos um problema da vida real para um modelo matemático. Com a experiência, adquirimos a habilidade de optar pelas hipóteses corretas para solucionar o problema mais próximo possível do real, porém, ao fazê-lo, essas hipóteses podem dificultar demasiadamente a busca por uma solução. Esse é um dilema recorrente na matemática aplicada.
@@ -535,120 +536,9 @@
 		\end{minipage}
 	\end{center}
 	
-	Perceba a grande beleza que emana desse problema inverso. Uma das suas características mais interessantes é sua simplicidade --- tem como entrada apenas um conjunto de distâncias entre pontos não localizados e procura-se localizá-los ---, que o leva a ser aplicado em muitas diferentes áreas do conhecimento \cite{carlileGDandAplications}. 
+	 Uma da características mais interessantes desse problema é sua simplicidade --- tem como entrada apenas um conjunto de distâncias entre pontos não localizados e procura-se localizá-los ---, que o leva a ser aplicado em muitas diferentes áreas do conhecimento \cite{carlileGDandAplications}. 
 	
 	Tendo em mente nosso problema fundamental, podemos ajustar nossos dados moleculares para aplicá-lo.
-	
-	\subsection{Representações de Átomos em Coordenadas\label{sec:bi}}
-	Como as partículas que estamos interessados estão localizadas no espaço tridimensional, podemos representa-las utilizando coordenadas cartesianas tridimensionais $x_1, ...,x_n \in\mathbb{R}^3$, onde $x_n$ é a \textit{realização} do n-ésimo átomo da molécula analisada. 
-	
-	Além da utilização das coordenadas cartesianas, também podemos usar outro sistema de coordenadas, mais condizente com os dados que temos a priori sobre a molécula --- rever Figura ~\ref{fig:rama}. Tal sistema denomina-se \textit{coordenadas internas} (e tem forte relação com as coordenadas esféricas).
-	
-	As coordenadas internas de uma proteína são definidas pela distância entre os átomos $d_{1,2}, ..., d_{n - 1,n}$, pelo ângulo planar $\theta_{1,3}, ...,\theta_{n - 2,n}$ (formados por 3 átomos consecutivos) e pelos ângulos de torção $\omega_{1,4}, ..., \omega_{n-3,n}$ (formado por 4 átomos consecutivos), conforme ilustrado na Figura ~\ref{fig:angulos}. O ângulo de torção é definido entre os planos formados pelos átomos $i-3,i-2,i-1$ e$i-2,i-1,i$, respectivamente. Assim, temos que $\omega$ varia no intervalo $[0,2\pi]$ e $\theta$ de $[0,\pi]$ --- assim como em um sistema de coordenadas esféricas --- e também já vimos que as distâncias entre os átomos unidos por ligações covalentes são da ordem de 1,5\AA. 
-	
-	\begin{figure}[H]
-		\begin{center}
-			\includegraphics[width=0.6\linewidth]{Capturar.PNG}
-		\end{center}
-		\caption{Ângulos planos e de torção \cite{carlileBook31Coloquio}}
-		\label{fig:angulos}
-	\end{figure}
-	
-	Pode-se obter facilmente os ângulos planos pela \textit{Lei dos Cossenos}, tendo em vista que conhece-se todas as distâncias que, por construção, representam os lados do triângulo --- para mais detalhes, recorrer ao Apêndice A. Porém, descobrir o ângulo de torção associado (também chamado de ângulo diedral) pode se mostrar um grande problema. 
-	
-	O cosseno de um ângulo diedral pode ser dado em função de distâncias euclidianas e ângulos planos \cite{carlileTese}. Sejam $x_i, x_j, x_k, x_l \in \mathbb{R}^3$ quaisquer quatro átomos consecutivos com coordenadas ($x_{i_1}, x_{i_2}, x_{i_3}$), ($x_{j_1}, x_{j_2}, x_{j_3}$), ($x_{k_1}, x_{k_2}, x_{k_3}$) e ($x_{l_1}, x_{l_2}, x_{l_3}$), respectivamente; Também $r_{ab}$, com $a,b \in \{i,j,k,l\}$ as distâncias entre os átomos $x_a$ e $x_b$; e por último $\theta_{ijk}$, o ângulo definido pelos átomos $x_i, x_j, x_k$ e $\theta_{kji}$, o ângulo definido pelos átomos $x_k, x_j, x_i$. Então, o cosseno do ângulo diedral $\omega_{ijkl}$ é dado por:
-	
-	\begin{equation}
-	\cos(\omega_{ijkl}) = \frac{r^2_{ij} + r^2_{jl} - 2r_{ij}r_{jl}\cos(\theta_{ijk})\cos(\theta_{kjl}-r^2_{il})}{2r_{ij}r_{jl}\mbox{sen}(\theta_{ijk})\mbox{sen}(\theta_{kjl})}. \label{eq:cosOmega}
-	\end{equation}    
-	
-	Porém, não temos como definir exatamente o seno desse ângulo. Só podemos fazer $\mbox{sen}(\omega_{ijkl}) = \pm\sqrt{1 - \cos(\omega_{ijkl})^2} \label{eq:senOmega}$. Mas vamos deixar esse problema do ângulo de torção para outra hora --- por enquanto supomos que temos os valores exatos de $\omega_{ijkl}$.
-	
-	Por tanto, conseguimos definir todo o problema a partir das coordenadas internas. Como nosso objetivo é obter as posições tridimensionais de cada átomo, nosso problema se restringiu em transformar as coordenadas internas em cartesianas. Para isso, utiliza-se uma série de operações lineares que estão descritas pelas matrizes abaixo.
-	
-	Consideremos que as coordenadas do ponto $x_{i} \in\mathbb{R}^3,i= 1, ...,n $ são dadas por $(x_{i1},x_{i2},x_{i3})$, temos:
-	
-	$$
-	\begin{bmatrix}
-	x_{i1}\\ 
-	x_{i2}\\ 
-	x_{i3}\\ 
-	1
-	\end{bmatrix}
-	= B_{1}B_{2}\cdots B_{i}\begin{bmatrix}
-	0\\ 
-	0\\ 
-	0\\ 
-	1
-	\end{bmatrix},
-	$$
-	onde
-	$$
-	B_1\: =\:
-	\begin{bmatrix}
-	1 & 0 & 0 & 0\\ 
-	0 & 1 & 0 & 0\\ 
-	0 & 0 & 1 & 0\\ 
-	0 & 0 & 0 & 1
-	\end{bmatrix},\:\:\:
-	\: B_2\: =\:
-	\begin{bmatrix}
-	-1 & 0 & 0 & -d_{1,2}\\
-	0 & 1 & 0 & 0\\ 
-	0 & 0 & -1 & 0\\ 
-	0 & 0 & 0 & 1
-	\end{bmatrix},
-	$$
-	$$
-	B_3\:=\:
-	\begin{bmatrix}
-	-\cos\theta_{1,3} & -\mbox{sen}\theta_{1,3} & 0 & -d_{2,3}\cos\theta_{1,3}\\ 
-	\mbox{sen}\theta_{1,3} & -\cos\theta_{1,3} & 0 & d_{2,3}\mbox{sen}\theta_{1,3}\\ 
-	0 & 0 & 1 & 0\\ 
-	0 & 0 & 0 & 1
-	\end{bmatrix}
-	$$
-	e
-	$$
-	B_i\:=\:
-	\begin{bmatrix}
-	-c_{\theta_{i}} & -s_{\theta_{i}} & 0 & -d_{i-1,i}c_{\theta_{i}}\\ 
-	s_{\theta_{i}}c_{\omega_{i}} & -c_{\theta_{i}}c_{\omega_{i}}
-	& -s_{\omega_{i}} & d_{i-1,i}s_{\theta_{i}}c_{\omega_{i}}\\ 
-	s_{\theta_{i}}s_{\omega_{i}} & -c_{\theta_{i}}s_{\omega_{i}} & c_{\omega_{i}} & d_{i-1,i}s_{\theta_{i}}s_{\omega_{i}}\\ 
-	0 & 0 & 0 & 1
-	\end{bmatrix}
-	$$
-	dado $s_{\theta_{i}}=\mbox{sen} (\theta_{i-2, i}),\: c_{\theta_{i}}=\cos (\theta_{i-2, i}),\: s_{\omega_{i}}=\mbox{sen} (\omega_{i-3, i}),\: c_{\omega_{i}}=\cos (\omega_{i-3, i})$. Em $B_i$, $i=4, ..., n$.
-	
-	
-	Perceba que $B_i$ (chamada \textit{Matriz de Torção}) é a matriz que engloba todas as operações necessárias para encontrar a i-ésima realização do i-ésimo átomo da molécula, tendo conhecimento de todas as matrizes $B_j$ $\forall j < i$. Como é de grande importância o entendimento de tais operações que formam a $B_i$, deixa-se o Apêndice B para esta discussão.
-	
-	Note também que fixando os comprimentos das ligações covalentes $d_{1,2},d_{2,3}$ e o valor do ângulo plano $\theta_{1,3}$, os três primeiros átomos terão as coordenadas dadas por
-	$$
-	x_1\:=\:
-	\begin{bmatrix}
-	0\\ 
-	0\\  
-	0
-	\end{bmatrix},\:\:\:
-	x_2\:=\:
-	\begin{bmatrix}
-	-d_{1,2}\\ 
-	0\\  
-	0
-	\end{bmatrix},\:\:\:
-	x_3\:=\:
-	\begin{bmatrix}
-	-d_{1,2}+d_{2,3}\cos\theta_{1,3}\\ 
-	d_{2,3}\mbox{sen}\theta_{1,3}\\  
-	0
-	\end{bmatrix}.
-	$$
-	
-	Dadas essas três realizações dos primeiros átomos, fixamos a base do sistema, evitando estruturas obtidas por meio de rotações e translações a partir de uma mesma estrutura.	
-	
-	Além dos dados teóricos sobre as estruturas dos aminoácidos, também teremos dados de distâncias entre átomos dadas de forma experimental, através de experimentos de RMN.
 	
 	\subsection{Ressonância Magnética Nuclear}
 	A ressonância magnética nuclear é um processo físico que analisa a interação da radiação eletromagnética com a matéria. Neste experimento é escolhida uma faixa de radiofrequência para bombardear uma amostra que está imersa em um campo magnético bastante intenso. Dependendo da radiofrequência utilizada, alguns núcleos atômicos irão absorver energia e outros não. Caso atinja-se uma frequência exata de ressonância dentro destes núcleos atômicos, é possível medir essa ressonância como um sinal de radiofrequência enviado dos núcleos atômicos --- para calcular distâncias entre átomos próximos, com distâncias menores que 5\AA. No nosso problema, a frequência utilizada é para a ressonância dos núcleos de hidrogênio e um computador capta essas respostas eletromagnéticas dos núcleos atômicos para utilizar como dados do problema. \cite{RMNBookIntroduction}
@@ -658,8 +548,10 @@
 	
 	$$ 0 \leq d_{i,j}^i \leq d_{i,j} \leq d_{i,j}^f$$
 	
+	Porém, devido a grande complexidade gerada ao trabalhar com estas distâncias intervalares, nesse texto nós só trabalharemos com as distâncias $d_{i,j}$ exatas, supondo-as como hipótese.
+	
 	\subsection{Modelagem Matemática}
-	Quando um pesquisador de outra área se depara com um problema que não consegue resolver e precisa recorrer aos matemáticos, quase sempre se torna uma tarefa muito complicada para quem for tentar desenvolver o problema. Não pela complexidade matemática do assunto, isto os matemáticos dominam. A dificuldade está em entender o problema de outras áreas e, como se por ironia, resolve-los. Este é um fardo que se tem de carregar quando se escolhe trabalhar com uma ciência que é utilizada por tantas outras. No entanto, por sorte, os matemáticos são apaixonados por interpretar, modelar e resolver problemas.
+	Quando um pesquisador de outra área se depara com um problema que não consegue resolver e precisa recorrer aos matemáticos, quase sempre se torna uma tarefa muito complicada para quem for tentar desenvolver o problema. Não pela complexidade matemática do assunto, isto os matemáticos dominam. A dificuldade está em \textit{entender} o problema de outras áreas para resolve-los.
 	
 	A boa interpretação de um problema de matemática aplicada deve se ater a algumas perguntas importantes:
 	\begin{itemize}
@@ -785,7 +677,7 @@
 	
 	Admitindo que todas as distâncias dadas são valores \textit{precisos} e que certamente representam as distâncias entre os átomos, o problema então terá uma solução. Para encontrarmos a solução devemos achar o mínimo global discutido na modelagem matemática, que, como vimos anteriormente, é inviável. A quantidade de mínimos locais cresce exponencialmente com a quantidade de vértices. Ou seja, o custo computacional para resolver um MDGP onde, suponha, todas as distâncias da RMN são realmente precisas, pode ser proporcional a $2^n$, onde $n$ é a quantidade de átomos. O que faz esse problema entrar na classificação \textit{NP-difícil}. \cite{ComplexidadeComp}
 	
-	Por tanto, precisamos encontrar outra abordagem para solucionar nosso problema. É assim o processo cientifico. Nosso próximo passo será tentar garantir que, ao menos, não tenhamos uma quantidade não enumerável de soluções do problema.
+	Por tanto, precisamos encontrar outra abordagem para solucionar nosso problema. Nosso próximo passo será tentar garantir que, ao menos, não tenhamos uma quantidade não enumerável de soluções do problema.
 	
 	\subsection{Estudando o Conjunto Solução de um MDGP}
 	Com base no que temos, podemos analisar condições para garantir a finitude do conjunto solução do MDGP --- conforme em \cite{carlileBook31Coloquio}. A cardinalidade do conjunto solução de um MDGP (elementos são funções) pode ajudar na solução do problema. Sabemos que um MDGP pode ter conjunto solução vazio, solução única ou ser não-enumerável. Para essa analise, consideremos o mesmo problema da seção anterior, porém, nesse caso, os vértices não estão restritos ao plano. Temos, então, um MDGP com $V=\{u, v, r, s\}$ e $E=\{\{u,v\}, \{u, r\}, \{v, r\}, \{v, s\}, \{r, s\}, \{u, s\}\}$. Fixamos \textit{u, v, r} e \textit{s}; obtemos o mesmo sistema quadrático:
@@ -943,7 +835,7 @@
 	Portanto uma solução do problema pode ser representada, então, como um elemento do $\mathbb{R}^{3\|V\|}$
 	
 	\subsection{Ordenação Conveniente dos Vértices \label{sec:hc}}
-	Ótimo, estamos progredindo. Caso exista uma ordenação que respeite essas condições, podemos tornar a busca por uma solução para o problema factível. Porém, encontrar tal ordem, no geral, não é trivial e depende muito da natureza do problema. Encontrar essa ordem trata-se do $\emph{Problema da Ordem de Vértices Discretizáveis}$ --- ou simplesmente DVOP (do inglês, \textit{Discretization Vertex Order Problem}). Segue sua definição formal:
+	Caso exista uma ordenação que respeite essas condições, podemos tornar a busca por uma solução para o problema factível. Porém, encontrar tal ordem, no geral, não é trivial e depende muito da natureza do problema. Encontrar essa ordem trata-se do $\emph{Problema da Ordem de Vértices Discretizáveis}$ --- ou simplesmente DVOP (do inglês, \textit{Discretization Vertex Order Problem}). Segue sua definição formal:
 	
 	\begin{center}
 		\begin{minipage}{0.9 \linewidth}
@@ -956,7 +848,7 @@
 		\end{minipage}
 	\end{center}
 
-	É importante mencionar que o DVOP é um problema NP-Completo \cite{carlile:dvopComplexity} --- o que não nos faz fugir da infactibilidade vista no MDGP. Entretanto, talvez uma ordem possa ser construída manualmente utilizando as características próprias das proteínas. Felizmente, já existe uma solução para esse problema \cite{carlile:MinimalOrder}. Essa ordem se chama \textit{Hand-crafted vertex order} --- ou HC Order --- e possui esse nome justamente por ter sido feita a mão, após um grande esforço desempenhado por Carlile Lavor e companhia, estudando as configurações dos aminoácidos na cadeia principal.
+	É importante mencionar que o DVOP é um problema NP-Completo \cite{carlile:dvopComplexity} --- o que não nos faz fugir da infactibilidade vista no MDGP. Entretanto, talvez uma ordem possa ser construída manualmente utilizando as características próprias das proteínas. Felizmente, já existe uma solução para esse problema \cite{carlile:MinimalOrder}. Essa ordem se chama \textit{Hand-crafted vertex order} --- ou HC Order --- e possui esse nome justamente por ter sido feita a mão, após um grande esforço desempenhado por Carlile Lavor e colaboradores, estudando as configurações dos aminoácidos na cadeia principal.
 	
 	\subsubsection*{HC Order}
 	Definiremos assa ordenação conforme \cite{carlile:MinimalOrder}. Seja $G = (V, E, d)$ o grafo associado a cadeia principal de uma proteína $(\{N^k, C^{k}_\alpha,C^k\}$, para $k = 1,\dots,p)$, incluindo os átomos de oxigênio $O^k$, ligados ao $C^k$, e átomos de hidrogênio $H^k$ e $H^{k}_\alpha$, ligados ao $N^k$ e $C^{k}_\alpha$, respectivamente (conforme Figura ~\ref{fig:hcVO}, onde $p = 3$).
@@ -996,7 +888,7 @@
  	
  	Nesse momento, é importante mencionar que o software PDBReader implementa a ordenação HC (como pode ser visto no componente 6 da Figura ~\ref{fig:pdbreader}), ou seja, este trabalho também tem como resultado final uma automação do processo de criação de instâncias de proteínas ordenadas a partir de dados de moléculas reais vindas do wwPDB. Vale mencionar que essa é uma ferramenta valiosa do ponto de vista acadêmico, uma vez que possibilita a entrada de dados reais para testes --- é comum, na literatura, a utilização de instâncias artificiais nos testes \cite{carlile:BP} \cite{carlile:instancesMDGP}.
  	
- 	A ordenação HC gera uma estrutura muitíssimo interessante para se trabalhar. De fato, por garantir que sempre tenhamos pelo menos um 3-click em todo átomo com posto maior que três, podemos tentar encontrar a realização do próximo átomo da sequência $v_i$ com $i \geq 4$, utilizando a interseção das 3 esferas centradas nos três átomos anteriores $v_{i-3}, v_{i-2}$ e $v_{i-1}$ (já realizados) e com os respectivos raios iguais as distâncias $d_{i,i-3}, d_{i,i-2}$ e $d_{i,i-1}$ para o átomo $i$ que se está tentando localizar. 
+ 	A ordenação HC gera uma estrutura muitíssimo interessante para se trabalhar. De fato, por garantir que sempre tenhamos pelo menos um 3-clique em todo átomo com posto maior que três, podemos tentar encontrar a realização do próximo átomo da sequência $v_i$ com $i \geq 4$, utilizando a interseção das 3 esferas centradas nos três átomos anteriores $v_{i-3}, v_{i-2}$ e $v_{i-1}$ (já realizados) e com os respectivos raios iguais as distâncias $d_{i,i-3}, d_{i,i-2}$ e $d_{i,i-1}$ para o átomo $i$ que se está tentando localizar. 
  	
  	Essas intersecções tem três possibilidades associadas (veja Figura ~\ref{fig:esferas}): Ou não temos nenhum ponto de interseção entre elas --- e isso não acontece, pois fere as hipóteses do problema, logo, só ocorre se existe alguma informação incorreta; Ou existe um ponto --- donde os átomos são colineares e isso também nunca acontece, devido aos ângulos típicos das ligações; ou existem dois pontos onde as esferas se interceptam --- este é o caso geral.
  	
@@ -1033,9 +925,121 @@
  		\end{minipage}
  	\end{center}
  	
- 	Note que, usando os valores de distâncias das cliques $\{ v_{i-3}, v_{i-2} , v_{i-1}, v_i \}$, temos gratuitamente todas as distâncias entre átomos consecutivos $d_{1,2}, \dots, d_{n-1, n}$, além de podermos obter facilmente os ângulos planos $\theta_{1,3}, \dots, \theta_{n-2, n}$ usando a Lei dos Cossenos (vide Apêndice A).
+ 	\subsubsection{Representações de Átomos em Coordenadas Internas\label{sec:bi}}
+ 	Como as partículas que estamos interessados estão localizadas no espaço tridimensional, podemos representa-las utilizando coordenadas cartesianas tridimensionais $x_1, ...,x_n \in\mathbb{R}^3$, onde $x_n$ é a \textit{realização} do n-ésimo átomo da molécula analisada. 
  	
- 	Lembrando que só precisamos das coordenadas internas para definir a estrutura 3D das proteínas --- visto que podemos aplicar o conjunto de matrizes $B_i$ para realizar a conversão dos sistemas de coordenadas. Como temos todas as distâncias e ângulos planos, só nos falta verificar os ângulos de torção $\omega_{1,4}, \dots, \omega_{n-3, n}$, que, como vimos, sempre possuímos dois ($\omega_{i-3, i}^1$ e $\omega_{i-3,i}^2$) possíveis ângulos associados. Essa estrutura binária de decisão é ilustrado na Figura ~\ref{fig:torcao}, onde temos as duas posições possíveis ($i$ e $i^\prime$) para o último vértice.
+ 	Além da utilização das coordenadas cartesianas, também podemos usar outro sistema de coordenadas, mais condizente com os dados que temos a priori sobre a molécula --- rever Figura ~\ref{fig:rama}. Tal sistema denomina-se \textit{coordenadas internas} (e tem forte relação com as coordenadas esféricas).
+ 	
+ 	As coordenadas internas de uma proteína são definidas pela distância entre os átomos $d_{1,2}, ..., d_{n - 1,n}$, pelo ângulo planar $\theta_{1,3}, ...,\theta_{n - 2,n}$ (formados por 3 átomos consecutivos) e pelos ângulos de torção $\omega_{1,4}, ..., \omega_{n-3,n}$ (formado por 4 átomos consecutivos), conforme ilustrado na Figura ~\ref{fig:angulos}. O ângulo de torção é definido entre os planos formados pelos átomos $i-3,i-2,i-1$ e$i-2,i-1,i$, respectivamente. Assim, temos que $\omega$ varia no intervalo $[0,2\pi]$ e $\theta$ de $[0,\pi]$ --- assim como em um sistema de coordenadas esféricas --- e também já vimos que as distâncias entre os átomos unidos por ligações covalentes são da ordem de 1,5\AA. 
+ 	
+ 	\begin{figure}[H]
+ 		\begin{center}
+ 			\includegraphics[width=0.6\linewidth]{Capturar.PNG}
+ 		\end{center}
+ 		\caption{Ângulos planos e de torção \cite{carlileBook31Coloquio}}
+ 		\label{fig:angulos}
+ 	\end{figure}
+ 	
+ 	Pode-se obter facilmente os ângulos planos pela \textit{Lei dos Cossenos}, tendo em vista que conhece-se todas as distâncias que, por construção, representam os lados do triângulo --- para mais detalhes, recorrer ao Apêndice A. Porém, descobrir o ângulo de torção associado (também chamado de ângulo diedral) pode se mostrar um grande problema. 
+ 	
+ 	O cosseno de um ângulo diedral pode ser dado em função de distâncias euclidianas e ângulos planos \cite{carlileTese}. Sejam $x_i, x_j, x_k, x_l \in \mathbb{R}^3$ quaisquer quatro átomos consecutivos com coordenadas ($x_{i_1}, x_{i_2}, x_{i_3}$), ($x_{j_1}, x_{j_2}, x_{j_3}$), ($x_{k_1}, x_{k_2}, x_{k_3}$) e ($x_{l_1}, x_{l_2}, x_{l_3}$), respectivamente; Também $r_{ab}$, com $a,b \in \{i,j,k,l\}$ as distâncias entre os átomos $x_a$ e $x_b$; e por último $\theta_{ijk}$, o ângulo definido pelos átomos $x_i, x_j, x_k$ e $\theta_{kji}$, o ângulo definido pelos átomos $x_k, x_j, x_i$. Então, o cosseno do ângulo diedral $\omega_{ijkl}$ é dado por:
+ 	
+ 	\begin{equation}
+ 	\cos(\omega_{ijkl}) = \frac{r^2_{ij} + r^2_{jl} - 2r_{ij}r_{jl}\cos(\theta_{ijk})\cos(\theta_{kjl}-r^2_{il})}{2r_{ij}r_{jl}\mbox{sen}(\theta_{ijk})\mbox{sen}(\theta_{kjl})}. \label{eq:cosOmega}
+ 	\end{equation}    
+ 	
+ 	Porém, não temos como definir exatamente o seno desse ângulo. Só podemos fazer $\mbox{sen}(\omega_{ijkl}) = \pm\sqrt{1 - \cos(\omega_{ijkl})^2} \label{eq:senOmega}$. Mas vamos deixar esse problema do ângulo de torção para depois --- por enquanto supomos que temos os valores exatos de $\omega_{ijkl}$.
+ 	
+ 	Por tanto, conseguimos definir todo o problema a partir das coordenadas internas. Como nosso objetivo é obter as posições tridimensionais de cada átomo, nosso problema se restringiu em transformar as coordenadas internas em cartesianas. Para isso, utiliza-se uma série de operações lineares que estão descritas pelas matrizes abaixo.
+ 	
+ 	Consideremos que as coordenadas do ponto $x_{i} \in\mathbb{R}^3,i= 1, ...,n $ são dadas por $(x_{i1},x_{i2},x_{i3})$, temos:
+ 	
+ 	$$
+ 	\begin{bmatrix}
+ 	x_{i1}\\ 
+ 	x_{i2}\\ 
+ 	x_{i3}\\ 
+ 	1
+ 	\end{bmatrix}
+ 	= B_{1}B_{2}\cdots B_{i}\begin{bmatrix}
+ 	0\\ 
+ 	0\\ 
+ 	0\\ 
+ 	1
+ 	\end{bmatrix},
+ 	$$
+ 	onde
+ 	$$
+ 	B_1\: =\:
+ 	\begin{bmatrix}
+ 	1 & 0 & 0 & 0\\ 
+ 	0 & 1 & 0 & 0\\ 
+ 	0 & 0 & 1 & 0\\ 
+ 	0 & 0 & 0 & 1
+ 	\end{bmatrix},\:\:\:
+ 	\: B_2\: =\:
+ 	\begin{bmatrix}
+ 	-1 & 0 & 0 & -d_{1,2}\\
+ 	0 & 1 & 0 & 0\\ 
+ 	0 & 0 & -1 & 0\\ 
+ 	0 & 0 & 0 & 1
+ 	\end{bmatrix},
+ 	$$
+ 	$$
+ 	B_3\:=\:
+ 	\begin{bmatrix}
+ 	-\cos\theta_{1,3} & -\mbox{sen}\theta_{1,3} & 0 & -d_{2,3}\cos\theta_{1,3}\\ 
+ 	\mbox{sen}\theta_{1,3} & -\cos\theta_{1,3} & 0 & d_{2,3}\mbox{sen}\theta_{1,3}\\ 
+ 	0 & 0 & 1 & 0\\ 
+ 	0 & 0 & 0 & 1
+ 	\end{bmatrix}
+ 	$$
+ 	e
+ 	$$
+ 	B_i\:=\:
+ 	\begin{bmatrix}
+ 	-c_{\theta_{i}} & -s_{\theta_{i}} & 0 & -d_{i-1,i}c_{\theta_{i}}\\ 
+ 	s_{\theta_{i}}c_{\omega_{i}} & -c_{\theta_{i}}c_{\omega_{i}}
+ 	& -s_{\omega_{i}} & d_{i-1,i}s_{\theta_{i}}c_{\omega_{i}}\\ 
+ 	s_{\theta_{i}}s_{\omega_{i}} & -c_{\theta_{i}}s_{\omega_{i}} & c_{\omega_{i}} & d_{i-1,i}s_{\theta_{i}}s_{\omega_{i}}\\ 
+ 	0 & 0 & 0 & 1
+ 	\end{bmatrix}
+ 	$$
+ 	dado $s_{\theta_{i}}=\mbox{sen} (\theta_{i-2, i}),\: c_{\theta_{i}}=\cos (\theta_{i-2, i}),\: s_{\omega_{i}}=\mbox{sen} (\omega_{i-3, i}),\: c_{\omega_{i}}=\cos (\omega_{i-3, i})$. Em $B_i$, $i=4, ..., n$.
+ 	
+ 	
+ 	Perceba que $B_i$ (chamada \textit{Matriz de Torção}) é a matriz que engloba todas as operações necessárias para encontrar a i-ésima realização do i-ésimo átomo da molécula, tendo conhecimento de todas as matrizes $B_j$ $\forall j < i$. Como é de grande importância o entendimento de tais operações que formam a $B_i$, deixa-se o Apêndice B para esta discussão.
+ 	
+ 	Note também que fixando os comprimentos das ligações covalentes $d_{1,2},d_{2,3}$ e o valor do ângulo plano $\theta_{1,3}$, os três primeiros átomos terão as coordenadas dadas por
+ 	$$
+ 	x_1\:=\:
+ 	\begin{bmatrix}
+ 	0\\ 
+ 	0\\  
+ 	0
+ 	\end{bmatrix},\:\:\:
+ 	x_2\:=\:
+ 	\begin{bmatrix}
+ 	-d_{1,2}\\ 
+ 	0\\  
+ 	0
+ 	\end{bmatrix},\:\:\:
+ 	x_3\:=\:
+ 	\begin{bmatrix}
+ 	-d_{1,2}+d_{2,3}\cos\theta_{1,3}\\ 
+ 	d_{2,3}\mbox{sen}\theta_{1,3}\\  
+ 	0
+ 	\end{bmatrix}.
+ 	$$
+ 	
+ 	Dadas essas três realizações dos primeiros átomos, fixamos a base do sistema, evitando estruturas obtidas por meio de rotações e translações a partir de uma mesma estrutura.	
+ 	
+ 	Além dos dados teóricos sobre as estruturas dos aminoácidos, também teremos dados de distâncias entre átomos dadas de forma experimental, através de experimentos de RMN.
+ 	
+ 	\subsubsection{Espaço de Busca por Soluções}
+ 	Note que, usando os valores de distâncias das cliques $\{ v_{i-3}, v_{i-2} , v_{i-1}, v_i \}$ garantidas pelo DMDGP, temos gratuitamente todas as distâncias entre átomos consecutivos $d_{1,2}, \dots, d_{n-1, n}$, donde podemos obter facilmente os ângulos planos $\theta_{1,3}, \dots, \theta_{n-2, n}$ (Apêndice A).
+ 	
+ 	Logo, sabendo que só precisamos das coordenadas internas para definir a estrutura 3D das proteínas --- visto que podemos aplicar o conjunto de matrizes $B_i$ para realizar a conversão dos sistemas de coordenadas --- como temos todas as distâncias e ângulos planos, só nos falta verificar os ângulos de torção $\omega_{1,4}, \dots, \omega_{n-3, n}$, que, como vimos, sempre possuímos dois possíveis ângulos associados ($\omega_{i-3, i}^1$ e $\omega_{i-3,i}^2$). Isso induz uma estrutura binária de decisão que é ilustrado na Figura ~\ref{fig:torcao}, onde temos as duas posições possíveis ($i$ e $i^\prime$) para o último vértice.
  	
  	\begin{figure}[H]
  		\begin{center}
@@ -1045,16 +1049,16 @@
  		\label{fig:torcao}
  	\end{figure}
  	
- 	Uma das conclusões mais interessantes que partem dessa análise é que não precisamos mais resolver os sistemas quadráticos que definem o DGP, problema fundamental de Geometria de Distâncias --- que antes envolviam otimização contínua, complicada do ponto de vista computacional, com a quantidade de mínimos locais explodindo para moléculas demasiadamente grandes ---, pois já temos definidas as posições possíveis para cada vértice. Logo, nosso problema se restringiu apenas a decidir quais são os ângulos de torção corretos.
+ 	Uma das conclusões mais interessantes que partem dessa análise é que não precisamos mais resolver os sistemas quadráticos que definem o DGP, problema fundamental de Geometria de Distâncias --- que antes envolviam otimização contínua, complicada do ponto de vista computacional, com a quantidade de mínimos locais explodindo para moléculas demasiadamente grandes ---, pois já temos definidas as posições possíveis para cada vértice. Logo, nosso problema se restringiu apenas a decidir quais são os ângulos de torção corretos, diminuindo drasticamente nosso espaço de busca por soluções.
  	
 	\newpage
-	\section{\textit{Branch-and-Prune}}
-	 Introduzimos o capítulo anterior com a definição do problema fundamental da nossa área, o \textit{Distance Geometry Problem}, que não tardou ao ceder seu lugar de destaque para o \textit{Molecular Distance Geometry Problem} --- sendo exatamente o mesmo problema, porém, com o espaço fixado em $\mathbb{R}^3$. Em seguida fomos apresentados ao \textit{Discretization Vertex Order Problem}, que, de posse de uma de suas soluções, nos permitiu construir uma versão discreta do nosso problema, chegando, finalmente, no \textit{Discretizable Molecular Distance Geometry Problem} --- que se trata do MDGP monido de uma ordem esperta para seus vértices.
+	\section{\textit{Branch-and-Prune} \label{sec:bp}}
+	 Introduzimos o capítulo anterior com a definição do problema fundamental da nossa área, o \textit{Distance Geometry Problem}, que não tardou ao ceder seu lugar de destaque para o \textit{Molecular Distance Geometry Problem} --- sendo exatamente o mesmo problema, porém, com o espaço fixado em $\mathbb{R}^3$. Em seguida fomos apresentados ao \textit{Discretization Vertex Order Problem}, que, de posse de uma de suas soluções, nos permitiu construir uma versão discreta do nosso problema, chegando, finalmente, no \textit{Discretizable Molecular Distance Geometry Problem} --- que se trata do MDGP munido de uma ordem esperta para seus vértices.
 	
-	As vezes parece que o universo conspira a favor da beleza de uma solução matemática. A ordenação nos átomos da molécula, além de reduzir infinitamente o conjunto solução do problema \cite{carlileBook31Coloquio}, ainda induziu uma estrutura de \textbf{árvore binária} para os pontos que sobraram \cite{fidalgotese}, que logo deu origem a um algorítimo que se aproveita dessa estrutura para reduzir ainda mais o conjunto solução do problema --- o algorítimo Branch-and-Prune, tema desse capítulo. E mais: por conta dessa estrutura, ficou fácil perceber --- visualmente mesmo --- que existe uma simetria intrínseca nas diferentes soluções do DMDGP (que normalmente não tem solução única, devido as várias conformações moleculares). De fato, parece que o universo conspirou a favor desta solução. É belíssima.
+	A ordenação nos átomos da molécula, além de reduzir infinitamente o conjunto solução do problema \cite{carlileBook31Coloquio}, ainda induziu uma estrutura de \textbf{árvore binária} para os pontos que sobraram \cite{fidalgotese}, que logo deu origem a um algorítimo que se aproveita dessa estrutura para reduzir ainda mais o conjunto solução do problema --- o algorítimo Branch-and-Prune, tema desse capítulo.
 	
 	\subsection{O Algorítimo}
-	Apresentado em 2007 \cite{carlile:BP}, por Leo Liberti, Carlile Lavor e Nelson Maculan, este algorítimo (também chamado BP, com grande similaridade ao Branch-and-Bound) consiste em uma estratégia numérica recursiva, que resolve o DMDGP eficientemente utilizando uma busca combinatória no espaço de busca de soluções, onde realiza-se vértice por vértice do sistema, seguindo a ordem dada, ``podando'' --- isto é, descartando --- todo sub-conjunto solução do sistema que não esteja de acordo com as informações pré-estabelecidas. Desde que ele foi publicado, tem se verificado tanto sua beleza matemática, quanto a sua eficiência numérica-computacional para resolver problemas em Geometria de Distâncias.
+	Apresentado em 2007 \cite{carlile:BP}, por Leo Liberti, Carlile Lavor e Nelson Maculan, este algorítimo (também chamado BP) consiste em uma estratégia numérica recursiva, que resolve o DMDGP eficientemente utilizando uma busca combinatória no espaço de busca de soluções, onde realiza-se vértice por vértice do sistema, seguindo a ordem dada, ``podando'' --- isto é, descartando --- todo sub-conjunto solução do sistema que não esteja de acordo com as informações pré-estabelecidas. Desde que ele foi publicado, tem se verificado tanto sua beleza matemática, quanto a sua eficiência numérica-computacional para resolver problemas em Geometria de Distâncias.
 	
 	Como todo algorítimo, esse possui um conjunto de entradas e saídas.
 	\begin{description}
@@ -1242,51 +1246,47 @@ Utilizamos a biblioteca BLAS (\textit{Basic Linear Algebra Subprograms}), onde e
 	 
 	 \begin{center}
 	 	\begin{minipage}{0.9 \linewidth}
-	 		\textbf{Matriz de Distâncias Euclidianas (MDE)}: Uma matriz $D_{n \times n}$ é dita MDE se existe um inteiro $k>0$ e um conjunto $X=\{x_1, \dots, x_n\} \subset \mathbb{R}^k$ tal que para $i,j \leq n$ temos
+	 		\textbf{Matriz de Distâncias Euclidianas (EDM)}: Uma matriz $D_{n \times n}$ é dita MDE se existe um inteiro $k>0$ e um conjunto $X=\{x_1, \dots, x_n\} \subset \mathbb{R}^k$ tal que para $i,j \leq n$ temos
 	 		$$D_{i,j}  =||x_i - x_j||.$$
 	 	\end{minipage}
 	 \end{center}
 	 
-	 Perceba que utilizando uma MDE podemos representar de forma completa o grafo que define um DMDGP: O conjunto de vértices $V$ tem uma relação biunívoca com o conjunto de linhas da matriz e, além disso, a ordem dos vértices é dado pela ordem das linhas; Também temos o conjunto de arestas $E$, pois se $d_{ij} \in D_{n\times n} \neq 0$, então existe $\{v_i, v_j\} \in E$;
+	 Perceba que utilizando uma matriz desse tipo podemos representar de forma completa o grafo que define um DMDGP: O conjunto de vértices $V$ tem uma relação biunívoca com o conjunto de linhas da matriz e, além disso, a ordem dos vértices é dado pela ordem das linhas; Também temos o conjunto de arestas $E$, pois se $d_{ij} \in D_{n\times n} \neq 0$, então existe $\{v_i, v_j\} \in E$;
 	 
-	 Inclusive, utilizando esse conceito, podemos definir um problema paralelo da área \cite{fidalgotese} que funcione a partir de uma extensão e um completamento das lacunas dessa matriz, tentando transformar-la em uma MDE quadrada, simétrica, completa e com diagonal nula. Esse é o \textit{Euclidean Distance Matrix Completion Problem} (EDMCP). Perceba também que resolve-lo significa ter o grafo completo da análise do capítulo ~\ref{sec:modelagem}, deixando a solução do nosso problema com complexidade linear.
+	 Inclusive, utilizando esse conceito, podemos definir um problema paralelo da área \cite{fidalgotese} que funcione a partir de uma extensão e um completamento das lacunas dessa matriz, tentando transformar-la em uma matriz de distâncias euclidianas quadrada, simétrica, completa e com diagonal nula. Esse é o \textit{Euclidean Distance Matrix Completion Problem} (EDMCP). Perceba também que resolve-lo significa ter o grafo completo da análise do capítulo ~\ref{sec:modelagem}, deixando a solução do nosso problema com complexidade linear.
 	 
 	 \subsubsection{Medida de distância entre resultados}
-	 A qualidade das soluções aqui apresentadas foram averiguadas utilizando a medida \textit{Largest Distance Error}, que é definida como se segue, a partir de \cite{mucherino:BP}.
+	 A qualidade das soluções aqui apresentadas foram averiguadas utilizando a medida \textit{Mean Distance Error}, que é definida como se segue, a partir de \cite{mucherino:BP}.
 	 
 	 \begin{center}
 	 	\begin{minipage}{0.9 \linewidth}
-	 		\textbf{\textit{Largest Distance Error} (LDE)}: Para uma conformação $x = \{x_1, \dots, x_n\}$ de uma instância com $n$ vértices, cujo conjunto de distâncias disponíveis é dado por $m = |d|$, o LDE é definido por  
-	 		$$LDE(x) = \frac{1}{m} \sum_{i,j}^{}\frac{|||x_i - x_j|| - d_{i,j}|}{d_{i,j}} .$$
+	 		\textbf{\textit{Mean Distance Error} (MDE)}: Para uma conformação $x = \{x_1, \dots, x_n\}$ de uma instância com $n$ vértices, cujo conjunto de distâncias disponíveis é dado por $m = |d|$, o MDE é definido por  
+	 		$$MDE(x) = \frac{1}{m} \sum_{i,j}^{}\frac{|||x_i - x_j|| - d_{i,j}|}{d_{i,j}} .$$
 	 	\end{minipage}
 	 \end{center}
 	
 	\subsubsection{Experimentos}
-	Para os primeiros testes, utilizamos como moléculas sintéticas as chamadas Lavor Instances \cite{carlile:instancesMDGP}, que possuem uma estrutura minimamente parecida com as reais (pois são baseadas nas posições de equilíbrio energético da molécula), garantindo sua validade acadêmica. Todos os testes foram rodados em um Intel Core 5 CPU 8600k @ 3.6 GHz com 8GB de RAM, rodando Linux e utilizamos $\varepsilon = 0.01$.
+	Para os primeiros testes, utilizamos como moléculas sintéticas as chamadas Lavor Instances \cite{carlile:instancesMDGP}, que possuem uma estrutura minimamente parecida com as reais (pois são baseadas nas posições de equilíbrio energético da molécula), garantindo sua validade acadêmica. Todos os testes foram rodados em um Intel Core 5 CPU 8600k @ 3.6 GHz com 8GB de RAM DDR4 2666Mhz (em \textit{single channel}, logo 1333Mhz), rodando Linux e utilizamos $\varepsilon = 0.01$.
 	
-	Um exemplo de matriz MDE de uma Lavor Instance, de tamanho $|V| = 10$, é mostrado como se segue: 
-	\\
-	
-	\begin{footnotesize}
-		\hspace{-2.6cm}
-		$
+	Um exemplo de matriz de distâncias euclidianas de uma Lavor Instance, de tamanho $|V| = 10$, é mostrado como se segue: 
+	\\	
+		$$
 		\begin{bmatrix}
-		0 & 1.526 & 2.4923900 & 2.89142911 & 3.48973730 & 4.58573650 & 4.37631924 & 3.9408570 & 2.6081655 & 3.0647545\\
-		1.526 & 0 & 1.526 & 2.4923900 & 2.933932 & 4.3520923 & 4.6600857 & 4.4179412 & 3.0301235 & 3.6325558\\
-		2.4923900 & 1.526 & 0 & 1.5259999 & 2.4923900 & 3.8396108 & 4.344572 & 3.88905 & 2.530918 & 2.9777443\\
-		2.89142911 & 2.4923900 & 1.5259999 & 0 & 1.526 & 2.4923900 & 2.9231996 & 2.506865 & 1.4901654 & 2.484326\\
-		3.4897373 & 2.933932 & 2.4923900 & 1.526 & 0 & 1.52599 & 2.4923900 & 2.933932 & 2.4827921 & 3.8434642\\
-		4.58573650 & 4.3520923 & 3.8396108 & 2.4923900 & 1.52599 & 0 & 1.526 & 2.4923900 & 2.9019439 & 4.303094\\
-		4.37631924 & 4.6600857 & 4.344572 & 2.9231996 & 2.4923900 & 1.526 & 0 & 1.5259999 & 2.49239 & 3.840923\\
-		3.9408570 & 4.4179412 & 3.88905 & 2.506865 & 2.933932 & 2.4923900 & 1.5259999 & 0 & 1.525999 & 2.49239\\
-		2.6081655 & 3.0301235 & 2.530918 & 1.4901654 & 2.4827921 & 2.9019439 & 2.49239 & 1.525999 & 0 & 1.52599\\
-		3.0647545 & 3.6325558 & 2.9777443 & 2.484326 & 3.8434642 & 4.303094 & 3.840923 & 2.49239 & 1.52599 & 0 
+		0 & 1.526 & 2.4923 & 2.8914 & 3.4897 & 4.5857 & 4.3763 & 3.9408 & 2.6081 & 3.0647\\
+		1.526 & 0 & 1.526 & 2.4923 & 2.9339 & 4.3520 & 4.6600 & 4.4179 & 3.0301 & 3.6325\\
+		2.4923 & 1.526 & 0 & 1.5259 & 2.4923 & 3.8396 & 4.3445 & 3.8890 & 2.5309 & 2.9777\\
+		2.8914 & 2.4923 & 1.5259 & 0 & 1.526 & 2.4923 & 2.9231 & 2.5068 & 1.4901 & 2.4843\\
+		3.4897 & 2.9339 & 2.4923 & 1.526 & 0 & 1.5259 & 2.4923 & 2.9339 & 2.4827 & 3.8434\\
+		4.5857 & 4.3520 & 3.8396 & 2.4923 & 1.5259 & 0 & 1.526 & 2.4923 & 2.9019 & 4.3030\\
+		4.3763 & 4.6600 & 4.3445 & 2.9231 & 2.4923 & 1.526 & 0 & 1.5259 & 2.4923 & 3.8409\\
+		3.9408 & 4.4179 & 3.8890 & 2.5068 & 2.9339 & 2.4923 & 1.5259 & 0 & 1.5259 & 2.4923\\
+		2.6081 & 3.0301 & 2.5309 & 1.4901 & 2.4827 & 2.9019 & 2.4923 & 1.5259 & 0 & 1.5259\\
+		3.0647 & 3.6325 & 2.9777 & 2.4843 & 3.8434 & 4.3030 & 3.8409 & 2.4923 & 1.5259 & 0 
 		\end{bmatrix}
-		$
-	\end{footnotesize}
+		$$
 	\\
 	
-	Ao utilizar nossa implementação do BP para calcular as possíveis instâncias dessa MDE, obtemos como resultado 2 moléculas válidas. São elas:
+	Ao utilizar nossa implementação do BP para calcular as possíveis instâncias dessa EDM, obtemos como resultado duas moléculas válidas. São elas:
 	
 	\begin{center}
 		\begin{minipage}{0.45 \linewidth}
@@ -1341,13 +1341,13 @@ Utilizamos a biblioteca BLAS (\textit{Basic Linear Algebra Subprograms}), onde e
 		\label{fig:arvore}
 	\end{figure}
 	
-	Como forma de verificar se o resultado condiz com o correto, calculou-se os LDE dos exemplares acima, que são mostrados na Tabela ~\ref{tab:resul}. O tempo para resolver esse BP foi da ordem de 0,616ms.
+	Como forma de verificar se o resultado condiz com o correto, calculou-se os MDE dos exemplares acima, que são mostrados na Tabela ~\ref{tab:resul}. O tempo para resolver esse BP foi da ordem de 0,616ms.
 	
 	\begin{table}[H]
 		\centering
 		\begin{tabular}{ |c c| } 
 			\hline
-			\textbf{Exemplar} & \textbf{LDE} \\\hline
+			\textbf{Exemplar} & \textbf{MDE} \\\hline
 			1 & $10^{-23}$\\
 			2 & $10^{-23}$\\\hline
 		\end{tabular}
@@ -1355,13 +1355,13 @@ Utilizamos a biblioteca BLAS (\textit{Basic Linear Algebra Subprograms}), onde e
 		\label{tab:resul}
 	\end{table}
 	
-	Também calculou-se as instâncias de outras Larvor Instances, com $|V| = 20$, 50, 100, 200, 500 e 1000. Os resultados são mostrados na Tabela ~\ref{tab:resul2}, onde, LDE média $= \frac{1}{n}\sum_{i=1}^{n}LDE_i$ e $n$ é o número de soluções encontradas.
+	Também calculou-se as instâncias de outras Larvor Instances, com $|V| = 20$, 50, 100, 200, 500 e 1000. Os resultados são mostrados na Tabela ~\ref{tab:resul2}, onde, MDE média $= \frac{1}{n}\sum_{i=1}^{n}MDE_i$ e $n$ é o número de soluções encontradas.
 	
 	\begin{table}[H]
 		\centering
 		\begin{tabular}{ |c c c c| } 
 			\hline
-			\textbf{$|V|$} & n & \textbf{LDE} & \textbf{time (ms)} \\\hline
+			\textbf{$|V|$} & n & \textbf{MDE} & \textbf{time (ms)} \\\hline
 			20 & 2 & $10^{-23}$& 0.231 \\
 			50 & 4 & $10^{-13}$& 4.381\\\hline
 			100 & 8 & $10^{-13}$& 26.181 \\\hline
@@ -1373,9 +1373,9 @@ Utilizamos a biblioteca BLAS (\textit{Basic Linear Algebra Subprograms}), onde e
 		\label{tab:resul2}
 	\end{table}
 	
-	Vale mencionar que a instância com $|V| = 2000$ também foi gerada, porém, infelizmente a memória RAM do computador (8Gb) não foi suficiente para que o algorítimo chegasse ao fim. 
+	Vale mencionar que a instância com $|V| = 2000$ também foi gerada, porém, infelizmente a memória RAM do computador (8Gb) não foi suficiente para que o algorítimo chegasse ao fim, deixando instâncias com ordens de grandeza superiores para trabalhos futuros.
 	
-	Dominado esta etapa, também utilizamos instâncias reais retiradas do repositório PDB (lidas com o auxílio do software PDBReader) para testar a nossa implementação do BP, feita em Linguagem C. Porém, mais uma vez nós não conseguimos terminar de executar o algorítimo para nenhuma das instâncias reais, pois, em média, elas possuem $|V| = 2000$. Como visto nas Lavor Instances, exemplares desta ordem costumam necessitar mais que os 8Gb de memória que tínhamos a disposição. 
+	Dominado esta etapa, também utilizamos instâncias reais retiradas do repositório PDB (lidas com o auxílio do software PDBReader) para testar a nossa implementação do BP, feita em Linguagem C. Porém, mais uma vez nós não conseguimos terminar de executar o algorítimo para nenhuma das instâncias reais, pois, em média, elas possuem $|V| = 2000$. Como visto nas Lavor Instances, solucionar exemplares desta ordem costuma extrapolar os 8Gb de memória que tínhamos a disposição. 
 	
 	\newpage
 	\section{Resultados e Discussão}
@@ -1491,7 +1491,7 @@ Utilizamos a biblioteca BLAS (\textit{Basic Linear Algebra Subprograms}), onde e
 			\begin{center}
 				\includegraphics[width=0.4\linewidth]{Angulovetoresnovo.png}
 			\end{center}
-			\caption{Diferença entre vetores u e v}
+			\caption{Diferença entre vetores $u$ e $v$}
 			\label{fig:diffbtvet}
 		\end{figure}
 		Para encontrarmos o angulo $\theta$ utilizaremos a lei dos cossenos aplicada a $\Delta ABC$:
@@ -1915,12 +1915,12 @@ Utilizamos a biblioteca BLAS (\textit{Basic Linear Algebra Subprograms}), onde e
  		\end{bmatrix},}
  	$$
  	
- 	Pode-se deduzir, decompondo esta matriz em tentativas de composições com as matrizes de translação e rotações descritas, que esta matriz trata-se de 
+ 	Pode-se decompor esta matriz em produtos das matrizes de translação e rotações descritas, donde
  	$$
- 	B_i=R_{x}(w_{i-3,i}).R_{x}(\pi).R_{z}(\theta_{i-2,i}).R_{y}(\pi).T_{x}(d_{i-1,i}),
+ 	B_i=R_{x}(w_{i-3,i})\cdot R_{x}(\pi)\cdot R_{z}(\theta_{i-2,i})\cdot R_{y}(\pi)\cdot T_{x}(d_{i-1,i}),
  	$$
  	
- 	onde, perceba, as operações são compostas da direita para a esquerda, ou seja, primeiro há uma translação e depois um conjunto de quatro rotações. Dentre essas, duas são de um angulo fixo $\pi$, isto se deve ao fato de que, como estamos caminhando de um átomo a outro, toda vez que chegamos em um novo átomo deve-se primeiro olhar para trás (para o átomo anterior) e só então definir aonde está a próxima direção à se percorrer, pois os ângulos assim são definidos (vide Figura ~\ref{fig:angulos}).
+ 	onde, perceba, as operações são compostas da direita para a esquerda, ou seja, primeiro há uma translação e depois um conjunto de quatro rotações. Dentre essas, duas são de um angulo fixo $\pi$. Isto se deve ao fato de que, como estamos caminhando de um átomo a outro, toda vez que chegamos em um novo átomo deve-se primeiro ``olhar para trás'' (para o átomo anterior) e só então definir aonde está a próxima direção à se percorrer, pois os ângulos assim são definidos (vide Figura ~\ref{fig:angulos}).
  	
  	\newpage
  	\phantomsection
