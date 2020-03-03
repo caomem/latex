@@ -1,0 +1,1720 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.11.3)  3 MAR 2020 13:13
+entering extended mode
+**./gphilippi.tex
+(gphilippi.tex
+LaTeX2e <2018-04-01> patch level 5
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\beamer.cls"
+Document Class: beamer 2018/09/20 v3.54 A class for typesetting presentations
+
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\beamerbasem
+odes.sty"
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\etoolbox\etoolbox.
+sty"
+Package: etoolbox 2018/08/19 v2.5f e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count80
+)
+\beamer@tempbox=\box26
+\beamer@tempcount=\count81
+\c@beamerpauses=\count82
+
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\beamerbased
+ecode.sty"
+\beamer@slideinframe=\count83
+\beamer@minimum=\count84
+)
+\beamer@commentbox=\box27
+\beamer@modecount=\count85
+)
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.s
+ty"
+Package: ifpdf 2018/09/07 v3.3 Provides the ifpdf switch
+)
+\headdp=\dimen102
+\footheight=\dimen103
+\sidebarheight=\dimen104
+\beamer@tempdim=\dimen105
+\beamer@finalheight=\dimen106
+\beamer@animht=\dimen107
+\beamer@animdp=\dimen108
+\beamer@animwd=\dimen109
+\beamer@leftmargin=\dimen110
+\beamer@rightmargin=\dimen111
+\beamer@leftsidebar=\dimen112
+\beamer@rightsidebar=\dimen113
+\beamer@boxsize=\dimen114
+\beamer@vboxoffset=\dimen115
+\beamer@descdefault=\dimen116
+\beamer@descriptionwidth=\dimen117
+\beamer@lastskip=\skip41
+\beamer@areabox=\box28
+\beamer@animcurrent=\box29
+\beamer@animshowbox=\box30
+\beamer@sectionbox=\box31
+\beamer@logobox=\box32
+\beamer@linebox=\box33
+\beamer@sectioncount=\count86
+\beamer@subsubsectionmax=\count87
+\beamer@subsectionmax=\count88
+\beamer@sectionmax=\count89
+\beamer@totalheads=\count90
+\beamer@headcounter=\count91
+\beamer@partstartpage=\count92
+\beamer@sectionstartpage=\count93
+\beamer@subsectionstartpage=\count94
+\beamer@animationtempa=\count95
+\beamer@animationtempb=\count96
+\beamer@xpos=\count97
+\beamer@ypos=\count98
+\beamer@ypos@offset=\count99
+\beamer@showpartnumber=\count100
+\beamer@currentsubsection=\count101
+\beamer@coveringdepth=\count102
+\beamer@sectionadjust=\count103
+\beamer@tocsectionnumber=\count104
+
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\beamerbaseo
+ptions.sty"
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\keyval.st
+y"
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+))
+\beamer@paperwidth=\skip42
+\beamer@paperheight=\skip43
+
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\geometry\geometry.
+sty"
+Package: geometry 2018/04/16 v5.8 Page Geometry
+
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ifvtex.
+sty"
+Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+)
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.
+sty"
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count105
+\Gm@cntv=\count106
+\c@Gm@tempcnt=\count107
+\Gm@bindingoffset=\dimen118
+\Gm@wd@mp=\dimen119
+\Gm@odd@mp=\dimen120
+\Gm@even@mp=\dimen121
+\Gm@layoutwidth=\dimen122
+\Gm@layoutheight=\dimen123
+\Gm@layouthoffset=\dimen124
+\Gm@layoutvoffset=\dimen125
+\Gm@dimlist=\toks15
+
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\geometry\geometry.
+cfg"))
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\size11.clo"
+File: size11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\basiclayer\pgf
+core.sty"
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphicx.
+sty"
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphics.
+sty"
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg\graph
+ics.cfg"
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 99.
+
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-def\pdfte
+x.def"
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen126
+\Gin@req@width=\dimen127
+)
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\systemlayer\pg
+fsys.sty"
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\utilities\pgfr
+cs.sty"
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\pg
+futil-common.tex"
+\pgfutil@everybye=\toks16
+\pgfutil@tempdima=\dimen128
+\pgfutil@tempdimb=\dimen129
+
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\pg
+futil-common-lists.tex"))
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\pg
+futil-latex.def"
+\pgfutil@abb=\box34
+
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ms\everyshi.sty"
+Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
+))
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\pg
+frcs.code.tex"
+Package: pgfrcs 2015/08/07 v3.0.1a (rcs-revision 1.31)
+))
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemlayer\
+pgfsys.code.tex"
+Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
+
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\pg
+fkeys.code.tex"
+\pgfkeys@pathtoks=\toks17
+\pgfkeys@temptoks=\toks18
+
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\pg
+fkeysfiltered.code.tex"
+\pgfkeys@tmptoks=\toks19
+))
+\pgf@x=\dimen130
+\pgf@y=\dimen131
+\pgf@xa=\dimen132
+\pgf@ya=\dimen133
+\pgf@xb=\dimen134
+\pgf@yb=\dimen135
+\pgf@xc=\dimen136
+\pgf@yc=\dimen137
+\w@pgf@writea=\write3
+\r@pgf@reada=\read1
+\c@pgf@counta=\count108
+\c@pgf@countb=\count109
+\c@pgf@countc=\count110
+\c@pgf@countd=\count111
+\t@pgf@toka=\toks20
+\t@pgf@tokb=\toks21
+\t@pgf@tokc=\toks22
+
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemlayer\
+pgf.cfg"
+File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
+)
+Driver file for pgf: pgfsys-pdftex.def
+
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemlayer\
+pgfsys-pdftex.def"
+File: pgfsys-pdftex.def 2014/10/11  (rcs-revision 1.35)
+
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemlayer\
+pgfsys-common-pdf.def"
+File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
+)))
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemlayer\
+pgfsyssoftpath.code.tex"
+File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
+\pgfsyssoftpath@smallbuffer@items=\count112
+\pgfsyssoftpath@bigbuffer@items=\count113
+)
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemlayer\
+pgfsysprotocol.code.tex"
+File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
+))
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\xcolor\xcolor.sty"
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg\color
+.cfg"
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\p
+gfcore.code.tex"
+Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
+
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmath
+.code.tex"
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmath
+calc.code.tex"
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmath
+util.code.tex")
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmath
+parser.code.tex"
+\pgfmath@dimen=\dimen138
+\pgfmath@count=\count114
+\pgfmath@box=\box35
+\pgfmath@toks=\toks23
+\pgfmath@stack@operand=\toks24
+\pgfmath@stack@operation=\toks25
+)
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmath
+functions.code.tex"
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmath
+functions.basic.code.tex")
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmath
+functions.trigonometric.code.tex")
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmath
+functions.random.code.tex")
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmath
+functions.comparison.code.tex")
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmath
+functions.base.code.tex")
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmath
+functions.round.code.tex")
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmath
+functions.misc.code.tex")
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmath
+functions.integerarithmetics.code.tex")))
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmath
+float.code.tex"
+\c@pgfmathroundto@lastzeros=\count115
+))
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\p
+gfcorepoints.code.tex"
+File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
+\pgf@picminx=\dimen139
+\pgf@picmaxx=\dimen140
+\pgf@picminy=\dimen141
+\pgf@picmaxy=\dimen142
+\pgf@pathminx=\dimen143
+\pgf@pathmaxx=\dimen144
+\pgf@pathminy=\dimen145
+\pgf@pathmaxy=\dimen146
+\pgf@xx=\dimen147
+\pgf@xy=\dimen148
+\pgf@yx=\dimen149
+\pgf@yy=\dimen150
+\pgf@zx=\dimen151
+\pgf@zy=\dimen152
+)
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\p
+gfcorepathconstruct.code.tex"
+File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
+\pgf@path@lastx=\dimen153
+\pgf@path@lasty=\dimen154
+)
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\p
+gfcorepathusage.code.tex"
+File: pgfcorepathusage.code.tex 2014/11/02  (rcs-revision 1.24)
+\pgf@shorten@end@additional=\dimen155
+\pgf@shorten@start@additional=\dimen156
+)
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\p
+gfcorescopes.code.tex"
+File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
+\pgfpic=\box36
+\pgf@hbox=\box37
+\pgf@layerbox@main=\box38
+\pgf@picture@serial@count=\count116
+)
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\p
+gfcoregraphicstate.code.tex"
+File: pgfcoregraphicstate.code.tex 2014/11/02  (rcs-revision 1.12)
+\pgflinewidth=\dimen157
+)
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\p
+gfcoretransformations.code.tex"
+File: pgfcoretransformations.code.tex 2015/08/07  (rcs-revision 1.20)
+\pgf@pt@x=\dimen158
+\pgf@pt@y=\dimen159
+\pgf@pt@temp=\dimen160
+)
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\p
+gfcorequick.code.tex"
+File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
+)
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\p
+gfcoreobjects.code.tex"
+File: pgfcoreobjects.code.tex 2006/10/11  (rcs-revision 1.2)
+)
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\p
+gfcorepathprocessing.code.tex"
+File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
+)
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\p
+gfcorearrows.code.tex"
+File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
+\pgfarrowsep=\dimen161
+)
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\p
+gfcoreshade.code.tex"
+File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
+\pgf@max=\dimen162
+\pgf@sys@shading@range@num=\count117
+)
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\p
+gfcoreimage.code.tex"
+File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
+
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\p
+gfcoreexternal.code.tex"
+File: pgfcoreexternal.code.tex 2014/07/09  (rcs-revision 1.21)
+\pgfexternal@startupbox=\box39
+))
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\p
+gfcorelayers.code.tex"
+File: pgfcorelayers.code.tex 2013/07/18  (rcs-revision 1.7)
+)
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\p
+gfcoretransparency.code.tex"
+File: pgfcoretransparency.code.tex 2013/09/30  (rcs-revision 1.5)
+)
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\p
+gfcorepatterns.code.tex"
+File: pgfcorepatterns.code.tex 2013/11/07  (rcs-revision 1.5)
+)))
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\utilities\xxco
+lor.sty"
+Package: xxcolor 2003/10/24 ver 0.1
+\XC@nummixins=\count118
+\XC@countmixins=\count119
+)
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\atbegsh
+i.sty"
+Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
+
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\infware
+rr.sty"
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds
+.sty"
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+))
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\hyperref.
+sty"
+Package: hyperref 2018/09/30 v6.88a Hypertext links for LaTeX
+
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\hobsub-
+hyperref.sty"
+Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
+
+
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\hobsub-
+generic.sty"
+Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
+Package hobsub Info: Skipping package `infwarerr' (already loaded).
+Package hobsub Info: Skipping package `ltxcmds' (already loaded).
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+Package hobsub Info: Skipping package `ifvtex' (already loaded).
+Package: intcalc 2016/05/16 v1.2 Expandable calculations with integers (HO)
+Package hobsub Info: Skipping package `ifpdf' (already loaded).
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+Package: pdftexcmds 2018/09/10 v0.29 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+Package: pdfescape 2016/05/16 v1.14 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2016/05/16 v1.4 Expandable calculations on big integers (HO
+)
+Package: bitset 2016/05/16 v1.2 Handle bit-vector datatype (HO)
+Package: uniquecounter 2016/05/16 v1.3 Provide unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2016/05/16 v1.5 Let assignment for LaTeX macros (HO)
+Package: hopatch 2016/05/16 v1.3 Wrapper for package hooks (HO)
+Package: xcolor-patch 2016/05/16 xcolor patch
+Package: atveryend 2016/05/16 v1.9 Hooks at the very end of document (HO)
+Package hobsub Info: Skipping package `atbegshi' (already loaded).
+Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
+Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
+)
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\auxhook.s
+ty"
+Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
+)
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\kvoptions
+.sty"
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+)
+\@linkdim=\dimen163
+\Hy@linkcounter=\count120
+\Hy@pagecounter=\count121
+
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\pd1enc.de
+f"
+File: pd1enc.def 2018/09/30 v6.88a Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+\Hy@SavedSpaceFactor=\count122
+
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\00miktex\hyperref.
+cfg"
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Option `bookmarks' set `true' on input line 4409.
+Package hyperref Info: Option `bookmarksopen' set `true' on input line 4409.
+Package hyperref Info: Option `implicit' set `false' on input line 4409.
+Package hyperref Info: Hyper figures OFF on input line 4535.
+Package hyperref Info: Link nesting OFF on input line 4540.
+Package hyperref Info: Hyper index ON on input line 4543.
+Package hyperref Info: Plain pages OFF on input line 4550.
+Package hyperref Info: Backreferencing OFF on input line 4555.
+Package hyperref Info: Implicit mode OFF; no redefinition of LaTeX internals.
+Package hyperref Info: Bookmarks ON on input line 4788.
+\c@Hy@tempcnt=\count123
+ ("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\url\url.sty"
+\Urlmuskip=\muskip10
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 5141.
+\XeTeXLinkMargin=\dimen164
+\Fld@menulength=\count124
+\Field@Width=\dimen165
+\Fld@charsize=\dimen166
+Package hyperref Info: Hyper figures OFF on input line 6396.
+Package hyperref Info: Link nesting OFF on input line 6401.
+Package hyperref Info: Hyper index ON on input line 6404.
+Package hyperref Info: backreferencing OFF on input line 6411.
+Package hyperref Info: Link coloring OFF on input line 6416.
+Package hyperref Info: Link coloring with OCG OFF on input line 6421.
+Package hyperref Info: PDF/A mode OFF on input line 6426.
+LaTeX Info: Redefining \ref on input line 6466.
+LaTeX Info: Redefining \pageref on input line 6470.
+\Hy@abspage=\count125
+
+
+Package hyperref Message: Stopped early.
+
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\hpdftex.d
+ef"
+File: hpdftex.def 2018/09/30 v6.88a Hyperref driver for pdfTeX
+\Fld@listcount=\count126
+\c@bookmark@seq@number=\count127
+
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\rerunfile
+check.sty"
+Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+82.
+))
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\beamerbaser
+equires.sty"
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\beamerbasec
+ompatibility.sty")
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\beamerbasef
+ont.sty"
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\amssymb.s
+ty"
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.
+sty"
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks26
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\sansmathaccent\san
+smathaccent.sty"
+Package: sansmathaccent 2013/03/28
+
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\filehook\filehook.
+sty"
+Package: filehook 2011/10/12 v0.5d Hooks for input files
+)))
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\beamerbaset
+ranslator.sty"
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\translator\transla
+tor.sty"
+Package: translator 2018/01/04 v1.12 Easy translation of strings in LaTeX
+))
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\beamerbasem
+isc.sty")
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\beamerbaset
+woscreens.sty")
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\beamerbaseo
+verlay.sty"
+\beamer@argscount=\count128
+\beamer@lastskipcover=\skip44
+\beamer@trivlistdepth=\count129
+)
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\beamerbaset
+itle.sty")
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\beamerbases
+ection.sty"
+\c@lecture=\count130
+\c@part=\count131
+\c@section=\count132
+\c@subsection=\count133
+\c@subsubsection=\count134
+)
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\beamerbasef
+rame.sty"
+\beamer@framebox=\box40
+\beamer@frametitlebox=\box41
+\beamer@zoombox=\box42
+\beamer@zoomcount=\count135
+\beamer@zoomframecount=\count136
+\beamer@frametextheight=\dimen167
+\c@subsectionslide=\count137
+\beamer@frametopskip=\skip45
+\beamer@framebottomskip=\skip46
+\beamer@frametopskipautobreak=\skip47
+\beamer@framebottomskipautobreak=\skip48
+\beamer@envbody=\toks27
+\framewidth=\dimen168
+\c@framenumber=\count138
+)
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\beamerbasev
+erbatim.sty"
+\beamer@verbatimfileout=\write4
+)
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\beamerbasef
+ramesize.sty"
+\beamer@splitbox=\box43
+\beamer@autobreakcount=\count139
+\beamer@autobreaklastheight=\dimen169
+\beamer@frametitletoks=\toks28
+\beamer@framesubtitletoks=\toks29
+)
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\beamerbasef
+ramecomponents.sty"
+\beamer@footins=\box44
+)
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\beamerbasec
+olor.sty")
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\beamerbasen
+otes.sty"
+\beamer@frameboxcopy=\box45
+)
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\beamerbaset
+oc.sty")
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\beamerbaset
+emplates.sty"
+\beamer@sbttoks=\toks30
+
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\beamerbasea
+uxtemplates.sty"
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\beamerbaseb
+oxes.sty"
+\bmb@box=\box46
+\bmb@colorbox=\box47
+\bmb@boxshadow=\box48
+\bmb@boxshadowball=\box49
+\bmb@boxshadowballlarge=\box50
+\bmb@temp=\dimen170
+\bmb@dima=\dimen171
+\bmb@dimb=\dimen172
+\bmb@prevheight=\dimen173
+)
+\beamer@blockheadheight=\dimen174
+))
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\beamerbasel
+ocalstructure.sty"
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\enumerate.st
+y"
+Package: enumerate 2015/07/23 v3.00 enumerate extensions (DPC)
+\@enLab=\toks31
+)
+\c@figure=\count140
+\c@table=\count141
+\abovecaptionskip=\skip49
+\belowcaptionskip=\skip50
+)
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\beamerbasen
+avigation.sty"
+\beamer@section@min@dim=\dimen175
+)
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\beamerbaset
+heorems.sty"
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsmath.st
+y"
+Package: amsmath 2017/09/02 v2.17a AMS math features
+\@mathmargin=\skip51
+
+For additional information on amsmath, use the `?' option.
+
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amstext.st
+y"
+Package: amstext 2000/06/29 v2.01 AMS text
+
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty
+"
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks32
+\ex@=\dimen176
+))
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty
+"
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen177
+)
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty
+"
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count142
+LaTeX Info: Redefining \frac on input line 213.
+\uproot@=\count143
+\leftroot@=\count144
+LaTeX Info: Redefining \overline on input line 375.
+\classnum@=\count145
+\DOTSCASE@=\count146
+LaTeX Info: Redefining \ldots on input line 472.
+LaTeX Info: Redefining \dots on input line 475.
+LaTeX Info: Redefining \cdots on input line 596.
+\Mathstrutbox@=\box51
+\strutbox@=\box52
+\big@size=\dimen178
+LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
+\macc@depth=\count147
+\c@MaxMatrixCols=\count148
+\dotsspace@=\muskip11
+\c@parentequation=\count149
+\dspbrk@lvl=\count150
+\tag@help=\toks33
+\row@=\count151
+\column@=\count152
+\maxfields@=\count153
+\andhelp@=\toks34
+\eqnshift@=\dimen179
+\alignsep@=\dimen180
+\tagshift@=\dimen181
+\tagwidth@=\dimen182
+\totwidth@=\dimen183
+\lineht@=\dimen184
+\@envbody=\toks35
+\multlinegap=\skip52
+\multlinetaggap=\skip53
+\mathdisplay@stack=\toks36
+LaTeX Info: Redefining \[ on input line 2817.
+LaTeX Info: Redefining \] on input line 2818.
+)
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amscls\amsthm.sty"
+Package: amsthm 2017/10/31 v2.20.4
+\thm@style=\toks37
+\thm@bodyfont=\toks38
+\thm@headfont=\toks39
+\thm@notefont=\toks40
+\thm@headpunct=\toks41
+\thm@preskip=\skip54
+\thm@postskip=\skip55
+\thm@headsep=\skip56
+\dth@everypar=\toks42
+)
+\c@theorem=\count154
+)
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\beamerbaset
+hemes.sty"))
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\beamertheme
+default.sty"
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\beamerfontt
+hemedefault.sty")
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\beamercolor
+themedefault.sty")
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\beamerinner
+themedefault.sty"
+\beamer@dima=\dimen185
+\beamer@dimb=\dimen186
+)
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\beamerouter
+themedefault.sty")))
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\beamertheme
+AnnArbor.sty"
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\beamerinner
+themerounded.sty")
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\beamerouter
+themeinfolines.sty")
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\beamercolor
+themewolverine.sty"))
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\etex-pkg\etex.sty"
+Package: etex 2016/08/01 v2.7 eTeX basic definition package (PEB,DPC)
+\et@xins=\count155
+) ("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\inputenc.st
+y"
+Package: inputenc 2018/04/06 v1.3b Input encoding file
+\inpenc@prehook=\toks43
+\inpenc@posthook=\toks44
+)
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\babel.sty"
+Package: babel 2018/10/16 3.26 The Babel package
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\switch.def
+"
+File: switch.def 2018/10/16 3.26 Babel switching mechanism
+)
+*************************************
+* Local config file bblopts.cfg used
+*
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\arabi\bblopts.cfg"
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
+ babel
+)
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\babel-english\engl
+ish.ldf"
+Language: english 2017/06/06 v3.3r English support from the babel system
+
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\babel.def"
+File: babel.def 2018/10/16 3.26 Babel common definitions
+\babel@savecnt=\count156
+\U@D=\dimen187
+
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\txtbabel.d
+ef")
+LaTeX Info: Redefining \textlatin on input line 2003.
+\bbl@dirlevel=\count157
+)
+\l@canadian = a dialect from \language\l@american 
+\l@australian = a dialect from \language\l@british 
+\l@newzealand = a dialect from \language\l@british 
+))
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amscd.sty"
+Package: amscd 2017/04/14 v2.1 AMS Commutative Diagrams
+\athelp@=\toks45
+\minaw@=\dimen188
+\bigaw@=\dimen189
+\minCDarrowwidth=\dimen190
+)
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\multicol.sty
+"
+Package: multicol 2018/04/20 v1.8s multicolumn formatting (FMi)
+\c@tracingmulticols=\count158
+\mult@box=\box53
+\multicol@leftmargin=\dimen191
+\c@unbalance=\count159
+\c@collectmore=\count160
+\doublecol@number=\count161
+\multicoltolerance=\count162
+\multicolpretolerance=\count163
+\full@width=\dimen192
+\page@free=\dimen193
+\premulticols=\dimen194
+\postmulticols=\dimen195
+\multicolsep=\skip57
+\multicolbaselineskip=\skip58
+\partial@page=\box54
+\last@line=\box55
+\maxbalancingoverflow=\dimen196
+\mult@rightbox=\box56
+\mult@grightbox=\box57
+\mult@gfirstbox=\box58
+\mult@firstbox=\box59
+\@tempa=\box60
+\@tempa=\box61
+\@tempa=\box62
+\@tempa=\box63
+\@tempa=\box64
+\@tempa=\box65
+\@tempa=\box66
+\@tempa=\box67
+\@tempa=\box68
+\@tempa=\box69
+\@tempa=\box70
+\@tempa=\box71
+\@tempa=\box72
+\@tempa=\box73
+\@tempa=\box74
+\@tempa=\box75
+\@tempa=\box76
+\c@columnbadness=\count164
+\c@finalcolumnbadness=\count165
+\last@try=\dimen197
+\multicolovershoot=\dimen198
+\multicolundershoot=\dimen199
+\mult@nat@firstbox=\box77
+\colbreak@box=\box78
+\mc@col@check@num=\count166
+)
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\multirow\multirow.
+sty"
+Package: multirow 2018/08/03 v2.3 Span multiple rows of a table
+\multirow@colwidth=\skip59
+\multirow@cntb=\count167
+\multirow@dima=\skip60
+Normal \dimen register pool exhausted, switching to extended pool.
+\bigstrutjot=\dimen256
+)
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\array.sty"
+Package: array 2018/04/30 v2.4h Tabular extension package (FMi)
+\col@sep=\dimen257
+\ar@mcellbox=\box79
+\extrarowheight=\dimen258
+\NC@list=\toks46
+\extratabsurround=\skip61
+\backup@length=\skip62
+\ar@cellbox=\box80
+)
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\frontendlayer\
+tikz.sty"
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\basiclayer\pgf
+.sty"
+Package: pgf 2015/08/07 v3.0.1a (rcs-revision 1.15)
+
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\modules\pgfm
+oduleshapes.code.tex"
+File: pgfmoduleshapes.code.tex 2014/03/21  (rcs-revision 1.35)
+\pgfnodeparttextbox=\box81
+)
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\modules\pgfm
+oduleplot.code.tex"
+File: pgfmoduleplot.code.tex 2015/08/03  (rcs-revision 1.13)
+)
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\compatibility\
+pgfcomp-version-0-65.sty"
+Package: pgfcomp-version-0-65 2007/07/03 v3.0.1a (rcs-revision 1.7)
+\pgf@nodesepstart=\dimen259
+\pgf@nodesepend=\dimen260
+)
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\compatibility\
+pgfcomp-version-1-18.sty"
+Package: pgfcomp-version-1-18 2007/07/23 v3.0.1a (rcs-revision 1.1)
+))
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\utilities\pgff
+or.sty"
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\utilities\pgfk
+eys.sty"
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\pg
+fkeys.code.tex"))
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\math\pgfmath.s
+ty"
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmath
+.code.tex"))
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\pg
+ffor.code.tex"
+Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
+
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmath
+.code.tex")
+\pgffor@iter=\dimen261
+\pgffor@skip=\dimen262
+\pgffor@stack=\toks47
+\pgffor@toks=\toks48
+))
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlaye
+r\tikz\tikz.code.tex"
+Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
+
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\libraries\pg
+flibraryplothandlers.code.tex"
+File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
+\pgf@plot@mark@count=\count168
+\pgfplotmarksize=\dimen263
+)
+\tikz@lastx=\dimen264
+\tikz@lasty=\dimen265
+\tikz@lastxsaved=\dimen266
+\tikz@lastysaved=\dimen267
+\tikzleveldistance=\dimen268
+\tikzsiblingdistance=\dimen269
+\tikz@figbox=\box82
+\tikz@figbox@bg=\box83
+\tikz@tempbox=\box84
+\tikz@tempbox@bg=\box85
+\tikztreelevel=\count169
+\tikznumberofchildren=\count170
+\tikznumberofcurrentchild=\count171
+\tikz@fig@count=\count172
+
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\modules\pgfm
+odulematrix.code.tex"
+File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
+\pgfmatrixcurrentrow=\count173
+\pgfmatrixcurrentcolumn=\count174
+\pgf@matrix@numberofcolumns=\count175
+)
+\tikz@expandcount=\count176
+
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlaye
+r\tikz\libraries\tikzlibrarytopaths.code.tex"
+File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
+)))
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tikz-qtree\tikz-qt
+ree.sty"
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tikz-qtree\pgftree
+.sty"
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tikz-qtree\pgfsubp
+ic.sty"
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\tikz-qtree\pgfsu
+bpic.tex"
+\pgf@subpicminx=\dimen270
+\pgf@subpicminy=\dimen271
+\pgf@subpicmaxx=\dimen272
+\pgf@subpicmaxy=\dimen273
+))
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\tikz-qtree\pgftr
+ee.tex"
+\levelsep=\dimen274
+\subtreesep=\dimen275
+\smuggle@levelsep=\dimen276
+\smuggle@subtreesep=\dimen277
+\this@levelsep=\dimen278
+\this@subtreesep=\dimen279
+\pgftree@childx=\dimen280
+\pgftree@savechildx=\dimen281
+\pgftree@childy=\dimen282
+\pgftree@savechildy=\dimen283
+\pgftree@childi=\count177
+\pgftree@savechildi=\count178
+\pgftree@level=\count179
+\pgftree@depth=\dimen284
+\pgf@subpic@hbox@children=\box86
+\pgf@subpic@minx@children=\dimen285
+\pgf@subpic@miny@children=\dimen286
+\pgf@subpic@maxx@children=\dimen287
+\pgf@subpic@maxy@children=\dimen288
+\pgftree@lastchildx=\dimen289
+\pgftree@lastchildy=\dimen290
+))
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\tikz-qtree\tikz-
+qtree.tex"
+\@result=\toks49
+\child@list=\toks50
+\root@node=\toks51
+))
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\wrapfig\wrapfig.st
+y"
+\wrapoverhang=\dimen291
+\WF@size=\dimen292
+\c@WF@wrappedlines=\count180
+\WF@box=\box87
+\WF@everypar=\toks52
+Package: wrapfig 2003/01/31  v 3.6
+) (3dplot.sty
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ifthen.sty"
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlaye
+r\tikz\libraries\tikzlibrarycalc.code.tex"
+File: tikzlibrarycalc.code.tex 2013/07/15 v3.0.1a (rcs-revision 1.9)
+)
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlaye
+r\tikz\libraries\tikzlibrary3d.code.tex"
+File: tikzlibrary3d.code.tex 2013/07/17 v3.0.1a (rcs-revision 1.2)
+))
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tkz-euclide\tkz-eu
+clide.sty"
+Package: tkz-euclide 2011/06/01 1.16 c for plots 2d 
+
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tkz-base\tkz-base.
+sty"
+Package: tkz-base 2018/09/19 1.16 d tkz-base
+
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlaye
+r\tikz\libraries\tikzlibraryarrows.code.tex"
+File: tikzlibraryarrows.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
+
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\libraries\pg
+flibraryarrows.code.tex"
+File: pgflibraryarrows.code.tex 2013/09/23 v3.0.1a (rcs-revision 1.16)
+\arrowsize=\dimen293
+))
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlaye
+r\tikz\libraries\tikzlibraryplotmarks.code.tex"
+File: tikzlibraryplotmarks.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
+
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\libraries\pg
+flibraryplotmarks.code.tex"
+File: pgflibraryplotmarks.code.tex 2015/08/03 v3.0.1a (rcs-revision 1.14)
+))
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlaye
+r\tikz\libraries\tikzlibrarypositioning.code.tex"
+File: tikzlibrarypositioning.code.tex 2008/10/06 v3.0.1a (rcs-revision 1.7)
+)
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlaye
+r\tikz\libraries\tikzlibraryshapes.misc.code.tex"
+File: tikzlibraryshapes.misc.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
+
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\libraries\sh
+apes\pgflibraryshapes.misc.code.tex"
+File: pgflibraryshapes.misc.code.tex 2013/07/18 v3.0.1a (rcs-revision 1.5)
+))
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlaye
+r\tikz\libraries\tikzlibrarydecorations.code.tex"
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\modules\pgfm
+oduledecorations.code.tex"
+\pgfdecoratedcompleteddistance=\dimen294
+\pgfdecoratedremainingdistance=\dimen295
+\pgfdecoratedinputsegmentcompleteddistance=\dimen296
+\pgfdecoratedinputsegmentremainingdistance=\dimen297
+\pgf@decorate@distancetomove=\dimen298
+\pgf@decorate@repeatstate=\count181
+\pgfdecorationsegmentamplitude=\dimen299
+\pgfdecorationsegmentlength=\dimen300
+)
+\tikz@lib@dec@box=\box88
+)
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlaye
+r\tikz\libraries\tikzlibrarydecorations.markings.code.tex"
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\libraries\de
+corations\pgflibrarydecorations.markings.code.tex"))
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlaye
+r\tikz\libraries\tikzlibrarydecorations.pathreplacing.code.tex"
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\libraries\de
+corations\pgflibrarydecorations.pathreplacing.code.tex"))
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlaye
+r\tikz\libraries\tikzlibrarypatterns.code.tex"
+File: tikzlibrarypatterns.code.tex 2008/01/15 v3.0.1a (rcs-revision 1.2)
+
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\libraries\pg
+flibrarypatterns.code.tex"
+File: pgflibrarypatterns.code.tex 2008/03/03 v3.0.1a (rcs-revision 1.13)
+))
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\numprint\numprint.
+sty"
+Package: numprint 2012/08/20 v1.39 Print numbers (HH)
+\c@nprt@mantissa@digitsbefore=\count182
+\c@nprt@mantissa@digitsafter=\count183
+\c@nprt@exponent@digitsbefore=\count184
+\c@nprt@exponent@digitsafter=\count185
+\nprt@digitwidth=\skip63
+\nprt@sepwidth=\skip64
+\nprt@decimalwidth=\skip65
+\nprt@blockwidth=\skip66
+\nprt@digittoks=\toks53
+\nprt@pretoks=\toks54
+\nprt@posttoks=\toks55
+\nprt@thisdigit=\count186
+\nprt@curpos=\count187
+\nprt@rndpos=\count188
+\c@nprt@digitsfirstblock=\count189
+\c@nprt@blockcnt=\count190
+\c@nprt@cntprint=\count191
+ No configuration file `numprint.cfg' found.)
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fp\fp.sty"
+Package: fp 1995/04/02
+
+`Fixed Point Package', Version 0.8, April 2, 1995 (C) Michael Mehlich
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fp\defpattern.sty"
+Package: defpattern 1994/10/12
+\actioncount=\count192
+) ("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fp\fp-basic.sty"
+Package: fp-basic 1996/05/13
+\FP@xs=\count193
+\FP@xia=\count194
+\FP@xib=\count195
+\FP@xfa=\count196
+\FP@xfb=\count197
+\FP@rega=\count198
+\FP@regb=\count199
+Normal \count register pool exhausted, switching to extended pool.
+\FP@regs=\count277
+\FP@times=\count278
+) ("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fp\fp-addons.sty
+"
+Package: fp-addons 1995/03/15
+) ("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fp\fp-snap.sty"
+Package: fp-snap 1995/04/05
+) ("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fp\fp-exp.sty"
+Package: fp-exp 1995/04/03
+)
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fp\fp-trigo.sty"
+Package: fp-trigo 1995/04/14
+)
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fp\fp-pas.sty"
+Package: fp-pas 1994/08/29
+)
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fp\fp-random.sty"
+Package: fp-random 1995/02/23
+\FPseed=\count279
+) ("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fp\fp-eqn.sty"
+Package: fp-eqn 1995/04/03
+)
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fp\fp-upn.sty"
+Package: fp-upn 1996/10/21
+)
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fp\fp-eval.sty"
+Package: fp-eval 1995/04/03
+))
+\tkzRadius=\dimen301
+\tkzLength=\dimen302
+\tkz@radi=\dimen303
+\tkz@ax=\dimen304
+\tkz@ay=\dimen305
+\tkz@bx=\dimen306
+\tkz@by=\dimen307
+\tkz@cx=\dimen308
+\tkz@cy=\dimen309
+\tkz@dx=\dimen310
+\tkz@dy=\dimen311
+
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tkz-base\tkz-tools
+-utilities.tex")
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tkz-base\tkz-tools
+-arith.tex"
+File: tkz-tool-arith.tex tkz-tool-arith 1.161 d
+)
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tkz-base\tkz-tools
+-base.tex")
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tkz-base\tkz-tools
+-misc.tex")
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tkz-base\tkz-tools
+-math.tex")
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tkz-base\tkz-obj-p
+oints.tex")
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tkz-base\tkz-obj-s
+egments.tex")
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tkz-base\tkz-obj-m
+arks.tex"
+\tkz@cntmk=\count280
+))
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tkz-euclide\tkz-to
+ols-intersections.tex")
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tkz-euclide\tkz-to
+ols-transformations.tex")
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tkz-euclide\tkz-ob
+j-lines.tex")
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tkz-euclide\tkz-li
+b-symbols.tex")
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tkz-euclide\tkz-ob
+j-circles.tex")
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tkz-euclide\tkz-ob
+j-addpoints.tex"))
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\algorithms\algorit
+hmic.sty"
+Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
+\c@ALC@unique=\count281
+\c@ALC@line=\count282
+\c@ALC@rem=\count283
+\c@ALC@depth=\count284
+\ALC@tlm=\skip67
+\algorithmicindent=\skip68
+)
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\algorithms\algorit
+hm.sty"
+Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
+nment
+
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\float\float.sty"
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count285
+\float@exts=\toks56
+\float@box=\box89
+\@float@everytoks=\toks57
+\@floatcapt=\box90
+)
+\@float@every@algorithm=\toks58
+\c@algorithm=\count286
+)
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\l3packages\xparse\
+xparse.sty"
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\l3kernel\expl3.sty
+"
+Package: expl3 2018-10-31 L3 programming layer (loader) 
+
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\l3kernel\expl3-cod
+e.tex"
+Package: expl3 2018-10-31 L3 programming layer (code)
+\c_max_int=\count287
+\l_tmpa_int=\count288
+\l_tmpb_int=\count289
+\g_tmpa_int=\count290
+\g_tmpb_int=\count291
+\g__kernel_prg_map_int=\count292
+\c_log_iow=\count293
+\l_iow_line_count_int=\count294
+\l__iow_line_target_int=\count295
+\l__iow_one_indent_int=\count296
+\l__iow_indent_int=\count297
+\c_zero_dim=\dimen312
+\c_max_dim=\dimen313
+\l_tmpa_dim=\dimen314
+\l_tmpb_dim=\dimen315
+\g_tmpa_dim=\dimen316
+\g_tmpb_dim=\dimen317
+\c_zero_skip=\skip69
+\c_max_skip=\skip70
+\l_tmpa_skip=\skip71
+\l_tmpb_skip=\skip72
+\g_tmpa_skip=\skip73
+\g_tmpb_skip=\skip74
+\c_zero_muskip=\muskip12
+\c_max_muskip=\muskip13
+\l_tmpa_muskip=\muskip14
+\l_tmpb_muskip=\muskip15
+\g_tmpa_muskip=\muskip16
+\g_tmpb_muskip=\muskip17
+\l_keys_choice_int=\count298
+\l__intarray_loop_int=\count299
+\c__intarray_sp_dim=\dimen318
+\g__intarray_font_int=\count300
+\c__fp_leading_shift_int=\count301
+\c__fp_middle_shift_int=\count302
+\c__fp_trailing_shift_int=\count303
+\c__fp_big_leading_shift_int=\count304
+\c__fp_big_middle_shift_int=\count305
+\c__fp_big_trailing_shift_int=\count306
+\c__fp_Bigg_leading_shift_int=\count307
+\c__fp_Bigg_middle_shift_int=\count308
+\c__fp_Bigg_trailing_shift_int=\count309
+\c__kernel_randint_max_int=\count310
+\g__fp_array_int=\count311
+\l__fp_array_loop_int=\count312
+\l__sort_length_int=\count313
+\l__sort_min_int=\count314
+\l__sort_top_int=\count315
+\l__sort_max_int=\count316
+\l__sort_true_max_int=\count317
+\l__sort_block_int=\count318
+\l__sort_begin_int=\count319
+\l__sort_end_int=\count320
+\l__sort_A_int=\count321
+\l__sort_B_int=\count322
+\l__sort_C_int=\count323
+\l__tl_analysis_normal_int=\count324
+\l__tl_analysis_index_int=\count325
+\l__tl_analysis_nesting_int=\count326
+\l__tl_analysis_type_int=\count327
+\l__regex_internal_a_int=\count328
+\l__regex_internal_b_int=\count329
+\l__regex_internal_c_int=\count330
+\l__regex_balance_int=\count331
+\l__regex_group_level_int=\count332
+\l__regex_mode_int=\count333
+\c__regex_cs_in_class_mode_int=\count334
+\c__regex_cs_mode_int=\count335
+\l__regex_catcodes_int=\count336
+\l__regex_default_catcodes_int=\count337
+\c__regex_catcode_D_int=\count338
+\c__regex_catcode_S_int=\count339
+\c__regex_catcode_L_int=\count340
+\c__regex_catcode_O_int=\count341
+\c__regex_catcode_A_int=\count342
+\c__regex_all_catcodes_int=\count343
+\l__regex_show_lines_int=\count344
+\l__regex_min_state_int=\count345
+\l__regex_max_state_int=\count346
+\l__regex_left_state_int=\count347
+\l__regex_right_state_int=\count348
+\l__regex_capturing_group_int=\count349
+\l__regex_min_pos_int=\count350
+\l__regex_max_pos_int=\count351
+\l__regex_curr_pos_int=\count352
+\l__regex_start_pos_int=\count353
+\l__regex_success_pos_int=\count354
+\l__regex_curr_char_int=\count355
+\l__regex_curr_catcode_int=\count356
+\l__regex_last_char_int=\count357
+\l__regex_case_changed_char_int=\count358
+\l__regex_curr_state_int=\count359
+\l__regex_step_int=\count360
+\l__regex_min_active_int=\count361
+\l__regex_max_active_int=\count362
+\l__regex_replacement_csnames_int=\count363
+\l__regex_match_count_int=\count364
+\l__regex_min_submatch_int=\count365
+\l__regex_submatch_int=\count366
+\l__regex_zeroth_submatch_int=\count367
+\g__regex_trace_regex_int=\count368
+\c_empty_box=\box91
+\l_tmpa_box=\box92
+\l_tmpb_box=\box93
+\g_tmpa_box=\box94
+\g_tmpb_box=\box95
+\l__box_top_dim=\dimen319
+\l__box_bottom_dim=\dimen320
+\l__box_left_dim=\dimen321
+\l__box_right_dim=\dimen322
+\l__box_top_new_dim=\dimen323
+\l__box_bottom_new_dim=\dimen324
+\l__box_left_new_dim=\dimen325
+\l__box_right_new_dim=\dimen326
+\l__box_internal_box=\box96
+\l__coffin_internal_box=\box97
+\l__coffin_internal_dim=\dimen327
+\l__coffin_offset_x_dim=\dimen328
+\l__coffin_offset_y_dim=\dimen329
+\l__coffin_x_dim=\dimen330
+\l__coffin_y_dim=\dimen331
+\l__coffin_x_prime_dim=\dimen332
+\l__coffin_y_prime_dim=\dimen333
+\c_empty_coffin=\box98
+\l__coffin_aligned_coffin=\box99
+\l__coffin_aligned_internal_coffin=\box100
+\l_tmpa_coffin=\box101
+\l_tmpb_coffin=\box102
+\l__coffin_display_coffin=\box103
+\l__coffin_display_coord_coffin=\box104
+\l__coffin_display_pole_coffin=\box105
+\l__coffin_display_offset_dim=\dimen334
+\l__coffin_display_x_dim=\dimen335
+\l__coffin_display_y_dim=\dimen336
+\g__file_internal_ior=\read2
+\l__coffin_bounding_shift_dim=\dimen337
+\l__coffin_left_corner_dim=\dimen338
+\l__coffin_right_corner_dim=\dimen339
+\l__coffin_bottom_corner_dim=\dimen340
+\l__coffin_top_corner_dim=\dimen341
+\l__coffin_scaled_total_height_dim=\dimen342
+\l__coffin_scaled_width_dim=\dimen343
+\l__seq_internal_a_int=\count369
+\l__seq_internal_b_int=\count370
+)
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\l3kernel\l3pdfmode
+.def"
+File: l3pdfmode.def 2018-10-31 v L3 Experimental driver: PDF mode
+\l__driver_color_stack_int=\count371
+))
+Package: xparse 2018-10-17 L3 Experimental document command parser
+\l__xparse_current_arg_int=\count372
+\g__xparse_grabber_int=\count373
+\l__xparse_m_args_int=\count374
+\l__xparse_mandatory_args_int=\count375
+\l__xparse_v_nesting_int=\count376
+)
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\subfigure\subfigur
+e.sty"
+Package: subfigure 2002/07/30 v2.1.4 subfigure package
+\subfigtopskip=\skip75
+\subfigcapskip=\skip76
+\subfigcaptopadj=\dimen344
+\subfigbottomskip=\skip77
+\subfigcapmargin=\dimen345
+\subfiglabelskip=\skip78
+\c@subfigure=\count377
+\c@lofdepth=\count378
+\c@subtable=\count379
+\c@lotdepth=\count380
+
+****************************************
+* Local config file subfigure.cfg used *
+****************************************
+
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\subfigure\subfigur
+e.cfg")
+\subfig@top=\skip79
+\subfig@bottom=\skip80
+)
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlaye
+r\tikz\libraries\tikzlibraryshadows.code.tex"
+File: tikzlibraryshadows.code.tex 2008/01/13 v3.0.1a (rcs-revision 1.3)
+
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlaye
+r\tikz\libraries\tikzlibraryfadings.code.tex"
+File: tikzlibraryfadings.code.tex 2009/11/15 v3.0.1a (rcs-revision 1.2)
+
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\libraries\pg
+flibraryfadings.code.tex"
+File: pgflibraryfadings.code.tex 2008/02/07 v3.0.1a (rcs-revision 1.3)
+)))
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlaye
+r\tikz\libraries\tikzlibrarytrees.code.tex"
+File: tikzlibrarytrees.code.tex 2008/02/24 v3.0.1a (rcs-revision 1.2)
+)
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlaye
+r\tikz\libraries\tikzlibrarydecorations.pathmorphing.code.tex"
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\libraries\de
+corations\pgflibrarydecorations.pathmorphing.code.tex"))
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlaye
+r\tikz\libraries\tikzlibrarychains.code.tex"
+File: tikzlibrarychains.code.tex 2013/07/15 v3.0.1a (rcs-revision 1.6)
+)
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlaye
+r\tikz\libraries\tikzlibrarymatrix.code.tex"
+File: tikzlibrarymatrix.code.tex 2013/07/12 v3.0.1a (rcs-revision 1.4)
+)
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlaye
+r\tikz\libraries\tikzlibraryscopes.code.tex"
+File: tikzlibraryscopes.code.tex 2008/06/27 v3.0.1a (rcs-revision 1.2)
+)
+\c@definicao=\count381
+\c@prop=\count382
+\c@teo=\count383
+\c@cor=\count384
+ (gphilippi.aux)
+\openout1 = `gphilippi.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: custom
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: includehead includefoot 
+* h-part:(L,W,R)=(14.22636pt, 335.74263pt, 14.22636pt)
+* v-part:(T,H,B)=(0.0pt, 273.14662pt, 0.0pt)
+* \paperwidth=364.19536pt
+* \paperheight=273.14662pt
+* \textwidth=335.74263pt
+* \textheight=244.6939pt
+* \oddsidemargin=-58.04362pt
+* \evensidemargin=-58.04362pt
+* \topmargin=-72.26999pt
+* \headheight=14.22636pt
+* \headsep=0.0pt
+* \topskip=11.0pt
+* \footskip=14.22636pt
+* \marginparwidth=4.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-pdf.mk
+ii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count385
+\scratchdimen=\dimen346
+\scratchbox=\box106
+\nofMPsegments=\count386
+\nofMParguments=\count387
+\everyMPshowfont=\toks59
+\MPscratchCnt=\count388
+\MPscratchDim=\dimen347
+\MPnumerator=\count389
+\makeMPintoPDFobject=\count390
+\everyMPtoPDFconversion=\toks60
+)
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-
+base.sty"
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\grfext.st
+y"
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+) ABD: EveryShipout initializing macros
+\AtBeginShipoutBox=\box107
+Package hyperref Info: Link coloring OFF on input line 79.
+
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\nameref.s
+ty"
+Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
+
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\gettitl
+estring.sty"
+Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
+)
+\c@section@level=\count391
+)
+LaTeX Info: Redefining \ref on input line 79.
+LaTeX Info: Redefining \pageref on input line 79.
+LaTeX Info: Redefining \nameref on input line 79.
+ (gphilippi.out) (gphilippi.out)
+\@outlinefile=\write5
+\openout5 = `gphilippi.out'.
+
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 79.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 79.
+\symnumbers=\mathgroup6
+\sympureletters=\mathgroup7
+LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
+(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 79.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 79.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 79.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 79.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 79.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 79.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 79.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 79.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 79.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 79.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 79.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 79.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 79.
+LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
+(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 79.
+LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
+(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 79.
+LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
+(Font)                  OT1/cmss/bx/n --> OT1/cmr/bx/n on input line 79.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> OT1/cmss/bx/n on input line 79.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 79.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 79.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/bx/n on input line 79.
+LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 79.
+LaTeX Font Info:    Overwriting symbol font `pureletters' in version `normal'
+(Font)                  OT1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 7
+9.
+LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
+(Font)                  OT1/cmss/bx/it --> OT1/mathkerncmss/m/sl on input line 
+79.
+LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
+(Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on inp
+ut line 79.
+
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\translator\transla
+tor-basic-dictionary-English.dict"
+Dictionary: translator-basic-dictionary, Language: English 
+)
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\translator\transla
+tor-bibliography-dictionary-English.dict"
+Dictionary: translator-bibliography-dictionary, Language: English 
+)
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\translator\transla
+tor-environment-dictionary-English.dict"
+Dictionary: translator-environment-dictionary, Language: English 
+)
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\translator\transla
+tor-months-dictionary-English.dict"
+Dictionary: translator-months-dictionary, Language: English 
+)
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\translator\transla
+tor-numbers-dictionary-English.dict"
+Dictionary: translator-numbers-dictionary, Language: English 
+)
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\translator\transla
+tor-theorem-dictionary-English.dict"
+Dictionary: translator-theorem-dictionary, Language: English 
+) (gphilippi.nav)
+<brasaoazul_ufsc.png, id=47, 271.0125pt x 369.63094pt>
+File: brasaoazul_ufsc.png Graphic file (type png)
+<use brasaoazul_ufsc.png>
+Package pdftex.def Info: brasaoazul_ufsc.png  used on input line 91.
+(pdftex.def)             Requested size: 21.68144pt x 29.57108pt.
+ [1
+
+{C:/Users/Bruno/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./brasaoazu
+l_ufsc.png>]
+(gphilippi.toc) [2
+
+]
+File: brasaoazul_ufsc.png Graphic file (type png)
+<use brasaoazul_ufsc.png>
+Package pdftex.def Info: brasaoazul_ufsc.png  used on input line 117.
+(pdftex.def)             Requested size: 139.41832pt x 190.15619pt.
+File: brasaoazul_ufsc.png Graphic file (type png)
+<use brasaoazul_ufsc.png>
+Package pdftex.def Info: brasaoazul_ufsc.png  used on input line 117.
+(pdftex.def)             Requested size: 133.72786pt x 182.3954pt.
+File: brasaoazul_ufsc.png Graphic file (type png)
+<use brasaoazul_ufsc.png>
+Package pdftex.def Info: brasaoazul_ufsc.png  used on input line 117.
+(pdftex.def)             Requested size: 156.49014pt x 213.44418pt.
+File: brasaoazul_ufsc.png Graphic file (type png)
+<use brasaoazul_ufsc.png>
+Package pdftex.def Info: brasaoazul_ufsc.png  used on input line 117.
+(pdftex.def)             Requested size: 156.49014pt x 213.44418pt.
+
+Overfull \vbox (246.9297pt too high) detected at line 117
+ []
+
+[3
+
+]
+<thank.png, id=78, 551.05875pt x 414.54875pt>
+File: thank.png Graphic file (type png)
+<use thank.png>
+Package pdftex.def Info: thank.png  used on input line 132.
+(pdftex.def)             Requested size: 192.87344pt x 145.09422pt.
+
+Overfull \hbox (92.14964pt too wide) in paragraph at lines 132--132
+[]  
+ []
+
+LaTeX Font Info:    Try loading font information for U+msa on input line 132.
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 132.
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Try loading font information for OT1+mathkerncmss on input 
+line 132.
+
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\sansmathaccent\ot1
+mathkerncmss.fd"
+File: ot1mathkerncmss.fd 2013/03/27 Fontinst v1.933 font definitions for OT1/ma
+thkerncmss.
+)
+Overfull \hbox (9.69774pt too wide) in paragraph at lines 132--132
+ []$[]$[] 
+ []
+
+[4
+
+ <./thank.png>]
+\tf@nav=\write6
+\openout6 = `gphilippi.nav'.
+
+\tf@toc=\write7
+\openout7 = `gphilippi.toc'.
+
+\tf@snm=\write8
+\openout8 = `gphilippi.snm'.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 134.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 134.
+ (gphilippi.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 134.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 134.
+Package rerunfilecheck Info: File `gphilippi.out' has not changed.
+(rerunfilecheck)             Checksum: 194A99BA0FD323F97D13769693745995;48.
+ ) 
+Here is how much of TeX's memory you used:
+ 34747 strings out of 492970
+ 702187 string characters out of 3126594
+ 787595 words of memory out of 3000000
+ 37899 multiletter control sequences out of 15000+200000
+ 539689 words of font info for 50 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 56i,16n,78p,778b,661s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Users/Bruno/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts
+/cm/cmss10.pfb><C:/Users/Bruno/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
+blic/amsfonts/cm/cmss12.pfb><C:/Users/Bruno/AppData/Local/Programs/MiKTeX 2.9/f
+onts/type1/public/amsfonts/cm/cmss8.pfb><C:/Users/Bruno/AppData/Local/Programs/
+MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssbx10.pfb>
+Output written on gphilippi.pdf (4 pages, 294072 bytes).
+PDF statistics:
+ 104 PDF objects out of 1000 (max. 8388607)
+ 10 named destinations out of 1000 (max. 500000)
+ 181 words of extra memory for PDF output out of 10000 (max. 10000000)
+
