@@ -1,3 +1,2 @@
 \babel@toc {english}{}
 \babel@toc {english}{}
-\beamer@sectionintoc {1}{Preliminares}{3}{0}{1}

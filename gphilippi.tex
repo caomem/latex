@@ -37,9 +37,11 @@
 \usepackage{pgf}
 \usepackage{tkz-euclide}
 \usepackage{algorithmic}
-\usepackage{algorithm}
+\usepackage{algorithm2e}
 \usepackage{xparse}
 \usepackage{subfigure}
+\usepackage{ragged2e}
+
 
 %LIBRARIES-TIKZ ------------------------------------------
 
@@ -91,29 +93,60 @@
 	\end{frame}
 	
 	%Indice
-	\begin{frame}
-		\tableofcontents 
-	\end{frame}
-	
-	\section{Preliminares}
+	%\begin{frame}
+	%	\tableofcontents 
+	%\end{frame}
 	
 	%SLIDE 1
 	\begin{frame}
-		\frametitle{\normalsize Preliminares} 
-		\begin{center} 
-			\large Para que queremos descobrir localizações?
-		\end{center}
-		
+		\frametitle{\normalsize Um Package Manager para Windows} 		
+		\begin{algorithm}[H]
+			\small
+			Abra a aplicação ``\color{cyan} Windows PowerShell\color{black}'' como administrador\;
+			
+			Digite o comando 
+			\begin{minipage}{0.8\linewidth}
+				\justify``\color{cyan}Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol \mbox{-bor 3072; iex ((New-Object System.Net.WebClient).DownloadString}{\linebreak}('https://chocolatey.org/install.ps1'))\color{black}''\;
+			\end{minipage}
+			
+			Aperte enter e espere até que a instalação seja concluída\;
+			Feche e abra o PowerShell\;
+			Use o comando ``\color{cyan}choco -?\color{black}''\;
+		\end{algorithm}
+		\vspace{0.2cm}	
+		\centering
+		Passo a passo adaptado de chocolatey.org/install
 		\begin{figure}
-			\subfigure{\includegraphics[width=4.9cm]{brasaoazul_ufsc}}
-			\hspace{0.3cm}
-			\subfigure{\includegraphics[width=4.7cm]{brasaoazul_ufsc}}
-			\\
-			\subfigure{\includegraphics[width=5.5cm]{brasaoazul_ufsc}}
-			\subfigure{\includegraphics[width=5.5cm]{brasaoazul_ufsc}}
+			\includegraphics[width=3cm]{chocologo.png}
 		\end{figure}
 	\end{frame}
+
+	%Slide 2
+	\begin{frame}
+		\frametitle{\normalsize Iniciando o Julia no Windows} 		
+		Agora que possuímos o Chocolatey, podemos obter facilmente uma versão estável do Julia e uma IDE para trabalharmos.
+		\vspace{0.2cm}
+		
+		\begin{algorithm}[H]
+			\small
+			Abra a aplicação ``\color{cyan} Windows PowerShell\color{black}'' como administrador\;
+			
+			Seja $Programs = \{vscode, julia\}$\;
+			\ForEach{$program \in Programs$}{			
+				Use o comando ``\color{cyan}choco install \color{black}$program$''\;
+				Quando lhe for solicitado permissão, digite ``A'' (accept All) e Enter\;
+				Aguarde a instalação ser concluída\;
+			}
+			Feche e abra o PowerShell\;
+			Use o comando ``\color{cyan}code -h\color{black}'' para testar a IDE\;
+			Use o comando ``\color{cyan}julia\color{black}'' para abrir o terminal do julia\;
+		\end{algorithm}
 	
+		\begin{figure}
+			\includegraphics[width=5cm]{vscodeejulia.png}
+		\end{figure}
+		
+	\end{frame}	
 	
 	%Slide End
 	\begin{frame}
