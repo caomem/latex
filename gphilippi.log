@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.11.3)  3 MAR 2020 14:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.11.3)  4 MAR 2020 01:35
 entering extended mode
 **./gphilippi.tex
 (gphilippi.tex
@@ -1628,22 +1628,22 @@ l_ufsc.png>]
 ]
 File: brasaoazul_ufsc.png Graphic file (type png)
 <use brasaoazul_ufsc.png>
-Package pdftex.def Info: brasaoazul_ufsc.png  used on input line 117.
+Package pdftex.def Info: brasaoazul_ufsc.png  used on input line 115.
 (pdftex.def)             Requested size: 139.41832pt x 190.15619pt.
 File: brasaoazul_ufsc.png Graphic file (type png)
 <use brasaoazul_ufsc.png>
-Package pdftex.def Info: brasaoazul_ufsc.png  used on input line 117.
+Package pdftex.def Info: brasaoazul_ufsc.png  used on input line 115.
 (pdftex.def)             Requested size: 133.72786pt x 182.3954pt.
 File: brasaoazul_ufsc.png Graphic file (type png)
 <use brasaoazul_ufsc.png>
-Package pdftex.def Info: brasaoazul_ufsc.png  used on input line 117.
+Package pdftex.def Info: brasaoazul_ufsc.png  used on input line 115.
 (pdftex.def)             Requested size: 156.49014pt x 213.44418pt.
 File: brasaoazul_ufsc.png Graphic file (type png)
 <use brasaoazul_ufsc.png>
-Package pdftex.def Info: brasaoazul_ufsc.png  used on input line 117.
+Package pdftex.def Info: brasaoazul_ufsc.png  used on input line 115.
 (pdftex.def)             Requested size: 156.49014pt x 213.44418pt.
 
-Overfull \vbox (246.9297pt too high) detected at line 117
+Overfull \vbox (246.9297pt too high) detected at line 115
  []
 
 [3
@@ -1652,30 +1652,30 @@ Overfull \vbox (246.9297pt too high) detected at line 117
 <thank.png, id=78, 551.05875pt x 414.54875pt>
 File: thank.png Graphic file (type png)
 <use thank.png>
-Package pdftex.def Info: thank.png  used on input line 132.
+Package pdftex.def Info: thank.png  used on input line 130.
 (pdftex.def)             Requested size: 192.87344pt x 145.09422pt.
 
-Overfull \hbox (92.14964pt too wide) in paragraph at lines 132--132
+Overfull \hbox (92.14964pt too wide) in paragraph at lines 130--130
 []  
  []
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 132.
+LaTeX Font Info:    Try loading font information for U+msa on input line 130.
 ("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 132.
+LaTeX Font Info:    Try loading font information for U+msb on input line 130.
 ("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Try loading font information for OT1+mathkerncmss on input 
-line 132.
+line 130.
 
 ("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\sansmathaccent\ot1
 mathkerncmss.fd"
 File: ot1mathkerncmss.fd 2013/03/27 Fontinst v1.933 font definitions for OT1/ma
 thkerncmss.
 )
-Overfull \hbox (9.69774pt too wide) in paragraph at lines 132--132
+Overfull \hbox (9.69774pt too wide) in paragraph at lines 130--130
  []$[]$[] 
  []
 
@@ -1691,18 +1691,18 @@ Overfull \hbox (9.69774pt too wide) in paragraph at lines 132--132
 \tf@snm=\write8
 \openout8 = `gphilippi.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 134.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 134.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 132.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 132.
  (gphilippi.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 134.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 134.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 132.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 132.
 Package rerunfilecheck Info: File `gphilippi.out' has not changed.
 (rerunfilecheck)             Checksum: 194A99BA0FD323F97D13769693745995;48.
  ) 
 Here is how much of TeX's memory you used:
  34747 strings out of 492970
  702187 string characters out of 3126594
- 787595 words of memory out of 3000000
+ 787588 words of memory out of 3000000
  37899 multiletter control sequences out of 15000+200000
  539689 words of font info for 50 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1712,7 +1712,7 @@ Here is how much of TeX's memory you used:
 blic/amsfonts/cm/cmss12.pfb><C:/Users/Bruno/AppData/Local/Programs/MiKTeX 2.9/f
 onts/type1/public/amsfonts/cm/cmss8.pfb><C:/Users/Bruno/AppData/Local/Programs/
 MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssbx10.pfb>
-Output written on gphilippi.pdf (4 pages, 294072 bytes).
+Output written on gphilippi.pdf (4 pages, 294065 bytes).
 PDF statistics:
  104 PDF objects out of 1000 (max. 8388607)
  10 named destinations out of 1000 (max. 500000)
