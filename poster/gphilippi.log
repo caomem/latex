@@ -1,14 +1,14 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050) (preloaded format=pdflatex 2019.5.20)  25 JUL 2019 07:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.11.3)  13 MAR 2020 09:28
 entering extended mode
 **./gphilippi.tex
 (gphilippi.tex
-LaTeX2e <2018-12-01>
+LaTeX2e <2018-04-01> patch level 5
 (baposter.cls
 Document Class: baposter 2010/06/10 v1.04 baposter class
-(/home/bruno/.miktex/texmfs/install/tex/latex/base/article.cls
-Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
-(/home/bruno/.miktex/texmfs/install/tex/latex/base/size10.clo
-File: size10.clo 2018/09/03 v1.4i Standard LaTeX file (size option)
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\article.cls"
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\size10.clo"
+File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count80
 \c@section=\count81
@@ -38,24 +38,29 @@ r/
 \baposter@titleimage@left@width=\skip54
 \baposter@titleimage@right@width=\skip55
 \baposter@titleimage@textwidth=\skip56
-\baposter@content=\box27
-\baposter@titleimage@left=\box28
-\baposter@titleimage@title=\box29
-\baposter@titleimage@right=\box30
+\baposter@content=\box26
+\baposter@titleimage@left=\box27
+\baposter@titleimage@title=\box28
+\baposter@titleimage@right=\box29
 Use Packages
-(/home/bruno/.miktex/texmfs/install/tex/latex/xkeyval/xkeyval.sty
+
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\xkeyval\xkeyval.st
+y"
 Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 
-(/home/bruno/.miktex/texmfs/install/tex/generic/xkeyval/xkeyval.tex
-(/home/bruno/.miktex/texmfs/install/tex/generic/xkeyval/xkvutils.tex
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xkeyval\xkeyval.
+tex"
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xkeyval\xkvutils
+.tex"
 \XKV@toks=\toks14
 \XKV@tempa@toks=\toks15
 
-(/home/bruno/.miktex/texmfs/install/tex/generic/xkeyval/keyval.tex))
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xkeyval\keyval.t
+ex"))
 \XKV@depth=\count88
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
-(/home/bruno/.miktex/texmfs/install/tex/latex/tools/calc.sty
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\calc.sty"
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Acount=\count89
 \calc@Bcount=\count90
@@ -68,15 +73,17 @@ LaTeX Info: Redefining \addtolength on input line 81.
 \calc@Ccount=\count91
 \calc@Cskip=\skip59
 )
-(/home/bruno/.miktex/texmfs/install/tex/latex/xcolor/xcolor.sty
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\xcolor\xcolor.sty"
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
 
-(/home/bruno/.miktex/texmfs/install/tex/latex/graphics-cfg/color.cfg
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg\color
+.cfg"
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
 
-(/home/bruno/.miktex/texmfs/install/tex/latex/graphics-def/pdftex.def
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-def\pdfte
+x.def"
 File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 )
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
@@ -89,39 +96,48 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 )
-(/home/bruno/.miktex/texmfs/install/tex/latex/pgf/frontendlayer/tikz.sty
-(/home/bruno/.miktex/texmfs/install/tex/latex/pgf/basiclayer/pgf.sty
-(/home/bruno/.miktex/texmfs/install/tex/latex/pgf/utilities/pgfrcs.sty
-(/home/bruno/.miktex/texmfs/install/tex/generic/pgf/utilities/pgfutil-common.te
-x
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\frontendlayer\
+tikz.sty"
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\basiclayer\pgf
+.sty"
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\utilities\pgfr
+cs.sty"
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\pg
+futil-common.tex"
 \pgfutil@everybye=\toks16
 \pgfutil@tempdima=\dimen105
 \pgfutil@tempdimb=\dimen106
 
-(/home/bruno/.miktex/texmfs/install/tex/generic/pgf/utilities/pgfutil-common-li
-sts.tex))
-(/home/bruno/.miktex/texmfs/install/tex/generic/pgf/utilities/pgfutil-latex.def
-\pgfutil@abb=\box31
-(/home/bruno/.miktex/texmfs/install/tex/latex/ms/everyshi.sty
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\pg
+futil-common-lists.tex"))
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\pg
+futil-latex.def"
+\pgfutil@abb=\box30
+
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ms\everyshi.sty"
 Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
 ))
-(/home/bruno/.miktex/texmfs/install/tex/generic/pgf/utilities/pgfrcs.code.tex
-(/home/bruno/.miktex/texmfs/install/tex/generic/pgf/pgf.revision.tex)
-Package: pgfrcs 2019/05/09 v3.1.3 (3.1.3)
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\pg
+frcs.code.tex"
+Package: pgfrcs 2015/08/07 v3.0.1a (rcs-revision 1.31)
 ))
-Package: pgf 2019/05/09 v3.1.3 (3.1.3)
+Package: pgf 2015/08/07 v3.0.1a (rcs-revision 1.15)
 
-(/home/bruno/.miktex/texmfs/install/tex/latex/pgf/basiclayer/pgfcore.sty
-(/home/bruno/.miktex/texmfs/install/tex/latex/graphics/graphicx.sty
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\basiclayer\pgf
+core.sty"
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphicx.
+sty"
 Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/home/bruno/.miktex/texmfs/install/tex/latex/graphics/graphics.sty
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphics.
+sty"
 Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
 
-(/home/bruno/.miktex/texmfs/install/tex/latex/graphics/trig.sty
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\trig.sty"
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-(/home/bruno/.miktex/texmfs/install/tex/latex/graphics-cfg/graphics.cfg
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg\graph
+ics.cfg"
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 99.
@@ -129,15 +145,19 @@ Package graphics Info: Driver file: pdftex.def on input line 99.
 \Gin@req@height=\dimen107
 \Gin@req@width=\dimen108
 )
-(/home/bruno/.miktex/texmfs/install/tex/latex/pgf/systemlayer/pgfsys.sty
-(/home/bruno/.miktex/texmfs/install/tex/generic/pgf/systemlayer/pgfsys.code.tex
-Package: pgfsys 2019/05/09 v3.1.3 (3.1.3)
-(/home/bruno/.miktex/texmfs/install/tex/generic/pgf/utilities/pgfkeys.code.tex
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\systemlayer\pg
+fsys.sty"
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemlayer\
+pgfsys.code.tex"
+Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
+
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\pg
+fkeys.code.tex"
 \pgfkeys@pathtoks=\toks17
 \pgfkeys@temptoks=\toks18
 
-(/home/bruno/.miktex/texmfs/install/tex/generic/pgf/utilities/pgfkeysfiltered.c
-ode.tex
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\pg
+fkeysfiltered.code.tex"
 \pgfkeys@tmptoks=\toks19
 ))
 \pgf@x=\dimen109
@@ -148,8 +168,6 @@ ode.tex
 \pgf@yb=\dimen114
 \pgf@xc=\dimen115
 \pgf@yc=\dimen116
-\pgf@xd=\dimen117
-\pgf@yd=\dimen118
 \w@pgf@writea=\write3
 \r@pgf@reada=\read1
 \c@pgf@counta=\count92
@@ -159,428 +177,449 @@ ode.tex
 \t@pgf@toka=\toks20
 \t@pgf@tokb=\toks21
 \t@pgf@tokc=\toks22
-\pgf@sys@id@count=\count96
 
-(/home/bruno/.miktex/texmfs/install/tex/generic/pgf/systemlayer/pgf.cfg
-File: pgf.cfg 2019/05/09 v3.1.3 (3.1.3)
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemlayer\
+pgf.cfg"
+File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
 )
 Driver file for pgf: pgfsys-pdftex.def
 
-(/home/bruno/.miktex/texmfs/install/tex/generic/pgf/systemlayer/pgfsys-pdftex.d
-ef
-File: pgfsys-pdftex.def 2019/05/09 v3.1.3 (3.1.3)
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemlayer\
+pgfsys-pdftex.def"
+File: pgfsys-pdftex.def 2014/10/11  (rcs-revision 1.35)
 
-(/home/bruno/.miktex/texmfs/install/tex/generic/pgf/systemlayer/pgfsys-common-p
-df.def
-File: pgfsys-common-pdf.def 2019/05/09 v3.1.3 (3.1.3)
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemlayer\
+pgfsys-common-pdf.def"
+File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
 )))
-(/home/bruno/.miktex/texmfs/install/tex/generic/pgf/systemlayer/pgfsyssoftpath.
-code.tex
-File: pgfsyssoftpath.code.tex 2019/05/09 v3.1.3 (3.1.3)
-\pgfsyssoftpath@smallbuffer@items=\count97
-\pgfsyssoftpath@bigbuffer@items=\count98
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemlayer\
+pgfsyssoftpath.code.tex"
+File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
+\pgfsyssoftpath@smallbuffer@items=\count96
+\pgfsyssoftpath@bigbuffer@items=\count97
 )
-(/home/bruno/.miktex/texmfs/install/tex/generic/pgf/systemlayer/pgfsysprotocol.
-code.tex
-File: pgfsysprotocol.code.tex 2019/05/09 v3.1.3 (3.1.3)
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemlayer\
+pgfsysprotocol.code.tex"
+File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
 ))
-(/home/bruno/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcore.code.tex
-Package: pgfcore 2019/05/09 v3.1.3 (3.1.3)
-(/home/bruno/.miktex/texmfs/install/tex/generic/pgf/math/pgfmath.code.tex
-(/home/bruno/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathcalc.code.tex
-(/home/bruno/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathutil.code.tex)
-(/home/bruno/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathparser.code.tex
-\pgfmath@dimen=\dimen119
-\pgfmath@count=\count99
-\pgfmath@box=\box32
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\p
+gfcore.code.tex"
+Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
+
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmath
+.code.tex"
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmath
+calc.code.tex"
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmath
+util.code.tex")
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmath
+parser.code.tex"
+\pgfmath@dimen=\dimen117
+\pgfmath@count=\count98
+\pgfmath@box=\box31
 \pgfmath@toks=\toks23
 \pgfmath@stack@operand=\toks24
 \pgfmath@stack@operation=\toks25
 )
-(/home/bruno/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfunctions.code.
-tex
-(/home/bruno/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfunctions.basic
-.code.tex)
-(/home/bruno/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfunctions.trigo
-nometric.code.tex)
-(/home/bruno/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfunctions.rando
-m.code.tex)
-(/home/bruno/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfunctions.compa
-rison.code.tex)
-(/home/bruno/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfunctions.base.
-code.tex)
-(/home/bruno/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfunctions.round
-.code.tex)
-(/home/bruno/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfunctions.misc.
-code.tex)
-(/home/bruno/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfunctions.integ
-erarithmetics.code.tex)))
-(/home/bruno/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count100
-)) (/home/bruno/.miktex/texmfs/install/tex/generic/pgf/math/pgfint.code.tex)
-(/home/bruno/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorepoints.co
-de.tex
-File: pgfcorepoints.code.tex 2019/05/09 v3.1.3 (3.1.3)
-\pgf@picminx=\dimen120
-\pgf@picmaxx=\dimen121
-\pgf@picminy=\dimen122
-\pgf@picmaxy=\dimen123
-\pgf@pathminx=\dimen124
-\pgf@pathmaxx=\dimen125
-\pgf@pathminy=\dimen126
-\pgf@pathmaxy=\dimen127
-\pgf@xx=\dimen128
-\pgf@xy=\dimen129
-\pgf@yx=\dimen130
-\pgf@yy=\dimen131
-\pgf@zx=\dimen132
-\pgf@zy=\dimen133
-)
-(/home/bruno/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorepathconst
-ruct.code.tex
-File: pgfcorepathconstruct.code.tex 2019/05/09 v3.1.3 (3.1.3)
-\pgf@path@lastx=\dimen134
-\pgf@path@lasty=\dimen135
-)
-(/home/bruno/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorepathusage
-.code.tex
-File: pgfcorepathusage.code.tex 2019/05/09 v3.1.3 (3.1.3)
-\pgf@shorten@end@additional=\dimen136
-\pgf@shorten@start@additional=\dimen137
-)
-(/home/bruno/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorescopes.co
-de.tex
-File: pgfcorescopes.code.tex 2019/05/09 v3.1.3 (3.1.3)
-\pgfpic=\box33
-\pgf@hbox=\box34
-\pgf@layerbox@main=\box35
-\pgf@picture@serial@count=\count101
-)
-(/home/bruno/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcoregraphicst
-ate.code.tex
-File: pgfcoregraphicstate.code.tex 2019/05/09 v3.1.3 (3.1.3)
-\pgflinewidth=\dimen138
-)
-(/home/bruno/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcoretransform
-ations.code.tex
-File: pgfcoretransformations.code.tex 2019/05/09 v3.1.3 (3.1.3)
-\pgf@pt@x=\dimen139
-\pgf@pt@y=\dimen140
-\pgf@pt@temp=\dimen141
-)
-(/home/bruno/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorequick.cod
-e.tex
-File: pgfcorequick.code.tex 2019/05/09 v3.1.3 (3.1.3)
-)
-(/home/bruno/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcoreobjects.c
-ode.tex
-File: pgfcoreobjects.code.tex 2019/05/09 v3.1.3 (3.1.3)
-)
-(/home/bruno/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorepathproce
-ssing.code.tex
-File: pgfcorepathprocessing.code.tex 2019/05/09 v3.1.3 (3.1.3)
-)
-(/home/bruno/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorearrows.co
-de.tex
-File: pgfcorearrows.code.tex 2019/05/09 v3.1.3 (3.1.3)
-\pgfarrowsep=\dimen142
-)
-(/home/bruno/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcoreshade.cod
-e.tex
-File: pgfcoreshade.code.tex 2019/05/09 v3.1.3 (3.1.3)
-\pgf@max=\dimen143
-\pgf@sys@shading@range@num=\count102
-\pgf@shadingcount=\count103
-)
-(/home/bruno/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcoreimage.cod
-e.tex
-File: pgfcoreimage.code.tex 2019/05/09 v3.1.3 (3.1.3)
-
-(/home/bruno/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcoreexternal.
-code.tex
-File: pgfcoreexternal.code.tex 2019/05/09 v3.1.3 (3.1.3)
-\pgfexternal@startupbox=\box36
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmath
+functions.code.tex"
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmath
+functions.basic.code.tex")
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmath
+functions.trigonometric.code.tex")
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmath
+functions.random.code.tex")
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmath
+functions.comparison.code.tex")
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmath
+functions.base.code.tex")
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmath
+functions.round.code.tex")
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmath
+functions.misc.code.tex")
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmath
+functions.integerarithmetics.code.tex")))
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmath
+float.code.tex"
+\c@pgfmathroundto@lastzeros=\count99
 ))
-(/home/bruno/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorelayers.co
-de.tex
-File: pgfcorelayers.code.tex 2019/05/09 v3.1.3 (3.1.3)
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\p
+gfcorepoints.code.tex"
+File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
+\pgf@picminx=\dimen118
+\pgf@picmaxx=\dimen119
+\pgf@picminy=\dimen120
+\pgf@picmaxy=\dimen121
+\pgf@pathminx=\dimen122
+\pgf@pathmaxx=\dimen123
+\pgf@pathminy=\dimen124
+\pgf@pathmaxy=\dimen125
+\pgf@xx=\dimen126
+\pgf@xy=\dimen127
+\pgf@yx=\dimen128
+\pgf@yy=\dimen129
+\pgf@zx=\dimen130
+\pgf@zy=\dimen131
 )
-(/home/bruno/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcoretranspare
-ncy.code.tex
-File: pgfcoretransparency.code.tex 2019/05/09 v3.1.3 (3.1.3)
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\p
+gfcorepathconstruct.code.tex"
+File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
+\pgf@path@lastx=\dimen132
+\pgf@path@lasty=\dimen133
 )
-(/home/bruno/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorepatterns.
-code.tex
-File: pgfcorepatterns.code.tex 2019/05/09 v3.1.3 (3.1.3)
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\p
+gfcorepathusage.code.tex"
+File: pgfcorepathusage.code.tex 2014/11/02  (rcs-revision 1.24)
+\pgf@shorten@end@additional=\dimen134
+\pgf@shorten@start@additional=\dimen135
 )
-(/home/bruno/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorerdf.code.
-tex
-File: pgfcorerdf.code.tex 2019/05/09 v3.1.3 (3.1.3)
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\p
+gfcorescopes.code.tex"
+File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
+\pgfpic=\box32
+\pgf@hbox=\box33
+\pgf@layerbox@main=\box34
+\pgf@picture@serial@count=\count100
+)
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\p
+gfcoregraphicstate.code.tex"
+File: pgfcoregraphicstate.code.tex 2014/11/02  (rcs-revision 1.12)
+\pgflinewidth=\dimen136
+)
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\p
+gfcoretransformations.code.tex"
+File: pgfcoretransformations.code.tex 2015/08/07  (rcs-revision 1.20)
+\pgf@pt@x=\dimen137
+\pgf@pt@y=\dimen138
+\pgf@pt@temp=\dimen139
+)
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\p
+gfcorequick.code.tex"
+File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
+)
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\p
+gfcoreobjects.code.tex"
+File: pgfcoreobjects.code.tex 2006/10/11  (rcs-revision 1.2)
+)
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\p
+gfcorepathprocessing.code.tex"
+File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
+)
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\p
+gfcorearrows.code.tex"
+File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
+\pgfarrowsep=\dimen140
+)
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\p
+gfcoreshade.code.tex"
+File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
+\pgf@max=\dimen141
+\pgf@sys@shading@range@num=\count101
+)
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\p
+gfcoreimage.code.tex"
+File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
+
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\p
+gfcoreexternal.code.tex"
+File: pgfcoreexternal.code.tex 2014/07/09  (rcs-revision 1.21)
+\pgfexternal@startupbox=\box35
+))
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\p
+gfcorelayers.code.tex"
+File: pgfcorelayers.code.tex 2013/07/18  (rcs-revision 1.7)
+)
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\p
+gfcoretransparency.code.tex"
+File: pgfcoretransparency.code.tex 2013/09/30  (rcs-revision 1.5)
+)
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\p
+gfcorepatterns.code.tex"
+File: pgfcorepatterns.code.tex 2013/11/07  (rcs-revision 1.5)
 )))
-(/home/bruno/.miktex/texmfs/install/tex/generic/pgf/modules/pgfmoduleshapes.cod
-e.tex
-File: pgfmoduleshapes.code.tex 2019/05/09 v3.1.3 (3.1.3)
-\pgfnodeparttextbox=\box37
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\modules\pgfm
+oduleshapes.code.tex"
+File: pgfmoduleshapes.code.tex 2014/03/21  (rcs-revision 1.35)
+\pgfnodeparttextbox=\box36
 )
-(/home/bruno/.miktex/texmfs/install/tex/generic/pgf/modules/pgfmoduleplot.code.
-tex
-File: pgfmoduleplot.code.tex 2019/05/09 v3.1.3 (3.1.3)
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\modules\pgfm
+oduleplot.code.tex"
+File: pgfmoduleplot.code.tex 2015/08/03  (rcs-revision 1.13)
 )
-(/home/bruno/.miktex/texmfs/install/tex/latex/pgf/compatibility/pgfcomp-version
--0-65.sty
-Package: pgfcomp-version-0-65 2019/05/09 v3.1.3 (3.1.3)
-\pgf@nodesepstart=\dimen144
-\pgf@nodesepend=\dimen145
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\compatibility\
+pgfcomp-version-0-65.sty"
+Package: pgfcomp-version-0-65 2007/07/03 v3.0.1a (rcs-revision 1.7)
+\pgf@nodesepstart=\dimen142
+\pgf@nodesepend=\dimen143
 )
-(/home/bruno/.miktex/texmfs/install/tex/latex/pgf/compatibility/pgfcomp-version
--1-18.sty
-Package: pgfcomp-version-1-18 2019/05/09 v3.1.3 (3.1.3)
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\compatibility\
+pgfcomp-version-1-18.sty"
+Package: pgfcomp-version-1-18 2007/07/23 v3.0.1a (rcs-revision 1.1)
 ))
-(/home/bruno/.miktex/texmfs/install/tex/latex/pgf/utilities/pgffor.sty
-(/home/bruno/.miktex/texmfs/install/tex/latex/pgf/utilities/pgfkeys.sty
-(/home/bruno/.miktex/texmfs/install/tex/generic/pgf/utilities/pgfkeys.code.tex)
-) (/home/bruno/.miktex/texmfs/install/tex/latex/pgf/math/pgfmath.sty
-(/home/bruno/.miktex/texmfs/install/tex/generic/pgf/math/pgfmath.code.tex))
-(/home/bruno/.miktex/texmfs/install/tex/generic/pgf/utilities/pgffor.code.tex
-Package: pgffor 2019/05/09 v3.1.3 (3.1.3)
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\utilities\pgff
+or.sty"
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\utilities\pgfk
+eys.sty"
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\pg
+fkeys.code.tex"))
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\math\pgfmath.s
+ty"
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmath
+.code.tex"))
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\pg
+ffor.code.tex"
+Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
 
-(/home/bruno/.miktex/texmfs/install/tex/generic/pgf/math/pgfmath.code.tex)
-\pgffor@iter=\dimen146
-\pgffor@skip=\dimen147
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmath
+.code.tex")
+\pgffor@iter=\dimen144
+\pgffor@skip=\dimen145
 \pgffor@stack=\toks26
 \pgffor@toks=\toks27
 ))
-(/home/bruno/.miktex/texmfs/install/tex/generic/pgf/frontendlayer/tikz/tikz.cod
-e.tex
-Package: tikz 2019/05/09 v3.1.3 (3.1.3)
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlaye
+r\tikz\tikz.code.tex"
+Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
 
-(/home/bruno/.miktex/texmfs/install/tex/generic/pgf/libraries/pgflibraryplothan
-dlers.code.tex
-File: pgflibraryplothandlers.code.tex 2019/05/09 v3.1.3 (3.1.3)
-\pgf@plot@mark@count=\count104
-\pgfplotmarksize=\dimen148
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\libraries\pg
+flibraryplothandlers.code.tex"
+File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
+\pgf@plot@mark@count=\count102
+\pgfplotmarksize=\dimen146
 )
-\tikz@lastx=\dimen149
-\tikz@lasty=\dimen150
-\tikz@lastxsaved=\dimen151
-\tikz@lastysaved=\dimen152
-\tikzleveldistance=\dimen153
-\tikzsiblingdistance=\dimen154
-\tikz@figbox=\box38
-\tikz@figbox@bg=\box39
-\tikz@tempbox=\box40
-\tikz@tempbox@bg=\box41
-\tikztreelevel=\count105
-\tikznumberofchildren=\count106
-\tikznumberofcurrentchild=\count107
-\tikz@fig@count=\count108
+\tikz@lastx=\dimen147
+\tikz@lasty=\dimen148
+\tikz@lastxsaved=\dimen149
+\tikz@lastysaved=\dimen150
+\tikzleveldistance=\dimen151
+\tikzsiblingdistance=\dimen152
+\tikz@figbox=\box37
+\tikz@figbox@bg=\box38
+\tikz@tempbox=\box39
+\tikz@tempbox@bg=\box40
+\tikztreelevel=\count103
+\tikznumberofchildren=\count104
+\tikznumberofcurrentchild=\count105
+\tikz@fig@count=\count106
 
-(/home/bruno/.miktex/texmfs/install/tex/generic/pgf/modules/pgfmodulematrix.cod
-e.tex
-File: pgfmodulematrix.code.tex 2019/05/09 v3.1.3 (3.1.3)
-\pgfmatrixcurrentrow=\count109
-\pgfmatrixcurrentcolumn=\count110
-\pgf@matrix@numberofcolumns=\count111
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\modules\pgfm
+odulematrix.code.tex"
+File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
+\pgfmatrixcurrentrow=\count107
+\pgfmatrixcurrentcolumn=\count108
+\pgf@matrix@numberofcolumns=\count109
 )
-\tikz@expandcount=\count112
+\tikz@expandcount=\count110
 
-(/home/bruno/.miktex/texmfs/install/tex/generic/pgf/frontendlayer/tikz/librarie
-s/tikzlibrarytopaths.code.tex
-File: tikzlibrarytopaths.code.tex 2019/05/09 v3.1.3 (3.1.3)
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlaye
+r\tikz\libraries\tikzlibrarytopaths.code.tex"
+File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
 )))
-(/home/bruno/.miktex/texmfs/install/tex/latex/base/ifthen.sty
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ifthen.sty"
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
-(/home/bruno/.miktex/texmfs/install/tex/latex/base/fontenc.sty
-Package: fontenc 2018/08/11 v2.0j Standard LaTeX package
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\fontenc.sty"
+Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
 
-(/home/bruno/.miktex/texmfs/install/tex/latex/base/t1enc.def
-File: t1enc.def 2018/08/11 v2.0j Standard LaTeX file
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\t1enc.def"
+File: t1enc.def 2017/04/05 v2.0i Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
 ))
-(/home/bruno/.miktex/texmfs/install/tex/generic/pgf/frontendlayer/tikz/librarie
-s/tikzlibrarydecorations.code.tex
-(/home/bruno/.miktex/texmfs/install/tex/generic/pgf/modules/pgfmoduledecoration
-s.code.tex
-\pgfdecoratedcompleteddistance=\dimen155
-\pgfdecoratedremainingdistance=\dimen156
-\pgfdecoratedinputsegmentcompleteddistance=\dimen157
-\pgfdecoratedinputsegmentremainingdistance=\dimen158
-\pgf@decorate@distancetomove=\dimen159
-\pgf@decorate@repeatstate=\count113
-\pgfdecorationsegmentamplitude=\dimen160
-\pgfdecorationsegmentlength=\dimen161
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlaye
+r\tikz\libraries\tikzlibrarydecorations.code.tex"
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\modules\pgfm
+oduledecorations.code.tex"
+\pgfdecoratedcompleteddistance=\dimen153
+\pgfdecoratedremainingdistance=\dimen154
+\pgfdecoratedinputsegmentcompleteddistance=\dimen155
+\pgfdecoratedinputsegmentremainingdistance=\dimen156
+\pgf@decorate@distancetomove=\dimen157
+\pgf@decorate@repeatstate=\count111
+\pgfdecorationsegmentamplitude=\dimen158
+\pgfdecorationsegmentlength=\dimen159
 )
-\tikz@lib@dec@box=\box42
+\tikz@lib@dec@box=\box41
 )
 Setup
 Zoom
 \baposter@movebody=\skip60
 \baposter@basemarginright=\skip61
 \baposter@basemarginleft=\skip62
-(/home/bruno/.miktex/texmfs/install/tex/latex/geometry/geometry.sty
+
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\geometry\geometry.
+sty"
 Package: geometry 2018/04/16 v5.8 Page Geometry
 
-(/home/bruno/.miktex/texmfs/install/tex/generic/oberdiek/ifpdf.sty
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.s
+ty"
 Package: ifpdf 2018/09/07 v3.3 Provides the ifpdf switch
 )
-(/home/bruno/.miktex/texmfs/install/tex/generic/oberdiek/ifvtex.sty
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ifvtex.
+sty"
 Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
 )
-(/home/bruno/.miktex/texmfs/install/tex/generic/ifxetex/ifxetex.sty
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.
+sty"
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-\Gm@cnth=\count114
-\Gm@cntv=\count115
-\c@Gm@tempcnt=\count116
-\Gm@bindingoffset=\dimen162
-\Gm@wd@mp=\dimen163
-\Gm@odd@mp=\dimen164
-\Gm@even@mp=\dimen165
-\Gm@layoutwidth=\dimen166
-\Gm@layoutheight=\dimen167
-\Gm@layouthoffset=\dimen168
-\Gm@layoutvoffset=\dimen169
+\Gm@cnth=\count112
+\Gm@cntv=\count113
+\c@Gm@tempcnt=\count114
+\Gm@bindingoffset=\dimen160
+\Gm@wd@mp=\dimen161
+\Gm@odd@mp=\dimen162
+\Gm@even@mp=\dimen163
+\Gm@layoutwidth=\dimen164
+\Gm@layoutheight=\dimen165
+\Gm@layouthoffset=\dimen166
+\Gm@layoutvoffset=\dimen167
 \Gm@dimlist=\toks28
 
-(/home/bruno/.miktex/texmfs/install/tex/latex/geometry/geometry.cfg))
-(/home/bruno/.miktex/texmfs/install/tex/latex/pgf/utilities/pgfpages.sty
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\geometry\geometry.
+cfg"))
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\utilities\pgfp
+ages.sty"
 Package: pgfpages 2011/01/05 ver 0.02
-\pgf@logicalpages=\count117
-\pgf@firstshipout=\count118
-\pgf@lastshipout=\count119
-\pgf@currentshipout=\count120
-\pgf@cpn=\count121
-\pgf@shipoutnextto=\count122
-\pgfphysicalheight=\dimen170
-\pgfphysicalwidth=\dimen171
-\pgfpages@shipoutbox=\box43
+\pgf@logicalpages=\count115
+\pgf@firstshipout=\count116
+\pgf@lastshipout=\count117
+\pgf@currentshipout=\count118
+\pgf@cpn=\count119
+\pgf@shipoutnextto=\count120
+\pgfphysicalheight=\dimen168
+\pgfphysicalwidth=\dimen169
+\pgfpages@shipoutbox=\box42
 )
-\pgfpages@box@1=\box44
+\pgfpages@box@1=\box43
 
 Keys
-) (/home/bruno/.miktex/texmfs/install/tex/latex/base/inputenc.sty
-Package: inputenc 2018/08/11 v1.3c Input encoding file
+) ("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\inputenc.st
+y"
+Package: inputenc 2018/04/06 v1.3b Input encoding file
 \inpenc@prehook=\toks29
 \inpenc@posthook=\toks30
 )
-(/home/bruno/.miktex/texmfs/install/tex/generic/babel/babel.sty
-Package: babel 2019/05/04 3.31 The Babel package
-
-(/home/bruno/.miktex/texmfs/install/tex/generic/babel/switch.def
-File: switch.def 2019/05/04 3.31 Babel switching mechanism
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\babel.sty"
+Package: babel 2018/10/16 3.26 The Babel package
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\switch.def
+"
+File: switch.def 2018/10/16 3.26 Babel switching mechanism
 )
 *************************************
 * Local config file bblopts.cfg used
 *
-(/home/bruno/.miktex/texmfs/install/tex/latex/arabi/bblopts.cfg
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\arabi\bblopts.cfg"
 File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
  babel
 )
-(/home/bruno/.miktex/texmfs/install/tex/latex/babel-portuges/portuges.ldf
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\babel-portuges\por
+tuges.ldf"
 Language: portuges 2008/03/18 v1.2q Portuguese support from the babel system
 
-(/home/bruno/.miktex/texmfs/install/tex/generic/babel/babel.def
-File: babel.def 2019/05/04 3.31 Babel common definitions
-\babel@savecnt=\count123
-\U@D=\dimen172
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\babel.def"
+File: babel.def 2018/10/16 3.26 Babel common definitions
+\babel@savecnt=\count121
+\U@D=\dimen170
 
-(/home/bruno/.miktex/texmfs/install/tex/generic/babel/txtbabel.def)
-\bbl@dirlevel=\count124
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\txtbabel.d
+ef")
+\bbl@dirlevel=\count122
 )
-
-Package babel Warning: No hyphenation patterns were preloaded for
-(babel)                the language `Portuguese' into the format.
-(babel)                Please, configure your TeX system to add them and
-(babel)                rebuild the format. Now I will use the patterns
-(babel)                preloaded for \language=0 instead on input line 55.
-
-\l@portuges = a dialect from \language0
 \l@brazil = a dialect from \language\l@portuges 
 Package babel Info: Making " an active character on input line 145.
-)) (/home/bruno/.miktex/texmfs/install/tex/latex/psnfss/times.sty
+))
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\times.sty"
 Package: times 2005/04/12 PSNFSS-v9.2a (SPQR) 
 )
-(/home/bruno/.miktex/texmfs/install/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2018/12/01 v2.17b AMS math features
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsmath.st
+y"
+Package: amsmath 2017/09/02 v2.17a AMS math features
 \@mathmargin=\skip63
 
 For additional information on amsmath, use the `?' option.
-(/home/bruno/.miktex/texmfs/install/tex/latex/amsmath/amstext.sty
+
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amstext.st
+y"
 Package: amstext 2000/06/29 v2.01 AMS text
 
-(/home/bruno/.miktex/texmfs/install/tex/latex/amsmath/amsgen.sty
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty
+"
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks31
-\ex@=\dimen173
+\ex@=\dimen171
 ))
-(/home/bruno/.miktex/texmfs/install/tex/latex/amsmath/amsbsy.sty
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty
+"
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen174
+\pmbraise@=\dimen172
 )
-(/home/bruno/.miktex/texmfs/install/tex/latex/amsmath/amsopn.sty
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty
+"
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count125
-LaTeX Info: Redefining \frac on input line 223.
-\uproot@=\count126
-\leftroot@=\count127
-LaTeX Info: Redefining \overline on input line 385.
-\classnum@=\count128
-\DOTSCASE@=\count129
-LaTeX Info: Redefining \ldots on input line 482.
-LaTeX Info: Redefining \dots on input line 485.
-LaTeX Info: Redefining \cdots on input line 606.
-\Mathstrutbox@=\box45
-\strutbox@=\box46
-\big@size=\dimen175
-LaTeX Font Info:    Redeclaring font encoding OML on input line 729.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 730.
-\macc@depth=\count130
-\c@MaxMatrixCols=\count131
+\inf@bad=\count123
+LaTeX Info: Redefining \frac on input line 213.
+\uproot@=\count124
+\leftroot@=\count125
+LaTeX Info: Redefining \overline on input line 375.
+\classnum@=\count126
+\DOTSCASE@=\count127
+LaTeX Info: Redefining \ldots on input line 472.
+LaTeX Info: Redefining \dots on input line 475.
+LaTeX Info: Redefining \cdots on input line 596.
+\Mathstrutbox@=\box44
+\strutbox@=\box45
+\big@size=\dimen173
+LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
+\macc@depth=\count128
+\c@MaxMatrixCols=\count129
 \dotsspace@=\muskip10
-\c@parentequation=\count132
-\dspbrk@lvl=\count133
+\c@parentequation=\count130
+\dspbrk@lvl=\count131
 \tag@help=\toks32
-\row@=\count134
-\column@=\count135
-\maxfields@=\count136
+\row@=\count132
+\column@=\count133
+\maxfields@=\count134
 \andhelp@=\toks33
-\eqnshift@=\dimen176
-\alignsep@=\dimen177
-\tagshift@=\dimen178
-\tagwidth@=\dimen179
-\totwidth@=\dimen180
-\lineht@=\dimen181
+\eqnshift@=\dimen174
+\alignsep@=\dimen175
+\tagshift@=\dimen176
+\tagwidth@=\dimen177
+\totwidth@=\dimen178
+\lineht@=\dimen179
 \@envbody=\toks34
 \multlinegap=\skip64
 \multlinetaggap=\skip65
 \mathdisplay@stack=\toks35
-LaTeX Info: Redefining \[ on input line 2844.
-LaTeX Info: Redefining \] on input line 2845.
+LaTeX Info: Redefining \[ on input line 2817.
+LaTeX Info: Redefining \] on input line 2818.
 )
-(/home/bruno/.miktex/texmfs/install/tex/latex/amsfonts/amssymb.sty
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\amssymb.s
+ty"
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
-(/home/bruno/.miktex/texmfs/install/tex/latex/amsfonts/amsfonts.sty
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.
+sty"
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
-(/home/bruno/.miktex/texmfs/install/tex/latex/relsize/relsize.sty
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\relsize\relsize.st
+y"
 Package: relsize 2013/03/29 ver 4.1
 )
-(/home/bruno/.miktex/texmfs/install/tex/latex/multirow/multirow.sty
-Package: multirow 2019/05/31 v2.5 Span multiple rows of a table
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\multirow\multirow.
+sty"
+Package: multirow 2018/08/03 v2.3 Span multiple rows of a table
 \multirow@colwidth=\skip66
-\multirow@cntb=\count137
+\multirow@cntb=\count135
 \multirow@dima=\skip67
-\bigstrutjot=\dimen182
-)
-(/home/bruno/.miktex/texmfs/install/tex/latex/tools/bm.sty
+\bigstrutjot=\dimen180
+) ("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\bm.sty"
 Package: bm 2017/01/16 v1.2c Bold Symbol Support (DPC/FMi)
 \symboldoperators=\mathgroup6
 \symboldletters=\mathgroup7
@@ -588,64 +627,68 @@ Package: bm 2017/01/16 v1.2c Bold Symbol Support (DPC/FMi)
 LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 141.
 LaTeX Info: Redefining \bm on input line 207.
 )
-(/home/bruno/.miktex/texmfs/install/tex/generic/pgf/frontendlayer/tikz/librarie
-s/tikzlibrarycalc.code.tex
-File: tikzlibrarycalc.code.tex 2019/05/09 v3.1.3 (3.1.3)
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlaye
+r\tikz\libraries\tikzlibrarycalc.code.tex"
+File: tikzlibrarycalc.code.tex 2013/07/15 v3.0.1a (rcs-revision 1.9)
 )
-(/home/bruno/.miktex/texmfs/install/tex/generic/pgf/frontendlayer/tikz/librarie
-s/tikzlibraryfadings.code.tex
-File: tikzlibraryfadings.code.tex 2019/05/09 v3.1.3 (3.1.3)
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlaye
+r\tikz\libraries\tikzlibraryfadings.code.tex"
+File: tikzlibraryfadings.code.tex 2009/11/15 v3.0.1a (rcs-revision 1.2)
 
-(/home/bruno/.miktex/texmfs/install/tex/generic/pgf/libraries/pgflibraryfadings
-.code.tex
-File: pgflibraryfadings.code.tex 2019/05/09 v3.1.3 (3.1.3)
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\libraries\pg
+flibraryfadings.code.tex"
+File: pgflibraryfadings.code.tex 2008/02/07 v3.0.1a (rcs-revision 1.3)
 
-Memory usage before: 281&339998; after: 253&339991; still untouched: 2658479
-Memory usage before: 281&340106; after: 253&340099; still untouched: 2658371
-Memory usage before: 281&340117; after: 253&340110; still untouched: 2658360
-Memory usage before: 281&340126; after: 253&340119; still untouched: 2658351
-Memory usage before: 409&340629; after: 381&340622; still untouched: 2657823
-Memory usage before: 441&340767; after: 413&340760; still untouched: 2657685
-Memory usage before: 473&340885; after: 445&340878; still untouched: 2657567
-Memory usage before: 505&341437; after: 477&341430; still untouched: 2656923
+Memory usage before: 281&332724; after: 253&332717; still untouched: 2665766
+Memory usage before: 281&332819; after: 253&332812; still untouched: 2665671
+Memory usage before: 281&332829; after: 253&332822; still untouched: 2665661
+Memory usage before: 281&332837; after: 253&332830; still untouched: 2665653
+Memory usage before: 373&333339; after: 345&333332; still untouched: 2665126
+Memory usage before: 396&333476; after: 368&333469; still untouched: 2664989
+Memory usage before: 419&333593; after: 391&333586; still untouched: 2664872
+Memory usage before: 442&334120; after: 414&334113; still untouched: 2664257
 ))
-(/home/bruno/.miktex/texmfs/install/tex/generic/pgf/frontendlayer/tikz/librarie
-s/tikzlibrarydecorations.pathreplacing.code.tex
-(/home/bruno/.miktex/texmfs/install/tex/generic/pgf/libraries/decorations/pgfli
-brarydecorations.pathreplacing.code.tex))
-(/home/bruno/.miktex/texmfs/install/tex/latex/tools/verbatim.sty
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlaye
+r\tikz\libraries\tikzlibrarydecorations.pathreplacing.code.tex"
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\libraries\de
+corations\pgflibrarydecorations.pathreplacing.code.tex"))
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\verbatim.sty
+"
 Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
 \every@verbatim=\toks36
 \verbatim@line=\toks37
 \verbatim@in@stream=\read2
 )
-(/home/bruno/.miktex/texmfs/install/tex/latex/tools/enumerate.sty
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\enumerate.st
+y"
 Package: enumerate 2015/07/23 v3.00 enumerate extensions (DPC)
 \@enLab=\toks38
 )
-(/home/bruno/.miktex/texmfs/install/tex/latex/tools/multicol.sty
-Package: multicol 2018/12/27 v1.8v multicolumn formatting (FMi)
-\c@tracingmulticols=\count138
-\mult@box=\box47
-\multicol@leftmargin=\dimen183
-\c@unbalance=\count139
-\c@collectmore=\count140
-\doublecol@number=\count141
-\multicoltolerance=\count142
-\multicolpretolerance=\count143
-\full@width=\dimen184
-\page@free=\dimen185
-\premulticols=\dimen186
-\postmulticols=\dimen187
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\multicol.sty
+"
+Package: multicol 2018/04/20 v1.8s multicolumn formatting (FMi)
+\c@tracingmulticols=\count136
+\mult@box=\box46
+\multicol@leftmargin=\dimen181
+\c@unbalance=\count137
+\c@collectmore=\count138
+\doublecol@number=\count139
+\multicoltolerance=\count140
+\multicolpretolerance=\count141
+\full@width=\dimen182
+\page@free=\dimen183
+\premulticols=\dimen184
+\postmulticols=\dimen185
 \multicolsep=\skip68
 \multicolbaselineskip=\skip69
-\partial@page=\box48
-\last@line=\box49
-\maxbalancingoverflow=\dimen188
-\mult@rightbox=\box50
-\mult@grightbox=\box51
-\mult@gfirstbox=\box52
-\mult@firstbox=\box53
+\partial@page=\box47
+\last@line=\box48
+\maxbalancingoverflow=\dimen186
+\mult@rightbox=\box49
+\mult@grightbox=\box50
+\mult@gfirstbox=\box51
+\mult@firstbox=\box52
+\@tempa=\box53
 \@tempa=\box54
 \@tempa=\box55
 \@tempa=\box56
@@ -662,21 +705,20 @@ Package: multicol 2018/12/27 v1.8v multicolumn formatting (FMi)
 \@tempa=\box67
 \@tempa=\box68
 \@tempa=\box69
-\@tempa=\box70
-\c@columnbadness=\count144
-\c@finalcolumnbadness=\count145
-\last@try=\dimen189
-\multicolovershoot=\dimen190
-\multicolundershoot=\dimen191
-\mult@nat@firstbox=\box71
-\colbreak@box=\box72
-\mc@col@check@num=\count146
+\c@columnbadness=\count142
+\c@finalcolumnbadness=\count143
+\last@try=\dimen187
+\multicolovershoot=\dimen188
+\multicolundershoot=\dimen189
+\mult@nat@firstbox=\box70
+\colbreak@box=\box71
+\mc@col@check@num=\count144
 ) (3dplot.sty
-(/home/bruno/.miktex/texmfs/install/tex/generic/pgf/frontendlayer/tikz/librarie
-s/tikzlibrary3d.code.tex
-File: tikzlibrary3d.code.tex 2019/05/09 v3.1.3 (3.1.3)
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlaye
+r\tikz\libraries\tikzlibrary3d.code.tex"
+File: tikzlibrary3d.code.tex 2013/07/17 v3.0.1a (rcs-revision 1.2)
 ))
-(/home/bruno/.miktex/texmfs/install/tex/latex/amscls/amsthm.sty
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amscls\amsthm.sty"
 Package: amsthm 2017/10/31 v2.20.4
 \thm@style=\toks39
 \thm@bodyfont=\toks40
@@ -687,69 +729,75 @@ Package: amsthm 2017/10/31 v2.20.4
 \thm@postskip=\skip71
 \thm@headsep=\skip72
 \dth@everypar=\toks44
-)
-(/home/bruno/.miktex/texmfs/install/tex/latex/amsmath/amscd.sty
+) ("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amscd.st
+y"
 Package: amscd 2017/04/14 v2.1 AMS Commutative Diagrams
 \athelp@=\toks45
-\minaw@=\dimen192
-\bigaw@=\dimen193
-\minCDarrowwidth=\dimen194
+\minaw@=\dimen190
+\bigaw@=\dimen191
+\minCDarrowwidth=\dimen192
 )
-(/home/bruno/.miktex/texmfs/install/tex/latex/doublestroke/dsfont.sty
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\doublestroke\dsfon
+t.sty"
 Package: dsfont 1995/08/01 v0.1 Double stroke roman fonts
 )
-(/home/bruno/.miktex/texmfs/install/tex/latex/algorithmicx/algorithmicx.sty
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\algorithmicx\algor
+ithmicx.sty"
 Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
 
 Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
-\c@ALG@line=\count147
-\c@ALG@rem=\count148
-\c@ALG@nested=\count149
+\c@ALG@line=\count145
+\c@ALG@rem=\count146
+\c@ALG@nested=\count147
 \ALG@tlm=\skip73
 \ALG@thistlm=\skip74
-\c@ALG@Lnr=\count150
-\c@ALG@blocknr=\count151
-\c@ALG@storecount=\count152
-\c@ALG@tmpcounter=\count153
+\c@ALG@Lnr=\count148
+\c@ALG@blocknr=\count149
+\c@ALG@storecount=\count150
+\c@ALG@tmpcounter=\count151
 \ALG@tmplength=\skip75
 ) (algorithm.sty
 Package: algorithm 
 
 Document Style `algorithm' - floating environment
-(/home/bruno/.miktex/texmfs/install/tex/latex/float/float.sty
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\float\float.sty"
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count154
+\c@float@type=\count152
 \float@exts=\toks46
-\float@box=\box73
+\float@box=\box72
 \@float@everytoks=\toks47
-\@floatcapt=\box74
+\@floatcapt=\box73
 )
 \@float@every@algorithm=\toks48
-\c@algorithm=\count155
+\c@algorithm=\count153
 )
-(/home/bruno/.miktex/texmfs/install/tex/latex/algorithmicx/algpseudocode.sty
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\algorithmicx\algps
+eudocode.sty"
 Package: algpseudocode 
 
 Document Style - pseudocode environments for use with the `algorithmicx' style
 )
-(/home/bruno/.miktex/texmfs/install/tex/latex/pgf/basiclayer/pgfbaselayers.sty
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\basiclayer\pgf
+baselayers.sty"
 
 Package pgf Warning: This package is obsolete and no longer needed on input lin
 e 13.
 
 )
-\pgf@layerbox@background=\box75
-\pgf@layerboxsaved@background=\box76
-\pgf@layerbox@foreground=\box77
-\pgf@layerboxsaved@foreground=\box78
- (/home/bruno/.miktex/texmfs/install/tex/latex/psnfss/helvet.sty
+\pgf@layerbox@background=\box74
+\pgf@layerboxsaved@background=\box75
+\pgf@layerbox@foreground=\box76
+\pgf@layerboxsaved@foreground=\box77
+ ("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\helvet.sty
+"
 Package: helvet 2005/04/12 PSNFSS-v9.2a (WaS) 
 )
-(/home/bruno/.miktex/texmfs/install/tex/latex/psnfss/palatino.sty
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\palatino.st
+y"
 Package: palatino 2005/04/12 PSNFSS-v9.2a (SPQR) 
 )
-\c@teo=\count156
-\c@post=\count157
+\c@teo=\count154
+\c@post=\count155
 
 
 LaTeX Warning: Unused global option(s):
@@ -771,51 +819,69 @@ LaTeX Font Info:    ... okay on input line 175.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 175.
 LaTeX Font Info:    ... okay on input line 175.
 LaTeX Font Info:    Try loading font information for T1+ppl on input line 175.
- (/home/bruno/.miktex/texmfs/install/tex/latex/psnfss/t1ppl.fd
+
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\t1ppl.fd"
 File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
 )
-(/home/bruno/.miktex/texmfs/install/tex/context/base/mkii/supp-pdf.mkii
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-pdf.mk
+ii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count158
-\scratchdimen=\dimen195
-\scratchbox=\box79
-\nofMPsegments=\count159
-\nofMParguments=\count160
+\scratchcounter=\count156
+\scratchdimen=\dimen193
+\scratchbox=\box78
+\nofMPsegments=\count157
+\nofMParguments=\count158
 \everyMPshowfont=\toks49
-\MPscratchCnt=\count161
-\MPscratchDim=\dimen196
-\MPnumerator=\count162
-\makeMPintoPDFobject=\count163
+\MPscratchCnt=\count159
+\MPscratchDim=\dimen194
+\MPnumerator=\count160
+\makeMPintoPDFobject=\count161
 \everyMPtoPDFconversion=\toks50
-) (/home/bruno/.miktex/texmfs/install/tex/latex/oberdiek/epstopdf-base.sty
+)
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-
+base.sty"
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
-(/home/bruno/.miktex/texmfs/install/tex/generic/oberdiek/infwarerr.sty
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\infware
+rr.sty"
 Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
 )
-(/home/bruno/.miktex/texmfs/install/tex/latex/oberdiek/grfext.sty
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\grfext.st
+y"
 Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
 
-(/home/bruno/.miktex/texmfs/install/tex/generic/oberdiek/kvdefinekeys.sty
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\kvdefin
+ekeys.sty"
 Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
 
-(/home/bruno/.miktex/texmfs/install/tex/generic/oberdiek/ltxcmds.sty
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds
+.sty"
 Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
 )))
-(/home/bruno/.miktex/texmfs/install/tex/latex/oberdiek/kvoptions.sty
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\kvoptions
+.sty"
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 
-(/home/bruno/.miktex/texmfs/install/tex/generic/oberdiek/kvsetkeys.sty
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\kvsetke
+ys.sty"
 Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
 
-(/home/bruno/.miktex/texmfs/install/tex/generic/oberdiek/etexcmds.sty
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\etexcmd
+s.sty"
 Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
 
-(/home/bruno/.miktex/texmfs/install/tex/generic/oberdiek/ifluatex.sty
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ifluate
+x.sty"
 Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
-))))
-(/home/bruno/.miktex/texmfs/install/tex/generic/oberdiek/pdftexcmds.sty
+)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\pdftexc
+mds.sty"
 Package: pdftexcmds 2018/09/10 v0.29 Utility functions of pdfTeX for LuaTeX (HO
 )
 Package pdftexcmds Info: LuaTeX not detected.
@@ -829,8 +895,7 @@ Package grfext Info: Graphics extension search list:
 (grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
-)
-ABD: EveryShipout initializing macros
+) ABD: EveryShipout initializing macros
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -873,7 +938,7 @@ Columns: 3
 2
 3
 BAPOSTER: Using shade top to bottom background.
-Memory usage before: 638&381094; after: 610&381087; still untouched: 2614330
+Memory usage before: 618&373541; after: 590&373534; still untouched: 2621469
 Eyecatcher found!
 <logo_ufsc.png, id=30, 2007.5pt x 1979.395pt>
 File: logo_ufsc.png Graphic file (type png)
@@ -891,12 +956,11 @@ Overfull \hbox (8.40442pt too wide) in paragraph at lines 249--249
  []
 
 LaTeX Font Info:    Try loading font information for U+msa on input line 249.
-(/home/bruno/.miktex/texmfs/install/tex/latex/amsfonts/umsa.fd
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 249.
-
-(/home/bruno/.miktex/texmfs/install/tex/latex/amsfonts/umsb.fd
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 \sf \bf \relax \fontsize {17.28}{22}\selectfont \nullfont DMDGP: Um Problema Re
@@ -906,32 +970,17 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10> not available
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <24.88> not available
 (Font)              Font shape `T1/ppl/b/n' tried instead on input line 249.
 LaTeX Font Info:    Try loading font information for T1+phv on input line 249.
-(/home/bruno/.miktex/texmfs/install/tex/latex/psnfss/t1phv.fd
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\t1phv.fd"
 File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
 )
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <17.28> not available
 (Font)              Font shape `T1/ppl/b/n' tried instead on input line 249.
 LaTeX Font Info:    Try loading font information for T1+pcr on input line 249.
 
-(/home/bruno/.miktex/texmfs/install/tex/latex/psnfss/t1pcr.fd
+("C:\Users\Bruno\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\t1pcr.fd"
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
 name=intro, column=0, row=0
-
-Underfull \hbox (badness 1783) in paragraph at lines 266--266
-\T1/ppl/m/n/10 geométrica das moléculas orgânicas e suas
- []
-
-
-Underfull \hbox (badness 1253) in paragraph at lines 266--266
-\T1/ppl/m/n/10 funções em organismos vivos [[]]. Sabe-se
- []
-
-
-Underfull \hbox (badness 1158) in paragraph at lines 266--266
-\T1/ppl/m/n/10 de todas as proteínas catalogadas chamado
- []
-
 <protein.png, id=33, 401.5pt x 331.2375pt>
 File: protein.png Graphic file (type png)
 <use protein.png>
@@ -956,7 +1005,7 @@ Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Header
 Header-Shape: roundedright
-Memory usage before: 3581&389613; after: 3553&389606; still untouched: 2604748
+Memory usage before: 3671&382063; after: 3643&382056; still untouched: 2612269
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <12> not available
 (Font)              Font shape `T1/ppl/b/n' tried instead on input line 266.
 Sidebars
@@ -964,49 +1013,7 @@ Drawing Text
 name=problem, column=0, below=intro
 
 Underfull \hbox (badness 1107) in paragraph at lines 270--270
-\T1/ppl/b/n/10 as posições dos átomos de uma molécula\T1/ppl/m/n/10 ,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 270--270
-\T1/ppl/m/n/10 tendo como entradas algumas distâncias
- []
-
-
-Underfull \hbox (badness 1810) in paragraph at lines 270--270
-\T1/ppl/m/n/10 entre átomos próximos (obtidas através de
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 270--270
-\T1/ppl/m/n/10 experimentos de Ressonância Magnética
- []
-
-
-Underfull \hbox (badness 6032) in paragraph at lines 270--270
-\T1/ppl/m/n/10 como \T1/ppl/m/it/10 Molecular Distance Geometry Problem
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 270--270
-\T1/ppl/m/n/10 (MDGP), que é uma particularização
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 270--270
-\T1/ppl/m/n/10 do \T1/ppl/m/it/10 Distance Geometry Problem \T1/ppl/m/n/10 (DGP
-) [[]].
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 270--270
-\T1/ppl/m/n/10 Tal problema, \T1/ppl/b/n/10 munido de uma ordem
- []
-
-
-Underfull \hbox (badness 1783) in paragraph at lines 270--270
-\T1/ppl/m/n/10 pelo \T1/ppl/m/it/10 Discretization Vertex Order Problem\T1/ppl/
-m/n/10 , ou
+\T1/ppl/b/n/10 as po-si-ções dos áto-mos de uma mo-lé-cula\T1/ppl/m/n/10 ,
  []
 
 Setting Coordinates
@@ -1027,22 +1034,16 @@ Sidebars
 Drawing Text
 name=dmdgp, column=0, below=problem
 
-Underfull \hbox (badness 4739) in paragraph at lines 288--288
-[]$\OML/cmm/m/it/10 G\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 U[]\OT1/cmr/m/n/10 ]$ \T
-1/ppl/m/n/10 é um clique em três vértices
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 288--288
-[]\T1/ppl/m/n/10 para cada vértice $\OML/cmm/m/it/10 v[]$\T1/ppl/m/n/10 , com p
-osto
+[]\T1/ppl/m/n/10 para cada vér-tice $\OML/cmm/m/it/10 v[]$\T1/ppl/m/n/10 , com 
+posto
  []
 
 
 Underfull \hbox (badness 4144) in paragraph at lines 288--288
 \OML/cmm/m/it/10 i \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 \OT1/cmr/m/n/10 (\OML/cm
 m/m/it/10 v[]\OT1/cmr/m/n/10 ) \OML/cmm/m/it/10 > \OT1/cmr/m/n/10 3$\T1/ppl/m/n
-/10 , juntamente com
+/10 , jun-ta-mente com
  []
 
 Setting Coordinates
@@ -1062,16 +1063,6 @@ Header-Shape: roundedright
 Sidebars
 Drawing Text
 name=geometria, column=0, below=dmdgp
-
-Underfull \hbox (badness 3098) in paragraph at lines 292--292
-\T1/ppl/m/n/10 precisamos estudar a geometria molecular.
- []
-
-
-Underfull \hbox (badness 1796) in paragraph at lines 292--292
-\T1/ppl/m/n/10 Felizmente existe uma \T1/ppl/m/it/10 subestrutura periódica
- []
-
 Setting Coordinates
 Upper Right
 geometria
@@ -1089,28 +1080,6 @@ Header-Shape: roundedright
 Sidebars
 Drawing Text
 name=cadeia, column=1
-
-Underfull \hbox (badness 10000) in paragraph at lines 303--303
-[]\T1/ppl/m/n/10 Através de dados experimentais de
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 303--303
-\T1/ppl/b/n/10 média dessa subestrutura \T1/ppl/m/n/10 [[]] (também
- []
-
-
-Underfull \hbox (badness 1496) in paragraph at lines 303--303
-\T1/ppl/m/n/10 conhecida como \T1/ppl/m/it/10 backbone\T1/ppl/m/n/10 , mostrada
- abaixo)
- []
-
-
-Underfull \hbox (badness 1466) in paragraph at lines 303--303
-\T1/ppl/m/n/10 onde \T1/ppl/b/n/10 os comprimentos e ângulos \T1/ppl/m/n/10 ent
-re as
- []
-
 <amino.png, id=36, 593.96906pt x 310.91156pt>
 File: amino.png Graphic file (type png)
 <use amino.png>
@@ -1140,16 +1109,6 @@ Drawing Text
 name=order, column=1, below=cadeia
 LaTeX Font Info:    Font shape `T1/ppl/bx/it' in size <10> not available
 (Font)              Font shape `T1/ppl/b/it' tried instead on input line 313.
-
-Underfull \hbox (badness 7238) in paragraph at lines 313--313
-[]\T1/ppl/m/n/10 Tendo posse dessas informações sobre a
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 313--313
-\T1/ppl/m/n/10 os átomos da molécula \T1/ppl/b/n/10 utilizando esta
- []
-
 <hcVO.png, id=37, 423.5825pt x 186.6975pt>
 File: hcVO.png Graphic file (type png)
 <use hcVO.png>
@@ -1210,47 +1169,6 @@ Header-Shape: roundedright
 Sidebars
 Drawing Text
 name=pdbreader, column=1, below=hc
-
-Underfull \hbox (badness 2626) in paragraph at lines 357--357
-\T1/ppl/m/n/10 e as simulações do problema, o principal
- []
-
-
-Underfull \hbox (badness 8075) in paragraph at lines 357--357
-\T1/ppl/m/n/10 autor deste documento implementou um
- []
-
-
-Underfull \hbox (badness 2221) in paragraph at lines 357--357
-\T1/ppl/m/n/10 software (chamado \T1/ppl/b/n/10 PDBReader\T1/ppl/m/n/10 ) que a
-ceita
- []
-
-
-Underfull \hbox (badness 6141) in paragraph at lines 357--357
-\T1/ppl/m/n/10 como entrada instâncias de proteínas do
- []
-
-
-Underfull \hbox (badness 1852) in paragraph at lines 357--357
-\T1/ppl/m/n/10 repositório wwPDB e tem como saída um
- []
-
-
-Underfull \hbox (badness 5331) in paragraph at lines 357--357
-\T1/ppl/m/n/10 arquivo descrevendo a proteína \T1/ppl/b/n/10 com sua
- []
-
-
-Underfull \hbox (badness 2245) in paragraph at lines 357--357
-\T1/ppl/b/n/10 instância reordenada \T1/ppl/m/n/10 (utilizando ordenação
- []
-
-
-Underfull \hbox (badness 1147) in paragraph at lines 357--357
-\T1/ppl/m/n/10 HC). Perceba que esta é uma \T1/ppl/m/it/10 automação da
- []
-
 Setting Coordinates
 Upper Right
 pdbreader
@@ -1321,24 +1239,14 @@ Overfull \hbox (95.47278pt too wide) in paragraph at lines 383--383
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 383--383
-[]\T1/ppl/m/n/10 Ganhamos algumas vantagens com a
+Underfull \hbox (badness 1067) in paragraph at lines 383--383
+\T1/ppl/m/n/10 ga-rante a \T1/ppl/b/n/10 fi-ni-tude do con-junto so-lu-ção \T1/
+ppl/m/n/10 do
  []
 
 
-Underfull \hbox (badness 7238) in paragraph at lines 383--383
-\T1/ppl/m/n/10 discretização do problema pois a ordem
- []
-
-
-Underfull \hbox (badness 1325) in paragraph at lines 383--383
-\T1/ppl/m/n/10 o espaço onde devemos fazer a busca por
- []
-
-
-Underfull \hbox (badness 1838) in paragraph at lines 383--383
-\T1/ppl/m/n/10 estratégia numérica \T1/ppl/m/it/10 recursiva \T1/ppl/m/n/10 que
- resolve o
+Underfull \hbox (badness 1152) in paragraph at lines 383--383
+\T1/ppl/m/n/10 pro-blema e, além disso, or-ga-niza o es-paço
  []
 
 Setting Coordinates
@@ -1360,51 +1268,6 @@ Drawing Text
 name=bibref, column=2, below=conclusion
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/ppl/b/n' tried instead on input line 447.
-
-Underfull \hbox (badness 3724) in paragraph at lines 447--447
-\T1/ppl/m/it/9 Álgebra e Geometria no Cálculo de Estrutura
- []
-
-
-Underfull \hbox (badness 2922) in paragraph at lines 447--447
-\T1/ppl/m/it/9 Distance geometry and molecular conformation\T1/ppl/m/n/9 ,
- []
-
-
-Underfull \hbox (badness 1668) in paragraph at lines 447--447
-[]\T1/ppl/m/n/9 Leo Liberti, Carlile Lavor, Nelson Maculan,
- []
-
-
-Underfull \hbox (badness 1152) in paragraph at lines 447--447
-\T1/ppl/m/it/9 and Applied Mathematics\T1/ppl/m/n/9 , 56(1):3-69, February
- []
-
-
-Underfull \hbox (badness 6396) in paragraph at lines 447--447
-[]\T1/ppl/m/n/9 Carlile Lavor, Leo Liberti, Bruce Donald,
- []
-
-
-Underfull \hbox (badness 3088) in paragraph at lines 447--447
-\T1/ppl/m/n/9 distance information for rigidity of protein
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 447--447
-[]\T1/ppl/m/n/9 GN Ramachandran, AS Kolaskar,
- []
-
-
-Underfull \hbox (badness 3439) in paragraph at lines 447--447
-[]\T1/ppl/m/n/9 Felipe Delfini Caetano Fidalgo.  \T1/ppl/m/it/9 Dividindo
- []
-
-
-Underfull \hbox (badness 2564) in paragraph at lines 447--447
-\T1/ppl/m/it/9 e conquistando com simetrias em geometria de
- []
-
 Setting Coordinates
 Upper Right
 bibref
@@ -1440,42 +1303,45 @@ Sidebars
 Drawing Text
 [2
 
-{/home/bruno/.miktex/texmfs/data/pdftex/config/pdftex.map} <./logo_ufsc.png> <.
-/cnpq.jpg> <./protein.png> <./amino.png> <./hcVO.png> <./output.png> <./dual.pn
-g> <./bp.png>]
-Memory usage before: 49994&405660; after: 26335&400164; still untouched: 252472
-1
+{C:/Users/Bruno/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./logo_ufsc
+.png> <./cnpq.jpg> <./protein.png> <./amino.png> <./hcVO.png> <./output.png> <.
+/dual.png> <./bp.png>]
+Memory usage before: 50736&397700; after: 26652&391492; still untouched: 253343
+3
 (gphilippi.aux) ) 
 Here is how much of TeX's memory you used:
- 17837 strings out of 494857
- 348833 string characters out of 3178232
- 475279 words of memory out of 3000000
- 21048 multiletter control sequences out of 15000+200000
+ 17262 strings out of 492970
+ 340994 string characters out of 3126594
+ 466567 words of memory out of 3000000
+ 20697 multiletter control sequences out of 15000+200000
  45990 words of font info for 100 fonts, out of 3000000 for 9000
- 0 hyphenation exceptions out of 8191
- 62i,14n,72p,968b,952s stack positions out of 5000i,500n,10000p,200000b,50000s
-{/home/bruno/.miktex/texmfs/install/fonts/enc/dvips/base/8r.en
-c}</home/bruno/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi10.pfb
-></home/bruno/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi6.pfb><
-/home/bruno/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi7.pfb></h
-ome/bruno/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi9.pfb></hom
-e/bruno/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb></home/
-bruno/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr6.pfb></home/bru
-no/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr7.pfb></home/bruno/
-.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr9.pfb></home/bruno/.mi
-ktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb></home/bruno/.mik
-tex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy5.pfb></home/bruno/.mikte
-x/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy6.pfb></home/bruno/.miktex/
-texmfs/install/fonts/type1/public/amsfonts/cm/cmsy7.pfb></home/bruno/.miktex/te
-xmfs/install/fonts/type1/public/amsfonts/cm/cmsy9.pfb></home/bruno/.miktex/texm
-fs/install/fonts/type1/public/amsfonts/symbols/msbm10.pfb></home/bruno/.miktex/
-texmfs/install/fonts/type1/urw/courier/ucrr8a.pfb></home/bruno/.miktex/texmfs/i
-nstall/fonts/type1/urw/helvetic/uhvr8a.pfb></home/bruno/.miktex/texmfs/install/
-fonts/type1/urw/palatino/uplb8a.pfb></home/bruno/.miktex/texmfs/install/fonts/t
-ype1/urw/palatino/uplbi8a.pfb></home/bruno/.miktex/texmfs/install/fonts/type1/u
-rw/palatino/uplr8a.pfb></home/bruno/.miktex/texmfs/install/fonts/type1/urw/pala
-tino/uplri8a.pfb>
-Output written on gphilippi.pdf (1 page, 1163168 bytes).
+ 1141 hyphenation exceptions out of 8191
+ 62i,14n,74p,968b,948s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Users/Bruno/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dv
+ips/base/8r.enc}<C:/Users/Bruno/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/p
+ublic/amsfonts/cm/cmmi10.pfb><C:/Users/Bruno/AppData/Local/Programs/MiKTeX 2.9/
+fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/Bruno/AppData/Local/Programs
+/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/Bruno/AppData/Lo
+cal/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Users/Brun
+o/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C
+:/Users/Bruno/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
+cmr6.pfb><C:/Users/Bruno/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/a
+msfonts/cm/cmr7.pfb><C:/Users/Bruno/AppData/Local/Programs/MiKTeX 2.9/fonts/typ
+e1/public/amsfonts/cm/cmr9.pfb><C:/Users/Bruno/AppData/Local/Programs/MiKTeX 2.
+9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Bruno/AppData/Local/Progr
+ams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/Bruno/AppData
+/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/B
+runo/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb
+><C:/Users/Bruno/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/
+cm/cmsy9.pfb><C:/Users/Bruno/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
+ic/amsfonts/symbols/msbm10.pfb><C:/Users/Bruno/AppData/Local/Programs/MiKTeX 2.
+9/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users/Bruno/AppData/Local/Programs/MiK
+TeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Users/Bruno/AppData/Local/Progr
+ams/MiKTeX 2.9/fonts/type1/urw/palatino/uplb8a.pfb><C:/Users/Bruno/AppData/Loca
+l/Programs/MiKTeX 2.9/fonts/type1/urw/palatino/uplbi8a.pfb><C:/Users/Bruno/AppD
+ata/Local/Programs/MiKTeX 2.9/fonts/type1/urw/palatino/uplr8a.pfb><C:/Users/Bru
+no/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on gphilippi.pdf (1 page, 1163152 bytes).
 PDF statistics:
  132 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

@@ -1,0 +1,106 @@
+\documentclass[a4,11pt]{pssbmac}
+
+\usepackage[brazil]{babel}      % para texto em Português
+%\usepackage[english]{babel}    % para texto em Inglês
+
+\usepackage[latin1]{inputenc}   % para acentuação em Português OU
+%\usepackage[utf8]{inputenc}   % para acentuação em Português com o uso do Unicode, 
+% mude a codificação desse padrão para utf-8
+
+%%
+%% POR FAVOR, NÃO FAÇA MUDANÇAS NESSE PADRÃO QUE ACARRETEM  EM
+%% ALTERAÇÃO NA FORMATAÇÃO FINAL DO TEXTO
+%%
+\usepackage{graphics}
+\usepackage{subfigure}
+\usepackage{graphicx}
+\usepackage{epsfig}
+\usepackage[centertags]{amsmath}
+\usepackage{graphicx,indentfirst,amsmath,amsfonts,amssymb,amsthm,newlfont}
+\usepackage{longtable}
+\usepackage{cite}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{booktabs}
+\begin{document}
+
+%********************************************************
+\title{Instruções para submissão de resumos em eventos da SBMAC}
+
+\author{
+    {\large Sandra M. C. Malta}\thanks{autora1@email.}\\
+    {\small LNCC, Petrópolis, RJ} \\
+    {\large Mateus Bernardes}\thanks{autor2@email.} \\
+    {\small DAMAT/UTFPR, Curitiba, PR} \\
+}
+\criartitulo
+
+Este é o padrão (formato \LaTeX apenas)  a ser usado exclusivamente nos resumos de até duas páginas classificados na Categoria 1 dos eventos da SBMAC, destinados à divulgação de pesquisas em andamento, com resultados preliminares, e resultados desenvolvidos em projetos de Iniciação Científica. Os trabalhos submetidos que não estiverem de acordo com a formato apresentado por esse padrão serão {\bf rejeitados} pelo Comitê Editorial do evento, sem análise do mérito científico.
+
+Nesta categoria os trabalhos podem ser submetidos em Português ou Inglês e serão apresentados na forma de paineis, dentro da sessão técnica onde está inscrito. Para que seja aceito e incluído na Programação do evento, é necessário que o {\bf autor-apresentador tenha pago a taxa de inscrição até a data definida na página do CNMAC}. Cada taxa de inscrição permite a apresentação de, no máximo, 2 (dois) trabalhos, em quaisquer categorias, respeitadas as restrições sobre o tipo e categoria das contribuições. Desse modo, cada participante só poderá submeter até 2 (dois) trabalhos.
+
+Os trabalhos aceitos e apresentados serão publicados no {\it Proceeding Series of the Brazilian Society of Computational and Applied Mathematics} \footnote{http://proceedings.sbmac.org.br/sbmac}. Por esta razão, ao submeter e apresentar um trabalho, fica o autor ciente que o mesmo será publicado pela SBMAC, sendo tacitamente cedidos os direitos autorais à Sociedade.
+
+Para equações, figuras e tabelas, orientamos que seja seguido o modelo disponível para a Categoria 2, de trabalhos completos.
+
+{\bf As referências devem estar em ordem alfabética pelo sobrenome do primeiro autor.} Cada referência é produzida através do comando  \verb!\bibitem{nome-da-ref}! e é citada no texto via o comando \verb!\cite{nome-da-ref}!. A bibliografia ({\it Referências}), que deve figurar no final do artigo, é então gerada da seguinte forma (exige dupla compilação):
+
+\begin{verbatim}
+\begin{thebibliography}{00}
+\bibitem{}
+\end{thebibibliography}
+\end{verbatim}
+%%
+
+Abaixo incluímos modelos de diversos tipos de publicações. Um padrão similar deve ser usado para os casos omitidos aqui.
+
+\begin{itemize}
+
+\item No caso de livros, deve-se seguir o padrão da referência \cite{Boldrini}, ou, para aqueles publicados dentro de uma série, \cite{Gomes}. Se capítulo de livro, após o título da publicação,  deve vir o título da série (quando aplicável), o número do capítulo e o volume, como na referência \cite{daSilva};
+\item Se artigo, após o título da publicação ({\it em itálico}) deve vir o volume e as páginas correspondentes, seguidos do ano, conforme as referências \cite{Diniz2}. Trabalhos aceitos, mas não publicados, devem ser citados conforme mostrado na referência \cite{Cuminato}. Não havendo DOI, coloque-se (to appear). Trabalhos publicados em anais de eventos devem seguir o padrão da referência em \cite{Santos};
+\item Dissertações, teses e similares devem seguir o padrão da referência \cite{Diniz1}.
+\end{itemize}
+
+\section*{Agradecimentos (opcional)}
+Seção reservada aos agradecimentos dos autores, caso pertinente.
+
+\begin{thebibliography}{00}
+
+\bibitem{Boldrini} 
+Boldrini, J. L., Costa, S. I. R., Ribeiro, V. R. and Wetzler, H. G. {\it Álgebra Linear e Aplicações, 3a. edição}. Harbra, São Paulo, 1984.
+
+\bibitem{Cuminato}
+Cuminato, J. A. and Ruas, V. Unification of distance inequalities for linear variational problems, 
+{\it Comp. Appl. Math.}, 2014. DOI: 10.1007/s40314-014-0163-6.
+ 
+\bibitem{daSilva} 
+Da Silva, P. L. and Freire, I. L. On the group analysis of a modified Novikov equation, 
+{\it Interdisciplinary Topics in Applied Mathematics, Modeling and Computational Science}, 
+Springer Proceedings in Mathematics and Statistics,  volume 117, chapter 23, pages 161-166, 2015.
+
+\bibitem{Diniz1}
+Diniz, G. L. A mudança no habitat de populações de peixes: de rio a represa -- o modelo 
+matemático, Dissertação de Mestrado, Unicamp, 1994.
+
+\bibitem{Diniz2}
+Diniz, G. L., Meyer, J. F. C. A. e Barros, L. C. Solução numérica para um problema de 
+Cauchy Fuzzy que modela o decaimento radioativo, {\it TEMA},  23:63--72, 2001. DOI:10.1007/s40314-014-0163-6.
+
+\bibitem{Gomes}
+Gomes, L. T., De Barros, L. C. and Bede, B. Fuzzy differential equation in various approaches. 
+In {\it SpringerBriefs in Mathematics}. SBMAC- Springer, 2015. ISSN: 2191-8198.
+
+%\bibitem{Jafelice} Jafelice, R. M., Barros, L. C. and Bassanezi, R. C. Study of the dynamics of HIV under treatment considering fuzzy delay, {\it Comp. Appl. Math.}, 33:45--61, 2014.
+
+%\bibitem{Mallet}
+%Mallet, S. M. Análise Numérica de Elementos Finitos. Tese de Doutorado, LNCC/MCTI, 1990.
+
+\bibitem{Santos} Santos, I. L. D. e Silva, G. N. Uma classe de problemas de controle ótimo 
+em escalas temporais, {\it Proceeding Series of the Brazilian Society of Computational and 
+Applied Mathematics}, volume 1, 2013. DOI: 10.5540/03.2013.001.01.0177.
+
+\end{thebibliography}
+\end{document}
+
+
+
+
