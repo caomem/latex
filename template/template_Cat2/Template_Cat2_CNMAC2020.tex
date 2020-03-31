@@ -1,0 +1,174 @@
+% !TeX spellcheck = pt_BR
+\documentclass[a4,11pt]{pssbmac}
+
+\usepackage[brazil]{babel}      % para texto em Português
+%\usepackage[english]{babel}    % para texto em Inglês
+
+%\usepackage[latin1]{inputenc}   % para acentuação em Português
+\usepackage[utf8]{inputenc}   % para acentuação em Português com o uso do Unicode, 
+                              % mude a codificação desse template para utf-8
+
+%%
+%% POR FAVOR, NÃO FAÇA MUDANÇAS NESSE TEMPLATE QUE ACARRETEM  EM
+%% ALTERAÇÃO NA FORMATAÇÃO FINAL DO TEXTO
+%%
+
+\usepackage{graphics}
+\usepackage{subfigure}
+\usepackage{graphicx}
+\usepackage[centertags]{amsmath}
+\usepackage{indentfirst,amsfonts,amssymb,amsthm,newlfont}
+\usepackage{longtable}
+\usepackage{cite}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{booktabs}
+
+\begin{document}
+
+%********************************************************
+\title{Instruções para submissão de trabalhos completos em eventos da SBMAC}
+
+\author{
+    {\large Sandra M. C. Malta}\thanks{autora1@email.}\\
+    {\small LNCC, Petrópolis, RJ} \\
+    {\large Mateus Bernardes}\thanks{autor2@email.} \\
+    {\small DAMAT/UTFPR, Curitiba, PR} \\
+}
+
+\criartitulo
+
+\begin{abstract}
+{\bf Resumo}. Este é o padrão (formato \LaTeX apenas) a ser usado exclusivamente nos trabalhos completos, com no mínimo 5 e no máximo 7 páginas, classificados na Categoria 2 dos eventos da SBMAC. Os trabalhos da Categoria 2 tratam de atividades pesquisas em andamento, com resultados conclusivos. Os trabalhos submetidos que não estiverem de acordo com a formato apresentado por esse padrão serão {\bf rejeitados} pelo Comitê Editorial do evento, sem análise do mérito científico. 
+
+\noindent
+{\bf Palavras-chave}. Instruções, \LaTeX, Trabalhos Completos, SBMAC, CNMAC  (entre 3-6 palavras-chave)
+\end{abstract}
+
+\section{Introdução}
+
+Este breve documento normatiza os trabalhos submetidos aos eventos da SBMAC na Categoria 2, destinado a trabalhos completos (Tipo C) de 5 a 7 páginas. As categorias e tipos que compõem o evento encontram-se descritos no \textit{site} do congresso.
+
+Os trabalhos que se classificam na Categoria 1, resumos de até 2 páginas, devem ser submetidos via o padrão específico disponibilizado na página do evento. Por favor, não utilizar este padrão para a Categoria 1. 
+
+Leia atentamente as instruções apresentadas neste documento e siga fielmente as informações do template/padrão para a submissão de um trabalho da Categoria 2. Relembrando novamente que as submissões fora dessa formatação serão {\bf rejeitados} pelo Comitê Editorial do evento, sem análise do mérito científico.
+
+\section{Regras Gerais}
+
+Os autores podem submeter seus trabalhos em Português ou Inglês. \textbf{As configurações de tamanho e fonte pré-determinadas neste padrão não podem ser alteradas}. O Comitê Editorial do evento poderá, a seu critério, consultar o currículo Lattes dos autores para checagem de informações pertinentes sobre a titulação do autor-apresentador. {\bf Só serão aceitos trabalhos cujos os autores estejam no mínimo matriculados em curso superior}.
+
+Para que um trabalho aceito seja incluído no Programa do CNMAC, é necessário que {\bf o autor-apresentador pague a taxa de inscrição até a data definida na página do evento}. Cada taxa de inscrição permite a apresentação de, no máximo, 2 (dois) trabalhos, em quaisquer categorias, respeitadas as  restrições sobre o Tipo e Categoria das contribuições. 
+
+Os trabalhos aceitos e apresentados serão publicados no {\it Proceeding Series of the Brazilian Society of Computational and Applied Mathematics} \footnote{http://proceedings.sbmac.org.br/sbmac}, independente da categoria. Por esta razão, ao submeter e apresentar um trabalho, fica o autor ciente que o mesmo será publicado pela SBMAC, sendo tacitamente cedidos os direitos autorais à Sociedade.
+
+\section{Figuras e Tabelas}\label{sec3}
+
+Os autores podem introduzir tabelas e figuras em seus textos, respeitados os limites de páginas correspondentes às respectivas categorias.
+
+\begin{obs}
+Não esqueçam: tabelas e figuras têm legendas.
+\end{obs}
+
+\subsection{Exemplo de inclusão de figuras}
+
+Sabemos que figuras são, em geral, elementos importantes dos trabalhos. Elas devem ser inseridas de maneira que seu tamanho torne clara a sua leitura e compreensão, sem descaracterizar os objetivos propostos pelo texto. A legenda deve vir abaixo da mesma. Para gerar uma figura como ilustrado pela Figura \ref{figura01}, recorra ao arquivo fonte. 
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=.5\textwidth]{logo_cnmac_2020}
+\caption{ {\small Logo do CNMAC 2020, UFMS, Campo Grande.}}
+\label{figura01}
+\end{figure}
+
+\subsection{Exemplo de inclusão de tabelas}
+
+Para a confecção das tabelas, deve-se usar o ambiente \texttt{table}, com a legenda acima da tabela e as entradas centralizadas nas colunas, como na Tabela \ref{tabela01}.
+
+\begin{table}[ht]
+\caption{ {\small Categorias dos trabalhos.}}
+\centering
+\begin{tabular}{ccc}
+\toprule
+Categoria do trabalho  & Número de páginas & Tipo do trabalho\\ \midrule
+1          & 2  & $A$, $B$ e $C$    \\
+2          & entre 5 e 7  & apenas $C$ \\
+\bottomrule
+\end{tabular}\label{tabela01}
+\end{table}
+
+\section{Instruções para a inserção de equações}
+
+As equações são numeradas sequencialmente no texto, com a numeração automaticamente colocada à direita (favor não alterar) usando o comando \verb!\label{nome-da-equacao}! para identificá-las. A chamada \verb!\eqref{nome-da-equacao}! faz referência à equação, no texto. 
+
+Por exemplo, a equação \eqref{Calor} foi gerada usada a sequeência que se encontra no arquivo \texttt{.tex} gerador deste documento.
+
+%
+\begin{equation}
+\frac{\partial u}{\partial t}-\Delta u = f, \quad  \mathrm{em} \; \Omega. \label{Calor}
+\end{equation}
+%
+
+\section{Sobre as Referências Bibliográficas}\label{sec5}
+
+{\bf As referências devem estar em ordem alfabética pelo sobrenome do primeiro autor e dos demais, se necessário, usando-se, ainda, ordem cronológica, para trabalhos de um mesmo autor.} Trabalhos dos mesmos autores, publicados no mesmo ano, devem ser listados utilizando-se a ordem alfabética do título do trabalho. Basicamente, as referências devem iniciar pelo último sobrenome do autor por extenso, seguido pelas iniciais dos nomes dos autores. Em seguida, o título do trabalho e o título da publicação (revista, livro, dissertação, tese, anais de evento), volume, páginas, ano e DOI (se for o caso) ou ISSN (se for o caso). Cada referência é produzida através do comando  
+\verb!\bibitem{nome-da-referencia}!. As referências são introduzidas no texto via o comando \verb!\cite{nome-da-referencia}!. A bibliografia ({\it Referências}), que deve figurar no final do artigo, é então gerada da seguinte forma (exige dupla compilação):
+
+\begin{verbatim}
+\begin{thebibliography}{00}
+\bibitem{}
+\end{thebibibliography}
+\end{verbatim}
+%%
+
+No final deste texto, seguem instruções para diversos tipos de publicações, devendo-se seguir um padrão similar para os casos omitidos aqui:
+
+\begin{itemize}
+\item No caso de livros, deve-se seguir o padrão da referência \cite{Boldrini}, ou, para aqueles publicados dentro de uma série, \cite{Gomes}. Se capítulo de livro, após o título da publicação,  deve vir o título da série (quando aplicável), o número do capítulo e o volume, como na referência \cite{daSilva};
+\item Se artigo, após o título da publicação ({\it em itálico}) deve vir o volume e as páginas correspondentes, seguidos do ano, conforme as referências \cite{Diniz2}. Trabalhos aceitos, mas não publicados, devem ser citados conforme mostrado na referência \cite{Cuminato}. Não havendo DOI, coloque-se (to appear). Trabalhos publicados em anais de eventos devem seguir o padrão da referência em \cite{Santos};
+\item Dissertações, teses e similares devem seguir o padrão da referência \cite{Diniz1}.
+\end{itemize}
+
+\section{Conclusões}
+Em linhas gerais, as principais conclusões do trabalho devem figurar nesta seção.. 
+
+\section*{Agradecimentos (opcional)}
+Seção reservada aos agradecimentos dos autores, caso pertinente.
+
+\begin{thebibliography}{00}
+
+\bibitem{Boldrini} 
+Boldrini, J. L., Costa, S. I. R., Ribeiro, V. R. and Wetzler, H. G. {\it Álgebra Linear e Aplicações, 3a. edição}. Harbra, São Paulo, 1984.
+
+\bibitem{Cuminato}
+Cuminato, J. A. and Ruas, V. Unification of distance inequalities for linear variational problems, 
+{\it Comp. Appl. Math.}, 2014. DOI: 10.1007/s40314-014-0163-6.
+ 
+\bibitem{daSilva} 
+Da Silva, P. L. and Freire, I. L. On the group analysis of a modified Novikov equation, 
+{\it Interdisciplinary Topics in Applied Mathematics, Modeling and Computational Science}, 
+Springer Proceedings in Mathematics and Statistics,  volume 117, chapter 23, pages 161-166, 2015.
+
+\bibitem{Diniz1}
+Diniz, G. L. A mudança no habitat de populações de peixes: de rio a represa -- o modelo 
+matemático, Dissertação de Mestrado, Unicamp, 1994.
+
+\bibitem{Diniz2}
+Diniz, G. L., Meyer, J. F. C. A. e Barros, L. C. Solução numérica para um problema de 
+Cauchy Fuzzy que modela o decaimento radioativo, {\it TEMA},  23:63--72, 2001. DOI:10.1007/s40314-014-0163-6.
+
+\bibitem{Gomes}
+Gomes, L. T., De Barros, L. C. and Bede, B. Fuzzy differential equation in various approaches. 
+In {\it SpringerBriefs in Mathematics}. SBMAC- Springer, 2015. ISSN: 2191-8198.
+
+%\bibitem{Jafelice} Jafelice, R. M., Barros, L. C. and Bassanezi, R. C. Study of the dynamics of HIV under treatment considering fuzzy delay, {\it Comp. Appl. Math.}, 33:45--61, 2014.
+
+%\bibitem{Mallet}
+%Mallet, S. M. Análise Numérica de Elementos Finitos. Tese de Doutorado, LNCC/MCTI, 1990.
+
+\bibitem{Santos} Santos, I. L. D. e Silva, G. N. Uma classe de problemas de controle ótimo 
+em escalas temporais, {\it Proceeding Series of the Brazilian Society of Computational and 
+Applied Mathematics}, volume 1, 2013. DOI: 10.5540/03.2013.001.01.0177.
+
+\end{thebibliography}
+
+\end{document}
+
