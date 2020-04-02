@@ -28,18 +28,20 @@
 	
 	\author{
 		{\large Guilherme Philippi}\thanks{guilherme.philippi@hotmail.com}\\
-		{\small Universidade Federal de Santa Catarina, Blumenau, SC} \\
+		{\small UFSC, Blumenau, SC} \\
 		{\large Felipe Fidalgo}\thanks{felipe.fidalgo@ufsc.br} \\
-		{\small Departamento de Matemática/Universidade Federal de Santa Catarina, Blumenau, SC} \\
+		{\small MAT/UFSC, Blumenau, SC} \\
 	}
 	\criartitulo
 	
-	A Geometria de Distâncias originou-se dos esforços de Menger (1928), seguido por Blumenthal (1953), na caracterização de vários conceitos geométricos (como congruência e convexidade de conjuntos) em termos de distâncias \cite{carlileGDandAplications}. Isso permitiu a formulação do \textit{Distance Geometry Problem} (DGP), conhecido como problema fundamental de Geometria de Distâncias. Trata-se de um problema inverso, onde, dado um grafo simples, ponderado positivamente e não direcionado $G=(V,E, d)$, e um inteiro $k>0$, deseja-se encontrar uma função $x:V\rightarrow\mathbb{R}^k$ (dita realização de $G$ em $\mathbb{R}^k$) tal que $\forall$ $\{u,v\} \in E$, $\left\|x(u) - x(v)\right\| = d(\{u,v\})$. 
+	Existe uma relação muito forte com a forma geométrica das moléculas e suas funções em organismos vivos \cite{bioquimicaLehninger}, daí a importância do estudo sobre determinar estas estruturas. Nesta direção, este trabalho tem como objetivo usar a Geometria de Distâncias (GD) como modelo na conformação molecular de proteínas, em conjunto com a interpretação de dados de \textit{Ressonância Magnética Nuclear} (RMN). Como resultado, desenvolveu-se um software que facilita a construção de instâncias para testar algoritmos que se proponham a solucionar problemas fundamentais em GD \cite{carlileGDandAplications}. 
 	
-	Em particular, a restrição do DGP para $k = 3$ é de interesse prático e é conhecido como \textit{Molecular Distance Geometry Problem} (MDGP) --- carrega o termo \textit{molecular} pois, mesmo que não seja exclusivo para essa aplicação \cite{carlileGDandAplications}, teve sua origem associada as estruturas moleculares. Supondo que o conjunto solução de um MDGP seja não vazio, sabe-se que ele é não enumerável ou finito \cite{carlileBook31Coloquio}. A busca pela segunda possibilidade está associada ao conceito de \textit{ordem nos vértices} do grafo $G$ do MDGP (a procura por essa ordem é caracterizado como \textit{Discretization Vertex Order Problem}, ou, DVOP). Munido de tal ordem, o MDGP pode ser discretizado, gerando o problema principal desse trabalho, como segue formalmente definido \cite{carlileBook31Coloquio}: %\cite{carlileDMDGP}:
+	A Geometria de Distâncias originou-se dos esforços de Menger (1928) \cite{menger1928}, seguido por Blumenthal (1953) \cite{blumenthal}, ao caracterizar vários conceitos da Geometria Euclidiana (como congruência e convexidade) em termos de distâncias \cite{carlileGDandAplications}. O desafio fundamental dessa área é o estudo de um problema inverso denominado Problema de Geometria de Distâncias (do inglês, DGP), onde, dados um grafo simples, ponderado positivamente e não direcionado $G=(V,E, d)$ e um inteiro $K>0$, deseja-se encontrar uma imersão $x:V\rightarrow\mathbb{R}^K$ (a qual é chamada de realização de $G$ em $\mathbb{R}^K$) tal que $\forall$ $\{u,v\} \in E$, $\left\|x(u) - x(v)\right\| = d(\{u,v\})$. 
+	
+	Em particular, a restrição do DGP para $k = 3$ é de interesse prático e conhecido como Problema de Geometria de Distâncias Moleculares (do inglês, MDGP), pois surgiu na busca por conformações moleculares tridimensionais --- no entanto, não é exclusivo a essa aplicação \cite{carlileGDandAplications}. Para que se crie um ambiente adequado para encontrar conformações, especificamente, para proteínas, uma relação de ordem total no conjunto $V$ foi desenvolvida \cite{carlile:MinimalOrder}. Munido de tal ordem, o espaço de busca por soluções do MDGP pode ser discretizado e, dessa forma, definindo o Problema Discretizável de Geometria de Distâncias Moleculares (do inglês, DMDGP), definido como segue \cite{carlileGDandAplications} \cite{carlileDMDGP}:
 	
 	\vspace{0.15cm}
-	\textbf{Discretizable Molecular Distance Geometry Problem (DMDGP): }Dados um grafo simples, ponderado e não-direcionado $G = (V,E,d)$, onde $d: E \rightarrow \mathbb{R}_{+}$, o subconjunto de vértices $U_{0} = \{v_{1},v_{2},v_{3} \}$ e uma relação de ordem total $v_1, \dots, v_{|V|} \in V$, que satisfaça as propriedades
+	\textbf{Discretizable Molecular Distance Geometry Problem (DMDGP): } Trata-se do MDGP associado ao grafo $G = (V,E,d)$, de modo que existam um subconjunto de vértices $U_{0} = \{v_{1},v_{2},v_{3} \}$ e uma relação de ordem total $v_1, \dots, v_{|V|}$ em $V$ que satisfaça as propriedades
 	\begin{enumerate}
 		\item $U_{0}$ é um 3-clique em $G$;
 		\vspace{-0.6cm}
@@ -51,23 +53,19 @@
 			\vspace{0.6cm}
 			-- $U_{i} = \{v_i, v_{i-1}, v_{i-2}, v_{i-3}\}$ é um 4-clique em $G$;
 			\vspace{0.2cm}
-						
-			-- vale a desigualdade $d_{i-3,i-1} < d_{i-3,i-2} + d_{i-2,i-1}$,
+			
+			-- vale a desigualdade $d_{i-3,i-1} < d_{i-3,i-2} + d_{i-2,i-1}$.
 		\end{minipage}
-		
 	\end{enumerate}
-	encontre uma realização $x: V \rightarrow \mathbb{R}^{3}$ tal que valha, $\forall$ $\{u,v\} \in E$, $\left\| x(u) - x(v) \right\| = d(\{u,v\})$.
-	\vspace{0.15cm}
+	\vspace{-0.09cm}
 	
-	A ordenação no DMDGP garante, de fato, a finitude do conjunto solução do problema \cite{carlileBook31Coloquio}. Além disso, ela organiza o espaço onde devemos fazer a busca por uma solução. Na verdade, a ordem induz uma estrutura de \textit{árvore binária} no espaço de busca \cite{fidalgotese}. Isto é, a partir do quarto, sempre temos duas possibilidades para a realização de um vértice \cite{carlileGDandAplications}. Visando essa estrutura, originou-se o algoritmo chamado \textit{Branch-and-Prune} (BP) \cite{fidalgotese}, que consiste em uma estratégia numérica recursiva para resolver o DMDGP eficientemente, utilizando uma busca combinatória no espaço de busca por soluções. Nele, realiza-se vértice por vértice do grafo, seguindo a ordenação definida pelo DMDGP, ``podando'' (descartando) todo sub-conjunto solução do problema onde uma realização $x(v)$ não respeita ao menos uma das distâncias $d(\{u,v\})$ definidas pelo grafo, isto é, $\left\| x(u) - x(v) \right\| \neq d(\{u,v\})$. Desde que esse algoritmo foi publicado, tem se verificado tanto sua beleza matemática quanto a sua eficiência numérica-computacional para resolver problemas em Geometria de Distâncias \cite{fidalgotese}. 
-	
-	Especificamente, neste trabalho, buscou-se usar a Geometria de Distâncias como modelo na conformação molecular de proteínas, em conjunto com a interpretação de dados de \textit{Ressonância Magnética Nuclear} (RMN) --- experimentos que tem como resultado distâncias entre alguns átomos próximos na molécula. Esse é um problema inverso onde possuímos uma série de distâncias e ângulos e queremos descobrir suas posições, logo, estamos interessados em uma função de realização no espaço $\mathbb{R}^3$, descrita pelo MDGP. Mais do que isso, na verdade, estamos interessados em definir uma ordenação nos átomos da molécula (vértices do grafo) de forma a discretizar o problema.
+	De fato, tal ordenação garante a finitude do espaço de busca por soluções \cite{carlileGDandAplications} e, além disso, organiza esse espaço, induzindo uma estrutura de \textit{árvore binária finita} --- dado que, a partir do quarto, sempre temos duas possibilidades para a realização de um vértice \cite{carlileGDandAplications}. Para tirar proveito dessa estrutura, originou-se o algoritmo chamado \textit{Branch-and-Prune} (BP) \cite{carlileDMDGP}, que consiste em uma estratégia numérica recursiva para resolver o problema eficientemente, utilizando uma busca combinatória no espaço de busca por soluções. Nele, posiciona-se vértice por vértice do grafo, seguindo a ordenação, ``podando'' todo sub-conjunto de uma solução que não respeita todas as restrições de distâncias. Especificamente, no caso proteico, essas restrições advêm tanto dos dados de RMN quanto pela geometria já conhecida das proteínas \cite{carlile:MinimalOrder}.
 	
 	\vspace{-0.25cm}
 	\begin{figure}[h!]
 		\centering
 		\begin{minipage}{0.43\linewidth}   
-			\paragraph{} Felizmente essa ordenação já foi feita. Em \cite{carlile:MinimalOrder}, os autores propuseram o \textit{hand-crafted vertex order} (HC), conforme esboça a Figura~\ref{fig:hcVO}. Note que há uma estrutura que se repete. De fato, existe uma subestrutura nas proteínas chamada \textit{Cadeia Principal}, que possui uma geometria bem conhecida (a partir de estudos usando cristalografia \cite{fidalgotese}). Com essas informações, podemos modelar o DMDGP utilizando os átomos da molécula como vértices e as distâncias conhecidas como arestas.
+			\paragraph{} No contexto proteico, a Ordenação de Vértices Hand-Crafted (HC) \cite{carlile:MinimalOrder} mostra-se uma boa alternativa para definir o DMDGP. Representada na Figura~\ref{fig:hcVO}, a ordenação denota um padrão repetitivo. De fato, existe uma subestrutura frequente com geometria bem conhecida nas proteínas, chamada \textit{Cadeia Principal} \cite{bioquimicaLehninger}. Mais do que discretizar o problema, a ordenação HC garante que, se as distâncias são valores precisos, o DMDGP possui apenas uma solução válida que pode ser encontrada em tempo linear.
 		\end{minipage}
 		\begin{minipage}{0.563\linewidth}
 			\includegraphics[scale=0.585]{hcVO.png}
@@ -77,34 +75,36 @@
 	\end{figure}
 	\vspace{-0.25cm}
 	
-	Esse estudo teve como produto um software, chamado HCProt, que atua no processamento de dados retirados do repositório \textit{Worldwide Protein Data Bank} afim de criar instâncias esparsas (usando a ordenação HC) que podem ser usadas como entrada para implementações do algoritmo BP.  Automatiza-se, assim, a geração de instâncias DMDGP. Espera-se que este software possa auxiliar o processo de pesquisa dos autores da área. Fora desenvolvido, também,  um algoritmo BP para realizar simulações computacionais, obtendo conformações válidas de moléculas reais.
+	Por fim, esse estudo teve como produto um software chamado HCProt. Seu objetivo é o processamento de dados retirados do repositório \textit{Worldwide Protein Data Bank} afim de criar instâncias esparsas (ordenadas pela HC) que podem ser usadas como entrada para implementações do algoritmo BP.  Automatiza-se, assim, a geração de instâncias DMDGP. Espera-se que este software possa auxiliar o processo de pesquisa dos autores da área. Fora implementado, também,  uma versão do algoritmo BP com o intuito de realizar simulações computacionais e, com o auxilio do software HCProt, obteve-se conformações válidas de moléculas reais. %\cite{primeiro}.
 	
 	\vspace{-0.14cm}
 	\section*{Agradecimentos}
-	O presente trabalho foi realizado com o apoio do Conselho Nacional de Desenvolvimento Científico e Tecnológico – CNPq – Brasil. Agradeço a Família, ao Felipão e a quem prorrogou a submissão.
+	O presente trabalho foi realizado com o suporte financeiro do CNPq.
 	
-	\vspace{-0.14cm}
+	%\vspace{-0.14cm}
 	\begin{thebibliography}{00}
 		
-		\bibitem{fidalgotese}
-		Fidalgo, F. Dividindo e conquistando com simetrias em geometria de distâncias. Tese de Doutorado, IMECC/UNICAMP, Campinas - SP, 2015.
+		\bibitem{blumenthal} 
+		Blumenthal, L. M. {\it Theory and applications of distance geometry}.  Oxford University Press, Oxford, 1953.
 		
-		\bibitem{carlileBook31Coloquio} 
-		Lavor, C., Maculan, N., Souza, M. and Alves, R. {\it Álgebra e Geometria no Cálculo de Estrutura Molecular, 31º Colóquio Brasileiro de Matemática}. IMPA, Rio de Janeiro - RJ, 2017.
+		%\bibitem{primeiro}
+		%Fidalgo, F., Castelani, E. V. e Philippi, G.: Artigo em desenvolvimento, 2020.
 		
-		%\bibitem{carlileDMDGP} 
-		%Lavor, C., Liberti, L., Maculan, N., and Mucherino, A. The discretizable molecular distance geometry problem, {\it Computational Optimization and Application}, Springer,  volume 52, number 1, pages 115-146, 2012. DOI. 10.1007/s10589-011-9402-6.
+		\bibitem{carlileDMDGP} 
+		Lavor, C., Liberti, L., Maculan, N., and Mucherino, A. The discretizable molecular distance geometry problem, {\it Computational Optimization and Application}, Springer,  volume 52, number 1, pages 115-146, 2012. DOI. 10.1007/s10589-011-9402-6.
 		
 		\bibitem{carlile:MinimalOrder}
 		Lavor, C., Liberti, L., Donald, B., Worley, B., Bardiaux, B., Malliavin, T. E. and Nilges, M. Minimal NMR distance information for rigidity of protein graphs, {\it Discrete Applied Mathematics}, Elsevier, 256:91--104, 2019. DOI:10.1016/j.dam.2018.03.071.
-
+		
 		
 		\bibitem{carlileGDandAplications} 
 		Liberti, L., Lavor, C., Maculan, N. and Mucherino, A. Euclidean distance geometry and applications, {\it SIAM REVIEW}, Society for Industrial and Applied Mathematics,  volume 56, number 1, pages 3-69, 2014. DOI. 10.1137/120875909.
 		
-		%\bibitem{bioquimicaLehninger} 
-		%Nelson, D. L. and Cox, M. M. {\it Lehninger principles of biochemistry, 6th edition}.  W.H.Freeman and Company, New York, 2012.
+		\bibitem{menger1928}
+		Menger, K. Untersuchungen über allgemeine Metrik, {\it Math. Ann.},  100:75--163, 1928. DOI:doi.org/10.1007/BF01448840.
 		
+		\bibitem{bioquimicaLehninger} 
+		Nelson, D. L. and Cox, M. M. {\it Lehninger principles of biochemistry, 6th edition}.  W.H.Freeman and Company, New York, 2012.
 		
 		%\bibitem{Boldrini} 
 		%Boldrini, J. L., Costa, S. I. R., Ribeiro, V. R. and Wetzler, H. G. {\it Álgebra Linear e Aplicações, 3a. edição}. Harbra, São Paulo, 1984.
