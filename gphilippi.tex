@@ -25,6 +25,26 @@
 
 \usepackage[table]{xcolor}
 
+\usepackage{esvect}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{indentfirst}
+\usepackage{caption}
+\usepackage{blkarray}
+\newcommand\Mark[1]{\textsuperscript#1}
+\usepackage{pgfplots}
+\usepackage[english, ruled, linesnumbered]{algorithm2e}
+\usepackage{algorithmic}
+\usepackage{multirow}
+\usepackage{siunitx}
+\usepackage{pdflscape}
+\usepackage{booktabs}
+\usepackage{makecell}
+\usepackage{xltabular}
+\usepackage{blindtext}
+\usepackage{rccol}
+
+
 \usepackage{graphicx}
 \usepackage{tikz}
 \usetikzlibrary{arrows,shapes,positioning,shadows,trees}
@@ -67,6 +87,16 @@
 \newtheorem*{DVOP}{{\emph{Discretization Vertex Order Problem (DVOP)}}}
 
 \usepackage[top=3cm,bottom=3cm,right=2.5cm,left=2.5cm]{geometry}
+
+\makeatletter
+\newcommand{\@chapapp}{}% Not necessary...
+\newenvironment{chapquote}[2][2em]
+{\setlength{\@tempdima}{#1}%
+	\def\chapquote@author{#2}%
+	\parshape 1 \@tempdima \dimexpr\textwidth-2\@tempdima\relax%
+	\itshape}
+{\par\normalfont\hfill--\ \chapquote@author\hspace*{\@tempdima}\par\bigskip}
+\makeatother
 
 %\usepackage[backend=biber,style=numeric-comp]{biblatex}
 %\usepackage{csquotes}
@@ -148,16 +178,114 @@
 
 \end{titlepage}
 
+
+\begin{abstract}
+	A Álgebra Geométrica é uma área relativamente recente da matemática aplicada que proporciona representações algébricas para conceitos geométricos. Convém sua utilização pela sua grande capacidade de unificação, simplificação e generalização de vários objetos matemáticos que possuem interpretação geométrica. Ela integra as noções de vetores, espaços vetoriais, números complexos, quatérnios, tensores e formas diferenciais, proporcionando uma linguagem única para tratar destes conceitos, facilitando a definição e compreensão de problemas. O objetivo principal deste projeto de pesquisa é uma introdução à Álgebra Geométrica, bem como suas aplicações.
+\end{abstract}
+
 \tableofcontents
 
-
-\section{Resumo}
-
-O tema deste trabalho é 
-
-Aplicações
-
 \section{Introdução}
+
+Pode-se dizer que nosso tema de estudo teve início em 1844, com a chamada \textit{Teoria da Expansão} (ou, em alemão, \textit{Ausdehnungslehre} \cite{grassmannLineale}), introduzida por Hermann Günther Grassmann (1809-1877), precursor do que hoje entendemos como a Álgebra Linear. Mas foi somente em 1878 que William Kingdon Clifford (1845-1879) de fato deu à área uma de suas ferramentas fundamentais: o produto geométrico. Na verdade, o termo \textit{Álgebra Geométrica} foi cunhado por Clifford, o que eventualmente fez com que essa área também fosse chamada de Álgebra de Clifford \cite{sommerGeometric}. 
+\\
+
+
+\begin{chapquote}{Clifford, \textit{Applications of Grassmann's Extensive Algebra} \cite{cliffordApplicationsGrassmannAlgebras}}
+	``Until recently I was unacquainted with the Ausdehnungsleh, and knew only so much of it as is contained in the author's geometrical papers (...). I may, perhaps, therefore be permitted to express my profound admiration of that extraordinary work, and my conviction that its principles will exercise a vast influence upon the future of mathematical science.''
+\end{chapquote}
+
+
+Existe uma diferença fundamental entre espaço físico e espaço de representação. O espaço físico é onde estão os objetos que estamos interessados em estudar. Já o espaço de representação é tal que proporcione um modelo matemático que abstrai a natureza destes objetos a fim de que possamos manipulá-los. Por exemplo, a Álgebra Linear é um espaço de representação construída a partir do conceito de vetor, isso é, pontos no espaço de representação. Já a Álgebra Geométrica é construída sobre o conceito de subespaços vetoriais. Para tanto, é necessário que se possa representar os subespaços de forma elementar, como primitivas, assim como são os vetores na Álgebra Linear.
+
+\subsection{O Espaço Multivetorial $\bigwedge\mathbb{R}^n$}
+
+Partiremos de um espaço vetorial. Assim, seja a base $\{e_i\}^n_{i=1}$ para $\mathbb{R}^n$. Um vetor $a$ arbitrário pode ser escrito como a \textit{combinação linear} dos elementos da base, por tanto, para $n=3$, $$a = \alpha_1e_1 + \alpha_2e_2 + \alpha_3e_3\in \mathbb{R}^3,$$
+onde $\alpha_i\in \mathbb{R}$ é o $i$-ésimo coeficiente de $a$. Podemos interpretar geometricamente $a$ como um segmento de reta orientado, suportado por um subespaço 1-dimensional (uma reta), que passa pela origem de $\mathbb{R}^3$.
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=0.25\linewidth]{figures/aR3.png}
+	\end{center}
+	\caption{Representação do vetor $a$ \cite{leandro2017algebra}}
+	\label{fig:r3}
+\end{figure}
+
+A Álgebra Exterior de Grassmann trás um novo produto que nos permite operar vetores para construir subespaços de dimensionalidade mais altas. Na Álgebra Geométrica, um subespaço 2-dimensional $C_{\left <2 \right >}$ pode ser expandido como \textbf{produto externo} de dois vetores $a,b$ linearmente independentes:
+
+$$C_{\left <2 \right >} = a \wedge b,$$
+onde o $\wedge$ representa o produto externo, cujo resultado é um \textit{bivetor} representado como a superfície plana orientada da figura~\label{fig:2blade}. $a\wedge b$ possui magnitude (representada pela área do disco) e orientação (representada pela seta curva). 
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=0.25\linewidth]{figures/2blade.png}
+	\end{center}
+	\caption{Um bivetor $a\wedge b$ representado por um disco apoiado sobre o subespaço 2-dimensional $C_{\left < 2\right >}$, imerso em um espaço tridimensional com base $(e_1,e_2,e_3)$  \cite{leandro2017algebra}.}
+	\label{fig:2blade}
+\end{figure}
+
+Também pode-se representar um trivetor como o produto exterior de três vetores linearmente independentes $a\wedge b\wedge c$, que expande um subespaço 3-dimensional $D_{\left < 3 \right >}$. A dimensionalidade de $D_{\left < 3 \right >}$ é igual a dimensionalidade do espaço $\mathbb{R}^3$, o que implica que $D_{\left < 3 \right >}$ é uma cópia do volume total, mas agora munido de orientação (representada pela seta em espiral). Isso é, permite-se a construção de pedaços do espaço $\mathbb{R}^3$ com módulo e orientação.
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=0.3\linewidth]{figures/3blade.png}
+	\end{center}
+	\caption{Representação do espaço 3-dimensional $D_{\left < 3 \right >}$, expandido pelos vetores $a, b $ e $c$.}
+	\label{fig:3blade}
+\end{figure}
+
+De modo geral, pode-se expandir subespaços com dimensão $k$ a partir de $k$ vetores linearmente independentes em $\mathbb{R}^n$. Chamamos tais subespaços de \textbf{$k$-blades}, onde $k$ é o \textbf{grau} do blade. Estes serão os elementos primitivos da Álgebra Geométrica. Veja que isso generaliza a Álgebra Vetorial, onde possuíamos apenas os 0-blades e 1-blades, isso é, escalares e vetores. 
+\\
+
+Assim, a partir dos elementos do espaço vetorial $\mathbb{R}^n$, podemos construir um \textit{espaço multivetorial} $\bigwedge\mathbb{R}^n$. Isso é, temos $\sum_{k=0}^{n} {n\choose k} = 2^n$ $k$-combinações dos vetores de base de $\mathbb{R}^n$, que descrevem $2^n$ \textbf{blades de base} para $\bigwedge\mathbb{R}^n$. No caso $n =3$, temos
+
+\begin{center}
+	\includegraphics[width=0.75\linewidth]{figures/wr3.png}
+\end{center}
+
+A combinação linear destes elementos formam os \textbf{multivetores}. Perceba que há uma simetria entre as dimensões de $\bigwedge^k\mathbb{R}^n$ e $\bigwedge^{n-k}\mathbb{R}^n$.
+Por conta de tal simetria, chamamos os elementos de $\bigwedge^{n-1}\mathbb{R}^n$ de \textbf{pseudovetores} e os elementos de $\bigwedge^{n}\mathbb{R}^n$ de \textbf{pseudoescalares}.
+
+Por exemplo, podemos escrever um pseudovetor como 
+$$C_{\left < 2\right >} = \alpha_1 e_1\wedge e_2 + \alpha_2 e_1 \wedge e_3 + \alpha_3 e_2 \wedge e_3.$$
+
+\subsection{O Produto Geométrico}
+
+A álgebra exterior definida sobre o espaço multivetorial $\bigwedge\mathbb{R}^3$ é útil para representar o espaço tridimensional, pois contém uma cópia do $\mathbb{R}^3$, o que permite que diversas aplicações geométricas sejam representadas por ela. Porém, como o produto externo não preserva norma, trabalhar com esta álgebra pode ser um inconveniente para algumas operações (como rotações). Portanto, seria conveniente definir um novo tipo de produto que, dado dois vetores $a$ e $b$, tivéssemos $|``ab''| = |a||b|$. Foi o que Clifford fez, e chamou esta nova operação de \textbf{produto geométrico}.
+\\
+
+Quando $a,b$ forem números reais (\textit{i.e.}, subespaços 0-dimensionais), o produto geométrico é equivalente a multiplicação de escalares. Quando forem vetores (subespaços 1-dimensionais), esse produto torna-se a soma do produto interno com o produto externo de Grassmann, isso é, $$ab = a\cdot b + a \wedge b.$$
+
+Assim, através do produto geométrico, podemos operar vetores e obter elementos do espaço multivetorial. Assim, a Álgebra Geométrica pode ser construída a partir de um espaço vetorial $\mathbb{R}^n$ munido do produto geométrico. Está álgebra também é denotada por $\mathcal C \ell_n$.
+
+\subsection{Modelos de Geometria}
+
+A Álgebra Geométrica também é útil para trabalhar com modelos de geometria diferentes do Euclidiano. Em particular, pretende-se estudar outros dois modelos com diversas aplicações na matemática aplicada, física, engenharia e outras ciências \cite{dorst2010geometric}: O Modelo Homogêneo e o Modelo Conforme.
+
+O Modelo Homogêneo (ou modelo projetivo) possui métrica Euclidiana, com a diferença de que o espaço-base $d$-dimensional está imerso em um espaço de representação com $n = d+1$ dimensões, \textit{i.e.}, possui assinatura $\mathbb{R}^{d+1,0}$. O vetor de base extra é definido como $e_0$ e é interpretado geometricamente como a origem do espaço-base (como representado na Figura~\ref{fig:homogeneo}).
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=0.75\linewidth]{figures/homogeneo.png}
+	\end{center}
+	\caption{O plano paralelo a $e_1\wedge e_2$ é a representação homogênea do espaço-base 2-dimensional, exibido como um espaço Cartesiano na imagem em detalhe, à direita \cite{leandro2017algebra}.}
+	\label{fig:homogeneo}
+\end{figure}
+
+Este modelo é útil para representar translações, pois elas passam a ser transformações lineares. Por conta disso, em Álgebra Linear, quando se trabalha com translações, utilizar o modelo homogêneo permite que se agregue em uma única matriz operações de rotação e translação.
+\\
+
+O Modelo Conforme é uma ferramenta que surge quando se deseja trabalhar com transformações de similaridade (que preservam ângulos, paralelismo e razão entre distâncias). Para isso, define-se uma métrica tal que o produto interno entre vetores que codificam \textit{pontos finitos unitários}\footnote{aqueles descritos como $p =n_0 + \alpha_1e_1 + \dots + \alpha_de_d + \frac{1}{2} \sum_{i=1}^{d}(\alpha_i^2)n_\infty$.} seja diretamente proporcional ao quadrado da distância Euclidiana entre esses pontos. Isso implicaria que o produto interno de um ponto a ele mesmo seria igual nulo.
+
+O Modelo Conforme possui assinatura $\mathbb{R}^{d+1,1}$ e, aqui, as translações também passam a ser lineares. Mais do que isso: elas se tornam transformações ortogonais! Desta maneira, as rotações, reflexões e translações podem ser combinadas em uma única transformação ortogonal, facilitando muito o calculo computacional. As duas dimensões extras são interpretadas geometricamente como o ponto na origem (similar ao Modelo Homogêneo) e o ponto no infinito. 
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=0.75\linewidth]{figures/conforme.png}
+	\end{center}
+	\caption{O espaço de representação 4-dimensional do modelo conforme, com espaço-base 2-dimensiona, é representado graficamente tendo o $n_0$ como dimensão homogênea e ponto na origem do espaço $\{e_1, e_2, e_\infty\}$. Vetores que codificam pontos finitos são representados como pontos no paraboloide \cite{leandro2017algebra}.}
+	\label{fig:conforme}
+\end{figure}
 
 
 \section{Objetivos e Justificativa} \label{aims}
@@ -165,7 +293,7 @@ Aplicações
 
 \subsection{Objetivo Principal}
 
-O que foi exposto acima torna possível a contextualização do {\bf principal objetivo} deste projeto, que está em estudar todos os aspectos matemáticos do DGP e suas variações, bem como da verificação se será possível encontrar uma ordem para os vértices do sistema proposto, isto é, verificar a solução do DVOP aplicado à conformações de sistemas de Robôs Móveis e aos resultados computacionais.
+O que foi exposto acima torna possível a contextualização do {\bf principal objetivo} deste projeto, que está em estudar a Álgebra Geométrica e seus principais resultados e aplicações. 
 
 \subsection{Objetivos Específicos}
 
@@ -173,119 +301,79 @@ Com o intuito de contemplar isto, ressaltamos alguns dos {\bf objetivos específ
 
 \begin{enumerate}[(1)]
 
-\item Estudar formas viáveis (pelos vieses energético, de construção e precisão da medida) para obtenção das distâncias entre os elementos do sistema físico.
+\item Estudar a Álgebra dos subespaços vetoriais com produto interno;
 
-\item Estudar as possíveis distribuições dos Robôs Móveis em um sistema genérico, visando verificar quais conjuntos de dados possam ser garantidos como entradas para a construção do problema, tal como em.
+\item Introduzir-se nos espaços métricos;
 
-\item Verificar a solução do DVOP aplicado ao problema proposto e estudar o ordenamento de vértices que se adeque aos objetivos do trabalho.
+\item Conhecer o produto externo, o produto regressivo e o multiespaço vetorial;
 
-\item Caso consiga-se uma boa ordenação para os vértices, verificar a aplicação do algorítimo BP para a solução do DDGP proposto, se não, estudar outros algorítimos que possam solucionar o problema;
+\item Estudar o produto escalar de blades e contrações de subespaços vetoriais e suas implicações;
 
-\item Estudar a complexidade computacional do algorítimo proposto aplicado as possíveis distribuições estudadas no item.
+\item Conhecer o produto geométrico e suas implicações, como a Dualidade;
 
-\item Simular computacionalmente o algoritmo para solução do problema com instâncias artificialmente geradas, dominando cada passo utilizado;
+\item Estudar diferentes modelos de geometria, como o Modelo Homogêneo e Modelo Conforme;
 
-\item Aplicar o algoritmo estudado em estruturas de pequena escala, como instâncias reais do problema;
+\item Estudar como representar os modelos de geometria sob o ponto de vista da Álgebra Geométrica;
 
-\item Ter contato matemático e computacional com problemas científicos;
+\item Estudar as transformações geométricas usando Álgebra Geométrica e suas aplicações.
 
-\item Habituar-se a ler, citar e escrever documentos científicos;
-
-\item Associar os objetos estudados como aplicações e generalizações de estudos teóricos e práticos nas disciplinas dos cursos de graduação.
 \end{enumerate}
-
-
-\subsection{Justificativa}
-
-Este projeto é tanto viável para alunos de Matemática quanto das Engenharias, cursos presentes no Centro de Blumenau, visto que tem viés interdisciplinar.
-
-Os pré-requisitos conceituais básicos tangem Física, Geometria Analítica, Álgebra Linear, Cálculo Diferencial e Integral, Automação e Programação.
-
-Além disso, este tema está ganhando cada vez mais espaço na literatura, uma vez que esta é uma área em crescimento constante devido a grande quantidade de novas aplicações advindas do rápido desenvolvimento tecnológico das últimas décadas. Assim, este estudo dá aos alunos a possibilidade de participar de estudos de pesquisa a nível de Iniciação Científica que possam contribuir, de maneira até significativa, com trabalhos em andamento de pesquisa com relevante nível acadêmico.
-
-Isto, além de trazer pra prática o significado de vários estudos realizados no curso, ainda permite que o aluno tenha contato com ideias e experiências das quais possa fazer uso em eventual pós-graduação, como início de uma carreira acadêmica na área. Também, o contato com a literatura científica brasileira e estrangeira.
-
-Por fim, ainda existem poucos pesquisadores no Brasil trabalhando nesta área que é bem ampla, como já foi comentado até agora neste texto. Ou seja, este projeto ainda tem por prerrogativa contribuir para a formação de pessoal que deve dar prosseguimento aos estudos na área, aumentando a quantidade de especialistas em GD no futuro, tornando o Brasil como uma referência.
-
 
 \section{Metodologia e Resultados Esperados}
  
-Pretende-se focar, inicialmente, no estudo teórico, utilizando as referências \cite{savvides2001dynamic}, , \cite{carlile:MinimalOrder}, \cite{carlileGDandAplications} e \cite{carlile:DDGP}, além de artigos e livros citados como referências nestes itens da Literatura. 
+Inicialmente, pretende-se uma revisão bibliográfica sobre espaços vetoriais e os resultados que interessam ao trabalho. Depois, focar-se-á em uma revisão bibliográfica minuciosa sobre os assuntos elementares da Álgebra Geométrica, utilizando as referências \cite{leandro2017algebra}, , \cite{dorst2010geometric}, \cite{sommerGeometric}, \cite{lundholm2009clifford} e \cite{lounestoClifford}, além de artigos e livros citados como referências nestes itens da Literatura. 
 
-Este trabalho deve-se dar em separado na primeira parte, com encontros periódicos com o orientador, seja em forma de reunião ou de exposição oral, para apurar os desenvolvimentos teóricos e sanar eventuais dúvidas que surjam. Paralelamente, deve-se pedir que o aluno escreva o que está aprendendo, utilizando LaTeX, a fim de aprender a escrever cientificamente sobre o que se estuda.
+Feito isso, algum tempo será dispendido para que o estudante possa confeccionar as seções introdutórias do tema na revisão bibliográfica de seu trabalho de conclusão de curso. Pretende-se um conjunto de definições, resultados e demonstrações dos principais resultados do tema, além de exemplos e discussão para acompanhá-los.
+\\
 
-Espera-se conseguir aplicar o DVOP de forma satisfatória ao sistema proposto, de forma a obter uma boa ordenação aos Robôs Móveis, assim, conseguindo montar o DDGP e aplicar o algorítimo BP. Caso não se consiga fazê-lo, espera-se poder estudar e aplicar outros algorítimos presentes ou não na literatura para propor uma solução ao problema. 
+Depois, propõe-se uma ampla revisão bibliográfica para os diferentes modelos de geometria, com foco nos modelos Homogêneo e Conforme e suas caracterizações usando Álgebra Geométrica.
 
-Contudo, o essencial, espera-se desenvolver uma implementação do algoritmo a fim, estimando o desempenho computacional no tocante à resolução de um DGP - tanto artificial como real, visando estudar sua complexidade computacional. Por fim, pretende-se elaborar um documento final com tais conteúdos e com simulações computacionais para indicar a validade científica do mesmo.
+Como antes, espera-se outro intervalo focado na produção das seções referentes ao novo estudo para a revisão bibliográfica do trabalho. Dever-se-á preencher estas seções com exemplos e imagens, a fim de que se possa tomar como intuitiva a manipulação dos conceitos após a leitura.
+\\
 
-Pretende-se participar de reuniões científicas a fim de trocar experiências e idéias com outros alunos e pesquisadores, bem como estabelecer uma rede de contatos e colaborações.
+Por fim, deseja-se estudar a aplicações para a Álgebra Geométrica munidas de tais modelos geométricos. Espera-se que algum estudo prático-computacional possa ser realizado a partir destes conceitos, buscando solucionar problemas descritos através da Álgebra Geométrica.
 
-Além disso, deseja-se escrever e submeter um artigo a nível de iniciação Científica a algum periódico nacional.
+E, fiel ao método, gastar-se-á algum tempo para escrever sobre as aplicações e as conclusões do estudo, bem como formatá-lo e prepará-lo para submissão. 
+\\
+
+Todas as atividades serão acompanhadas de seminários a cada duas semanas para o orientador, a fim de dirimir eventuais dúvidas e traçar planejamentos.
 
 \section{Planos de Trabalho e Cronogramas}
 
-Segue abaixo os planos de trabalho e respectivos cronogramas, ajustados para um ano de vigência, prevendo inclusive as escritas dos relatórios
+Segue abaixo os planos de trabalho e respectivos cronogramas, ajustados para um semestre de 102 dias (como planejado para o semestre de 2022.2, segundo calendário acadêmico).
 	
 	\subsection{Plano de Trabalho}
 	
 	\begin{enumerate}[(1)]
 		
-	\item {\bf Levantamento bibliográfico sobre Sistemas de Automação em literatura específica, formas de se obter distâncias, além de estudo sobre estruturas e funções destes sistemas}
+	\item \textbf{Levantamento bibliográfico sobre a Álgebra dos subespaços vetoriais com produto interno}
 	
-	\vspace{0.2cm}
+	\item \textbf{Demonstrações dos resultados principais}
 	
-	Nesta atividade, o bolsista deverá juntamente com o orientador fazer um apanhado de artigos e livros referentes ao tema que servirão de apoio teórico. ele durará metade do período porque frequentemente novas bibliografias deverão ser consultadas. Além disto, este é o tempo onde o bolsista terá a oportunidade de estudar a fundo e propor formas de se obter os valores de distâncias medidos entre os elementos dos sistemas.
+	\item \textbf{Levantamento bibliográfico sobre espaços métricos}
 	
-	\item {\bf Levantamento bibliográfico sobre o DVOP, DDGP e estudo do problema}
+	\item \textbf{Preparação de seminários e escrita do trabalho}
 	
-	\vspace{0.2cm}
+	\item \textbf{Estudo sobre a Álgebra Exterior, Álgebra Geométrica e suas implicações}
 	
-	Nesta atividade, o bolsista deverá juntamente com o orientador fazer um apanhado de artigos e livros referentes ao tema que servirão de apoio teórico. ele durará metade do período porque frequentemente novas bibliografias deverão ser consultadas. Já o estudo do tema será dividido em partes: 
+	\item \textbf{Demonstrações dos resultados principais}
 	
-	\begin{enumerate}[(i)]
-		\item estudo da Teoria de Grafos;
-		
-		\item estudo dos modelos de DGP usando grafos;
-		
-		\item modelar um DGP que caracterize o sistema real estudado
-		
-		\item modelagem e estudo de solução do DVOP sobre o sistema real;
-		
-		\item estudo extenso sobre algorítimos existentes para solucionar o problema;
-		
-		\item estudar a factibilidade da solução do problema e, caso for possível, propor um algorítimo que o solucione.
-		
-	\end{enumerate}
+	\item \textbf{Preparação de seminários e escrita do trabalho}
 	
-	 Todas as contas devem ser abertas e teoremas demonstrados. Este item e o anterior estão ligados e durarão o mesmo tempo porque devem ser estudados em paralelo, já que são os temas principais e co-relacionados fortemente.
+	\item \textbf{Levantamento bibliográfico sobre diferentes modelos de geometria, como o Homogêneo e o Conforme}
 	
-	\item {\bf Escrita do relatório parcial referente à primeira metade da vigência, contemplando os dois itens anteriores}
+	\item \textbf{Integrar estes modelos à Álgebra Geométrica}
 	
-	Nesta atividade, que durará a primeira metade do projeto, o aluno deve escrever parcialmente o relatório periodicamente a cada avanço teórico realizado. Dever-se-á estar em paralelo com os itens anteriores.
+	\item \textbf{Demonstrações dos resultados principais}
 	
-	\item {\bf Estudo detalhado e minucioso (teórico e computacional) do Algoritmo Proposto}
+	\item \textbf{Preparação de seminários e escrita do trabalho}
 	
-	Nesta atividade, que durará o quarto e quinto bimestre, o bolsista deverá estudar em detalhes a estrutura algorítmica do algoritmo que fora proposto no item anterior. Este estudo será dividido em partes:
+	\item \textbf{Estudar aplicações ao que foi estudado}
 	
-	\begin{enumerate}[(i)]
-		\item estudo sobre a Teoria de Complexidade Computacional
-		
-		\item verificar a complexidade computacional do algorítimo adotado
-		
-		\item estudar formas de se alterar o sistema afim de se obter melhores soluções computacionais
-	\end{enumerate}
+	\item \textbf{Preparação de seminários e escrita do trabalho}
 	
-	\item {\bf Simulações em conjunto com instâncias artificiais e reais}
+	\item \textbf{Finalização do manuscrito e adequação a partir das revisões do orientador}
 	
-	Nesta atividade, o bolsista deverá simular numericamente com instâncias artificiais e reais, usando o algoritmo implementado por ele. Durará toda a segunda metade do projeto, visto que a cada passo que se estuda deve-se realizar as implementações computacionais.
-	
-	\item {\bf Submissões a possíveis encontros científicos, o que em nossa área ocorre no primeiro semestre do ano}
-	
-	Nesta atividade, o bolsista deverá aprender a escrever propostas, resumos, posteres e, eventualmente, se comunicar oralmente sobre o objeto de seus estudo científico.
-	
-	\item {\bf Escrita do relatório final}
-	
-	Nesta atividade, o bolsista deverá finalizar o relatório parcial com a escrita do relatório final, aparando as arestas e fazendo as correções necessárias apontadas pelo orientador.
 	\end{enumerate}
 	
 	
@@ -293,24 +381,27 @@ Segue abaixo os planos de trabalho e respectivos cronogramas, ajustados para um 
 	
 \begin{table}[h]
 \centering
-	\begin{tabular}{| c || c | c | c | c | c | c |}
+	\begin{tabular}{| c || c | c | c | c |}
 	\hline 
-	Atividades & 1$^{\circ}$ bimestre & 2$^{\circ}$ bimestre & 3$^{\circ}$ bimestre & 4$^{\circ}$ bimestre  & 5$^{\circ}$ bimestre & 6$^{\circ}$ bimestre \\ \hline \hline
-	(1) & \cellcolor{gray} & \cellcolor{gray} & \cellcolor{gray} &  & &\\ \hline
-	(2) & \cellcolor{gray} & \cellcolor{gray} & \cellcolor{gray} &  & &\\ \hline
-	(3) & \cellcolor{gray} & \cellcolor{gray} & \cellcolor{gray} & \cellcolor{gray} &\cellcolor{gray} & \\ \hline
-	(4) &  & & & \cellcolor{gray} & \cellcolor{gray} & \\ \hline
-	(5) &  & & & \cellcolor{gray} & \cellcolor{gray} & \cellcolor{gray} \\ \hline
-	(6) &  & & & & & \cellcolor{gray} \\ \hline
-	(7) &  & & &  & & \cellcolor{gray} \\
+	Atividades & 1$^{\circ}$ mês & 2$^{\circ}$ mês & 3$^{\circ}$ mês & 4$^{\circ}$ mês \\ \hline \hline
+	(1) & \cellcolor{gray} &  &  & \\ \hline
+	(2) & \cellcolor{gray} &  &  & \\ \hline
+	(3) & \cellcolor{gray} &  &  & \\ \hline
+	(4) & \cellcolor{gray} &  &  & \\ \hline
+	(5) &  & \cellcolor{gray} &  & \\ \hline
+	(6) &  & \cellcolor{gray} &  & \\ \hline
+	(7) &  & \cellcolor{gray} &  & \\ \hline
+	(8) &  &  & \cellcolor{gray} & \\ \hline
+	(9) &  &  & \cellcolor{gray} & \\ \hline
+	(10) &  &  & \cellcolor{gray} & \\ \hline
+	(11) &  &  & \cellcolor{gray} & \\ \hline
+	(12) &  &  &  & \cellcolor{gray} \\ \hline
+	(13) &  &  &  & \cellcolor{gray} \\ \hline
+	(14) &  &  &  & \cellcolor{gray} \\ 
 	\hline
 	\end{tabular}
 \end{table}
 	
-
-\section{Exequibilidade}
-
-Devida a natureza das implementações propostas no projeto, o aluno realizará um trabalho de pesquisa em livros e artigos, de simulações em seus computadores pessoais, utilizando o software livre Octave (uma versão livre com recursos similares ao Matlab, ou outro, dependendo da preferência do estudante) e poderá implementar um ambiente real (utilizando microcontroladores como Arduíno ou similares, dependendo da preferência do bolsista) afim de aplicar a solução proposta (se existir). O ambiente de estudo deve ser escolhido pelo aluno. As reuniões e seminários serão realizados em alguma sala-de-aula na Sede Acadêmica do Centro.
 
 \phantomsection
 \addcontentsline{toc}{section}{Referências}
