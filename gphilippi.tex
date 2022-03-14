@@ -196,12 +196,12 @@ Pode-se dizer que nosso tema de estudo teve início em 1844, com a chamada \text
 \end{chapquote}
 
 
-Existe uma diferença fundamental entre espaço físico e espaço de representação. O espaço físico é onde estão os objetos que estamos interessados em estudar. Já o espaço de representação é tal que proporcione um modelo matemático que abstrai a natureza destes objetos a fim de que possamos manipulá-los. Por exemplo, a Álgebra Linear é um espaço de representação construída a partir do conceito de vetor, isso é, pontos no espaço de representação. Já a Álgebra Geométrica é construída sobre o conceito de subespaços vetoriais. Para tanto, é necessário que se possa representar os subespaços de forma elementar, como primitivas, assim como são os vetores na Álgebra Linear.
+Existe uma diferença fundamental entre espaço físico e espaço de representação. O espaço físico é onde estão os objetos que estamos interessados em estudar. Já o espaço de representação é tal que proporcione um modelo matemático que abstrai a natureza destes objetos a fim de que possamos manipulá-los. Por exemplo, a Álgebra Linear é um espaço de representação construída a partir do conceito de vetor, isso é, pontos no espaço de representação. A Álgebra Geométrica, no entanto, é um espaço de representação construído sobre o conceito de \textit{subespaços vetoriais}. Para tanto, é necessário que se possa representar os subespaços de forma elementar, como primitivas, assim como são os vetores na Álgebra Linear.
 
 \subsection{O Espaço Multivetorial $\bigwedge\mathbb{R}^n$}
 
-Partiremos de um espaço vetorial. Assim, seja a base $\{e_i\}^n_{i=1}$ para $\mathbb{R}^n$. Um vetor $a$ arbitrário pode ser escrito como a \textit{combinação linear} dos elementos da base, por tanto, para $n=3$, $$a = \alpha_1e_1 + \alpha_2e_2 + \alpha_3e_3\in \mathbb{R}^3,$$
-onde $\alpha_i\in \mathbb{R}$ é o $i$-ésimo coeficiente de $a$. Podemos interpretar geometricamente $a$ como um segmento de reta orientado, suportado por um subespaço 1-dimensional (uma reta), que passa pela origem de $\mathbb{R}^3$.
+Partiremos de um espaço vetorial. Assim, seja a base $\{e_i\}^n_{i=1}$ para $\mathbb{R}^n$. Um vetor $a$ arbitrário pode ser escrito como a \textit{combinação linear} dos elementos da base, portanto, para $n=3$, $$a = \alpha_1e_1 + \alpha_2e_2 + \alpha_3e_3\in \mathbb{R}^3,$$
+em que $\alpha_i\in \mathbb{R}$ é o $i$-ésimo coeficiente de $a$. Podemos interpretar geometricamente $a$ como um segmento de reta orientado, suportado por um subespaço 1-dimensional (uma reta), que passa pela origem de $\mathbb{R}^3$.
 
 \begin{figure}[H]
 	\begin{center}
@@ -211,10 +211,10 @@ onde $\alpha_i\in \mathbb{R}$ é o $i$-ésimo coeficiente de $a$. Podemos interp
 	\label{fig:r3}
 \end{figure}
 
-A Álgebra Exterior de Grassmann trás um novo produto que nos permite operar vetores para construir subespaços de dimensionalidade mais altas. Na Álgebra Geométrica, um subespaço 2-dimensional $C_{\left <2 \right >}$ pode ser expandido como \textbf{produto externo} de dois vetores $a,b$ linearmente independentes:
+A Álgebra Exterior de Grassmann trás um novo produto que nos permite operar vetores para construir subespaços de dimensionalidade mais altas. Na Álgebra Geométrica, um subespaço 2-dimensional $C_{\left <2 \right >}$ pode ser expandido como \textbf{produto exterior} de dois vetores $a,b$ linearmente independentes:
 
 $$C_{\left <2 \right >} = a \wedge b,$$
-onde o $\wedge$ representa o produto externo, cujo resultado é um \textit{bivetor} representado como a superfície plana orientada da figura~\label{fig:2blade}. $a\wedge b$ possui magnitude (representada pela área do disco) e orientação (representada pela seta curva). 
+onde o $\wedge$ representa o produto exterior, cujo resultado é um \textit{bivetor} representado como a superfície plana orientada da figura~\ref{fig:2blade}. $a\wedge b$ possui magnitude (representada pela área do disco) e orientação (representada pela seta curva). 
 
 \begin{figure}[H]
 	\begin{center}
@@ -234,7 +234,7 @@ Também pode-se representar um trivetor como o produto exterior de três vetores
 	\label{fig:3blade}
 \end{figure}
 
-De modo geral, pode-se expandir subespaços com dimensão $k$ a partir de $k$ vetores linearmente independentes em $\mathbb{R}^n$. Chamamos tais subespaços de \textbf{$k$-blades}, onde $k$ é o \textbf{grau} do blade. Estes serão os elementos primitivos da Álgebra Geométrica. Veja que isso generaliza a Álgebra Vetorial, onde possuíamos apenas os 0-blades e 1-blades, isso é, escalares e vetores. 
+De modo geral, pode-se expandir subespaços com dimensão $k$ a partir de $k$ vetores li-ne-ar-mente independentes em $\mathbb{R}^n$. Chamamos tais subespaços de \textbf{$k$-blades}, onde $k$ é o \textbf{grau} do blade. Estes serão os elementos primitivos da Álgebra Geométrica. Veja que isso generaliza a Álgebra Vetorial, onde possuíamos apenas os 0-blades e 1-blades, isso é, escalares e vetores. 
 \\
 
 Assim, a partir dos elementos do espaço vetorial $\mathbb{R}^n$, podemos construir um \textit{espaço multivetorial} $\bigwedge\mathbb{R}^n$. Isso é, temos $\sum_{k=0}^{n} {n\choose k} = 2^n$ $k$-combinações dos vetores de base de $\mathbb{R}^n$, que descrevem $2^n$ \textbf{blades de base} para $\bigwedge\mathbb{R}^n$. No caso $n =3$, temos
@@ -251,12 +251,12 @@ $$C_{\left < 2\right >} = \alpha_1 e_1\wedge e_2 + \alpha_2 e_1 \wedge e_3 + \al
 
 \subsection{O Produto Geométrico}
 
-A álgebra exterior definida sobre o espaço multivetorial $\bigwedge\mathbb{R}^3$ é útil para representar o espaço tridimensional, pois contém uma cópia do $\mathbb{R}^3$, o que permite que diversas aplicações geométricas sejam representadas por ela. Porém, como o produto externo não preserva norma, trabalhar com esta álgebra pode ser um inconveniente para algumas operações (como rotações). Portanto, seria conveniente definir um novo tipo de produto que, dado dois vetores $a$ e $b$, tivéssemos $|``ab''| = |a||b|$. Foi o que Clifford fez, e chamou esta nova operação de \textbf{produto geométrico}.
+A álgebra exterior definida sobre o espaço multivetorial $\bigwedge\mathbb{R}^3$ é útil para representar o espaço tridimensional, pois contém uma cópia do $\mathbb{R}^3$, o que permite que diversas aplicações geométricas sejam representadas por ela. Porém, como o produto exterior não preserva norma, trabalhar com esta álgebra pode ser um inconveniente para algumas operações (como rotações). Portanto, seria conveniente definir um novo tipo de produto que, dado dois vetores $a$ e $b$, tivéssemos $|\text{``}ab\text{''}| = |a||b|$. Foi o que Clifford fez, e chamou esta nova operação de \textbf{produto geométrico}.
 \\
 
-Quando $a,b$ forem números reais (\textit{i.e.}, subespaços 0-dimensionais), o produto geométrico é equivalente a multiplicação de escalares. Quando forem vetores (subespaços 1-dimensionais), esse produto torna-se a soma do produto interno com o produto externo de Grassmann, isso é, $$ab = a\cdot b + a \wedge b.$$
+Quando $a,b$ forem números reais (\textit{i.e.}, subespaços 0-dimensionais), o produto geométrico é equivalente a multiplicação de escalares. Quando forem vetores (subespaços 1-dimensionais), esse produto torna-se a soma do produto interno com o produto exterior de Grassmann, isso é, $$ab = a\cdot b + a \wedge b.$$
 
-Assim, através do produto geométrico, podemos operar vetores e obter elementos do espaço multivetorial. Assim, a Álgebra Geométrica pode ser construída a partir de um espaço vetorial $\mathbb{R}^n$ munido do produto geométrico. Está álgebra também é denotada por $\mathcal C \ell_n$.
+Assim, através do produto geométrico, podemos operar vetores e obter elementos do espaço multivetorial. Assim, a Álgebra Geométrica pode ser construída a partir de um espaço vetorial $\mathbb{R}^n$ munido do produto geométrico. Esta álgebra também é denotada por $\mathcal C \ell_n$.
 
 \subsection{Modelos de Geometria}
 
@@ -275,7 +275,7 @@ O Modelo Homogêneo (ou modelo projetivo) possui métrica Euclidiana, com a dife
 Este modelo é útil para representar translações, pois elas passam a ser transformações lineares. Por conta disso, em Álgebra Linear, quando se trabalha com translações, utilizar o modelo homogêneo permite que se agregue em uma única matriz operações de rotação e translação.
 \\
 
-O Modelo Conforme é uma ferramenta que surge quando se deseja trabalhar com transformações de similaridade (que preservam ângulos, paralelismo e razão entre distâncias). Para isso, define-se uma métrica tal que o produto interno entre vetores que codificam \textit{pontos finitos unitários}\footnote{aqueles descritos como $p =n_0 + \alpha_1e_1 + \dots + \alpha_de_d + \frac{1}{2} \sum_{i=1}^{d}(\alpha_i^2)n_\infty$.} seja diretamente proporcional ao quadrado da distância Euclidiana entre esses pontos. Isso implicaria que o produto interno de um ponto a ele mesmo seria igual nulo.
+O Modelo Conforme é uma ferramenta que surge quando se deseja trabalhar com transformações de similaridade (que preservam ângulos, paralelismo e razão entre distâncias). Para isso, define-se uma métrica tal que o produto interno entre vetores que codificam \textit{pontos finitos unitários}\footnote{Aqueles descritos como $p =n_0 + \alpha_1e_1 + \dots + \alpha_de_d + \frac{1}{2} \sum_{i=1}^{d}(\alpha_i^2)n_\infty$.} seja diretamente proporcional ao quadrado da distância Euclidiana entre esses pontos. Isso implicaria que o produto interno de um ponto a ele mesmo seria igual nulo.
 
 O Modelo Conforme possui assinatura $\mathbb{R}^{d+1,1}$ e, aqui, as translações também passam a ser lineares. Mais do que isso: elas se tornam transformações ortogonais! Desta maneira, as rotações, reflexões e translações podem ser combinadas em uma única transformação ortogonal, facilitando muito o calculo computacional. As duas dimensões extras são interpretadas geometricamente como o ponto na origem (similar ao Modelo Homogêneo) e o ponto no infinito. 
 
@@ -283,7 +283,7 @@ O Modelo Conforme possui assinatura $\mathbb{R}^{d+1,1}$ e, aqui, as translaçõ
 	\begin{center}
 		\includegraphics[width=0.75\linewidth]{figures/conforme.png}
 	\end{center}
-	\caption{O espaço de representação 4-dimensional do modelo conforme, com espaço-base 2-dimensiona, é representado graficamente tendo o $n_0$ como dimensão homogênea e ponto na origem do espaço $\{e_1, e_2, e_\infty\}$. Vetores que codificam pontos finitos são representados como pontos no paraboloide \cite{leandro2017algebra}.}
+	\caption{O espaço de representação 4-dimensional do modelo conforme, com espaço-base 2-dimensional, é representado graficamente tendo o $n_0$ como dimensão homogênea e ponto na origem do espaço $\{e_1, e_2, e_\infty\}$. Vetores que codificam pontos finitos são representados como pontos no paraboloide \cite{leandro2017algebra}.}
 	\label{fig:conforme}
 \end{figure}
 
@@ -305,7 +305,7 @@ Com o intuito de contemplar isto, ressaltamos alguns dos {\bf objetivos específ
 
 \item Introduzir-se nos espaços métricos;
 
-\item Conhecer o produto externo, o produto regressivo e o multiespaço vetorial;
+\item Conhecer o produto exterior, o produto regressivo e o multiespaço vetorial;
 
 \item Estudar o produto escalar de blades e contrações de subespaços vetoriais e suas implicações;
 
@@ -321,7 +321,7 @@ Com o intuito de contemplar isto, ressaltamos alguns dos {\bf objetivos específ
 
 \section{Metodologia e Resultados Esperados}
  
-Inicialmente, pretende-se uma revisão bibliográfica sobre espaços vetoriais e os resultados que interessam ao trabalho. Depois, focar-se-á em uma revisão bibliográfica minuciosa sobre os assuntos elementares da Álgebra Geométrica, utilizando as referências \cite{leandro2017algebra}, , \cite{dorst2010geometric}, \cite{sommerGeometric}, \cite{lundholm2009clifford} e \cite{lounestoClifford}, além de artigos e livros citados como referências nestes itens da Literatura. 
+Inicialmente, pretende-se uma revisão bibliográfica sobre espaços vetoriais e os resultados que interessam ao trabalho. Depois, focar-se-á em uma revisão bibliográfica minuciosa sobre os assuntos elementares da Álgebra Geométrica, utilizando as referências \cite{sommerGeometric}, \cite{leandro2017algebra}, \cite{dorst2010geometric}, \cite{lundholm2009clifford} e \cite{lounestoClifford}, além de artigos e livros citados como referências nestes itens da Literatura. 
 
 Feito isso, algum tempo será dispendido para que o estudante possa confeccionar as seções introdutórias do tema na revisão bibliográfica de seu trabalho de conclusão de curso. Pretende-se um conjunto de definições, resultados e demonstrações dos principais resultados do tema, além de exemplos e discussão para acompanhá-los.
 \\
