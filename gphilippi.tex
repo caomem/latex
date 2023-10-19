@@ -1,4 +1,4 @@
- \documentclass[a4paper,12pt]{article}
+\documentclass[a4paper,12pt]{article}
 \usepackage[a4paper,top=3cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
 \usepackage[brazil]{babel}
 \usepackage[T1]{fontenc}
@@ -28,38 +28,28 @@
 \newtheorem{observacao}{Observação}[section]
 \newtheorem{corolario}{Corolário}[section]
 
-\title{Titulo Legal}
+\title{Notas de Estudo sobre Otimização Contínua}
 \author{Guilherme Philippi}
 \begin{document}
 \maketitle
 \tableofcontents
 
+% - O que é Modelagem Matemática de um problema (características);
+% - O que é um problema de otimização e pra que ela serve;
+% - O que é otimização discreta e otimização contínua;
+% - Os tipos de programação de cada uma delas;
+
+
 \section{Introdução}
 
-Este relatório tem como objetivo apresentar soluções de exercícios envolvendo grafos.
+A otimização é uma área da matemática que objetiva encontrar soluções ótimas para um problema. Entende-se como solução ótima aquela que minimizará ou maximizará uma função, chamada de \textit{função objetivo} do problema. Nem sempre essa solução ótima será fácil ou possível de encontrar, donde essa área também se restringe ao estudo de \textit{aproximações} para as soluções ótimas de um problema.
 
-Utilizou-se o software PIPE (Platform Independent Petri net Editor) \cite{dias2007ferramentas} para modelar e simular as soluções propostas, assim como segue na próxima seção.
+Definir a função objetivo de um problema de otimização é parte da \textit{modelagem matemática} do problema real. Para isso, busca-se descrever as características e comportamentos de uma situação do mundo real através de variáveis e funções que as restrinjam, abstraindo a situação real de tal forma que não se percam os comportamentos de interesse. Quanto mais variáveis e funções utiliza-se para descrever matematicamente os comportamentos do sistema real, mais fidedigna e complexa a sua representação se torna.
 
-\section{Desenvolvimento}
-Descrever de forma mais detalhada o problema.
-Apresentar a solução proposta pela equipe.
-Discorrer sobre a solução (por exemplo, explicar com detalhes os pontos mais
-importantes).
+Um problema de otimização é representado como segue: 
+$$\min_{}$$
 
-\begin{figure}[H]
-	\begin{center}
-		\includegraphics[width=0.4\linewidth]{img.png}
-	\end{center}
-	\caption{Transformação linear composta BA}
-	\label{fig:compfunc}
-\end{figure}
 
-Atenção: Se mais de uma ou atividade foi realizada no laboratório repetir a sequência
-anterior (da Seção 3) para cada atividade.
-
-\section{Considerações Finais}
-Apresentar as considerações finais sobre o trabalho. Se o objetivo foi alcançado ou não,
-o que foi aprendido, dificuldades encontradas, etc.
 
 \phantomsection
 \addcontentsline{toc}{section}{Referências}
